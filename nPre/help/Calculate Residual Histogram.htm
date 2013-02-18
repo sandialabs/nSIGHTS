@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Calculate Residual Histogram</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Calculate Residual Histogram </P></FONT>
+
+<P>What:   </B>A special case of the <B><FONT FACE="Technical" COLOR="#008000">Histogram</B></FONT> object, this object creates the input data for a histogram plot based on residual data.  The bin limits are set from the input residual data, and a linear histogram is always created. The actual histogram is plotted using an <B><FONT FACE="Technical" COLOR="#008000">XY Series</B></FONT> plot object on a plot page, with this object as the input.</P>
+<B><P>Why:   </B>Manipulates data in order to plot a histogram.<B> </P>
+<P>Used By:  </B><B><FONT FACE="Technical" COLOR="#008000">XY Series</B></FONT> plot object </P>
+<B><P>Appearance: </B></P>
+<P><IMG SRC="AppResidualHistogram.jpg"></P>
+<B><P>Application:</B> nPost</P>
+<B><P>Input Data:  </B><B><FONT FACE="Technical" COLOR="#008000">Extract Residuals</B></FONT></P>
+<B><P>Output Data: </B>Two XY data sets, one containing the histogram data, the second the standard normal distribution of the data.  The second data set is only output if the <B><FONT COLOR="#800050">Standardize</B></FONT> option is selected; otherwise, the data set is null.</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Residual Input Data</B></FONT></TD>
+<TD CLASS=desc>The residual data used to create the histogram is selected.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Cumulative</B></FONT></TD>
+<TD CLASS=desc>Cumulative frequencies are calculated.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Standardize</B></FONT></TD>
+<TD CLASS=desc>Frequencies are calculated for a standardized residual (residuals  are subtracted by the mean, and divided by the standard deviation).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Normalize</B></FONT></TD>
+<TD CLASS=desc>Frequencies are calculated for residuals normalized within the specified <B><FONT COLOR="#000080">Normalization Limit.</B></FONT></TD>
+</TR>
+</TABLE>
+
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Number of Bins</B></FONT></TD>
+<TD CLASS=desc>The number of bins for the histogram are entered in the text box.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Normalization Limit</B></FONT></TD>
+<TD CLASS=desc>The normalization range if normalized frequencies are calculated.  For example, a normalization limit of 5 will result  in bin limits between -5 and 5.</TD>
+</TR>
+</TABLE>
+</P>
+</FONT></BODY>
+</HTML>

@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Grid Color Fill</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Grid Color Fill </P></FONT>
+
+<P>What:</B>   Displays color filled contours of the nodes of a grid based on specified grid value limits. </P>
+<B><P>Why:</B>   Displays contours of grid data in a plot window.</P>
+<B><P>Used By:</B>  <B><FONT FACE="Technical" COLOR="#008000">Color Legend</P></FONT>
+<P>Appearance:  </B>This object appears different in 2D and 3D.</P>
+<B><P>2D</P></B>
+<P><IMG SRC="App2DataGridColorFill.jpg"></P>
+<B><P> 3D</P></B>
+<P><IMG SRC="App2DataGridColorFill3D.jpg"></P>
+<B><P>Input Data:</B>  grid data and color map</P>
+<B><P>Output Data:</B> color map limit specifications</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Grid Data To Plot</B></FONT></TD>
+<TD CLASS=desc>The grid data set to be plotted is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Z value</B></FONT></TD>
+<TD CLASS=desc>For 3D plots, a Z value needs to be identified to plot XY data in a 3D plot.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Same</I></FONT></TD>
+<TD CLASS=desc>The grid value at each grid co-ordinate is used as the Z value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Other Grid</I></FONT></TD>
+<TD CLASS=desc>Grid value is based on the grid value from another grid of the same size.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Constant</I></FONT></TD>
+<TD CLASS=desc>The grid is plotted at a constant Z value.  The Z value may be specified, or based on the Z value of another object. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Z Value Grid </B></FONT></TD>
+<TD CLASS=desc>For 3D plots, a grid is selected of the same size as the <B><FONT COLOR="#000080">Grid Data To Plot</B></FONT>.  The value from the selected grid is used as the Z value.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Fixed Z Value Value Source </B></FONT></TD>
+<TD CLASS=desc>For 3D plots, Master/Slave controls for a <I><FONT COLOR="#800050">Constant</I></FONT> Z value. For grids extracted from a cube, the grid extraction value may be used as the constant Z value.  Master/Slave controls are described in <A HREF="Masters and Slaves.htm">Masters and Slaves</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Fixed Z Value Value </B></FONT></TD>
+<TD CLASS=desc>For 3D plots and <I><FONT COLOR="#800050">Constant</I></FONT> Z value, the constant Z value at which to plot the grid.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Limit Selection</B></FONT></TD>
+<TD CLASS=desc>A master/slave control to connect the data limits to those specified in another object (e.g. <B><FONT FACE="Technical" COLOR="#008000">Cube Color Block</B></FONT>, <B><FONT FACE="Technical" COLOR="#008000">Grid Color Point</B></FONT>, etc.).  Master/Slave controls are described in <A HREF="Masters and Slaves.htm">Masters and Slaves</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Color Map  </B></FONT></TD>
+<TD CLASS=desc>The color map used to associate colors with data values is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Limits</B></FONT></TD>
+<TD CLASS=desc>Controls how data values in the input data are mapped to colors in the input color map.  This involves minimum and maximum data limit values that correspond to the first and last color in the color map respectively.  </TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Auto</B></FONT></TD>
+<TD CLASS=desc>If set, then the data limits are extracted from the data, based on the <B><FONT COLOR="#800050">Auto Source</B></FONT>. If not set, then the data limits specified by the <B><FONT COLOR="#800050">Min</B></FONT> and <B><FONT COLOR="#800050">Max</B></FONT> properties are used.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log</B></FONT></TD>
+<TD CLASS=desc>If set, the log range is mapped to the colors, and the log of the data values are used in calculating the mapped color.  Otherwise, linear mapping is used.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Auto Source</B></FONT></TD>
+<TD CLASS=desc>The method for determining the data limits automatically.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">All Data</I></FONT></TD>
+<TD CLASS=desc>The data limits are based on all data values.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Grid in View</I></FONT></TD>
+<TD CLASS=desc>The data limits are based on the data values within the window view.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Min</B></FONT></TD>
+<TD CLASS=desc>Minimum data value for color mapping.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Max</B></FONT></TD>
+<TD CLASS=desc>Maximum data value for color mapping. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Out-of-Range</B></FONT></TD>
+<TD CLASS=desc>Colors used for data values outside the data limits.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Extend</B></FONT></TD>
+<TD CLASS=desc>Values below the minimum data limit are given the first color in the color map, values above the maximum data limit are given the last color in the color map.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Clip</B></FONT></TD>
+<TD CLASS=desc>Values outside the data limits range are not plotted.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Edges</B></FONT></TD>
+<TD CLASS=desc>  Controls the plotting of triangulation edges with lines. (The grid is automatically triangulated in order to generate contours.)</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Plot</B></FONT></TD>
+<TD CLASS=desc> If selected, triangulation edges are plotted.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Pen</B></FONT></TD>
+<TD CLASS=desc>Color for edges selected from the plot window's plot pen set.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Thk</B></FONT></TD>
+<TD CLASS=desc>Edge line thickness.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">PolyOff</B></FONT></TD>
+<TD CLASS=desc>Polygon offset of lines.  Used only for OpenGL 1.1.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Cursor Reporting Format </B></FONT></TD>
+<TD CLASS=desc>For 2D plots, the numeric format of the values associated with the cursor position in the report area of the 2D plot window.  Numeric format controls are described in <A HREF="Formatting Real Numbers.htm">Formatting Real Numbers</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">3D co-ordinate Mapping</B></FONT></TD>
+<TD CLASS=desc>For 3D plots, determines which grid and Z variable is plotted as the X, Y and Z axis.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Offset </B></FONT></TD>
+<TD CLASS=desc>For 3D plot object, XYZ offset is used to improve visibility of objects (see discussion of 3D plot object visibility in <A HREF="Plot Object Visibility.htm">Plot Object Visibility</A>).</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

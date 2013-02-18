@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Evaluation of Constraints and Fitting Parameters</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Evaluation of Constraints and Fitting Parameters
+</B></FONT></P>
+
+<P>Within nPost, a plot of the Jacobian matrix is used to evaluate the sensitivity of fitting parameters to the constraints.  The sensitivity of a fitting parameter to a constraint indicates the effectiveness of a constraint in providing an estimate of that fitting parameter.</P>
+
+<OL>
+
+<LI>Open nPost.</LI>
+<P></P>
+
+<LI>Rename the default data page <FONT FACE="Courier"><B>Input Data </FONT></B>(by changing the object ID of the <B><FONT FACE="Technical" COLOR="#008000">DataPgDesc</B></FONT> object).</LI>
+<P></P>
+
+<LI>Create a new object:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Read Input<FONT FACE="Wingdings">&#224;</FONT>
+Read nSIGHTS Optimizer Results</B></FONT>. </LI>
+
+<P>The <B><FONT COLOR="#000080">Object</B></FONT> menu is accessed by selecting any of the objects in a page, and right-click to bring up the <B><FONT COLOR="#000080">Object</B></FONT> pop-up menu.  Alternatively, use the <B><FONT COLOR="#000080">Object</B></FONT> menu in the menu bar.  Note that the <B><FONT COLOR="#000080">Object</B></FONT> menu is page type specific.</P>
+
+<LI>The optimization results output file of the model run will be imported within this object.</LI>
+
+<STYLE>
+ul{list-style-type: square}
+</STYLE>
+<UL>
+<LI>Select the file Tutorial.nOpt using the browse button.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>Create a new data page.  Rename the page <B><FONT COLOR="#000080">Jacobian Data</B></FONT>.</LI>
+<P></P>
+
+<LI>In the <I>Jacobian Data</I> data page, create a new object:<B><FONT COLOR="#000080">  Object<FONT FACE="Wingdings">&#224;</FONT>
+New<FONT FACE="Wingdings">&#224;</FONT>nSIGHTS Results Extraction<FONT FACE="Wingdings">&#224;</FONT>Extract Jacobian</B></FONT>.  Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+
+<P><IMG SRC="TutExtractJac.jpg"></P>
+
+<LI>Create a new object:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Table Processing<FONT FACE="Wingdings">&#224;</FONT>
+Jacobian to Table</B></FONT>.  </LI>
+
+<UL>
+<LI>Change the <B><FONT COLOR="#000080">Object ID</B></FONT> to </FONT><FONT FACE="Courier"><B>Jacobian Cart</FONT></B>.</LI>
+<LI>In the <B><FONT COLOR="#000080">Fit(s)</B></FONT> drop-down-box, select <I><FONT COLOR="#800050">Cart_DAT_P</I></FONT>.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+
+<P><IMG SRC="TutJactoTable.jpg"></P>
+
+<LI>Create a 2D plot page (<B><FONT COLOR="#000080">Page<FONT FACE="Wingdings">&#224;</FONT>New 2D XY Plot</B></FONT>).  </LI>
+
+<UL>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">2D XY</B></FONT> object, change the name of the page to <FONT FACE="Courier"><B>Jacobian Cart Plot</FONT></B>, and change the left margin to </FONT><FONT FACE="Courier"><B>100</FONT></B>.  Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">X Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Axis Type</B></FONT> to <B><FONT COLOR="#800050">Logarithmic</B></FONT>.  Select <B><FONT COLOR="#000080">Apply</B></FONT></LI>
+<LI>Select the <B><FONT FACE="Technical" COLOR="#008000">2D Plot Anno</B></FONT> object.  Check the <B><FONT COLOR="#800050">Axis Labels</B></FONT> box, and type </FONT><FONT FACE="Courier"><B>Elapsed Time (hours)</FONT></B> for the X axis and </FONT><FONT FACE="Courier"><B>Sensitivity</FONT></B> for the Y axis labels.  Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>Create a new object in the <I>Jacobian Cart Plot</I> plot page:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Data: Single Table Series</B></FONT>.</LI>
+
+<UL>
+<LI>The <B><FONT COLOR="#000080">Table Data</B></FONT> should already select <I><FONT COLOR="#800050">Cart Jacobian</I></FONT>.</LI>
+<LI>Select the first five check boxes.  The five fitting parameters should be automatically selected in the drop-down-boxes (e.g. Test-zone compressibility).</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.  </LI></UL>
+
+<P><IMG SRC="TutJacobTableSeries.jpg"></P>
+
+<LI>Create a legend for the plot: <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Anno: Series Legend</B></FONT>.</LI>
+
+<UL>
+<LI>Select the first checkbox.  The table series should already be selected in the adjacent drop-down-box (<I><FONT COLOR="#800050">Series Legend Single Table Series \Jacobian Cart Plot</I></FONT>).</LI>
+<LI>Change the <B><FONT COLOR="#000080">Legend Font</B></FONT> <B><FONT COLOR="#800050">Size</B></FONT> to <I><FONT COLOR="#800050">12</I></FONT> point.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI> View the plot by selecting the <I>Jacobian Cart Plot</I> plot page from the <B><FONT COLOR="#000080">Window</B></FONT> menu, or from the <B><FONT COLOR="#000080">Window List </B></FONT>window.  The axes limits will need to be reset (select <B><FONT COLOR="#000080">Axes-&gt;Data Limits</B></FONT> in the 2D window pop-up menu), and the legend moved to an appropriate location (simply drag with the mouse).  </LI>
+
+<P><IMG SRC="TutJacPlot.jpg"></P>
+
+</OL>
+
+<P>Now is a good time to save the nPost configuration file.  Name the file <FONT FACE="Courier"><B>Tutorial.nPost</FONT></B>.</P>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="Residual Analysis.htm">Residual Analysis</A></P>
+
+</FONT></BODY>
+</HTML>

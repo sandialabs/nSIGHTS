@@ -1,0 +1,155 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Confidence Limits - Multiple Dual Parameter</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Confidence Limits - Multiple Dual Parameter</P></FONT>
+
+<P>What:   </B>Plots a symbol representing the best estimate and/or an ellipse repesenting dual confidence limits of each combination of two parameters for each selected covariance matrix.  Results are normalized, and plotted in a grid according to parameter index, such that each grid square contains the symbols and ellipses for only two parameters.</P>
+<B><P>Why:   </B>To plot confidence limits of data.</P>
+<B><P>Used By:</B>  </FONT><B><FONT FACE="Technical" COLOR="#008000">Series Legend</P></FONT>
+<P>Appearance: </B></P>
+<P><IMG SRC="App2DataDualConfLimits.jpg"></P>
+<B><P>Input Data:  <FONT FACE="Technical" COLOR="#008000">Extract Covariance Matrices</P></FONT>
+<P>Output Data: </B>series legend specifications</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Covariance Data</B></FONT></TD>
+<TD CLASS=desc>Best estimates and/or confidence limits are plotted for the covariance data selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Matrix Plot Options</B></FONT></TD>
+<TD CLASS=desc>The full resulting grid of ellipses and/or symbols can be plotted, or can be limited to the upper diagonal, lower diagonal, diagonal only, upper only or lower only.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Plot Options</B></FONT></TD>
+<TD CLASS=desc>Selects the data to be plotted:  confidence limit ellipses, best estimate symbols, a large x in the grid square if the covariance of the parameters is bad, and the normalized zero to one area limits for each grid square.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Confidence Limits</B></FONT></TD>
+<TD CLASS=desc>A probability is selected (99.0, 95.4, 90.0, 68.3) for the confidence limits. The probability indicates the likelihood the true parameter values are within the plotted confidence ellipse.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Ellipse Type</B></FONT></TD>
+<TD CLASS=desc>Ellipses can be plotted as a line (outline of the ellipse), or as a solid filled ellipse.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Line Thickness</B></FONT></TD>
+<TD CLASS=desc>The thickness of the confidence limit ellipse line is defined in pixels.  Only if <B><FONT COLOR="#800050">Line</B></FONT> is the ellipse type.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Ellipse Pts</B></FONT></TD>
+<TD CLASS=desc>The number of points used to define the ellipse.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Additional Options</B></FONT></TD>
+<TD CLASS=desc>The ellipse for each covariance matrix can be centered within its grid square.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Best Estimate Symbol</B></FONT></TD>
+<TD CLASS=desc>If plotted, best estimate symbols are plotted according to the specified symbol type and size.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Ellipse/Best Estimate Color</B></FONT></TD>
+<TD CLASS=desc>Confidence limit ellipses and best estimate symbols may be plotted in a single color, or using a color map.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Single Color Pen</B></FONT></TD>
+<TD CLASS=desc>The single color of the confidence limit ellipses and best estimate symbols.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Color Map Value</B></FONT></TD>
+<TD CLASS=desc>The color of the confidence limit ellispse and best estimate symbols can correspond to the SSE value of the covariance matrix, the index of the covariance matrix, the length of the main diagonal of the ellipse or the length of the off diagonal of the ellipse.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Limit Selection</B></FONT></TD>
+<TD CLASS=desc>A master/slave control to connect the data limits to those specified in another object (e.g. <B><FONT FACE="Technical" COLOR="#008000">Cube Color Point</B></FONT>, <B><FONT FACE="Technical" COLOR="#008000">Grid Color Block</B></FONT>, etc.). Master/Slave controls are described in <A HREF="Masters and Slaves.htm">Masters and Slaves</A>.</TD>
+</TR>
+</TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Color Map  </B></FONT></TD>
+<TD CLASS=desc>The color map used to associate colors with data values is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Limits</B></FONT></TD>
+<TD CLASS=desc>Controls how data values in the input data are mapped to colors in the input color map.  This involves minimum and maximum data limit values that correspond to the first and last color in the color map respectively.  </TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Auto</B></FONT></TD>
+<TD CLASS=desc>If set, then the data limits are extracted from the data, based on the <B><FONT COLOR="#800050">Auto Source</B></FONT>. If not set, then the data limits specified by the <B><FONT COLOR="#800050">Min</B></FONT> and <B><FONT COLOR="#800050">Max</B></FONT> properties are used.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log</B></FONT></TD>
+<TD CLASS=desc>If set, the log range is mapped to the colors, and the log of the data values are used in calculating the mapped color.  Otherwise, linear mapping is used.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Auto Source</B></FONT></TD>
+<TD CLASS=desc>The method for determining the data limits automatically.  <I><FONT COLOR="#800050">All Data</I></FONT> is the only option.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Min</B></FONT></TD>
+<TD CLASS=desc>Minimum data value for color mapping.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Max</B></FONT></TD>
+<TD CLASS=desc>Maximum data value for color mapping. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Out-of-Range</B></FONT></TD>
+<TD CLASS=desc>Colors used for data values outside the data limits.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Extend</B></FONT></TD>
+<TD CLASS=desc>Values below the minimum data limit are given the first color in the color map, values above the maximum data limit are given the last color in the color map.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Clip</B></FONT></TD>
+<TD CLASS=desc>Values outside the data limits range are not plotted.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Bad Covariance X</B></FONT></TD>
+<TD CLASS=desc>If plotted, the color and thickness of the x lines  are specified here. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">0-1 Area Limits</B></FONT></TD>
+<TD CLASS=desc>If plotted, the color and thickness of the area limit lines are specified here.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Plot Area Percentage</B></FONT></TD>
+<TD CLASS=desc>Data within each grid square spans the specified percentage of the grid square.   Reducing the plot area reduces confusion between data near the area limits of adjacent grid squares.</TD>
+</TR>
+</TABLE>
+
+
+<B><FONT COLOR="#000080">Legend Description</B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">New Label</B></FONT></TD>
+<TD CLASS=desc>A label used for the <B><FONT FACE="Technical" COLOR="#008000">Series Legend</B></FONT> object can be entered in the text box.  If the <B><FONT COLOR="#800050">New Label</B></FONT> checkbox is not selected, the <B><FONT COLOR="#000080">Object ID</B></FONT> is used as the legend label.</TD>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

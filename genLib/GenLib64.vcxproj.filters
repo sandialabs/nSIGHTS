@@ -1,0 +1,2864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f5abcc76-4bd1-4283-96d7-bbd2bd6ee599}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genApp">
+      <UniqueIdentifier>{8b8459b0-bb75-40af-824a-b74fcc2cbf98}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genApp\Settings">
+      <UniqueIdentifier>{3b1029bd-b13b-45a0-9dca-8ddf27626cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\genClass">
+      <UniqueIdentifier>{c7a71a41-2cf7-4db0-a867-c7ca0822e94e}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genClassPS">
+      <UniqueIdentifier>{68304fe6-dcc5-43ff-9fc4-ff60813ea780}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genCtrl">
+      <UniqueIdentifier>{31adaf3f-779e-4131-ade9-ab3e106e3ae9}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genDataClass">
+      <UniqueIdentifier>{a267bd88-5c1d-40a4-ac64-52ce601c7a63}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genDFO">
+      <UniqueIdentifier>{fa7c52e8-1084-4a18-b649-9130158d0b62}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genDPO">
+      <UniqueIdentifier>{b5800d6d-9f6e-4245-8675-be016af45c01}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genGrid">
+      <UniqueIdentifier>{54f6b2a6-1cc9-463f-92f9-bd530c882b07}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genInterface">
+      <UniqueIdentifier>{c3bfc499-76e1-437c-85eb-36dd5208f2ae}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genListClass">
+      <UniqueIdentifier>{a58f5780-0b4c-429a-8259-ae0b7d8fd669}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genListClassPS">
+      <UniqueIdentifier>{30a7a65f-4b5a-4a14-9598-92298f229155}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genLPO">
+      <UniqueIdentifier>{b169150a-ccd1-405f-b40a-46a39d3f8e90}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genMFC">
+      <UniqueIdentifier>{63bd9083-1941-4fea-b5f1-67989cd2cba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\genPFO">
+      <UniqueIdentifier>{27388513-7394-419e-ba60-0fc69c0f44a3}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genPFOGL">
+      <UniqueIdentifier>{d58f38f0-f911-46f5-8557-0ef0d2cfab6f}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genPlotClass">
+      <UniqueIdentifier>{d82cde1b-fce8-47dc-8991-06cfad9ba04a}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genPlotClassPS">
+      <UniqueIdentifier>{8972def8-faf1-4fc9-87ae-995a3017a122}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genPPD">
+      <UniqueIdentifier>{28c27998-9c58-432d-844c-59cace23694e}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genPPO">
+      <UniqueIdentifier>{054cfaa1-d58a-4f6c-87d5-18a11d2cbe29}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genUFO">
+      <UniqueIdentifier>{4bbb73a0-225f-45fb-a7c7-8b0444a4c66f}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genUIExt">
+      <UniqueIdentifier>{7a6bcca1-7312-4f33-bd3b-c591687f315e}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genUnits">
+      <UniqueIdentifier>{68862f7f-2795-40ba-bc8f-18734d2c1857}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\genUPO">
+      <UniqueIdentifier>{91633a6d-656f-4aa0-8372-d3a97ddfb44a}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1f3688e5-b25b-43be-9ff1-4eb7e753220e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genApp H">
+      <UniqueIdentifier>{a1ea4e88-21aa-4c65-bdfd-10a247825da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\genApp H\Settings H">
+      <UniqueIdentifier>{1cce34ba-ec68-4b59-849e-29062c49cf9d}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genClass H">
+      <UniqueIdentifier>{4be7abe6-bbd1-455e-bf3a-c27a8959e457}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genClassPS H">
+      <UniqueIdentifier>{fd696d9e-1005-4652-bd26-0f504b1abe9b}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genCtrl H">
+      <UniqueIdentifier>{09458afd-f99e-4354-814e-d2cd2b725d07}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genDataClass H">
+      <UniqueIdentifier>{cf514eff-3eee-4558-96ce-340354e56e35}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genDFO H">
+      <UniqueIdentifier>{75ad7d8f-4c65-4e38-9be4-295fed642b85}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genDPO H">
+      <UniqueIdentifier>{c0beb76a-a685-4f1d-aac2-649d7cabf292}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genGrid H">
+      <UniqueIdentifier>{89b9a027-0ebf-460c-926b-16c1c5a5c1f2}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genHelp H">
+      <UniqueIdentifier>{1e481491-6658-43a0-b417-a3fb23602a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\genInterface H">
+      <UniqueIdentifier>{d4df28e7-7a97-484c-8284-97461347d8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\genListClass H">
+      <UniqueIdentifier>{e32b11fe-ab78-4814-87a1-76ec8d1ae48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\genListClassPS H">
+      <UniqueIdentifier>{d74a23c2-1452-4543-93f2-95776887e7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\genLPO H">
+      <UniqueIdentifier>{33b2cc60-a415-4f03-9613-34436a071bbb}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genMFC H">
+      <UniqueIdentifier>{602b8637-cd18-4feb-a592-a2dc17cb2133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\genPFO H">
+      <UniqueIdentifier>{bda6e507-4d04-4535-8022-289011afc324}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genPFOGL H">
+      <UniqueIdentifier>{33b4e51a-604f-4f46-b852-e76fc264817e}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genPlotClass H">
+      <UniqueIdentifier>{b803dace-5690-42a8-a0e8-1979d83662fb}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genPlotClassPS H">
+      <UniqueIdentifier>{2daa69eb-0cae-4fb3-911f-b8031b3c6737}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genPPD H">
+      <UniqueIdentifier>{94529281-38b1-4df5-a109-422cbc664065}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genPPO H">
+      <UniqueIdentifier>{23e48897-b0da-4c2a-b215-6417410862eb}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genUFO H">
+      <UniqueIdentifier>{4b8da95f-f572-4ade-b464-c7a5463f8479}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genUIExt H">
+      <UniqueIdentifier>{fb92b58d-3e0a-4f77-8c32-38963f748e74}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genUnits H">
+      <UniqueIdentifier>{ee1a2868-b933-494e-9f11-f0ae9e55dd53}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\genUPO H">
+      <UniqueIdentifier>{2c0e93c9-8cc0-4da5-96e8-40c7751eed17}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{c62e26eb-2426-41bf-91cc-85099f0a47df}</UniqueIdentifier>
+      <Extensions>ico bmp</Extensions>
+    </Filter>
+    <Filter Include="Resource files\res">
+      <UniqueIdentifier>{16c27147-770a-4252-befc-15d8b251c3a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="genApp\AppConfigFile.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\AppCopyPaste.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_AllocListObj.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_AllocObj.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_AllocPage.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_AllocPlotObj.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_AppMenu.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_CfgFileObj.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_CompositePage.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_DataPage.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_ExposedObj.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_ListPage.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_MenuBase.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_MenuObj.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_MenuPage.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_MenuRoot.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_ObjHelp.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_PlotFolderPage.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_PlotPage.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_TreeBase.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\C_TreeNode.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\DebugUtil.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\DefaultObjects.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\ExposedList.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\ExposedReal.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\FileNameUpdateDlg.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\G_AppObj.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\G_FileNames.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\G_Version.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="GenLibAfx.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\ProjectFrame.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\ProjectUtil.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\PullMenu.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\SingleFrame.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\U_Menu.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\U_MenuDPO.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\U_MenuPPO.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\U_MsgPS.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\WindowSelector.cpp">
+      <Filter>Source Files\genApp</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\BitmapFontSettingsPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\CalcPrioritySettingsPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\CountrySettingsPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\OpenGLPropertiesPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\OpenGLSettingsPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\PlotSettingsPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\SettingsPropSheet.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\TemplateDirectorySettingsPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genApp\Settings\TreeViewSettingsPage.cpp">
+      <Filter>Source Files\genApp\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_BufFile.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_Common.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_ConvFile.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_DataObj.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_FuncObj.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_Geometry.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_GlobalFunc.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_Graphic.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_InteractiveObj.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_MessageLog.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_MPISupport.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_Text.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\C_TxtFile.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_ColorMap.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_ContourSpec.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_DataLimit.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_DateTime.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_PenSet.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_TableArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_TableData.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_XYCDF.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DC_XYData.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_ColorLimit.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_ColorMap.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_ContourSpec.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_DataLimit.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_DateTimeSpec.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_IDArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_Indx.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_Label.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_LabelArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_Listing.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_PenSet.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_Real.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_TableArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_TableData.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_XYCDF.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\DO_XYData.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\IO_LabelArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\IO_XYData.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_Array.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_BoolArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_ColorSpec.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_CoordArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_DoubleArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_IntArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_LineArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_PercentComplete.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_PlaneCalcs.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_PointArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_PolyStore.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_Random.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_RealFormat.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_SampVar.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_SetupErr.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_Statistics.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_StringArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\SC_Triangulation.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\T_SC_AllocPtrArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\T_SC_Array.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\T_SC_BasicPtrArray.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\U_Check.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\U_File.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\U_Matrix.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\U_Real.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\U_Str.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_ArgList.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_Color.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_DialogShell.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_FileOps.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_FindFiles.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_FormContainer.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_Import.Cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_MainWindow.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_OGLBase.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_TxtClipboard.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_UIBase.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_UIClass.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_UIGrid.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_WriteBmp.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genClassPS\PS_WriteTGA.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\ButtonCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\CheckBoxCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\ComboBoolCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\ComboFOCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\ComboIntCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\CtrlUpdate.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\FileCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\FolderCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\IntCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\ListBoxCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\RealCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\TextCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\TextDialogCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genCtrl\UpdateableCtrl.cpp">
+      <Filter>Source Files\genCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_FunctionSpec.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_IndexMSSpec.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_IndexMSSpecBase.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_Parser.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_RealMSSpec.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_RealMSSpecBase.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_ScaleTransform.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_Threshold.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDataClass\DSC_TimeBase.cpp">
+      <Filter>Source Files\genDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_BlendColorMap.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_ChooseColorMap.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_EnterColorMap.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_Histogram.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_InterpVal.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_LinColorMap.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_MathBase.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_MergeColorMap.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_PenSet.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_Quantile.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_RangeExtract.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_ReadColorMap.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_ReadColorMapCF.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_ScaleTransform.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_SelectBase.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDFO\DFO_Statistics.cpp">
+      <Filter>Source Files\genDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_BlendColorMap.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_BlendColorMapPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_ChooseColorMap.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_ChooseColorMapPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_DataPg.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_DataPgPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_EnterColorMap.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_EnterColorMapPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_Histogram.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_HistogramPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_InterpVal.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_InterpValPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_LinColorMap.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_LinColorMapPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_MathBasePS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_MergeColorMap.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_MergeColorMapPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_PenSet.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_PenSetPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_Quantile.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_QuantilePS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_RangeExtract.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_RangeExtractPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_ReadColorMap.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_ReadColorMapPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_ScaleTransform.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_ScaleTransformPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_SelectBase.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_SelectBasePS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_Statistics.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genDPO\DPO_StatisticsPS.cpp">
+      <Filter>Source Files\genDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\CheckEditWnd.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\CheckGridCell.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\ComboEditWnd.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\ComboGridCell.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\DialogGridCell.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\ExtendedComboBox.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\GridCell.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\GridCellIndices.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\GridCellMatrix.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\GridCellRange.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\GridCtrlBase.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\GridCtrlCell.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\TextEditWnd.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genGrid\TextGridCell.cpp">
+      <Filter>Source Files\genGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\DialogScrollView.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\GenericDialog.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\Interface.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\InterfaceContext.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\InterfaceCtrls.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\InterfacemView.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\InterfaceOutlook.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\OutlookFrame.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\C_ErrorListObj.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\C_ListDef.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\C_ListFactory.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\C_ListObj.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\LFO_MessageLogListing.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\LFO_ObjectListing.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\LFO_VersionListing.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClass\LSC_Listing.cpp">
+      <Filter>Source Files\genListClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClassPS\C_ListDefPS.cpp">
+      <Filter>Source Files\genListClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClassPS\ListHtmlView.cpp">
+      <Filter>Source Files\genListClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genListClassPS\WebBrowserPrint.cpp">
+      <Filter>Source Files\genListClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genLPO\LPO_Base.cpp">
+      <Filter>Source Files\genLPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\BasicView.cpp">
+      <Filter>Source Files\genMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\DLLLOAD.CPP">
+      <Filter>Source Files\genMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\HelpDialog.cpp">
+      <Filter>Source Files\genMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\HelpPropertySheet.cpp">
+      <Filter>Source Files\genMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\ProjectSplitterWnd.cpp">
+      <Filter>Source Files\genMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\ProjectTreeView.cpp">
+      <Filter>Source Files\genMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\ProjectView.cpp">
+      <Filter>Source Files\genMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PC_CalcIsothermPoly.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_ColorBase.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_ColorDataLegend.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_ColorLegend.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_DataLabels.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_GridLine.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_LabelAxes.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_SeriesLegend.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_ShadeRegion.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_TimeAxes.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFO\PFO_UserLabels.cpp">
+      <Filter>Source Files\genPFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_3DText.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_Arrow.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_Base.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_ColorLegendSpec.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_Extrusion.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_Histogram.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_Line.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_PixelCursorTrack.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_Polygon.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_StippleSpec.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\GL_Symbol.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\OGLBaseObj.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PC_GridLine.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PC_Label.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PC_Rectangle.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PC_ShadeTriangle.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_ColorDataLegendGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_ColorLegendGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_DataLabelsGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_GridLineGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_LabelAxesGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_SeriesLegendGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_ShadeRegionGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_TimeAxesGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPFOGL\PFO_UserLabelsGL.cpp">
+      <Filter>Source Files\genPFOGL</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\C_ActiveObj.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\C_AnnoObj.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\C_PlotDef.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\C_PlotObj.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\C_PlotObjBase.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\DO_SeriesLegendData.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_2DPlotAnno.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_3DAxesFormat.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_3DAxesLabel.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_Axes.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_CallbackMenu.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_DumpTGA.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_Lighting.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_ObjLimitRect.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_Platform.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_PSOutData.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_Report.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_TransparencySpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_View.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PC_VRMLOutData.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PD_2D.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PD_2DXY.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PD_3D.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PD_3DXYZ.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PD_Composite.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_3DSeriesSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_AnnoSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_ArrowSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_ColorBase.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_ColorLegendSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_ContourSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_EdgeSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_ExtrusionSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_Font.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_GridLineLabelFormat.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_Histogram.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_LabelSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_LegendOverride.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_LineSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_SeriesSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_StippleSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_SymbolSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_TransparentObject.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_XYLabelSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClass\PSC_XYZLabelSpec.cpp">
+      <Filter>Source Files\genPlotClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_2DBase.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_2DXY.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_3DBase.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_3DXYZ.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_Base.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_Font.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_MatrixOps.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\OGL_StringProcess.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PC_Platform2DPS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PC_Platform3DPS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PC_PlatformPS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PC_ReportPS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PD_2DXYPS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PD_3DXYZPS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PD_CompositePS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PS_ObjectDialog.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PS_PSOutputSetup.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PS_TGAOutputSetup.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PS_TransparencyDialog.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PS_ViewAnimationDialog.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPlotClassPS\PSC_FontPS.cpp">
+      <Filter>Source Files\genPlotClassPS</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_2D.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_2DPlotAnno.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_2DPlotAnnoPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_2DPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_2DXY.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_2DXYPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3D.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DAxesFormat.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DAxesFormatPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DAxesLabel.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DAxesLabelPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DLighting.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DLightingPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DXYZ.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_3DXYZPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_Base.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_BasePS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_Composite.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_CompositeLayout.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_CompositeLayoutPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_CompositePS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_LinLogAxis.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPD\PPD_LinLogAxisPS.cpp">
+      <Filter>Source Files\genPPD</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\genPPOConfigFile.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\genPPOUtil.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_AnnoBase.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_AnnoBasePS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_Base.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_BasePS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ColorBasePS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ColorDataLegend.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ColorDataLegendPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ColorLegend.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ColorLegendPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ContourSpecPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_DataLabels.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_DataLabelsPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_GridLine.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_GridLinePS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_LabelAxes.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_LabelAxesPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_PlotFolderPg.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_PlotFolderPgPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_SeriesLegend.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_SeriesLegendPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ShadeRegion.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_ShadeRegionPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_TimeAxes.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_TimeAxesPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_UserLabels.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genPPO\PPO_UserLabelsPS.cpp">
+      <Filter>Source Files\genPPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genUFO\UFO_WriteColorMap.cpp">
+      <Filter>Source Files\genUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genUFO\UFO_WriteColorMapCF.cpp">
+      <Filter>Source Files\genUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\BitmapMenu.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\ColorTextCB.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\ErrorMessage.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\FileDialog.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\GroupEdit.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\HyperLink.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\InfoBar.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\LineTypeCB.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\MappedBitmapButton.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\OutBarCtrl.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\SizingControlBar.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\SizingControlBarCF.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\SizingControlBarGrip.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\SplitterWndEx.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\SymbolTypeCB.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\TabbedComboBox.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\TabbedListBox.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\TabCtrlEx.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\TitlePopupMenu.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUIExt\TreeCtrlEx.cpp">
+      <Filter>Source Files\genUIExt</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\C_GenUnits.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\C_UnitListObj.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\ExposedUnitReal.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\U_Units.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\UnitConfigFile.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\UnitGridCell.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\UnitIndexCtrl.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\UnitRealCtrl.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUnits\UnitTableCol.cpp">
+      <Filter>Source Files\genUnits</Filter>
+    </ClCompile>
+    <ClCompile Include="genUPO\UPO_WriteColorMap.cpp">
+      <Filter>Source Files\genUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genUPO\UPO_WriteColorMapPS.cpp">
+      <Filter>Source Files\genUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="genInterface\InterfaceDesc.cpp">
+      <Filter>Source Files\genInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\U_Lapack.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genClass\kiss_fft.cpp">
+      <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GenLibAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenLibRes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\AppConfigFile.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\AppCopyPaste.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_AllocListObj.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_AllocObj.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_AllocPage.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_AllocPlotObj.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_AppMenu.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_CfgFileObj.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_CompositePage.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_DataPage.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_ExposedObj.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_ListPage.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_MenuBase.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_MenuObj.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_MenuPage.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_MenuRoot.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_ObjHelp.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_PlotFolderPage.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_PlotPage.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_TreeBase.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\C_TreeNode.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\DebugUtil.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\DefaultObjects.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\ExposedList.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\ExposedReal.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\FileNameUpdateDlg.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\G_AppObj.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\G_FileNames.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\G_Version.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\GenAppMessages.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\ProjectFrame.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\ProjectUtil.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\PullMenu.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\SingleFrame.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\U_Menu.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\U_MenuDPO.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\U_MenuPPO.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\WindowSelector.h">
+      <Filter>Header Files\genApp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\BitmapFontSettingsPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\CalcPrioritySettingsPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\CountrySettingsPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\OpenGLPropertiesPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\OpenGLSettingsPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\PlotSettingsPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\SettingsPropSheet.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\TemplateDirectorySettingsPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genApp\Settings\TreeViewSettingsPage.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_BufFile.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_Common.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_ConvFile.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_DataObj.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_FuncObj.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_Geometry.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_GlobalFunc.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_Graphic.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_InteractiveObj.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_MessageLog.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_MPISupport.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_Text.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\C_TxtFile.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_ColorMap.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_ContourSpec.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_DataLimit.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_DateTime.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_PenSet.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_TableArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_TableData.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_XYCDF.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DC_XYData.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_ColorLimit.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_ColorMap.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_ContourSpec.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_DataLimit.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_DateTimeSpec.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_IDArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_Indx.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_Label.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_LabelArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_Listing.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_PenSet.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_Real.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_TableArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_TableData.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_XYCDF.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\DO_XYData.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\IO_LabelArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\IO_XYData.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_Array.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_BoolArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_ColorSpec.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_CoordArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_DoubleArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_IntArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_LineArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_PercentComplete.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_PlaneCalcs.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_PointArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_PolyStore.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_Random.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_RealFormat.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_SampVar.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_SetupErr.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_Statistics.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_StringArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\SC_Triangulation.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\T_SC_AllocPtrArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\T_SC_Array.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\T_SC_BasicPtrArray.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\U_Check.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\U_File.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\U_Matrix.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\U_Msg.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\U_Real.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\U_Str.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_ArgList.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_Color.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_DialogShell.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_FileOps.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_FindFiles.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_FormContainer.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_Import.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_MainWindow.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_NCHitTest.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_OGLBase.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_TxtClipboard.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_UIBase.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_UIClass.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_UIGrid.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_WriteBmp.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClassPS\PS_WriteTGA.h">
+      <Filter>Header Files\genClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\ButtonCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\CheckBoxCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\ComboBoolCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\ComboFOCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\ComboIntCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\CtrlUpdate.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\FileCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\FolderCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\IntCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\ListBoxCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\RealCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\TextCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\TextDialogCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genCtrl\UpdateableCtrl.h">
+      <Filter>Header Files\genCtrl H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_FunctionSpec.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_IndexMSSpec.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_IndexMSSpecBase.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_Parser.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_RealMSSpec.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_RealMSSpecBase.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_ScaleTransform.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_Threshold.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDataClass\DSC_TimeBase.h">
+      <Filter>Header Files\genDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_BlendColorMap.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_ChooseColorMap.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_EnterColorMap.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_Histogram.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_InterpVal.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_LinColorMap.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_MathBase.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_MergeColorMap.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_PenSet.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_Quantile.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_RangeExtract.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_ReadColorMap.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_ScaleTransform.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_SelectBase.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDFO\DFO_Statistics.h">
+      <Filter>Header Files\genDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_BlendColorMap.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_BlendColorMapPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_ChooseColorMap.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_ChooseColorMapPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_DataPg.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_DataPgPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_EnterColorMap.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_EnterColorMapPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_Histogram.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_HistogramPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_InterpVal.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_InterpValPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_LinColorMap.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_LinColorMapPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_MathBasePS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_MergeColorMap.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_MergeColorMapPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_PenSet.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_PenSetPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_Quantile.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_QuantilePS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_RangeExtract.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_RangeExtractPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_ReadColorMap.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_ReadColorMapPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_ScaleTransform.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_ScaleTransformPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_SelectBase.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_SelectBasePS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_Statistics.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genDPO\DPO_StatisticsPS.h">
+      <Filter>Header Files\genDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\CheckEditWnd.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\CheckGridCell.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\ComboEditWnd.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\ComboGridCell.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\DialogGridCell.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\ExtendedComboBox.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\GridCell.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\GridCellIndices.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\GridCellMatrix.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\GridCellRange.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\GridCtrlBase.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\GridCtrlCell.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\TextEditWnd.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genGrid\TextGridCell.h">
+      <Filter>Header Files\genGrid H</Filter>
+    </ClInclude>
+    <ClInclude Include="genHelp\H_Genlib.h">
+      <Filter>Header Files\genHelp H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\DialogScrollView.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\GenericDialog.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\Interface.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\InterfaceContext.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\InterfaceCtrls.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\InterfacemView.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\InterfaceOutlook.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\OutlookFrame.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\C_ErrorListObj.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\C_ListDef.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\C_ListFactory.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\C_ListObj.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\LFO_MessageLogListing.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\LFO_ObjectListing.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\LFO_VersionListing.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClass\LSC_Listing.h">
+      <Filter>Header Files\genListClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClassPS\C_ListDefPS.h">
+      <Filter>Header Files\genListClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClassPS\ListHtmlView.h">
+      <Filter>Header Files\genListClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genListClassPS\WebBrowserPrint.h">
+      <Filter>Header Files\genListClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genLPO\LPO_Base.h">
+      <Filter>Header Files\genLPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genMFC\BasicView.h">
+      <Filter>Header Files\genMFC H</Filter>
+    </ClInclude>
+    <ClInclude Include="genMFC\DLLLOAD.H">
+      <Filter>Header Files\genMFC H</Filter>
+    </ClInclude>
+    <ClInclude Include="genMFC\HelpDialog.h">
+      <Filter>Header Files\genMFC H</Filter>
+    </ClInclude>
+    <ClInclude Include="genMFC\HelpPropertySheet.h">
+      <Filter>Header Files\genMFC H</Filter>
+    </ClInclude>
+    <ClInclude Include="genMFC\ProjectSplitterWnd.h">
+      <Filter>Header Files\genMFC H</Filter>
+    </ClInclude>
+    <ClInclude Include="genMFC\ProjectTreeView.h">
+      <Filter>Header Files\genMFC H</Filter>
+    </ClInclude>
+    <ClInclude Include="genMFC\ProjectView.h">
+      <Filter>Header Files\genMFC H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PC_CalcIsothermPoly.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_ColorBase.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_ColorDataLegend.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_ColorLegend.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_DataLabels.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_GridLine.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_LabelAxes.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_SeriesLegend.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_ShadeRegion.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_TimeAxes.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFO\PFO_UserLabels.h">
+      <Filter>Header Files\genPFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_3DText.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_Arrow.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_Base.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_ColorLegendSpec.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_Extrusion.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_Histogram.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_Line.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_PixelCursorTrack.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_Polygon.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_StippleSpec.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\GL_Symbol.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\OGLBaseObj.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PC_GridLine.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PC_Label.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PC_Rectangle.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PC_ShadeTriangle.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_ColorDataLegendGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_ColorLegendGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_DataLabelsGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_GridLineGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_LabelAxesGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_SeriesLegendGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_ShadeRegionGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_TimeAxesGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPFOGL\PFO_UserLabelsGL.h">
+      <Filter>Header Files\genPFOGL H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\C_ActiveObj.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\C_AnnoObj.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\C_PlotDef.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\C_PlotObj.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\C_PlotObjBase.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\DO_SeriesLegendData.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_2DPlotAnno.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_3DAxesFormat.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_3DAxesLabel.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_Axes.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_CallbackMenu.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_DumpTGA.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_Lighting.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_ObjLimitRect.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_Platform.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_PSOutData.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_Report.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_TransparencySpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_View.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PC_VRMLOutData.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PD_2D.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PD_2DXY.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PD_3D.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PD_3DXYZ.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PD_Composite.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_3DSeriesSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_AnnoSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_ArrowSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_ColorBase.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_ColorLegendSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_ContourSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_EdgeSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_ExtrusionSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_Font.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_GridLineLabelFormat.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_Histogram.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_LabelSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_LegendOverride.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_LineSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_SeriesSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_StippleSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_SymbolSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_TransparentObject.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_XYLabelSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClass\PSC_XYZLabelSpec.h">
+      <Filter>Header Files\genPlotClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_2DBase.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_2DXY.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_3DBase.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_3DXYZ.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_Base.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_Font.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_MatrixOps.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\OGL_StringProcess.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PC_Platform2DPS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PC_Platform3DPS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PC_PlatformPS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PC_ReportPS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PD_2DXYPS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PD_3DXYZPS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PD_CompositePS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PS_ObjectDialog.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PS_PSOutputSetup.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PS_TGAOutputSetup.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PS_TransparencyDialog.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PS_ViewAnimationDialog.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPlotClassPS\PSC_FontPS.h">
+      <Filter>Header Files\genPlotClassPS H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_2D.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_2DPlotAnno.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_2DPlotAnnoPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_2DPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_2DXY.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_2DXYPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3D.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DAxesFormat.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DAxesFormatPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DAxesLabel.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DAxesLabelPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DLighting.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DLightingPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DXYZ.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_3DXYZPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_Base.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_BasePS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_Composite.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_CompositeLayout.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_CompositeLayoutPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_CompositePS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_LinLogAxis.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPD\PPD_LinLogAxisPS.h">
+      <Filter>Header Files\genPPD H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\genPPOConfigFile.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\genPPOUtil.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_AnnoBase.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_AnnoBasePS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_Base.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_BasePS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ColorBasePS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ColorDataLegend.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ColorDataLegendPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ColorLegend.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ColorLegendPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ContourSpecPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_DataLabels.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_DataLabelsPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_GridLine.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_GridLinePS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_LabelAxes.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_LabelAxesPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_PlotFolderPg.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_PlotFolderPgPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_SeriesLegend.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_SeriesLegendPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ShadeRegion.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_ShadeRegionPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_TimeAxes.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_TimeAxesPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_UserLabels.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genPPO\PPO_UserlabelsPS.h">
+      <Filter>Header Files\genPPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUFO\UFO_WriteColorMap.h">
+      <Filter>Header Files\genUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\BitmapMenu.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\ColorTextCB.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\ErrorMessage.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\FileDialog.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\GroupEdit.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\HyperLink.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\InfoBar.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\LineTypeCB.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\MappedBitmapButton.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\OutBarCtrl.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\SizingControlBar.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\SizingControlBarCF.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\SizingControlBarGrip.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\SplitterWndEx.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\SymbolTypeCB.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\TabbedComboBox.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\TabbedListBox.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\TabCtrlEx.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\TitlePopupMenu.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUIExt\TreeCtrlEx.h">
+      <Filter>Header Files\genUIExt H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\C_GenUnits.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\C_UnitListObj.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\ExposedUnitReal.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\U_Units.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\UnitConfigFile.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\UnitGridCell.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\UnitIndexCtrl.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\UnitRealCtrl.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUnits\UnitTableCol.h">
+      <Filter>Header Files\genUnits H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUPO\UPO_WriteColorMap.h">
+      <Filter>Header Files\genUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genUPO\UPO_WriteColorMapPS.h">
+      <Filter>Header Files\genUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="genInterface\InterfaceDesc.h">
+      <Filter>Header Files\genInterface H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\U_Lapack.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="genClass\kiss_fft.h">
+      <Filter>Header Files\genClass H</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GenLib.rc">
+      <Filter>Resource files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\2dPlot.ico">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\3dplot.ico">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\CALC.ICO">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\dragging.cur">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\GXCHK95.BMP">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\GXCHKNT.BMP">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\icr_hand.cur">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\listing.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\menuchk.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\nodraggi.cur">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\outbar.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\pin1.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\pin3.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\plot.ico">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\plot_toolbar.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\project_.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\window_s.bmp">
+      <Filter>Resource files\res</Filter>
+    </None>
+    <None Include="res\compositeplot.ico" />
+    <None Include="res\ico2dplo.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Plot View</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Plot View</B></FONT></P>
+
+<P>Both 2D and 3D plots use the concept of a <B><I><FONT FACE="RomanS" COLOR="#ff0000">view</B></I></FONT>.  </P>
+
+<P>For a 2D plot, the view is defined by the axes limits of the plot.  In zoom mode, the user can change the view by dragging the mouse to outline a rectangle within the axes area (the cursor will change to a magnifying glass), and releasing the mouse button.  The view will zoom in on the rectangle, with the axes maximizing to fit the available window space.  The 2D plot window pop-up menu also provides zoom and pan options, based on the location of the cursor upon activation of the menu (see <A HREF="Plot PopUp Menus.htm">Plot Pop-Up Menus</A>).</P>
+
+<P>In a 3D plot, the view includes the axes limits, plus the attitude and translation of the plot.  Plot attitude describes the viewer’s perspective in the plot co-ordinate system and is defined in terms of:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><I><FONT FACE="RomanS" COLOR="#ff0000">elevation</B></I></FONT></TD>
+<TD CLASS=desc>The angle above the plot of the viewer co-ordinate.  An elevation of 90 degrees means the viewer is looking directly down on the plot.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><I><FONT FACE="RomanS" COLOR="#ff0000">azimuth</B></I></FONT></TD>
+<TD CLASS=desc>The rotation of the plot.  Azimuth 0 means the plot is not rotated and (assuming +x is east and +y is north) the viewer is looking due north. For example, azimuth -45 means the viewer is looking NW and +22.5 is NNE.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><I><FONT FACE="RomanS" COLOR="#ff0000">scale</B></I></FONT></TD>
+<TD CLASS=desc>The size of the plot data in the window. The absolute values of scale are plot projection and data limits dependent.  Small values of scale mean the plot looks far away, larger values zoom-in on the plot.</TD>
+</TR>
+</TABLE>
+
+<P>Plot translation moves the position of the looked at point within the plot co-ordinate system.  The effect of absolute values are plot dependent.   </P>
+
+<P>All 3D plots have a control bar at the bottom of the window that contains sliders and buttons used to change the view:</P>
+
+<P><IMG SRC="3DPlotControlBar.jpg"></P>
+
+<B><FONT COLOR="#000080"><P>Attitude</B></FONT> and <B><FONT COLOR="#000080">Translation</B></FONT> are controlled by the sliders shown in the figure above.  The <B><FONT COLOR="#000080">Reset</B></FONT> buttons are used to set attitude (<B><FONT COLOR="#800050">Att</B></FONT> button) and translation (<B><FONT COLOR="#800050">Tran</B></FONT> button) to default values. <B><FONT COLOR="#800050">Att</B></FONT> sets El/Az/Sc to 90/0.0/1.0, while <B><FONT COLOR="#800050">Tran</B></FONT> sets X/Y/Z to 0.0/0.0/0.0.  </P>
+
+<P>Normally the plotted view updates as the sliders are adjusted.  This can be a slow process in complex plots.  If the <B><FONT COLOR="#800050">Opt</B></FONT> toggle is selected, the view will not update until the slider stops moving.</P>
+
+</FONT></BODY>
+</HTML>

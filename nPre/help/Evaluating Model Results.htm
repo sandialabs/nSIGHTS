@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Evaluating Model Results</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Evaluating Model Results</B></FONT></P>
+
+<P>Many tools are available in nSIGHTS to evaluate test results.  The simulation mode used dictates a test's output and consequently has a bearing on the analysis tool used.  For example, a range grid is only output for range runs.  Due to the great number of tools, and the myriad of ways of implementing these tools, only a few analysis tools will be examined in this tutorial.  As the tutorial model ran in optimization mode, the model results evaluation will be specific to optimization mode.</P>
+
+<P>Within this tutorial, a process for evaluating uncertainty in the well test simulation developed in nSIGHTS will be followed, as described in an article by R. M. Roberts, R. L. Beauheim and J. D. Avis (Quantifying Parameter Uncertainty in Well-Test Analysis, In Proceedings of International Groundwater Symposium, pg 238-239, Lawrence Berkeley National Laboratory, Berkeley, CA, March 25-28, 2002).  The focus of the tutorial will be the steps required to produce the various plots, and not on interpretation of the results.  The user is referred to the article above for details on interpretation of results.</P>
+
+<P>The steps in the uncertainty analysis are summarized as follows:</P>
+
+<UL>
+<LI><A HREF="Evaluation of Constraints and Fitting Parameters.htm">Evaluation of constraints and fitting parameters</A> based on the sensitivity of fitting parameters to the chosen constraints.</LI>
+<LI><A HREF="Residual Analysis.htm">Residual analysis</A> to determine whether the conceptual model adequately reproduces observed data.</LI>
+<LI>Quantifying uncertainty in the estimates of fitting parameters, through:</LI>
+<DIR>
+<LI><A HREF="Evaluation of Joint Confidence Regions.htm">evaluation of joint confidence regions</A> </LI>
+<LI><A HREF="Perturbation Analysis.htm"> perturbation analysis</A></LI>
+<LI><A HREF="uncertainty distributions for nonfitting parameters.htm">uncertainty distributions for non-fitting parameters</A></LI></DIR>
+</UL>
+
+<P>Most of this analysis is conducted in nPost, designed as a post-processor for the nSIGHTS model.  The last two methods, perturbation analysis and uncertainty distributions for non-fitting parameters, require the model to be run again under different conditions, and therefore are partly conducted in nPre.    </P>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="Evaluation of Constraints and Fitting Parameters.htm">Evaluation of Constraints and Fitting Parameters</A></P>
+
+</FONT></BODY>
+</HTML>

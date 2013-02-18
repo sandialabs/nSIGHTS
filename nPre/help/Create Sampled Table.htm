@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Create Sampled Table Data</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4>
+<P>Create Sampled Table Data</P></FONT>
+<P>What:</B> Creates a table column containing values sampled according to a specified probability distribution.</P>
+<B><P>Why:</B> To create sample data conforming to a specified distribution.</P>
+<B><P>Used By:</B> Any object using table data.</P>
+<B><P>Appearance:</P>
+</B><P><IMG SRC="AppCreateSampledTableData.jpg"></P>
+<B><P>Input Data:</B> table data (optional existing table to append new column), CDF (if User CDF is selected distribution), table data (if Tabulated discrete is selected distribution)</P>
+<B><P>Output Data:</B> table data</P>
+<B><P>Properties:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Sample Table Type</B></FONT></TD>
+<TD CLASS=desc>The table column created can be created in a new table, or appended to an existing table.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Number of Samples</B></FONT></TD>
+<TD CLASS=desc>Number of rows for the table column.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Random # Seed</B></FONT></TD>
+<TD CLASS=desc>Random number seed used to generate the probability distribution.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Existing Sample Table</B></FONT></TD>
+<TD CLASS=desc>If the table column is to be appended to an existing table, the table to append to is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Sampling Method</B></FONT></TD>
+<TD CLASS=desc>The sampling method can be Random or Stratified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Post-Processing</B></FONT></TD>
+<TD CLASS=desc>The resulting samples can be randomized before they are output to the table column.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Sampling</B></FONT></TD>
+<TD CLASS=desc>The distribution is selected and the distribution parameters are input.  The following distributions can be selected:</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Normal</B></FONT></TD>
+<TD CLASS=desc>The mean and standard deviation are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Truncated Normal</B></FONT></TD>
+<TD CLASS=desc>The mean, standard deviation, minimum and maximum are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log-Normal</B></FONT></TD>
+<TD CLASS=desc>The mean and log standard deviation are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Truncated Log-Normal</B></FONT></TD>
+<TD CLASS=desc>The mean, standard deviation, minimum and maximum are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Uniform</B></FONT></TD>
+<TD CLASS=desc>The minimum and maximum are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log-Uniform</B></FONT></TD>
+<TD CLASS=desc>The minimum and maximum are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Triangular</B></FONT></TD>
+<TD CLASS=desc>The minimum, peak and maximum are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log-Triangular</B></FONT></TD>
+<TD CLASS=desc>The minimum, peak and maximum are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Exponential</B></FONT></TD>
+<TD CLASS=desc>The mean is the only required input.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Poisson</B></FONT></TD>
+<TD CLASS=desc>The Poisson mean is the only required input.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Weibull</B></FONT></TD>
+<TD CLASS=desc>The shape (alpha) and scale (beta) factors are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Beta</B></FONT></TD>
+<TD CLASS=desc>The minimum, maximum, P exponent and Q exponent are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Student t</B></FONT></TD>
+<TD CLASS=desc>The mean and standard deviation are required inputs.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">User CDF</B></FONT></TD>
+<TD CLASS=desc>A CDF object is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Tabulated</B></FONT></TD>
+<TD CLASS=desc>A table data object, and a column from the selected table, are selected.</TD>
+</TR>
+
+</TABLE>
+</P>
+</BODY>
+</HTML>

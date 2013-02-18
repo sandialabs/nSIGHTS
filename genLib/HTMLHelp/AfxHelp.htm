@@ -1,0 +1,555 @@
+<HTML>
+<HEAD>
+<TITLE>Hi Help Popup text for standard MFC ids</TITLE>
+<META name="description" content="Hi Help Popup text for standard MFC ids">
+</HEAD>
+<BODY>
+
+<B>This page is not intended to be shown as a whole.
+Instead, <B><I>Hi&nbsp;Help</B></I> shows the HTML between the
+horizontal rules in context-sensitive pop-up boxes.</B>
+<P>
+You may wish to customise this page for your application,
+eg change the text for ID_FILE_NEW.
+<P>
+This page covers the core and print MFC ids.
+Please write or copy your own MFC database and OLE client pop-ups.
+So, please check that pop-ups are displayed for all the ids in your program.
+<HR>
+
+<!-- Non-Client HitTest help IDs -->
+<!-- WM_SYSCOMMAND help IDs -->
+
+<A NAME="ID_HT_NOWHERE"></A>
+No help is available for this area of the window.
+<HR>
+
+<A NAME="ID_HT_CAPTION"></A>
+The title bar is located along the top of a window.
+It contains the name of the application and document.
+<P>
+To move the window, drag the title bar.
+Note: You can also move dialog boxes by dragging their title bars.
+<HR>
+
+<A NAME="ID_SC_SIZE"></A>
+<A NAME="ID_HT_SIZE"></A>
+<IMG SRC=AfxCurArw4.gif align=left hspace=2>
+Use this command to display a four-headed arrow so you can change the size
+the active window with the arrow keys.
+<P>
+After the pointer changes to the four-headed arrow:
+<BR>
+<OL>
+<LI>Press one of the DIRECTION keys (left, right, up, or down arrow key) to move the pointer to the border you want to move.  
+<LI>Press a DIRECTION key to move the border.
+<LI>Press ENTER when the window is the size you want.
+</OL>
+<BR>
+Note:  This command is unavailable if you maximize the window.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Mouse:</TD>
+	<TD>Drag the size bars at the corners or edges of the window.</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_HT_HSCROLL"></A>
+<A NAME="ID_HT_VSCROLL"></A>
+Scroll bars are displayed at the right and bottom edges of the document window.
+The scroll boxes inside the scroll bars indicate your vertical
+and horizontal location in the document.
+You can use the mouse to scroll to other parts of the document.
+<HR>
+
+<A NAME="ID_HT_MINBUTTON"></A>
+<A NAME="ID_SC_MINIMIZE"></A>
+Use this command to reduce the window to an icon on the task bar.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Mouse:</TD>
+	<TD>Click the minimize icon <IMG SRC="AfxScMin.gif" align=middle>on
+		the title bar.
+	</TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Alt+F9</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_HT_MAXBUTTON"></A>
+<A NAME="ID_SC_MAXIMIZE"></A>
+Use this command to enlarge the active window to fill the available space.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Mouse:</TD>
+	<TD>Click the maximize icon <IMG SRC="AfxScMax.gif" align=middle>on
+		the title bar or double-click the title bar.
+	</TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+F10 enlarges a document window.</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_SC_MOVE"></A>
+<IMG SRC=AfxCurArw4.gif align=left hspace=2>
+Use this command to display a four-headed arrow so you can move the active window
+or dialog box with the arrow keys.
+Press Enter when complete.
+<P>
+Note:  This command is unavailable if you maximize the window.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+F7</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_SC_NEXTWINDOW"></A>
+Use this command to switch to the next open document window.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+F6</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_SC_NEXTWINDOW"></A>
+Use this command to switch to the previous open document window.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Keys:</TD>
+	<TD>Shift+Ctrl+F6</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_SC_CLOSE"></A>
+Use this command to close the active window or dialog box.
+<P>
+<IMG SRC=AfxAppExit.gif align=left hspace=2>
+Double-clicking a Control-menu box is the same as choosing the Close command.
+<P>
+Note:  If you have multiple windows open for a single document,
+the Close command on the document Control menu closes only one window at a time.  You can close all windows at once with the Close command on the File menu.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+F4 closes a document window</TD>
+</TR>
+<TR><TD></TD>
+	<TD>Alt+F4 closes the main window or dialog box</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_SC_RESTORE"></A>
+Use this command to return the active window to its size and position
+before you chose the Maximize or Minimize command.
+<HR>
+
+<A NAME="ID_SC_TASKLIST"></A>
+Use this command to show the Start menu and task bar.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+Esc</TD>
+</TR>
+</TABLE>
+<HR>
+
+<!-- File MRU and aliases -->
+
+<A NAME="ID_FILE_MRU_FILE1"></A>
+Use the numbers and filenames listed at the bottom of the File menu
+to open one of the last documents you closed. 
+Choose the number that corresponds with the document you want to open.
+<HR>
+
+<!-- Window menu list -->
+
+<A NAME="ID_WINDOW_ALL"></A>
+A list of the currently open document windows is displayed at the bottom
+of the Window menu.
+A check mark appears in front of the document name of the active window.
+Choose a document from this list to make its window active.
+<HR>
+
+<!-- Commands (HID_*)  -->
+
+<A NAME="ID_FILE_NEW"></A>
+Use this command to create a new document.
+<P>
+Select the type of new file you want to create in the
+File New dialog box.
+<P>
+You can open an existing document with the
+<A HREF="AfxHelp.htm#ID_FILE_OPEN">Open command</A>.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxFileNew.gif" ALIGN=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+N</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_FILE_OPEN"></A>
+Use this command to open an existing document in a new window.
+<P>
+You may be able to open multiple documents at once.
+Use the Window menu to switch among the multiple open documents.
+See the <A HREF="AfxHelp.htm#ID_WINDOW_ALL">Window 1, 2, ... command</A>.
+<P>
+You can create new documents with the
+<A HREF="AfxHelp.htm#ID_FILE_NEW">New command</A>.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxFileOpen.gif" ALIGN=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+O</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_FILE_CLOSE"></A>
+Use this command to close all windows containing the active document.
+<P>
+We suggest that you save changes to your document before you close it.
+If you close a document without saving,
+you lose all changes made since the last time you saved it.
+Before closing an untitled document, the Save As dialog box is displayed
+and it suggests that you name and save the document.
+<P>
+<IMG SRC="AfxScMenu.gif" align=middle>
+You can also close a document by using the Close icon on the document's window.
+<HR>
+
+<A NAME="ID_FILE_SAVE"></A>
+Use this command to save the active document to its current name and directory.
+<P>
+When you save a document for the first time, the Save As dialog box is displayed
+so you can name your document.
+If you want to change the name and directory of an existing document before
+you save it, choose the Save As command.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxFileSave.gif" align=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+S</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_FILE_SAVE_AS"></A>
+Use this command to save and name the active document.
+The Save As dialog box is displayed so you can name your document.  
+<P>
+To save a document with its existing name and directory, use the Save command.
+<HR>
+
+<A NAME="ID_FILE_PRINT_SETUP"></A>
+Use this command to select a printer and a printer connection.
+<P>
+This command presents a Print Setup dialog box,
+where you specify the printer and its connection.
+<HR>
+
+<A NAME="ID_FILE_PRINT"></A>
+Use this command to print a document.
+<P>
+This command presents a Print dialog box,
+where you may specify the range of pages to be printed,
+the number of copies, the destination printer, and other printer setup options.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxFilePrnt.gif" align=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+P</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_FILE_PRINT_PREVIEW"></A>
+Use this command to display the active document as it would appear when printed.
+<P>
+When you choose this command,
+the main window will be replaced with a print preview window
+in which one or two pages will be displayed in their printed format.
+The print preview toolbar offers you options to view either one or two pages
+at a time; move back and forth through the document;
+zoom in and out of pages; and initiate a print job.
+<HR>
+
+<A NAME="ID_FILE_SEND_MAIL"></A>
+Use this command to send the active document through electronic mail.
+<P>
+This command presents a mail window with the active document attached to it.
+You may then fill out the <B>To:</B> field, <B>Subject:</B> field, etc.,
+and add text to the body of the message if you wish.
+When you are finished, click the <B>Send</B> button to send the message.
+<HR>
+
+<A NAME="ID_EDIT_CLEAR"></A>
+Use this command to delete the currently selected data from the document.
+This command is unavailable if there is no data currently selected.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Keys:</TD>
+	<TD>Del</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_EDIT_CLEAR_ALL"></A>
+Use this command to delete <U>all</U> the data from the document.
+<HR>
+
+<A NAME="ID_EDIT_COPY"></A>
+Use this command to copy selected data onto the clipboard.
+This command is unavailable if there is no data currently selected.
+<P>
+Copying data to the clipboard replaces the contents previously stored there.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxEditCopy.gif" align=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+C</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_EDIT_CUT"></A>
+Use this command to remove the currently selected data from the document
+and put it on the clipboard.
+This command is unavailable if there is no data currently selected.
+<P>
+Cutting data to the clipboard replaces the contents previously stored there.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxEditCut.gif" align=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+C</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_EDIT_PASTE"></A>
+Use this command to insert a copy of the clipboard contents at the insertion point.
+This command is unavailable if the clipboard is empty.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxEditPast.gif" align=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+V</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_EDIT_FIND"></A>
+Use this command to find text in the current document.
+<P>
+The Find dialog box is displayed.
+Enter the text you want to find, select other search options
+and press <B>Find Next</B>.
+<P>
+To find more occurances later, select <B>Edit+Find next</B> or press F3.
+<HR>
+
+<A NAME="ID_EDIT_UNDO"></A>
+Use this command to reverse the last editing action, if possible.
+<P>
+The name of the command changes, depending on what the last action was.
+The Undo command changes to Can't Undo on the menu if you cannot reverse your last action.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Toolbar:</TD>
+	<TD><IMG SRC="AfxEditUndo.gif" align=middle></TD>
+</TR>
+<TR><TD>Keys:</TD>
+	<TD>Ctrl+Z or Alt+BACKSPACE</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_WINDOW_NEW"></A>
+Use this command to open a new window with the same contents as the active window.
+<P>
+You can open multiple document windows to display different parts or views
+of a document at the same time.
+If you change the contents in one window,
+all other windows containing the same document reflect those changes.
+<P>
+When you open a new window, 
+it becomes the active window and is displayed on top of all other open windows.
+<HR>
+
+<A NAME="ID_WINDOW_ARRANGE"></A>
+Use this command to arrange the icons for minimized windows
+at the bottom of the main window.
+<P>
+If there is an open document window at the bottom of the main window,
+then some or all of the icons may not be visible because they will be
+underneath this document window.
+<HR>
+
+<A NAME="ID_WINDOW_CASCADE"></A>
+Use this command to arrange multiple opened windows in an overlapped fashion.
+<HR>
+
+<A NAME="ID_WINDOW_TILE_HORZ"></A>
+Use this command to vertically arrange multiple opened windows
+in a non-overlapped fashion.
+<HR>
+
+<A NAME="ID_WINDOW_TILE_VERT"></A>
+Use this command to arrange multiple opened windows side by side.
+<HR>
+
+<A NAME="ID_WINDOW_SPLIT"></A>
+Use this command to split the active window into panes.
+<P>
+You may then use the mouse or the keyboard arrows to move the splitter bars.
+When you are finished, press the mouse button or enter to leave the
+splitter bars in their new location.
+<P>
+Pressing Escape keeps the splitter bars in their original location.
+<HR>
+
+<A NAME="ID_APP_ABOUT"></A>
+Use this command to display the copyright notice and version number of this program.
+<HR>
+
+<A NAME="ID_APP_EXIT"></A>
+Use this command to quit this program.
+You can also use the Close command on the application Control menu.
+You are prompted to save documents with unsaved changes.
+<HR>
+
+<A NAME="ID_HELP_FINDER"></A>
+Use this command to display the help contents and index.
+<HR>
+
+<A NAME="ID_CONTEXT_HELP"></A>
+Use the Context Help command to obtain help on a command or part of the window.
+<P>
+When you choose the Toolbar's Context Help button,
+the mouse pointer will change to an arrow and question mark.
+Then click somewhere in the window, such as another Toolbar button.
+The Help topic will be shown for the item you clicked.
+<P>
+If a dialog box has a question mark in its title bar,
+then click on it to obtain similar context help for the dialog controls.
+<P>
+<B>Shortcut</B><BR>
+<TABLE>
+<TR><TD>Keys:</TD>
+	<TD>Shift+F1</TD>
+</TR>
+</TABLE>
+<HR>
+
+<A NAME="ID_VIEW_TOOLBAR"></A>
+Use this command to display and hide the Toolbar,
+which includes buttons for some of the most common commands,
+such as File Open.
+<P>
+A check mark appears next to the menu item when the Toolbar is displayed.
+<P>
+If you position the mouse over a Toolbar button,
+the name of the corresponding command appears as a yellow tool tip.
+<HR>
+
+<A NAME="ID_VIEW_STATUS_BAR"></A>
+Use this command to display and hide the Status Bar,
+which describes the action to be executed by the selected menu item or depressed 
+toolbar button, and keyboard latch state.
+<P>
+A check mark appears next to the menu item when the Status Bar is displayed.
+<P>
+The left area of the status bar describes actions of menu items as you use
+the arrow keys to navigate through menus.
+This area similarly shows messages that describe the actions of toolbar buttons
+as you depress them, before releasing them.
+If after viewing the description of the toolbar button command you wish 
+not to execute the command, then release the mouse button while the
+pointer is off the toolbar button.
+<P>
+The right areas of the status bar usually indicate which keys are latched down.
+<HR>
+
+<!-- Frame Controls (AFX_HIDW_*) -->
+
+<A NAME="AFX_HIDW_TOOLBAR"></A>
+This is the Toolbar which includes buttons for some of the most common commands,
+such as File Open.
+<P>
+If you position the mouse over a Toolbar button,
+the name of the corresponding command appears as a yellow tool tip.
+<HR>
+
+<A NAME="AFX_HIDW_STATUS_BAR"></A>
+This is the Status Bar.
+<P>
+The left area of the status bar describes actions of menu items as you use
+the arrow keys to navigate through menus.
+This area similarly shows messages that describe the actions of toolbar buttons
+as you depress them, before releasing them.
+If after viewing the description of the toolbar button command you wish 
+not to execute the command, then release the mouse button while the
+pointer is off the toolbar button.
+<P>
+The right areas of the status bar usually indicate which keys are latched down.
+<HR>
+
+<A NAME="AFX_HIDW_DOCKBAR_TOP"></A>
+<A NAME="AFX_HIDW_DOCKBAR_LEFT"></A>
+This is a spare portion of the screen, next to a docking bar.
+<HR>
+<A NAME="AFX_HIDW_DOCKBAR_RIGHT"></A>
+<A NAME="AFX_HIDW_DOCKBAR_BOTTOM"></A>
+This is a spare portion of the screen, next to a docking bar.
+<HR>
+<A NAME="AFX_HIDW_DOCKBAR_FLOAT"></A>
+This is a spare portion of the screen, next to a docking bar.
+<HR>
+
+</BODY>
+</HTML>

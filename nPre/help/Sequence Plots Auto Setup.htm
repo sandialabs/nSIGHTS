@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Sequence Plots Auto Setup</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Sequence Plots Auto Setup</B></FONT></P>
+
+<P>Selection of the <B><FONT COLOR="#000080">Auto Setup</B></FONT> command <B><FONT COLOR="#000080">Sequence Plots</B></FONT> will create data objects and plot objects within the <B><FONT COLOR="#000080">Sequence</B></FONT> tab of the <B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window that are typically required to create diagnostic plots of simulated data sets.  As well, a <B><FONT FACE="Technical" COLOR="#008000">Create XY Array</B></FONT> object, containing the simulated output defined in the <B><FONT COLOR="#000080">Process/Plot</B></FONT> tab of the <B><FONT COLOR="#000080">Sequences</B></FONT> input window, will be created in the <B><FONT COLOR="#000080">Runtime and Post-Processing Setup</B></FONT> input window.</P>
+
+<P><B><FONT COLOR="#000080">Sequence Plots</B></FONT> auto setup cannot be selected until sequences have been defined in the <B><FONT COLOR="#000080">Sequences</B></FONT> tab of the <B><FONT COLOR="#000080">Sequences</B></FONT> input window.</P>
+
+<P>The <B><FONT COLOR="#000080">Sequence Data and Plot Setup</B></FONT> dialog, which appears upon selection of the <B><FONT COLOR="#000080">Auto Setup<FONT FACE="Wingdings">&#224;</FONT>
+Sequence Plots</B></FONT> command, contains frames for each type of sequence containing checkboxes for common diagnostic plots. The frame and checkboxes for sequence types not defined will be hidden.</P>
+<P> </P>
+<P><IMG SRC="AutoSequencePlots.jpg"></P>
+
+<P>Within the <B><FONT COLOR="#000080">Data to Process</B></FONT> frame,  the option is given to process pressure or flow data.  As flow, pulse and slug sequences output pressure data, the plots associated with these sequences are only available if <B><FONT COLOR="#800050">Test zone pressure</B></FONT> is selected.  Similarly, history sequences output flow data, and the history sequence plots are only available if <B><FONT COLOR="#800050">Test zone flow</B></FONT> is selected.  If the <B><FONT COLOR="#800050">observation well pressure</B></FONT> toggle is selected, plots are created for each defined observation well, in addition to the main well.</P>
+
+<P>No diagnostic plots for a sequence type will be created unless the <B><FONT COLOR="#800050">Extract</B></FONT> checkbox is selected. Each plot to be created is then selected with a checkbox.  Plots are only created for a sequence if the <B><FONT COLOR="#800050">Auto</B></FONT> checkbox is selected for the sequence in the <B><FONT COLOR="#000080">Sequences</B></FONT> tab of the <B><FONT COLOR="#000080">Sequence</B></FONT> input window. If <B><FONT COLOR="#800050">Test design mode</B></FONT> is selected, the derivative specification for simulated data will be specified individually, instead of automatically slaved to the field data derivative specification.</P>
+
+<P>Each diagnostic plot option will create a data page and a plot page for all applicable sequences with the <B><FONT COLOR="#800050">Auto</B></FONT> checkbox selected.  The data page will include two <B><FONT FACE="Technical" COLOR="#008000">Extract Sequence(s)</B></FONT> objects, one for field data and one for simulated data.  The user is required to specify the applicable field and simulated data, but the correct sequence has been automatically chosen. </P>
+
+<P>All sequence types have an <B><FONT COLOR="#800050">Analytic on plots</B></FONT> checkbox, which is only active if at least one diagnostic plot has been selected from that sequence type. This option adds an <B><FONT FACE="Technical" COLOR="#008000">Analytics: Line Data</B></FONT> object to all 2D plots for that sequence type, allowing the user to create a straight line on a plot interactively.  A corresponding legend box on the 2D plot, showing the analytic line results, is also created using a <B><FONT FACE="Technical" COLOR="#008000">Data Labels</B></FONT> object.</P>
+
+<P>The following table provides the available diagnostic plots, and a brief description.</P>
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B><P>Auto Setup Sequence Diagnostics Plots</B></FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B><P>Flow Sequences</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Standard Diagnostic</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Plots field and simulated pressure data, as well as the derivative of the data (dP/dlnt) in a 2D XY plot.  </FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>FD Diagnostic</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>For both field and simulated data, plots 2*d<SUP>2</SUP>logP/dlogt<SUP>2</SUP> +2.  </FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Horner</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Using the <B><FONT FACE="Technical" COLOR="#008000">P(t) Time Processing</B></FONT> object, Horner time functions are applied to the X (time) data of field and simulated for each flow sequence, except if the flow sequence is the first sequence.  Individual plots are created for each flow sequence, displaying pressure versus Horner time. </FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Bourdet</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Using the <B><FONT FACE="Technical" COLOR="#008000">P(t) Time Processing</B></FONT> object, Bourdet superposition time functions are applied to the X (time) data of field and simulated data for each flow sequence, except if the flow sequence is the first sequence.  Individual plots are created for each flow sequence, displaying pressure and the derivative of pressure versus Bourdet time.</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B><P>History Sequences</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Decline Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Plots the field and simulated flow data on a 2D XY plot.</FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Diag #1 Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>For both field and simulated data, plots 2*d<SUP>2</SUP>logQ/dlogt<SUP>2</SUP> +2.</FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Diag #2 Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>For both field and simulated data, plots 2*d<SUP>2</SUP>log(1/Q)/dlogt<SUP>2</SUP> +2.</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B><P>Pulse and Slug Sequences</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Ramey A Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Plots normalized pressure and the derivative of normalized pressure (dP/dlogt) for both field and simulated data.</FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Ramey B Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Plots normalized pressure and the derivative of normalized pressure (dlogP/dlogt) for both field and simulated data.</FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Ramey C Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Plots (1-normalized pressure) and the derivative of (1-normalized pressure) (dlogP/dlogt) for both field and simulated data.  </FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Ramey FD Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Plots two times the derivative of normalized pressure (2*dlogP/dlogt) for both field and simulated data.</FONT></TD>
+</TR>
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P>Deconvolution Plot</FONT></TD>
+<TD WIDTH="76%" VALIGN="TOP">
+<P>Plots the results of deconvolution and the derivative of deconvolution for both field and simulated data.  Deconvolution is calculated by integrating normalized pressure data, and dividing by (1-normalized pressure data).</FONT></TD>
+</TR>
+</TABLE>
+
+
+<P>&nbsp;</P></FONT></BODY>
+</HTML>

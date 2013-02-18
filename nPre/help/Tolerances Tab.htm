@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Tolerances Tab</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Tolerances Tab</B></FONT></P>
+
+<P>Within this tab, various tolerances are set.</P>
+
+<P><IMG SRC="TolerancesTab.jpg"></P>
+
+<P>Optimization is complete once convergence tolerances have been met.  Each optimization algorithm has a maximum of three convergence tolerances: <B><FONT COLOR="#800050">Fit tolerance</B></FONT>, <B><FONT COLOR="#800050">Parameter tolerance</B></FONT>, and <B><FONT COLOR="#800050">Error tolerance</B></FONT>. The user may specify whether only one of these tolerances must be met, or whether all selected convergence tolerances must be met to satisfy convergence.  If additional convergence tolerances are required for an algorithm, they are specifed in the algorithm specific tab.</P>
+
+<P>Additional tolerances include:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">First stage transition tolerance multiplier</FONT></TD>
+<TD CLASS=desc>If a two stage approach is selected, the algorithms will switch once the specified convergence tolerances multiplied by this factor are met</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Derivative adjustment tolerance</FONT></TD>
+<TD CLASS=desc>In calculating the covariance matrix, an iterative procedure is used to calculate the derivative span (if the derivative span is not fixed in the <B><FONT COLOR="#000080">Main</B></FONT> tab).  The derivative span has been successfully calculated once this tolerance has been met.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Derivative adjustment tolerance</FONT></TD>
+<TD CLASS=desc>Optimization will stop once the maximum number of simulations has been reached. </TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

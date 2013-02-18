@@ -1,0 +1,96 @@
+///////////////////////////////////////////////////////////////////////////////////
+//
+// DSC_InterpPoints.h
+//
+///////////////////////////////////////////////////////////////////////////////////
+//
+// Copyright 2012 Sandia Corporation. Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation, the U.S. Government retains certain rights in this software.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//    * Redistributions of source code must retain the above copyright
+//      notice, this list of conditions and the following disclaimer.
+//    * Redistributions in binary form must reproduce the above copyright
+//      notice, this list of conditions and the following disclaimer in the
+//      documentation and/or other materials provided with the distribution.
+//    * Neither the name of Sandia Corporation nor the
+//      names of its contributors may be used to endorse or promote products
+//      derived from this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+// ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+// WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL SANDIA CORPORATION BE LIABLE FOR ANY
+// DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+// ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+///////////////////////////////////////////////////////////////////////////////////
+//
+// DESCRIPTION:
+//
+//
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+#ifndef DSC_INTERPPOINTS_H
+#define DSC_INTERPPOINTS_H
+
+#include <genClass/SC_DoubleArray.h>
+#include <genClass/DC_XYData.h>
+#include <genClass/SC_SetupErr.h>
+
+class DSC_InterpPoints {
+    public:
+
+        enum InterpPointsOp   {ipoAtInput,       // at X points of input
+                               ipoLinear,        // fixed linear
+                               ipoLogAbsolute,   // log(max) - log(Min)
+                               ipoLogRelative};  // min + log from start to delta
+
+        InterpPointsOp      interpPointsOp;
+
+        bool                useDataLimits;          // for min/max
+        double              minUserLimit;           // user specified
+        double              maxUserLimit;
+        double              logRelativestart;       // for cioLogRelative
+        int                 numInterpPoints;
+
+    private:
+        double              currMin;
+        double              currMax;
+
+    public:
+                            DSC_InterpPoints();
+                            DSC_InterpPoints(const DSC_InterpPoints& a);
+                            ~DSC_InterpPoints() {};
+
+        //  copy operator
+        DSC_InterpPoints&   operator= (const DSC_InterpPoints& a);
+
+        bool                AtInputPoints() const {return interpPointsOp == ipoAtInput;}
+
+        //  following only used if AtInputPoints() is false
+
+        void                SetMinMax(const double& dataMin,
+                                      const double& dataMax);
+        void                SetMinMax(const DC_XYData& inXY);
+
+        //  assumes setminmax already called
+        bool                InterpSetupOK(SC_SetupErr& interpErr);
+
+        //  assumes InterpSetupOK
+        void                GetInterpPoints(DC_XYData& outXY);
+        void                GetInterpPoints(SC_DoubleArray& outPts);
+
+    private:
+        void                LocalCopy(const DSC_InterpPoints& a);
+
+};
+
+
+#endif //DSC_INTERPPOINTS_H
+

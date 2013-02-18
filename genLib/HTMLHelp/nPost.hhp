@@ -1,0 +1,121 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=nPost.chm
+Contents file=nPost.hhc
+Default Window=SWETS nPost
+Default topic=nPost.htm
+Display compile progress=No
+Index file=nPost.hhk
+Language=0x409 English (United States)
+
+[WINDOWS]
+SWETS nPost="SWETS nPost","nPost.hhc","nPost.hhk",,,,,,,0x2120,,0x3006,,,,,,,,0
+
+
+[FILES]
+nPost.htm
+TreeView.htm
+UPO_WriteColorMap.htm
+UPO_WriteCurveArray.htm
+PPO_ColorData.htm
+PPO_ColorLegend.htm
+PPO_DataLabels.htm
+PPO_GridContour.htm
+PPO_SeriesLegend.htm
+PPO_UserLabels.htm
+PPO_2DTableSeries.htm
+PPO_2DXYData.htm
+PPO_3DTableSeries.htm
+PPO_3DXYData.htm
+DPO_CreateCurve.htm
+DPO_CreateReal.htm
+DPO_CurveInterp.htm
+DPO_DataPg.htm
+DPO_Derivative.htm
+DPO_EnterXY.htm
+DPO_ExtractSequenceInterval.htm
+DPO_LinColorMap.htm
+DPO_MergeColorMap.htm
+DPO_PenSet.htm
+DPO_ReadColorMap.htm
+DPO_ReadCurveArray.htm
+DPO_ReadGridData.htm
+DPO_ReadSequenceTimes.htm
+DPO_ReadTable.htm
+DPO_ReadXY.htm
+DPO_ReadXYSimResults.htm
+DPO_RealScaleTransform.htm
+DPO_SelectBase.htm
+DPO_TimeProcess.htm
+DPO_XYMath.htm
+DPO_XYScaleTransform.htm
+DPO_XYStatistics.htm
+PPD_2DPlotAnno.htm
+PPD_3DAxesFormat.htm
+PPD_3DAxesLabel.htm
+PPD_3DLighting.htm
+PPD_LinLogAxis.htm
+PPD_2D.htm
+PPD_3D.htm
+nPreDialog.htm
+
+[ALIAS]
+IDH_TREEVIEW=TreeView.htm
+IDH_UPO_WriteColorMap=UPO_WriteColorMap.htm
+IDH_UPO_WriteCurveArray=UPO_WriteCurveArray.htm
+IDH_PPO_ColorData=PPO_ColorData.htm
+IDH_PPO_ColorLegend=PPO_ColorLegend.htm
+IDH_PPO_DataLabels=PPO_DataLabels.htm
+IDH_PPO_GridContour=PPO_GridContour.htm
+IDH_PPO_SeriesLegend=PPO_SeriesLegend.htm
+IDH_PPO_UserLabels=PPO_UserLabels.htm
+IDH_PPO_2DTableSeries=PPO_2DTableSeries.htm
+IDH_PPO_2DXYData=PPO_2DXYData.htm
+IDH_PPO_3DTableSeries=PPO_3DTableSeries.htm
+IDH_PPO_3DXYData=PPO_3DXYData.htm
+IDH_DPO_CreateCurve=DPO_CreateCurve.htm
+IDH_DPO_CreateReal=DPO_CreateReal.htm
+IDH_DPO_CurveInterp=DPO_CurveInterp.htm
+IDH_DPO_DataPg=DPO_DataPg.htm
+IDH_DPO_Derivative=DPO_Derivative.htm
+IDH_DPO_EnterXY=DPO_EnterXY.htm
+IDH_DPO_ExtractSequenceInterval=DPO_ExtractSequenceInterval.htm
+IDH_DPO_LinColorMap=DPO_LinColorMap.htm
+IDH_DPO_MergeColorMap=DPO_MergeColorMap.htm
+IDH_DPO_PenSet=DPO_PenSet.htm
+IDH_DPO_ReadColorMap=DPO_ReadColorMap.htm
+IDH_DPO_ReadCurveArray=DPO_ReadCurveArray.htm
+IDH_DPO_ReadGridData=DPO_ReadGridData.htm
+IDH_DPO_ReadSequenceTimes=DPO_ReadSequenceTimes.htm
+IDH_DPO_ReadTable=DPO_ReadTable.htm
+IDH_DPO_ReadXY=DPO_ReadXY.htm
+IDH_DPO_ReadXYSimResults=DPO_ReadXYSimResults.htm
+IDH_DPO_RealScaleTransform=DPO_RealScaleTransform.htm
+IDH_DPO_SelectBase=DPO_SelectBase.htm
+IDH_DPO_TimeProcess=DPO_TimeProcess.htm
+IDH_DPO_XYMath=DPO_XYMath.htm
+IDH_DPO_XYScaleTransform=DPO_XYScaleTransform.htm
+IDH_DPO_XYStatistics=DPO_XYStatistics.htm
+IDH_PPD_2DPlotAnno=PPD_2DPlotAnno.htm
+IDH_PPD_3DAxesFormat=PPD_3DAxesFormat.htm
+IDH_PPD_3DAxesLabel=PPD_3DAxesLabel.htm
+IDH_PPD_3DLighting=PPD_3DLighting.htm
+IDH_PPD_LinLogAxis=PPD_LinLogAxis.htm
+IDH_PPD_2D=PPD_2D.htm
+IDH_PPD_3D=PPD_3D.htm
+
+[MAP]
+#include ..\appCommon\appCommonHelp.h
+#include ..\appDPO\appDPOHelp.h
+#include ..\appPPD\appPPDHelp.h
+#include ..\appPPO\appPPOHelp.h
+#include ..\appUPO\appUPOHelp.h
+
+[TEXT POPUPS]
+PSOutputSetup.txt
+TGAOutputSetup.txt
+Settings.txt
+ToolTips.h
+
+[INFOTYPES]
+

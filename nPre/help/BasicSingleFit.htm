@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>(Basic) Single Fit</TITLE>
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\html.dot">
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>(Basic) Single Fit </P>
+</FONT>
+<P>What:</B>  Pairs field and simulated data to be selected as a constraint. Typically used in the <B><FONT COLOR="#000080">Fit</B></FONT> tab of the </FONT><B><FONT COLOR="#000080">Plots & Data Processing</FONT><FONTCOLOR="#000080"> </B></FONT>nPre input window. </P>
+<B><P>Why:  </B>Used to determine the field data that simulated data should be compared to during an optimization or range simulation.</P>
+<B><P>Used By: <FONT COLOR="#000080">Fit Selection</B></FONT> tab of the <B><FONT COLOR="#000080">Fit Selection </FONT></B>nPre input window.</P>
+<B><P>Appearance: </P>
+
+</B><P><IMG SRC="AppBasicSingleFit.jpg"></P>
+
+<B><P>Input Data: </B>XY data</P>
+<B><P>Output Data: </B>fit specification<B> </P>
+<P>Properties: </P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Field Data</B></FONT></TD>
+<TD CLASS=desc>Select XY or table data representing field data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Simulation Results</B></FONT></TD>
+<TD CLASS=desc>Select XY or table data representing simulation data. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Std dev of measurement error</B></FONT></TD>
+<TD CLASS=desc> The standard deviation is used in the calculation of the Chi-squared minimization function.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Field X Limits</B></FONT> </TD>
+<TD CLASS=desc> The X limits of the data, usually time, can be limited between <B><FONT COLOR="#800050">X min</B></FONT> and <B><FONT COLOR="#800050">X max</B></FONT> if the <B><FONT COLOR="#800050">limited</B></FONT> checkbox is selected.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Coverage Requirement</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Minimum Coverage</B></FONT></TD>
+<TD CLASS=desc>After data processing, the number of simulated data points may be less than the number of field data points.  If the number of simulated data points multiplied by the minimum coverage value is less than the number of field data points, an error will result for the fit. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Coverage penalty</B></FONT></TD>
+<TD CLASS=desc>The fit value is adjusted by multipling the fit value by: 1.0 + coverage penalty /  actual coverage value.</TD>
+</TR>
+</TABLE>
+
+
+<B><FONT COLOR="#000080">Fit Status  </B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Calculated Fit Value</B></FONT></TD>
+<TD CLASS=desc>Once simulation results have been generated, the calculated fit value for the specified field and simulated data will be displayed.</TD>
+</TABLE>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"><P>Field Data Info</B></FONT></TD>
+<TD CLASS=desc> Provides basic information about the field data selected, including the total number of points, points before and after the simulation, and the minimum and maximum X values.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"><P>Simulation Data Info</B></FONT></TD>
+<TD CLASS=desc> Provides the same information as </FONT><B><FONT COLOR="#000080">Field Data Info</B></FONT>, but for the selected simulation data. Will not be active until simulation results have been generated.  </TD>
+</TR>
+</TABLE>
+</P>
+</BODY>
+</HTML>

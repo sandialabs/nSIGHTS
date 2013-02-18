@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>To create an XY scatter plot</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>To create an XY scatter plot</B></FONT></P>
+
+<STYLE>
+ul{list-style-type: square}
+</STYLE>
+
+<OL>
+
+<LI>Create a 2D plot page (<B><FONT COLOR="#000080">Page<FONT FACE="Wingdings">&#224;</FONT>
+New 2D XY Plot</B></FONT>).  </LI>
+
+<UL>
+<LI>Change the name of the page to </FONT><FONT FACE="Courier"><B>K and n Perturb Scatter</FONT></B> and change the left margin to 100.  Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">X Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Increment Label Format </B></FONT>to <I><FONT COLOR="#800050">Scientific</I></FONT> and <I><FONT COLOR="#800050">0.0E+00</I></FONT>, and select <B><FONT COLOR="#000080">Apply</B></FONT>. </LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">Y Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Increment Label Format </B></FONT>to <I><FONT COLOR="#800050">Decimal</I></FONT> and <I><FONT COLOR="#800050">0.000</I></FONT>, and select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>Select the <B><FONT FACE="Technical" COLOR="#008000">2D Plot Anno</B></FONT> object.  Check the <B><FONT COLOR="#800050">Axis Labels</B></FONT> box, and type </FONT><FONT FACE="Courier"><B>Hydraulic Conductivity (m/s) </FONT></B>for the X axis and </FONT><FONT FACE="Courier"><B>Flow Dimension </FONT></B>for the Y axis labels. Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI></UL>
+<P></P>
+
+<LI>Create a new object in the <I>K and n Perturb Scatter</I> plot page:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Data: Single Table Series</B></FONT>.</LI>
+
+<UL>
+<LI>Select <I><FONT COLOR="#800050">Output table SelectOptResults \Perturb Results</I></FONT> as the <B><FONT COLOR="#000080">Table Data</B></FONT>.</LI>
+<LI>Select <I><FONT COLOR="#800050">Formation conductivity</I></FONT> as the <B><FONT COLOR="#000080">X Data Column</B></FONT>.</LI>
+<LI>Select the first checkbox, and select <I><FONT COLOR="#800050">Flow Dimension </I></FONT>from the corresponding drop-down-box.</LI>
+<LI>Change the <I><FONT COLOR="#800050">Line</I></FONT> to <I><FONT COLOR="#800050">Symbol</I></FONT>.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.  </LI></UL>
+<P></P>
+
+<LI>View the plot by selecting the <I>K and n Perturb Scatter </I>plot page from the <B><FONT COLOR="#000080">Window</B></FONT> menu, or from the <B><FONT COLOR="#000080">Window List </B></FONT>window.  The axes limits will need to be reset (select <B><FONT COLOR="#000080">Axes-&gt;Data Limits</B></FONT> in the 2D window pop-up menu).</LI>
+
+<P><IMG SRC="TutKnPeturbScatter.jpg"></P>
+
+<LI>A useful addition to the XY data plot are the confidence regions for each perturbation.  Return to the <I>Perturb Results </I>data page, and add an <B><FONT FACE="Technical" COLOR="#008000">Extract Covariance Matrices </B></FONT>object (<B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>nSIGHTS Results Extraction<FONT FACE="Wingdings">&#224;</FONT>Extract Covariance Matrices</B></FONT>). </LI>
+
+<UL>
+<LI>Select <I><FONT COLOR="#800050">SimOptResults TutorialPerturb.nOpt</I></FONT> from the <B><FONT COLOR="#000080">nSIGHTS Opt Results To Select From</B></FONT> drop-down list.</LI>
+<LI>Check the <B><FONT COLOR="#800050">Multiple</B></FONT> checkbox in the <B><FONT COLOR="#000080">Index Selection Value Source</B></FONT> frame.</LI>
+<LI>Press the <B><FONT COLOR="#000080">All</B></FONT> button.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI></UL>
+<P></P>
+
+<LI>Return to the <I>K and n Perturb Scatter </I>plot page, and add <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Data: Confidence Limits - Two Parameter</B></FONT>.  </LI>
+
+<UL>
+<LI>Select <I><FONT COLOR="#800050">Covar Array SelectOptCovar \Perturb Results</I></FONT> as the <B><FONT COLOR="#000080">Covariance Data</B></FONT>.</LI>
+<LI>Select <I><FONT COLOR="#800050">Formation conductivity</I></FONT> as the X variable, and <I><FONT COLOR="#800050">Flow dimension</I></FONT> as the Y variable.</LI>
+<LI>Select <B><FONT COLOR="#000080">Limit Type</B></FONT> <I><FONT COLOR="#800050">Dual</I></FONT>.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI></UL>
+<P></P>
+
+<LI>View the <I>K and n Perturb Scatter </I>plot page again.</LI>
+
+<P><IMG SRC="TutKnPeturbScatter_wConfLim.jpg"></P>
+
+<LI>XY scatter plots can be created for other parameter combinations, by repeating steps (1) to (6).</LI></OL>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="To create an XYZ scatter plot.htm">To create an XYZ scatter plot</A></P>
+
+</FONT></BODY>
+</HTML>

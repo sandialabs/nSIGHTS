@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>TZ Curves Tab</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>TZ Curves Tab</B></FONT></P>
+
+<P>The <B><FONT COLOR="#000080">TZ Curves</B></FONT> tab contains a table to associate sequences with curve data.  Depending on the curve data source selected in the <B><FONT COLOR="#000080">Main</B></FONT> tab of the <B><FONT COLOR="#000080">Configuration</B></FONT> input window, curve data can be obtained from curve objects created within object trees or the well-bore boundary conditions curve file loaded in the <B><FONT COLOR="#000080">Curve Files</B></FONT> tab of the <B><FONT COLOR="#000080">Configuration</B></FONT> input window.  The curve data describe the data-type (e.g. flow) as it changes with time, and consequently the data should have time as the X data, and the data-type for the Y data.  The X and/or the Y data may be transformed by log 10.</P>
+
+<P>Table rows are inserted, deleted or duplicated using the commands in the pop-up menus (right click of the mouse).</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Type</B></FONT></TD>
+<TD CLASS=desc>The curves data type is dependent on the type of sequence it relates to:<TD>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Flow</I></FONT></TD>
+<TD CLASS=desc>for flow sequences </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Pressure</I></FONT></TD>
+<TD CLASS=desc>for history sequences</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Volume Change</I></FONT></TD>
+<TD CLASS=desc>for history, flow or pulse sequences with isolated well-bore storage</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Volume </I></FONT></TD>
+<TD CLASS=desc>for history, flow or pulse sequences with isolated well-bore storage</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Compressibility</I></FONT></TD>
+<TD CLASS=desc>for history, flow or pulse sequences with isolated well-bore storage</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Temperature</I></FONT></TD>
+<TD CLASS=desc>for pulse sequences with non-isothermal test zone thermal conditions</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050"><P>Curve Object/ID</B></FONT></TD>
+<TD CLASS=desc>A drop-down list providing the available curve data.  If the curve data source selected in the <B><FONT COLOR="#000080">Main</B></FONT> tab of the <B><FONT COLOR="#000080">Configuration</B></FONT> input window is <I><FONT COLOR="#800050">Object</I></FONT>, the drop-down list contains the available curve objects created within an object tree (<B><FONT COLOR="#000080">Plots & Data Processing</B></FONT>). Otherwise, if the curve data source selected is <I><FONT COLOR="#800050">File</I></FONT>, the curve data is obtained from the curve file loaded as <B><FONT COLOR="#800050">Well-bore boundary conditions</B></FONT> in the <B><FONT COLOR="#000080">Curve Files</B></FONT> tab of the <B><FONT COLOR="#000080">Configuration</B></FONT> input window. </TD>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Start Sequence<BR>End Sequence</B></FONT></TD>
+<TD CLASS=desc>The starting and ending sequences are selected from drop-down lists that contain the sequences defined in the <B><FONT COLOR="#000080">Sequences</B></FONT> tab. The curve data may span several sequences.  The sequence type of the sequences selected must correspond with the curve data type.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Curve Data</B></FONT></TD>
+<TD CLASS=desc>Double click on the cell, and a <B><FONT COLOR="#000080">TZ Curve Setup Dialog</B></FONT> will appear.  </TD>
+</TR>
+</TABLE>
+
+<P><IMG SRC="TZCurveSetupDialog.jpg"></P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Time Base</B></FONT></TD>
+<TD CLASS=desc>Determines where time zero begins for the curve data.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Test</I></FONT></TD>
+<TD CLASS=desc>Curve time is consistent with test time.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Sequence</I></FONT></TD>
+<TD CLASS=desc>Time zero is at the beginning of the sequence.</TD>
+</TR>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Y data units in curve</B></FONT></TD>
+<TD CLASS=desc>Units of the Y data (e.g. flow).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Y data are log 10</B></FONT></TD>
+<TD CLASS=desc><I><FONT COLOR="#800050">yes</I></FONT> if the Y data are log 10 transformed.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Time data units</B></FONT></TD>
+<TD CLASS=desc>For <I><FONT COLOR="#800050">Sequence</I></FONT> time bases, units of the Y data (e.g. flow).  For <I><FONT COLOR="#800050">Test</I></FONT> time bases, the units are assumed to be the same as those defined for the <B><FONT COLOR="#800050">Start time of first sequence</B></FONT> in the <B><FONT COLOR="#000080">Time-Base</B></FONT> tab.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Time data are log 10</B></FONT></TD>
+<TD CLASS=desc>For <I><FONT COLOR="#800050">Sequence</I></FONT> time bases, <I><FONT COLOR="#800050">yes</I></FONT> if the X data are log 10 transformed.  For <I><FONT COLOR="#800050">Test</I></FONT> time bases, the time data cannot be log 10 transformed. </TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

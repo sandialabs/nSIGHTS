@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Postscript Output</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Postscript Output</B></FONT></P>
+
+<P>Postscript output consists of Postscript (PS) or Encapsulated Postscript (EPS) commands written to an output file which can then be printed or imported into another application.  For convenience sake, in this manual all resolution independent output will be described as Postscript.   </P>
+
+<P>Postscript output is created by selecting <B><FONT COLOR="#800050">Postscript</B></FONT> from the <B><FONT COLOR="#000080">Output</B></FONT> menu bar item on any plot window:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">File Format</B></FONT></TD>
+<TD CLASS=desc>The specific output file format.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">PS</B></FONT></TD>
+<TD CLASS=desc>Vanilla postscript.  This format can be read by most postscript viewers and can be converted to pdf by Adobe Distiller. It also prints cleanly on tested PostScript printers.  PS format input has been tested successfully with Corel Draw.   Note that PS input files do not contain a preview image.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">EPS</B></FONT></TD>
+<TD CLASS=desc>Encapsulated postscript.  Imports cleanly into Adobe Distiller and Corel Draw.  No preview image.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">EPS/Win</B></FONT></TD>
+<TD CLASS=desc>Encapsulated postscript with Windows compatible preview image.  Imports cleanly into MS Word and Corel Draw.  Contains preview image.  Note that the preview image may be distorted. This is a known bug.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Orientation</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Portrait</B></FONT></TD>
+<TD CLASS=desc>Plot is not rotated.  The horizontal dimension of the plot (in pixels) is mapped to the page width (minus left and right margins) and the vertical to the page height (minus top and bottom margins).  Aspect ratio of the plot is preserved with the plot window origin at the bottom left of the page.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Landscape</B></FONT></TD>
+<TD CLASS=desc>Plot is rotated 90 degrees counter-clockwise.  The horizontal dimension of the plot (in pixels) is mapped to the page height (minus top and bottom margins) and the vertical to the page width  (minus left and right margins).  Aspect ratio of the plot is preserved with the plot window origin at the bottom right corner of the page.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Output Size and Margins</B></FONT></TD>
+<TD CLASS=desc>The defined size (in inches) of the plot mapping area.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Controls</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Line Width Multiplier</B></FONT></TD>
+<TD CLASS=desc>Maps OpenGL line widths specified in pixels to Postscript line widths specified in points (1 point = 1/72 inch).  The default setting is usually OK for 8.5 x 11 inch output.  Larger output may require a larger value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Gamma Correction</B></FONT></TD>
+<TD CLASS=desc>Corrects color for the differences between printed and displayed output.  Values in the range of 1.0 to 4.0 seem to produce acceptable output.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Z Buffer Multiplier</B></FONT></TD>
+<TD CLASS=desc>The postscript routines reduce the size of Postscript files by removing hidden polygons.  The algorithm used to do this relies upon a software Z buffer.  In some cases, small polygons may be missed during the sorting process.  They will appear as dropouts on the final image.  If this happens, a message will be written to the terminal window of the form: <B><FONT COLOR="#000080">Possible occlusion culling dropouts - check output</B></FONT>. In this case, the value of the Z buffer multiplier should be increased by a factor of 2 to 4.  Note that increasing this parameter uses a lot of extra memory.  Using a value of -1.0 will disable hidden polygon removal.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Text Multiplier</B></FONT></TD>
+<TD CLASS=desc>Occasionally, there are minor differences between the metrics of the bitmapped fonts displayed with OpenGL and the Postscript fonts. nSIGHTS will ensure that font heights are correct (i.e. same ratio to window size).  However, font widths may differ slightly.  These differences will manifest typically as annotation text which may exceed the enclosing  frame size of an annotation object or runs off the page.  This parameter can be adjusted until text output in the Postscript file looks correct. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Output File</B></FONT></TD>
+<TD CLASS=desc>The file that the postscript is written to when the <FONT COLOR="#000080"><B>Print</B></FONT> button is pressed.</TD>
+</TABLE>
+
+<B><P>Notes on Object Visibility in Postscript Output</B>:</P>
+
+<P>For 2D output, you cannot rely on the plot order of objects within a layer to maintain object visibility in the Postscript output  Use separate layers to ensure visibility is correct. </P>
+
+<P>For 3D plotting the postscript routines do not support polygon offset.  With the exception of outlines around symbols and polygons, plot objects must be specified to be unambiguously visible if Postscript output is to be created correctly.   All 3D data display plot objects have a field called <B><FONT COLOR="#800050">Offset</B></FONT> where an offset value can be added to the X, Y, and/or Z components of a plot object.  The user-entered value is added to the normal plotted values after all co-ordinate system transformations have been completed.   The smallest possible values to overcome renderer-induced stitching effects should be used.</P>
+
+</FONT></BODY>
+</HTML>

@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Create Curve from XY Data</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Create Curve from XY Data </P></FONT>
+
+<P>What:   </B>Creates functional approximations of XY data sets.  The functions available include: Linear, Cubic Spline, Polynomial, Step Mid and Step Full. Each curve type is described in <A HREF="Curve Data Functions.htm">Curve Data Functions</A>.</P>
+<B><P>Why: </B>Used to represent well-bore boundary conditions as a function of time, and parameters as a function of radius or pressure.<B>  </P>
+<P>Used By: </B>The </FONT><B><FONT COLOR="#000080">Sequence </B></FONT> and </FONT><B><FONT COLOR="#000080">Parameter</B></FONT> input windows.</P>
+<B><P>Appearance: </P>
+</B></FONT><P><IMG SRC="AppCreateCurve.jpg" WIDTH=684 HEIGHT=204></P>
+</FONT><B><P>Input Data: </B>XY data</P>
+<B><P>Output Data: </B>curve data</P>
+<B><P>Properties: </P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<P>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Curve Input XY Data</B></FONT> </TD>
+<TD CLASS=desc>The XY data set to be used as input data for the curve is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Curve Type</B></FONT></TD>
+<TD CLASS=desc>The curve type is selected: <I><FONT COLOR="#800050">Cubic Spline</I></FONT>, <I><FONT COLOR="#800050">Polynomial</I></FONT>, <I><FONT COLOR="#800050">Linear</I></FONT>, <I><FONT COLOR="#800050">StepMid</I></FONT> and <I><FONT COLOR="#800050">StepFull</I></FONT>.  Each curve type is described in <A HREF="Curve Data Functions.htm">Curve Data Functions</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Polynomial Order</B></FONT></TD>
+<TD CLASS=desc>For polynomial curve types, the order of the polynomial, between 1 to 10, is entered.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Spline Settings</B></FONT> </TD>
+<TD CLASS=desc>For cubic spline curve types, the shape of the curve may be modified by specifying the function slope at the extremes of the function or the spline tension. </TD>
+</TR>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Slope</FONT></B></TD>
+<TD CLASS=desc>Function slopes at the extremes of the function are specified by the user (<FONT COLOR="#800050"><B>User</B></FONT>  is selected), or are not forced to any specific slope (<FONT COLOR="#800050"><B>Natural</B></FONT> is selected).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B> Start Slope</B></FONT></TD>
+ <TD CLASS=desc>For user set slopes, the slope at the start of the function is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">End Slope</B></FONT></TD>
+<TD CLASS=desc>For user set slopes, the slope at the end of the function is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Tension</B></FONT></TD>
+<TD CLASS=desc>Used to modify the shape of the function, increasing the tension factor has an effect similar to pulling on either ends of a piece of string, whereas decreasing the tension factor has the effect of providing slack to the piece of string.</TD>
+</TR>
+</TABLE>
+
+</P>
+</BODY>
+</HTML>

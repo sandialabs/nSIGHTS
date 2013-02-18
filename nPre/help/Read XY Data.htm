@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Read XY Data</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Read XY Data </P></FONT>
+
+<P>What:</B>   Reads a list of XY points from a file (default file extension: *.dat).</P>
+<B><P>Why:</B>   Allows use of XY data created or manipulated outside the current nSIGHTS application (for example, in another nSIGHTS application or a spreadsheet).</P>
+<B><P>Used By:</B>  Any object using XY data.</P>
+<B><P>Appearance:</P></B>
+<P><IMG SRC="AppReadXYData.jpg"></P>
+<B><P>Input Data:</B>  external file containing XY data</P>
+<B><P>Output:</B>  XY data</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>XY Data File</B></FONT></TD>
+<TD CLASS=desc>The name of the file (including the file path) containing the XY data is entered in the text box or the <B><FONT COLOR="#000080">Browse</B></FONT> button is used to find the file using the standard Windows open file dialog.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">File Format</B></FONT></TD>
+<TD CLASS=desc>One of three file formats can be selected.  </TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Basic</FONT></B></TD>
+<TD CLASS=desc>XY values are separated by commas or spaces, one row per line. All data after the first two values of each line are ignored.  If <B><FONT COLOR="#800050">ID from Column Header</B></FONT> is selected, the first line of file contains column header names, without embedded spaces. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Table</FONT></B></TD>
+<TD CLASS=desc>XY values are separated by commas or spaces, one row per line. Columns selected as the X data and the Y data are specified in the X column index and Y column index fields.  If <B><FONT COLOR="#800050">ID from Column Header</B></FONT> is selected, the first line of file contains column header names, without embedded spaces.</TD>
+<TR>
+</TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Other</B></FONT></TD>
+<TD CLASS=desc>For future use, not currently supported.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">ID from Column Header</B></FONT></TD>
+<TD CLASS=desc>If selected, the ID is obtained from the Y column header.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">ID</B></FONT></TD>
+<TD CLASS=desc>If not obtained from the column header, the ID is specified in the text box.  The ID is used as the object type in drop-down lists, and the label in a <B><FONT FACE="Technical" COLOR="#008000">Series Legend</B></FONT>. </TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">X column index</B></FONT></TD>
+<TD CLASS=desc>For table file formats, the table column to use for X data is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Y column index </B></FONT></TD>
+<TD CLASS=desc>For table file formats, the table column to use for Y data is specified.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Status</B></FONT></TD>
+<TD CLASS=desc>Once the XY data file is loaded, the number of XY points is displayed.  </TD>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

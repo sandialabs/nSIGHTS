@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Data Display Plot Objects</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Data Display Plot Objects</B></FONT></P>
+
+<P>The following table summarizes the function of all the data display plot objects available.  In addition, the object input required for each object is specified. </P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B>Data Display Plot Objects Function Summary</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<B>Object</B></FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+<B>Function/Input</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Confidence Limits - Two Parameter</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots cross-hair or ellipse dual confidence limits of two parameters from a covariance matrix.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Covariance Matrices</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Confidence Limits - Multiple Single Parameter</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots a symbol representing the best estimate and/or a single vertical line repesenting the confidence limits of a single parameter for each parameter of the selected covariance matrices.  Each parameter is plotted at its associated index along the X axis, and results on the Y axis are normalized.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Covariance Matrices</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Confidence Limits - Multiple Dual Parameter</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots a symbol representing the best estimate and/or an ellipse repesenting dual confidence limits of each combination of two parameters in the selected covariance matrices.  Results are normalized, and plotted in a grid according to parameter index, such that each grid square contains the symbols and ellipses for only two parameters.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Covariance Matrices</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Cube Color Block</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots color blocks around each cube data value for specified cube indices within specified cube value limits.<BR>
+<B>Input:</B> cube data, cube indexes and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Cube Color Isovolume</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots a smooth color volume of a specified cube isovalue.<BR>
+<B>Input:</B> cube data and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Cube Color Point</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots color points at each cube data value for specified cube indices within specified cube value limits.<BR>
+<B>Input:</B> cube data, cube indexes and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Grid Color Block</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots color blocks around each node of the grid within specified grid value limits.<BR>
+<B>Input:</B> grid data and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Grid Color Fill</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots color filled contours of the nodes of a grid within specified grid value limits.<BR>
+<B>Input:</B> grid data and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Grid Color Point</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots color points representing each node of the grid within specified grid value limits.<BR>
+<B>Input:</B> grid data and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Grid Contour</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots single color contours of the nodes of a grid at specified grid values.<BR>
+<B>Input:</B> grid data</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Grid Fishnet</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots grid lines of the grid, connecting all nodes of the grid.  The number of grid lines can be reduced, based on an X and Y modulus.</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Profile Color Fill</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots color filled contours of the nodes of an extended profile within specified  data value limits.<BR>
+<B>Input:</B> extended profile and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Profile Contour</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots single line contours of the nodes of an extended profile at specified data values. <BR>
+<B>Input:</B> extended profile</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Multiple Table Series</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots one X and one Y column from multiple selected tables using symbols and/or lines.<BR>
+<B>Input:</B> table data</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Single Table Series</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots selected columns from single table using symbols and/or lines.  Only one column is selected as the X data column.  Multiple columns can be selected for the Y data.<BR>
+<B>Input:</B> table data</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Table Color Series</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots selected columns from single table using colored symbols and/or lines.  Only one X, Y and Z data column is selected, and one column is selected as the Color Data Column.  The color of the line varies according to the value in the Color Data column.<BR>
+<B>Input:</B> table data and color map</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Table Histogram</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots two columns of table data as bars in a standard histogram format.<BR>
+<B>Input:</B> table data</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Table Horsetail</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots all table columns within a table, using one of the columns as the X value. Within the <B><FONT COLOR="#000080">Horsetail Color</B></FONT> frame, selection of <B><FONT COLOR="#800050">Pen</B></FONT> will draw all data set lines in the same color, whereas selection of <B><FONT COLOR="#800050">Color Map</B></FONT> will draw each data set line in a different color.<BR>
+<B>Input:</B> table data</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+Table Series</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots selected columns from single table using symbols and/or lines in a 3D plot.  Only one column is selected for each the X, Y and Z data columns.<BR>
+<B>Input:</B> table data</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+XY Array Horsetail </FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots all XY data sets contained within an XY array.  Within the <B><FONT COLOR="#000080">Horsetail Color</B></FONT> frame, selection of <B><FONT COLOR="#800050">Pen</B></FONT> will draw all data set lines in the same color, whereas selection of <B><FONT COLOR="#800050">Color Map</B></FONT> will draw each data set line in a different color.<BR>
+<B>Input:</B> XY array</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+XY Data Array Series</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots selected XY data series within an XY data array using symbols and/or lines.<BR>
+<B>Input:</B> XY array</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+XY Histogram</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots XY data as bars in a standard histogram format.<BR>
+<B>Input: </B>XY data</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+XY Series</FONT></TD>
+<TD WIDTH="75%" VALIGN="TOP">
+Plots multiple XY data sets using symbols and/or lines.<BR>
+<B>Input: </B>XY data</FONT></TD>
+</TR>
+</TABLE>
+
+
+&nbsp;<BR></FONT></BODY>
+</HTML>

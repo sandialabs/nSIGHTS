@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Exposed Reals</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Exposed Reals</B></FONT></P>
+
+<P>An example of an exposed real value control shown below.  </P>
+<P></P>
+<P><IMG SRC="ExposedRealControl.jpg" ALIGN=LEFT HSPACE=20></P>
+<P></P>
+<P>This control example exposes the value of the <B><FONT COLOR="#000080">Extraction Constant Value Source</B></FONT> of an <B><FONT FACE="Technical" COLOR="#008000">Extract XY from Grid</B></FONT> object (for extracting a slice from a grid).  The exposed value is entered in the top field of the control.  Typing in a new value and pressing the Enter key has the same effect as making the change on the unexposed control on the property page and pressing the <B><FONT COLOR="#000080">Apply</B></FONT> button.  </P>
+<P></P>
+<P>The additional controls are designed to support animation (see <A HREF="Plot Animations.htm">Plot Animations</A>) by smoothly varying the exposed value for a specified number of steps or frames.  If the <B><FONT COLOR="#000080">Step Options </B></FONT>is set to <B><FONT COLOR="#800050">Range</B></FONT> the increment is calculated based on the <B><FONT COLOR="#800050">Start</B></FONT> and <B><FONT COLOR="#800050">End</B></FONT> value and the <B><FONT COLOR="#000080"># of steps</B></FONT>.  If it is set to <B><FONT COLOR="#800050">Incr.</B></FONT> the increment is entered directly. </P>
+<P></P>
+<B><FONT COLOR="#000080"><P>Step Type</B></FONT> controls the type of increment.  If set to <B><FONT COLOR="#800050">Lin</B></FONT>, range increments are calculated as: increment = (end - start) / steps, and successive values calculated as: next = current + increment.  <B><FONT COLOR="#800050">Log</B></FONT> range increments are calculated as: increment = (log10(end) - log10(start)) / steps, and successive values are calculated as next = 10**(log10(current) + increment).</P>
+<P></P>
+<P>The control buttons perform the following actions:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Step</B></FONT></TD>
+<TD CLASS=desc>Increment the current value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Animate</B></FONT></TD>
+<TD CLASS=desc>Set the current value to the start value, then increment the current value <B><FONT COLOR="#000080"># of steps</B></FONT> times.  While animating, the button text changes to <B><FONT COLOR="#000080">Stop</B></FONT>.  Pressing the button will stop the current animation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"><P>ResetSt</B></FONT></TD>
+<TD CLASS=desc>Set the current value to the start value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"><P>End2St</B></FONT></TD>
+<TD CLASS=desc>Set the start value to the current end value.</TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

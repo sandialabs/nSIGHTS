@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>L-M Tab</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>L-M Tab</B></FONT></P>
+
+<P>This tab provides options for both of the Levenberg-Marquardt algorithms.  The two implementations will be referred to as the basic and MINPACK algorithms.  </P>
+
+<P>For both algorithms, </FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">Lambda</B></I></FONT> is a parameter in the step calculation, which in turn  determines the new estimates of parameters.  The smaller the value of lambda, the greater the step change in parameter values.  During optimization, the step is increased if the new parameter estimates did not improve the fit, and decreased if the new parameter estimates improve the fit.  The basic algorithm modifies lambda to calculate the new step, whereas MINPACK only uses lambda to calculate the initial step. </P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Lambda factor multiplier</B></FONT></TD>
+<TD CLASS=desc>A multiplier factor to lambda, for decreases in lambda on successful steps and increases in lambda on unsuccessful steps.  For the basic algorithm only. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Initial lambda factor</B></FONT></TD>
+<TD CLASS=desc>The initial value of lambda, for the basic algorithm only. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Minimum lambda factor</B></FONT></TD>
+<TD CLASS=desc>As lambda changes over the optimization, lambda will  never decrease below this value.  For the basic algorithm only.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Relative change tolerance</B></FONT></TD>
+<TD CLASS=desc>A convergence tolerance that examines the difference in fit between 5 steps of the optimization.  For the basic algorithm only. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">MINPACK Lambda (factor)</B></FONT></TD>
+<TD CLASS=desc>The value of lambda for the MINPACK algorithm only.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Maximum derivative span</B></FONT></TD>
+<TD CLASS=desc>Limits the span of the derivative, as large spans increase the difficulty in converging towards a solution.  Small spans may also result in unnecessarily long optimization times.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Calculate derivative span?</B></FONT></TD>
+<TD CLASS=desc>For the MINPACK algorithm, modifies the derivative span during the optimization, according to the step size.  Otherwise, the derivative span remains constant at the value specified as the <B><FONT COLOR="#800050">Maximum derivative span</B></FONT>.  The basic algorithm always calculates the derivative span.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Use final LM deriv span in covar estimates </B></FONT></TD>
+<TD CLASS=desc>If covariance estimates are being calculated, uses the final derivate span calculated by the optimization algorithm in the calculation of covariance estimates. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Normalize MINPACK input parameters</B></FONT></TD>
+<TD CLASS=desc>The original MINPACK algorithm uses non-normalized parameters.  However, given the very large range of parameter values (e.g. log values versus linear values), normalizing the parameters may improve performance.</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

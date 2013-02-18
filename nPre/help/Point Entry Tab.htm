@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Point Entry Tab</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Point Entry Tab</B></FONT></A>
+
+<P>The X and Y parameters are entered into a table that varies depending on whether the simulation mode is forward or optimization. In either simulation mode, X data will be pressure, radius or time, depending on the parameter definition, and Y data will be the dependent variable values.</P>
+
+<P>In the following example of the <B><FONT COLOR="#000080">Point Entry</B></FONT> tab, formation conductivity was set as a function of radius (forward mode):</P>
+
+<P><IMG SRC="f(r)PointEntryTab.jpg"></P>
+
+<P>In optimization mode, there are two additional columns in the </FONT><B><FONT COLOR="#000080">Point Entry</B></FONT> tab,  </FONT><B><FONT COLOR="#800050">OptMin</B></FONT> and </FONT><B><FONT COLOR="#800050">OptMax</B></FONT>, as shown in the following example:</P>
+
+<P><IMG SRC="f(r)PointEntryTabOpt.jpg"></P>
+
+<P>There are three types of X and Y data, </FONT><I><FONT COLOR="#800050">Fixed</I></FONT>, </FONT><I><FONT COLOR="#800050">Suite</I></FONT>, or </FONT><I><FONT COLOR="#800050">Optimize</I></FONT>, specified by drop-down lists in the </FONT><B><FONT COLOR="#800050">XType</B></FONT> and </FONT><B><FONT COLOR="#800050">YType</B></FONT> columns. </FONT><I><FONT COLOR="#800050">Optimize</I></FONT> type is only available in optimization mode.  For </FONT><I><FONT COLOR="#800050">Fixed</I></FONT> type data, data are simply entered one value per line in the data columns.  For </FONT><I><FONT COLOR="#800050">Suite</I></FONT> type data, the model run will conduct a separate simulation for each suite value entered in the </FONT><B><FONT COLOR="#000080">Suite Value</B></FONT> dialog, which appears upon double clicking the corresponding cell in the data column:</P>
+
+<P><IMG SRC="SuiteTableDialog.jpg">&nbsp; </P>
+
+<P>A maximum of three parameters, including those defined in the </FONT><B><FONT COLOR="#000080">Parameter</B></FONT> input window, can be of type </FONT><I><FONT COLOR="#800050">Suite</I></FONT>.  </P>
+
+<P>In optimization mode, the </FONT><B><FONT COLOR="#800050">OptMin</B></FONT> and </FONT><B><FONT COLOR="#800050">OptMax</B></FONT> columns provide the minimum and maximum optimization values for each defined point in the X(p), X(r) or X(t) function.  They are specified here to ensure that the minimum values of one defined point in the X(x) function does not overlap the maximum value of the preceding defined point in the X(x) function.    </P>
+
+<P>Either or both the X and the Y data can be transformed by log 10.  If data are transformed by log 10, it should be specified in the </FONT><B><FONT COLOR="#000080">Units/Transform</B></FONT> tab.</P>
+
+<P>The units for the X and Y data are also specified in the </FONT><B><FONT COLOR="#000080">Units/Transform</B></FONT> tab.</P>
+
+<P>Table rows are inserted or deleted using the right click pop-up menu.</P>
+</FONT></BODY>
+</HTML>

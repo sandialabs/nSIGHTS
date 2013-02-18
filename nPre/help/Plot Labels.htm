@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Plot Labels</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Plot Labels</P></B></FONT>
+
+<P>Plot labels are generally created using annotation plot objects, although certain default and data display objects contain plot label options.  Within these plot object property windows, text boxes are available for the user to type specific labels (e.g. a legend title).</P>
+
+<P>nSIGHTS supports special formatting of labels by embedding non-printing codes in the text used to create the labels.  This allows for subscripts, superscripts, and special characters and formatting control.  The codes are outlined in the following table.</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD VALIGN="TOP" COLSPAN=3>
+<B>Special Formatting Codes</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="17%" VALIGN="MIDDLE">
+<B><P>Special Formatting</B></FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<B><P>Code</B></FONT></TD>
+<TD WIDTH="68%" VALIGN="MIDDLE">
+<B><P>Description</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="17%" VALIGN="TOP">
+<P>Superscripts</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P>&lt;^text^&gt;</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>Text will appear as superscript.  Superscripts cannot be nested.</FONT></TD>
+</TR>
+<TR><TD WIDTH="17%" VALIGN="TOP">
+<P>Subscripts</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P>&lt;_text_&gt;</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>Text will appear as subscript.  Subscripts cannot be nested.</FONT></TD>
+</TR>
+<TR><TD WIDTH="17%" VALIGN="TOP" ROWSPAN=3>
+<P>Superscript and Subscript Control</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P>\SSSNNN</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>Subscript/superscript size ratio where NNN is ratio to base font size (100 = 1.00). NNN must be between 030 and 100.  Default is 060.</FONT></TD>
+</TR>
+<TR><TD WIDTH="15%" VALIGN="TOP">
+<P>\SPONNN</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>Superscript offset.  Position above baseline that superscript starts where NNN is ratio to base font size (100 = 1.00). NNN must be between 050 and 100. Default is 060.</FONT></TD>
+</TR>
+<TR><TD WIDTH="15%" VALIGN="TOP">
+<P>\SBONNN</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>Subscript offset.  Position below baseline that subscript starts where NNN is ratio to base font size (100 = 1.00). NNN must be between 010 and 050. Default is 030.</FONT></TD>
+</TR>
+<TR><TD WIDTH="17%" VALIGN="TOP">
+<P>Line Spacing Control for multi-line labels</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P>\LSNNN</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>Position between baselines of adjacent lines where NNN is ratio to base font size (100 = 1.00).  NNN must be between 020 and 900. Default is 130. This control remains in effect until another LS control is encountered.</FONT></TD>
+</TR>
+<TR><TD WIDTH="17%" VALIGN="TOP">
+<P>Special Characters</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P>\C=NNN</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>NNN is character code between 000 and 255.</FONT></TD>
+</TR>
+<TR><TD WIDTH="17%" VALIGN="TOP">
+<P>New Lines</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P>\n</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<P>Single line text fields can produce multiple line labels by embedding new-line codes.  This is useful for axes labels.</FONT></TD>
+</TR>
+</TABLE>
+
+<P>For example, the following shows the text entered in a <B><FONT FACE="Technical" SIZE=2 COLOR="#008000">User Label</B></FONT> object, and the resulting display on the plot:</P>
+
+<FONT FACE="Courier"><B><P>\LS200Analysis Results:\nK=6.1 x 10&lt;^-12^&gt; m/s</P></FONT></B>
+
+<P><IMG SRC="PlotLabelSpecFormat.jpg"></P>
+
+</FONT></BODY>
+</HTML>

@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Uncertainty Distributions for Non-fitting Parameters</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Uncertainty Distributions for Non-fitting Parameters
+</B></FONT></P>
+
+<P>As with perturbation analysis, examining the uncertainty in fitting parameter uncertainty due to non-fitting parameter estimates requires running many simulations in nPre.  For each simulation, a set of non-fitting parameters are determined randomly from an uncertainty distribution (i.e. optimization-sampling mode) and the model re-optimizes the fitting parameters.  Correlations between non-fitting and fitting parameters can be observed from the results.</P>
+
+<P>In this tutorial, it will be demonstrated how to conduct an optimization-sampling model run.  As with perturbation analysis, a useful plot is the XY or XYZ scatter plot.  Variables in an XY or XYZ scatter plot may be optimized parameters or sampled parameters.  Extraction of results and creation of XY scatter plots is described in <A HREF="Perturbation Analysis.htm">Perturbation Analysis</A>.  During extraction of the optimization results table (<B><FONT FACE="Technical" COLOR="#008000">Extract Optimizer Results Table</B></FONT> object), the <B><FONT COLOR="#800050">Case Parameters</B></FONT> checkbox should be selected in order to include sampled parameters in the resulting table data.</P>
+
+<P>It should be noted that the execution of the model for this example will take considerably more time than the simple optimization run (e.g. approximately 10 minutes on a 1GHz dual-processor Pentium III equipped with 2GB of RAM).  </P>
+
+<B><P>To conduct an optimization-sampling model run:</P>
+</B>
+
+<STYLE>
+ul{list-style-type: square}
+</STYLE>
+
+<OL>
+
+<LI>Open nPre.</LI>
+<P></P>
+
+<LI>Open the configuration file Tutorial.nPre (<B><FONT COLOR="#000080">File<FONT FACE="Wingdings">&#224;</FONT>
+Open</B></FONT> or the standard Windows open file button).</LI>
+<P></P>
+
+<LI>Select the <B><FONT COLOR="#000080">Optimization</B></FONT> input window.  Select the <B><FONT COLOR="#000080">Perturbation</B></FONT> tab.</LI>
+
+<UL>
+<LI>Uncheck the <B><FONT COLOR="#800050">Do optimization perturbation</B></FONT> box.</LI></UL>
+<P></P>
+
+<LI>Select the <B><FONT COLOR="#000080">Configuration</B></FONT> input window.  In the <B><FONT COLOR="#000080">Main</B></FONT> tab, select <I><FONT COLOR="#800050">Sampling</I></FONT> as the <B><FONT COLOR="#800050">Simulation sub-type</B></FONT>.</LI>
+<P></P>
+
+<LI>In the <B><FONT COLOR="#000080">Parameter</B></FONT> input window, select non-fitting parameters to be sampled.  For the parameters outlined in the following table, select <I><FONT COLOR="#800050">Sample</I></FONT> in the <B><FONT COLOR="#800050">Type</B></FONT> cell, and double click on the <B><FONT COLOR="#800050">Value</B></FONT> cell to bring up the <B><FONT COLOR="#000080">Sample Value Dialog</B></FONT>. Enter the parameters provided in the table below.</LI>
+<P></P>
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<B><P>Parameter</B></FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<B><P>Distribution</B></FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP" COLSPAN=2>
+<B><P>Distribution Definition</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>Formation thickness</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Uniform</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Low limit 8 m</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Upper limit 15 m</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>External boundary radius</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Normal</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Mean 1E5 m</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>St.dev. 100m</FONT></TD>
+</TR>
+<TR><TD WIDTH="25%" VALIGN="TOP">
+<P>Well radius</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Normal</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>Mean 4 in</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P>St.dev. 0.5 in</FONT></TD>
+</TR>
+</TABLE>
+<P></P>
+
+<LI>In the <B><FONT COLOR="#000080">Sampling</B></FONT> input window, select <I><FONT COLOR="#800050">no</I></FONT> for <B><FONT COLOR="#800050">User specified variable correlations</B></FONT>.</LI>
+<P></P>
+
+<LI>In the <B><FONT COLOR="#000080">Output Files</B></FONT> input window, <B><FONT COLOR="#000080">Optimization</B></FONT> tab, change the file name to </FONT><FONT FACE="Courier"><B>TutorialSampling.nOpt</FONT></B>.</LI>
+<P></P>
+
+<LI>Select the <B><FONT COLOR="#000080">Verbose</B></FONT> command from the <B><FONT COLOR="#000080">Run</B></FONT> menu.  As the model executes, a window will track the progress of the model.  Note that the estimated time remaining will fluctuate considerably until several perturbation simulations have been conducted.</LI>
+
+<P><IMG SRC="TutRunVerboseSample.jpg"></P>
+
+<LI>Exit nPre.</LI>
+
+</OL>
+
+
+<P>To create XY and XYZ scatter plots in nPost, refer to <A HREF="To create an XY scatter plot.htm">To create an XY scatter plot</A> and <A HREF="To create an XYZ scatter plot.htm">To create an XYZ scatter plot</A>.  The following is an example of an XYZ plot based on the optimization-sampling run:</P>
+
+<P><IMG SRC="TutKnbXYZScatter.jpg"></P>
+
+<HR></HR>
+
+<P>End of Tutorial</P>
+
+</FONT></BODY>
+</HTML>

@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>XY Histogram </TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>XY Histogram </FONT>
+
+<P>What:   </B>Plots XY data as bars in a standard histogram format.</P>
+<B><P>Why:   </B>Standard histogram data display.</P>
+<B><P>Used By:  <FONT FACE="Technical" COLOR="#008000">Series Legend</FONT></P>
+<P>Appearance: </P></B>
+<P><IMG SRC="App2XYHistogram.jpg"></P>
+<B><P>Input Data:  </B>XY data</P>
+<B><P>Output Data: </B>series legend specifications</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>XY Data To Plot</B></FONT></TD>
+<TD CLASS=desc>The XY data set to be plotted is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Histogram Pen</B></FONT></TD>
+<TD CLASS=desc>All histogram bars are plotted in the specified color.</TD>
+</TR>
+</TABLE>
+
+
+<B><FONT COLOR="#000080">X Position</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Index</B></FONT></TD>
+<TD CLASS=desc>The X value of histogram bars is based on the index value (e.g. the first Y value is plotted at an index of 1, the second at an index of 2, etc.).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Value</B></FONT></TD>
+<TD CLASS=desc>The X value of histogram bars is based on the X value in the data set.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Index Offset</B></FONT></TD>
+<TD CLASS=desc>If an <B><FONT COLOR="#800050">Index </FONT><FONT COLOR="#000080">X position</B></FONT> is used, an offset can be applied to the X data indexes.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Bseline</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Axis</B></FONT></TD>
+<TD CLASS=desc>Histogram bars will extend down to the X axis, regardless of the Y value at the X axis.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Value</B></FONT></TD>
+<TD CLASS=desc>Histogram bars will extend down (or up) to the Y value specified in the <B><FONT COLOR="#000080">Baseline Value</B></FONT> box.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Baseline Value</B></FONT></TD>
+<TD CLASS=desc>If <B><FONT COLOR="#800050">Value</B></FONT> is specified as the <B><FONT COLOR="#000080">Baseline</B></FONT>, the minimum Y value of the histogram bars is specified.</TD>
+</TR>
+</TABLE>
+
+
+<B><FONT COLOR="#000080">Histogram Width</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Line</B></FONT></TD>
+<TD CLASS=desc>Histogram bars are plotted as lines.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">X Value</B></FONT></TD>
+<TD CLASS=desc>Histogram bars are plotted as bars, with a thickness specified as an X increment.	</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Pixels</B></FONT></TD>
+<TD CLASS=desc>Histogram bars are plotted as bars, with a thickness specified as a pixel width.  Similar to lines, however a rectangle is created which can be surrounded by an edge.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">% Avail</B></FONT></TD>
+<TD CLASS=desc>Histogram bars are plotted as bars, with a thickness specified as percentage of the minimum distance between bars.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Line Thk</B></FONT></TD>
+<TD CLASS=desc>For histogram bars plotted as lines, the line thickness is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">X Thick</B></FONT></TD>
+<TD CLASS=desc>For histogram bar thickness specified as an X value, the thickness as an X increment is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Pixels</B></FONT></TD>
+<TD CLASS=desc>For histogram bar thickness specified as a pixel width, the thickness in pixels is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">% Available</B></FONT></TD>
+<TD CLASS=desc>For histogram bar thickness specified as the percentage of space between X values, the thickness as a percentage is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Edges</B></FONT></TD>
+<TD CLASS=desc>For all histogram width types except line.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Plot</B></FONT></TD>
+<TD CLASS=desc>If toggled, edges of the bars will be plotted using the pen color and pixel thickness specified within this dialog frame.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Legend</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">New Label</B></FONT></TD>
+<TD CLASS=desc>When toggled on, the label output is entered by the user in the adjacent text box. When toggled off, the label output is the object ID of the input object.</TD>
+</TR>
+</TABLE>
+
+</P>
+
+</FONT></BODY>
+</HTML>

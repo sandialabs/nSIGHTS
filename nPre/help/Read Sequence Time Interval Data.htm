@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Read Sequence Time Interval Data</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Read Sequence Time Interval Data </P></FONT>
+
+<P>What:   </B>Reads a sequence time data file (default file extension:  *.seqt).</P>
+<B><P>Why:   </B>Contains time information for sequences defined in nPre, which are required for nPost objects. </P>
+<B><P>Used By:  <FONT FACE="Technical" COLOR="#008000">Extract Sequence(s) </B></FONT> and <B><FONT FACE="Technical" COLOR="#008000">Time Limits Extraction/Interpolation</P></FONT>
+<P>Appearance: </P></B>
+<P><IMG SRC="AppReadSeqTimeInterv.jpg"></P>
+<B><P>Application:  </B>nPost</P>
+<B><P>Input Data:  </B>external file containing sequence time data</P>
+<B><P>Output Data: </B>sequence time data </P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Sequence Time Data File</B></FONT></TD>
+<TD CLASS=desc>The name of the file (including the file path) containing the sequence time data is entered in the text box or the <B><FONT COLOR="#000080">Browse</B></FONT> button is used to find the file using the standard Windows open file dialog.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Status</B></FONT></TD>
+<TD CLASS=desc>Once the sequence time file is loaded, the number of sequences in the file is displayed.</TD>
+</TR>
+</TABLE>
+</P>
+
+<B><P>File Format:</P></B>
+<P>The sequence time data file format is as follows:</P>
+<TABLE>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 1: </TD>
+<TD>SeqID StartingTime   </TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 2:  </TD>
+<TD>SeqID StartingTime</TD>
+</TR>
+<TR>
+<TD></TD>
+<TD><B>.</B></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD><B>.</B></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD><B>.</B></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%> Line n:  </TD>
+<TD  VALIGN=TOP WIDTH=50%>SeqID StartingTime EndTime </TD>
+<TD>n=number of sequences </TD>
+</TR>
+</TABLE>
+<P>Note:  The sequence ID cannot contain embedded spaces.</P>
+
+</FONT></BODY>
+</HTML>

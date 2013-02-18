@@ -1,0 +1,179 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Read Grid Data</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Read Grid Data </P></FONT>
+
+<P>What:   </B>Reads grid data from an input file (default file extension:  *.grd).</P>
+<B><P>Why:   </B>Allows use of grid data created or manipulated outside the current nSIGHTS application (for example, in another nSIGHTS application).</P>
+<B><P>Used By:  </B>Any object using grid data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppReadGridFile.jpg"></P>
+<B><P>Application:  </B>nPost</P>
+<B><P>Input Data:  </B>external file containing grid data</P>
+<B><P>Output Data: </B>grid data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Grid Data File</B></FONT></TD>
+<TD CLASS=desc>The name of the file (including the file path) containing the grid data is entered in the text box or the </FONT><B><FONT COLOR="#000080">Browse</B></FONT> button is used to find the file using the standard Windows open file dialog.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">File Format</B></FONT></TD>
+<TD CLASS=desc>One of four file formats can be selected.  See the <B>File Formats</B> section below for standard and XYZ list file formats.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Std</B></FONT></TD>
+<TD CLASS=desc>The standard format produced by the object <B><FONT FACE="Technical" COLOR="#008000">Write Grid File</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Surfer</B></FONT></TD>
+<TD CLASS=desc>The grid format produced by Surfer Version 7 software.  Select <I>GS ASCII (*.grd)</I> as the file format.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">XYZ List</B></FONT></TD>
+<TD CLASS=desc>List of XYZ points.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Read Grid</B></FONT></TD>
+<TD CLASS=desc>Format specific to the OPG project.</TD>
+</TR>
+
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Other</B></FONT></TD>
+<TD CLASS=desc>For future use, not currently supported.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Decimation  </B></FONT></TD>
+<TD CLASS=desc>The grid file is reduced based on the decimation factor entered in the text box: every n grid points in both X and Y are kept, where n is the decimation factor.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Options</B></FONT></TD>
+<TD CLASS=desc>If X or Y is a log value in the grid data file, it should be specified in the appropriate checkbox.  X ID and Y ID are used as the respective object types in drop-down lists, and labels in a <B><FONT FACE="Technical" COLOR="#008000">Series Legend</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Status</B></FONT></TD>
+<TD CLASS=desc>Once the grid data file is loaded, the number of X and Y points in the grid are displayed.  </TD
+</TR>
+</TABLE>
+
+<B><P>File Formats:</P></B>
+
+<P>For all grids, X1 and Y1 is at the bottom left hand corner (e.g. X1=0,Y1=0).</P>
+<B><P>Standard</P></B>
+<P>The format produced by the object <B><FONT FACE="Technical" COLOR="#008000">Write Grid File</B></FONT>. The standard grid file format is as follows:</P>
+<TABLE>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 1:  </TD>
+<TD VALIGN=TOP WIDTH=50%>file heading   </TD>
+<TD VALIGN=TOP WIDTH=30%></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 2: </TD>
+<TD VALIGN=TOP WIDTH=50%>nX nY </TD>
+<TD VALIGN=TOP WIDTH=30%>nX=number of X points, nY=number of Y points</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 3: </TD>
+<TD VALIGN=TOP WIDTH=50%>Grid Value at X1,Y1 … Grid Value at X1,Y20 </TD>
+<TD VALIGN=TOP WIDTH=30%></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line a:  </TD>
+<TD VALIGN=TOP WIDTH=50%>Grid Value at X1,(nY-19) … Grid Value at X1,nY</TD>
+<TD VALIGN=TOP WIDTH=30%></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line a+1:  </TD>
+<TD VALIGN=TOP WIDTH=50%>Grid Value at X2,Y1 … Grid Value at X2,Y20</TD>
+<TD VALIGN=TOP WIDTH=30%></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Last Line: </TD>
+<TD VALIGN=TOP WIDTH=50%>Grid Value at nX,(nY-19) … Grid Value at nX,nY  </TD>
+<TD VALIGN=TOP WIDTH=30%></TD>
+</TR>
+</TABLE>
+
+<B><P>XYZ list</P></B>
+<P>The XYZ list grid file format is as follows:</P>
+<TABLE>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 1: </TD>
+<TD VALIGN=TOP WIDTH=50%>X1, Y1, Grid Value at X1,Y1 </TD>
+<TD VALIGN=TOP WIDTH=30%></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 2:  </TD>
+<TD VALIGN=TOP WIDTH=50%>X1, Y2, Grid Value at X1,Y2</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line nY:  </TD>
+<TD VALIGN=TOP WIDTH=50%>X1, nY, Grid Value at X1,nY</TD>
+<TD VALIGN=TOP>nY= number of Y points</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line nY+1: </TD>
+<TD VALIGN=TOP WIDTH=50%>X2, Y1, Grid Value at X2,Y1 </TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=50%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line nX*nY: </TD>
+<TD VALIGN=TOP WIDTH=50%>nX, nY, Grid Value at nX,nY</TD>
+<TD VALIGN=TOP>nX=number of X points</TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

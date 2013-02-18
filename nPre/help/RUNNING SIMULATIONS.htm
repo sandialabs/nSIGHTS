@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>RUNNING SIMULATIONS</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4>Running Simulations</B></FONT></P>
+
+<P>Once all required input has been entered, a model run can be executed by selecting one of the following commands from the <B><FONT COLOR="#000080">Run</B></FONT> menu:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><A HREF="#Minimal"><B><FONT COLOR="#000080">Minimal </B></FONT></A></TD>
+<TD CLASS=desc>Conducts a full model run, with a small window providing minimal information.   </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><A HREF="#Verbose"><B><FONT COLOR="#000080">Verbose</B></FONT></A></TD>
+<TD CLASS=desc>Conducts a full model run, with a small window providing detailed information.  The information provided is dependent on the simulation mode.  For example, in optimization mode, the best fit value and the current fit value are shown for each parameter to be optimized.  Due to the detailed information, a verbose model run will have a slightly increased execution time compared to a minimal model run.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">No Threads</B></FONT></TD>
+<TD CLASS=desc>Conducts a full model run, with messages appearing at the bottom of the main window instead of in a dialog.  The user is unable to cancel the model run, however avoids problems if there are multiple simulations being executed on multiple instances of the nPre program.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><A HREF="#Covariance"><B><FONT COLOR="#000080">Covariance Only</B></FONT></A></TD>
+<TD CLASS=desc>Calculates the covariance matrix using the current set of defined parameters, without conducting any simulations.  Only available for simulation modes that calculate the covariance matrix. </TD>
+</TR>
+</TABLE>
+
+<P>The following three figures are examples of the run window for an optimization model run with multiple fits.  The title of the run window indicates the current case and/or fit of the simulation.</P>
+
+<P><A NAME="Minimal"><B><FONT COLOR="#000080">Run<FONT FACE="Wingdings">&#224;</FONT>Minimal</B></FONT></A></P>
+<P><IMG SRC="RunMinimalEx.jpg"></P>
+
+<P><A NAME="Verbose"><B><FONT COLOR="#000080">Run<FONT FACE="Wingdings">&#224;</FONT>Verbose</B></FONT></A></P>
+<P><IMG SRC="RunVerboseEx.jpg"></P>
+
+<P><A NAME="Covariance"><B><FONT COLOR="#000080">Run<FONT FACE="Wingdings">&#224;</FONT>Covariance Only</B></FONT></A></P>
+<P><IMG SRC="RunCovOnlyEx.jpg"></P>
+
+<P>Dialog buttons and information displayed on all the run windows include:</P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Cancel</B></FONT></TD>
+<TD CLASS=desc>Cancels the run.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Minimize</B></FONT></TD>
+<TD CLASS=desc>Minimizes the main menu, as well as the run window.  Plot windows remain visible, in order to observe changes in the plots during the run.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Time elapsed</B></FONT></TD>
+<TD CLASS=desc>Time elapsed since beginning of the run.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Est. time remaining</B></FONT></TD>
+<TD CLASS=desc>Estimation of the time remaining for the run is only displayed once the first case is complete.  For runs with single cases, it will not be displayed.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Progress Bar</FONT></B></TD>
+<TD CLASS=desc>For runs with multiple cases (e.g. multiple fit optimizations, perturbations, etc.), a progress bar is provided that indicates the number of cases completed.</TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

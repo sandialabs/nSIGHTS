@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Table Row Index Logic</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Table Row Index Logic </P></FONT>
+
+<P>What:   </B>Conducts Boolean Logic (AND, OR, XOR) between two sets of table rows.</P>
+<B><P>Why:   </B>Used to select specified rows from a table. For example, table rows can be  can be limited to rows with a hydraulic conductivity and a flow dimension greater than specified values.   An application of this object would be a to limit the selection of simulations according to several parameter values, using the Master/Slave facility (the object’s <B><FONT COLOR="#000080">Index Selection Value Source</B></FONT> will be a slave to this <B><FONT FACE="Technical" COLOR="#008000">Table Row Index Logic</B></FONT> object).  </P>
+<B><P>Used By:  </B>Any object using table data.<B> </P>
+<P>Appearance: </P></B>
+<P><IMG SRC="AppTableRowIndexLogic.jpg"></P>
+<B><P>Application:  </B>nPost</P>
+<B><P>Input Data:  </B>output from <B><FONT FACE="Technical" COLOR="#008000">Extract Table Rows</B></FONT></P>
+<B><P>Output Data: </B>table data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Row Index Source A</B></FONT></TD>
+<TD CLASS=desc>Select table rows, extracted from an <B><FONT FACE="Technical" COLOR="#008000">Extract Table Rows</B></FONT> object, to be compared with the table rows specified as Source B.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Row Index Source B</B></FONT></TD>
+<TD CLASS=desc>Select table rows, extracted from an <B><FONT FACE="Technical" COLOR="#008000">Extract Table Rows</B></FONT> object, to be compared with the table rows specified as Source A.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Operation</B></FONT></TD>
+<TD CLASS=desc>One of three Boolean logic operators may be selected:</TD
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">A AND B</B></FONT></TD>
+<TD CLASS=desc>Row Indexes that occur in both A and B are output (i.e. only indexes common to A and B).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">A OR B</B></FONT></TD>
+<TD CLASS=desc>Row Indexes that occur in either A or B are output (i.e. all A indexes and all B indexes).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">A XOR B</B></FONT></TD>
+<TD CLASS=desc>Row Indexes that occur in either A or B, but not both, are output (i.e. all indexes in A and B except those indexes common to A and B).</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

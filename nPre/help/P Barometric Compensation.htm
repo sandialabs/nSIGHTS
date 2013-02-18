@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> P(t) Barometric Compensation</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>P(t) Barometric Compensation</P></FONT>
+
+<P>What:   </B> Subtracts barometric fluctuations from well pressures.  An efficiency or Rasmussen Deconvolution method may be used.</P>
+<B><P>Why:   </B> To remove the influence of barometric fluctuations on field data.</P>
+<P><B>Used By:  </B>Any object using XY data.</P>
+<B><P>Appearance: </B></P>
+<P><IMG SRC="AppPtBarComp.jpg"></P>
+<B><P>Input Data:  </B>XY data</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>P(t) Data to Compensate</B></FONT></TD>
+<TD CLASS=desc>Barometric fluctuations are removed from the selected input pressure time series data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Barometric P(t) Data</B></FONT></TD>
+<TD CLASS=desc>XY time series containing barometric pressures.</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR="#000080"><B>Correction Method</B></FONT>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>Efficiency</B></FONT></TD>
+<TD CLASS=desc>The barometric pressure change (from the initial barometric pressure) at each time in the pressure input series is calculated, and multiplied by an efficiency factor before it is subtracted from the input pressure. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>Rasmussen Deconvolution</B></FONT></TD>
+<TD CLASS=desc>A multiple-regression deconvolution formula designed to remove barometric pressures from water level data.</TD>
+</TR>
+</TABLE>
+
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Barometric Efficiency Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave controls for the <FONT COLOR="#000080"><B>Barometric Efficiency Value</B></FONT>. For more information, refer to <A HREF="Masters and Slaves.htm">Masters and Slaves</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Barometric Efficiency Value</B></FONT></TD>
+<TD CLASS=desc>Factor applied to the change in barometric pressure.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Spacing</B></FONT></TD>
+<TD CLASS=desc>For the Rasmussen Deconvolution to calculate correctly, the input pressure data points must be evenly spaced.  Note that the barometric pressure data is interpolated to the data point spacing of the input pressure data.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>force even</B></FONT></TD>
+<TD CLASS=desc>The force even toggle will cause input pressure data to be interpolated to an evently spaced set of times. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>even increment</B></FONT></TD>
+<TD CLASS=desc>The evenly spaces set of times the pressure data is interpolated to is calculated by beginning at the start time of the input pressure data, and incrementing by the specified even time increment until the time value is greater than the end time of the input pressure data.  </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Regression Lag</B></FONT></TD>
+<TD CLASS=desc>Number of data points used to lag the input pressure data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Regression Memory</B></FONT></TD>
+<TD CLASS=desc>Number of data points used for system memory.</TD>
+</TR>
+</TABLE>
+</P>
+</FONT></BODY>
+</HTML>

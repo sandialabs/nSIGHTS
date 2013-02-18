@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Read MiniTroll File</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Read Mini-Troll Text File </P></FONT>
+
+<P>What:   </B>Reads a Mini-Troll text file and converts it to a table file.</P>
+<B><P>Why:   </B>Allows use of Mini-Troll data without manipulation.</P>
+<B><P>Used By:  </B>Any object using table data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppReadMiniTroll.jpg"></P>
+<B><P>Input Data:  </B>external file created by Mini-Troll</P>
+<B><P>Output Data: </B>table data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Mini Troll Data File</B></FONT></TD>
+<TD CLASS=desc>The name of the file (including the file path) containing the Mini-Troll data is entered in the text box or the <B><FONT COLOR="#000080">Browse</B></FONT> button is used to find the file using the standard Windows open file dialog.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">File Format</B></FONT></TD>
+<TD CLASS=desc>Text file is in <B><FONT COLOR="#800050">raw</B></FONT> or <B><FONT COLOR="#800050">CVS</B></FONT> (comma separated variable) format.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Column Selection</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Single Col</B></FONT></TD>
+<TD CLASS=desc>Only a single column, specified by <B><FONT COLOR="#000080">Y Data Col</B></FONT>, is processed after the first date/time column. </TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">All Data</B></FONT></TD>
+<TD CLASS=desc>All columns are processed. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Y Data Col</B></FONT></TD>
+<TD CLASS=desc>The single column to be processed, based on Excel column headers for cvs data and column number for raw data.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Elapsed Time Type</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Data Start</B></FONT></TD>
+<TD CLASS=desc>Time starts at zero. </TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Year Start</B></FONT></TD>
+<TD CLASS=desc>Time starts at the day, month and time specified in the Mini Troll text file. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Excel Days</B></FONT></TD>
+<TD CLASS=desc>Time starts at the year, day, month and time specified in the Mini Troll text file, specified with Excel days (where time 1 day is the first of January, 1900).  </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Output Time Units</B></FONT></TD>
+<TD CLASS=desc>Time units for the output table data, if <B><FONT COLOR="#000080">Elapsed Time Type</B></FONT> is <B><FONT COLOR="#800050">Data Start</B></FONT> or <B><FONT COLOR="#800050">Year Start</B></FONT>. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Start Year</B></FONT></TD>
+<TD CLASS=desc>For <B><FONT COLOR="#800050">Year Start</B></FONT> <B><FONT COLOR="#000080">Elapsed Time Type</B></FONT>, specifies the year at time zero.  Allows for files with different time scales to be placed on the same time scale.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Table Status</B></FONT></TD>
+<TD CLASS=desc>Once the Mini-Troll file is processed, the number of columns and rows in the table are displayed.  </TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

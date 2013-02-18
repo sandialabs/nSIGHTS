@@ -1,0 +1,462 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Model Parameter Summary</Title>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<P> Shortcuts to parameter categories in the table: </P>
+<P>
+<A HREF="#Formation">Formation</A> |
+<A HREF="#Fracture">Fracture</A> |
+<A HREF="#Matrix">Matrix</A> |
+<A HREF="#Skin zone">Skin zone</A> |
+<A HREF="#Fluid">Fluid</A> |
+<A HREF="#Gas">Gas</A> |
+<A HREF="#Test-zone">Test-zone</A> |
+<A HREF="#Leaky layer">Leaky layer</A> |
+<A HREF="#Upper leaky layer">Upper leaky layer</A> |
+<A HREF="#Lower leaky layer">Lower leaky layer</A> |
+<A HREF="#Numeric">Numeric</A>
+</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4 >
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B><P>Model Parameter Summary</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<B><P>Parameter</B></FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<B><P>Notes</B></FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Formation"><B>Formation Tab</B></A></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation Thickness/ Saturated Thickness</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required.  For unconfined systems, the parameter is labelled Saturated Thickness.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Flow dimension</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required. Refers to the geometry of the flow system.  For radial systems, the flow dimension value is 2.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Static formation pressure</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required. Units vary depending on </FONT><B><FONT COLOR="#800050">Head Solution</B></FONT> variable (</FONT><B><FONT COLOR="#000080">Configuration<FONT FACE="Wingdings">&#224;</FONT>
+Liquid</B></FONT>): pressure units or length units.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>External boundary radius</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for single porosity systems if hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for single porosity systems if hydraulic conductivity is calculated from permeability.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation spec. storage </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Specific storage. Required for single porosity systems if specific storage is to be specified directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation specific yield </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for unconfined systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation porosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for single porosity systems if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for single porosity systems if specific storage is to be calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation klinkenburg factor</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for gas phase simulations where Klinkenburg effects are considered.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation vertical conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for unconfined systems if anisotropic and hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Formation vertical permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for unconfined systems if anisotropic and hydraulic conductivity is calculated from permeability.</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Fracture"><B>Fracture</B></A> - For dual porosity systems only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fracture conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fracture permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is calculated from permeability.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fracture spec. storage </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Specific storage. Required if specific storage to be specified directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Porosity within fracture</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fracture compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Matrix"><B>Matrix</B></A> - For dual porosity systems only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Matrix volume factor</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for dual porosity systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Geometry factor (Alpha)</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if the geometry factor is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Matrix sphere diameter</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for spherical matrix geometry, if the geometry factor is to be calculated.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Slab matrix block thickness</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for prismatic matrix geometry, if the geometry factor is to be calculated.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Matrix conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Matrix permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is calculated from permeability.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Matrix spec. storage</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Specific storage. Required if specific storage to be specified directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Matrix porosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Matrix compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Skin zone"><B>Skin zone</B></A> - Only if skin zone specified.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Radial thickness of skin</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required if skin zone specified.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Skin zone conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Skin zone permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is calculated from permeability.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Skin zone spec. storage</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Specific storage. Required if specific storage to be specified directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Skin zone porosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Skin zone compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Fluid"><B>Fluid</B></A> - For liquid phase simulations only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fluid compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for liquid phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fluid density</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for liquid phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fluid viscosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for liquid phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Fluid thermal exp. coeff. </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Fluid thermal expansion coefficient. Only used by non-isothermal pulse tests.</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Gas"><B><P>Gas</B></A> - For gas phase simulations only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Atmospheric pressure[abs]</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for gas phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Gas viscosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for gas phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Gas viscosity slope factor</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if viscosity is considered as a simple function of pressure (</FONT><B><FONT COLOR="#000080">Configuration<FONT FACE="Wingdings">&#224;</FONT>
+Gas<FONT FACE="Wingdings">&#224;</FONT>
+</B></FONT><B><FONT COLOR="#800050">Viscosity as f(P)</B></FONT>).</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Molecular weight</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if mass flow is the solution variable (</FONT><B><FONT COLOR="#000080">Configuration<FONT FACE="Wingdings">&#224;</FONT>
+Gas<FONT FACE="Wingdings">&#224;</FONT>
+</B></FONT><B><FONT COLOR="#800050">Gas flow solution variable</B></FONT>).</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP" HEIGHT=4>
+<P>Reference temperature</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP" HEIGHT=4>
+<P>Always required for gas phase simulations.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Test-zone"><B>Test-zone</B></A></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Well radius</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Partial penetration bottom offset</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for 2D radial systems with partial well penetration, with a <I><FONT COLOR="#800050">Middle</I> <B>Penetration type</FONT></B>.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Partial penetration screen length</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for 2D radial systems with partial well penetration.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Test-zone compressibility </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for liquid phase simulations if isolated well-bore storage or if a pulse sequence is defined.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Volume change from normal</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Refers to the volume of equipment in the borehole, i.e. volume of test interval not occupied by fluid.  Required for gas phase simulations, or liquid phase simulations if isolated well-bore storage or if a pulse sequence is defined.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Tubing string radius</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if a slug sequence is defined.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Leaky layer"><B><P>Leaky layer</B></A> - For single leakage systems only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Leaky layer thickness</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for single leakage systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Leaky conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Leaky permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is calculated from permeability. </FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Leaky spec. storage </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Specific storage. Required if specific storage to be specified directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Leaky porosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Leaky compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Upper leaky layer"><B>Upper leaky layer</B></A> - For upper/lower leakage systems only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Upper leaky layer thickness</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for upper/lower leakage systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Upper leaky conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Upper leaky permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is calculated from permeability.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Upper leaky spec. storage </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Specific storage. Required if specific storage to be specified directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Upper leaky porosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Upper leaky compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Lower leaky layer"><B>Lower leaky layer</B></A> - For upper/lower leakage systems only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Lower leaky layer thickness</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required for upper/lower leakage systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Lower leaky conductivity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is to be entered directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Lower leaky permeability</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if hydraulic conductivity is calculated from permeability.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Lower leaky spec. storage </FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Specific storage. Required if specific storage to be specified directly.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Lower leaky porosity</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Lower leaky compressibility</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if specific storage is calculated from porosity and compressibility.</FONT></TD>
+</TR>
+
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<A NAME="Numeric"><B>Numeric Tab</B></A></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P># of radial nodes</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Always required.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P># of vertical well nodes</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for 2D radial systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P># of vertical nodes above well</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for 2D radial systems with partial well penetration, with <I><FONT COLOR="#800050">Middle</I></FONT> or <I><FONT COLOR="#800050">Bottom</I> <B>Penetration type</B></FONT>.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P># of vertical nodes below well</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for 2D radial systems with partial well penetration, with <I><FONT COLOR="#800050">Middle</I></FONT> or <I><FONT COLOR="#800050">Top</I> <B>Penetration type</B></FONT>.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>Pressure solution tolerance</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for non-linear solutions. Non-linear solutions are required for gas flow simulations or if parameters are defined as functions of pressure. </FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P>STP flow solution tolerance</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for non-linear solutions. Non-linear solutions are required for gas flow simulations or if parameters are defined as functions of pressure. </FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P># of matrix nodes</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for dual porosity systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P># of leaky nodes</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required for leakage systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="33%" VALIGN="TOP">
+<P># of skin nodes</FONT></TD>
+<TD WIDTH="67%" VALIGN="TOP">
+<P>Required if skin effects are considered.</FONT></TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

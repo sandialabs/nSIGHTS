@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Sequence Input Window</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Sequence Input Window</B></FONT></P>
+
+<P>Sequences are discrete time intervals that divide a testing period, with one sequence representing a continuous period of consistent well-bore boundary conditions.  A series of sequences allows nPre to consider the cumulative effect of changing well-bore boundary conditions as well as consecutive well tests.  An unlimited number of sequences may be specified.</P>
+
+<P>There are four types of sequences, each representing a different type of well-bore boundary condition:</P>
+
+</FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000"><P>History sequence</B></I></FONT> – Time periods during which borehole pressures or heads are specified as constant or variable in time since the start of the sequence.  History sequences are used to represent:</P>
+<P>1. the time period between drilling and initial shut-in of the test zone</P>
+
+
+<P>2. time periods where external factors, such as changes in packer pressures, affect test-zone pressures</P>
+
+
+<P>3. constant-pressure flow tests</P>
+
+</FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000"><P>Flow sequence</I></FONT> </B>– Time periods during which water is injected or withdrawn from a well.  Flow rates can be constant or variable in time since the start of the sequence.  For highly variable flow rates, curve data for a single flow sequence is used.  For stepped flow rates, multiple flow sequences with constant flow rates are used.  A zero-flow-rate flow sequence is used to represent:</P>
+<OL>
+
+<LI>the recovery period following a pumping test </LI>
+<LI>time periods immediately after test zones are shut in for the first time</LI>
+<LI>pressure recovery under shut-in conditions following constant pressure flow tests (allows test-zone compressibility to be specified as a fitting parameter).</LI></OL>
+
+
+</FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000"><P>Pulse sequence</B></I></FONT> – Time periods during which a test zone is shut in and pressures in the test zone and the surrounding formation are equilibrating. The initial pressure is specified, and isolated zone well-bore storage is assumed.  Pulse sequences are used to represent pressure recovery periods following individual pulse injections or pulse withdrawals.</P>
+
+</FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000"><P>Slug sequence</B></I></FONT> – Time periods during which the injection or withdrawal of a slug of water from an open well causes changes in well (or tubing string) water levels.  The initial pressure is specified, and open hole (open tubing string) well-bore storage is assumed. For liquid simulations only.</P>
+
+<P>For history and flow sequences, well-bore storage may also be incorporated into the boundary conditions. Two types of well-bore storage are available:</P>
+
+<B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000"><P>Open Hole</B></I></FONT> – A tubing string of constant diameter filled with liquid is assumed to be connected to the test-zone.  For liquid phase simulations only.</P>
+
+<B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000"><P>Isolated</B></I></FONT> – The test-zone is filled with a compressible liquid or gas.</P>
+
+<P>Sequences are defined in the following sections:</P>
+<P>
+<A HREF="Time_Base Tab.htm">Time-Base Tab</A> |
+<A HREF="Sequences Tab.htm">Sequences Tab</A> |
+<A HREF="TZ Curves Tab.htm">TZ Curves Tab</A> |
+<A HREF="Dynamic Time Step Tab.htm">Dynamic Time Step Tab</A> |
+<A HREF="Partial Run Tab.htm">Partial Run Tab</A>
+</P>
+</FONT></FONT></BODY>
+</HTML>

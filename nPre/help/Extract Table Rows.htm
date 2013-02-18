@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Extract Table Range</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Extract Table Range </P>
+
+</FONT><P>What:   </B>Extracts a range of rows from a table column based on specified limits.<B>  </P>
+<P>Why:   </B>To examine a subset of the data.</P>
+<B><P>Used By:  </B>Any object using table data.<B> </P>
+<P>Appearance: </P></B>
+<P><IMG SRC="AppExtractTableRows.jpg"></P>
+<B><P>Input Data:  </B>table data</P>
+<B><P>Output Data: </B>table data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Table Data To Use</B></FONT></TD>
+<TD CLASS=desc>Table rows are extracted from the selected table.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Table Column</B></FONT></TD>
+<TD CLASS=desc>Table rows are extracted from the selected table column.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Operation</B></FONT></TD>
+<TD CLASS=desc>The table rows are extracted according to a range of values, specified by two limit variables, A and B. </TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">A and B</B></FONT></TD>
+<TD CLASS=desc>Rows are extracted if the value complies with both A restrictions and B restrictions.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">A or B</B></FONT></TD>
+<TD CLASS=desc>Rows are extracted if the value complies with either A restrictions or B restrictions.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">A only</B></FONT></TD>
+<TD CLASS=desc>Rows are extracted if the value complies with the A restriction.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">A Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave and expose controls for the A value.  See <A HREF="Masters and Slaves.htm">Masters and Slaves</A> and <A HREF="Exposed Controls.htm">Exposed Controls</A> for more information on these controls.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">A Value</B></FONT></TD>
+<TD CLASS=desc>A value for the A variable is entered.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">A Operation</B></FONT> </TD>
+<TD CLASS=desc>Values are limited to values &quot;greater than&quot;, &quot;greater than or equal to&quot;, &quot;less than&quot;, or &quot;less than or equal to&quot; to the <B><FONT COLOR="#800050">A Value</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">B Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave and expose controls for the B value.  See <A HREF="Masters and Slaves.htm">Masters and Slaves</A> and <A HREF="Exposed Controls.htm">Exposed Controls</A> for more information on these controls.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">B Value</B></FONT> </TD>
+<TD CLASS=desc>A value for the B variable is entered.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">B Operation</B></FONT></TD>
+<TD CLASS=desc>Values are limited to values &quot;greater than&quot;, &quot;greater than or equal to&quot;, &quot;less than&quot;, or &quot;less than or equal to&quot; the <B><FONT COLOR="#800050">B Value</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Status</B></FONT></TD>
+<TD CLASS=desc>Indicates the number of rows extracted from the table (<B><FONT COLOR="#800050">Accepted</B></FONT>), and the number of rows in the table that did not meet the specified criteria (<B><FONT COLOR="#800050">Rejected</B></FONT>).</TD>
+</TR>
+</TABLE>
+</P>
+</FONT></BODY>
+</HTML>

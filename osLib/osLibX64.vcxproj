@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F0B8C88B-FEAD-49DE-A42B-1ABB388992DB}</ProjectGuid>
+    <RootNamespace>osLibX64</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\OsLibX_Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\OsLibX_Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\OsLibX_Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\OsLibX_Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">x64\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">x64\$(Configuration)\</IntDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\MPICH2\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\MPICH2\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files\MPICH2\include</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files (x86)\MPICH2\include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\MPICH2\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\osLib\;..\genLib\;..\objLib\;..;..\..;..\mpi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;ADCONSOLEAPP;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\..\obj\OsLibX_Release/osLibX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj\OsLibX_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj\OsLibX_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj\OsLibX_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\Release\osLibX.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Software\lapack\libraries\Release</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\osLib\;..\genLib\;..\objLib\;..;..\..; ..\mpi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;ADCONSOLEAPP;_WIN32_WINNT=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\..\obj64\OsLibX_Release/osLibX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj64\OsLibX_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj64\OsLibX_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj64\OsLibX_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\Release\osLibX64.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>C:\Software\lapack\libraries\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>blas.lib;lapack.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\osLib\;..\genLib\;..\objLib\;..;..\..; ..\mpi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;ADCONSOLEAPP;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\..\obj\OsLibX_Debug/osLibX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj\OsLibX_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj\OsLibX_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj\OsLibX_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\Debug\osLibX.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>C:\Software\lapack\libraries\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\osLib\;..\genLib\;..\objLib\;..;..\..;..\mpi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;ADCONSOLEAPP;_WIN32_WINNT=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\..\obj64\OsLibX_Debug/osLibX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj64\OsLibX_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj64\OsLibX_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj64\OsLibX_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\Debug\osLibX64.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="OsLibAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osClass\C_OptVar.cpp" />
+    <ClCompile Include="osClass\C_OptVarUnits.cpp" />
+    <ClCompile Include="osClass\C_Runnable.cpp" />
+    <ClCompile Include="osClass\C_SampVar.cpp" />
+    <ClCompile Include="osClass\C_SampVarUnits.cpp" />
+    <ClCompile Include="osClass\C_SimErr.cpp" />
+    <ClCompile Include="osClass\C_VarBase.cpp" />
+    <ClCompile Include="osClass\C_VaryVar.cpp" />
+    <ClCompile Include="osClass\C_VaryVarUnits.cpp" />
+    <ClCompile Include="osClass\DC_Covar.cpp" />
+    <ClCompile Include="osClass\DC_CovarArray.cpp" />
+    <ClCompile Include="osClass\DC_CubeArray.cpp" />
+    <ClCompile Include="osClass\DC_FitResults.cpp" />
+    <ClCompile Include="osClass\DC_GridArray.cpp" />
+    <ClCompile Include="osClass\DC_Jacobian.cpp" />
+    <ClCompile Include="osClass\DC_OptSimResults.cpp" />
+    <ClCompile Include="osClass\DC_RangeSimResults.cpp" />
+    <ClCompile Include="osClass\DC_UncertSimResults.cpp" />
+    <ClCompile Include="osClass\DO_CalcParReal.cpp" />
+    <ClCompile Include="osClass\DO_Covar.cpp" />
+    <ClCompile Include="osClass\DO_CovarArray.cpp" />
+    <ClCompile Include="osClass\DO_CubeArray.cpp" />
+    <ClCompile Include="osClass\DO_FitResults.cpp" />
+    <ClCompile Include="osClass\DO_GridArray.cpp" />
+    <ClCompile Include="osClass\DO_Jacobian.cpp" />
+    <ClCompile Include="osClass\DO_OptIndx.cpp" />
+    <ClCompile Include="osClass\DO_OptSimResults.cpp" />
+    <ClCompile Include="osClass\DO_RangeIndx.cpp" />
+    <ClCompile Include="osClass\DO_RangeSimResults.cpp" />
+    <ClCompile Include="osClass\DO_ResidData.cpp" />
+    <ClCompile Include="osClass\DO_UncertSimResults.cpp" />
+    <ClCompile Include="osClass\IO_OptSimResults.cpp" />
+    <ClCompile Include="osClass\IO_RangeSimResults.cpp" />
+    <ClCompile Include="osClass\IO_UncertSimResults.cpp" />
+    <ClCompile Include="osClass\U_Resid.cpp" />
+    <ClCompile Include="osDataClass\DSC_FandChiConfidence.cpp" />
+    <ClCompile Include="osDataClass\DSC_IndexMSSpecOpt.cpp" />
+    <ClCompile Include="osDataClass\DSC_IndexMSSpecRange.cpp" />
+    <ClCompile Include="osDFO\DFO_BasicResidual.cpp" />
+    <ClCompile Include="osDFO\DFO_CalcConfidence.cpp" />
+    <ClCompile Include="osDFO\DFO_CalcConfidenceGrid.cpp" />
+    <ClCompile Include="osDFO\DFO_CalcConfidenceTable.cpp" />
+    <ClCompile Include="osDFO\DFO_CompositeFit.cpp" />
+    <ClCompile Include="osDFO\DFO_FitBase.cpp" />
+    <ClCompile Include="osDFO\DFO_JacobToTable.cpp" />
+    <ClCompile Include="osDFO\DFO_ReadOptSimResults.cpp" />
+    <ClCompile Include="osDFO\DFO_ReadRangeSimResults.cpp" />
+    <ClCompile Include="osDFO\DFO_ResidualDiagnostic.cpp" />
+    <ClCompile Include="osDFO\DFO_ResidualHistogram.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectOpt.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectOptCovar.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectOptJacob.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectOptResid.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectOptResults.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectRange.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectRangeCube.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectRangeGrid.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectRTRangeCube.cpp" />
+    <ClCompile Include="osDFO\DFO_SelectRTRangeGrid.cpp" />
+    <ClCompile Include="osDFO\DFO_SingleFit.cpp" />
+    <ClCompile Include="osDFO\DFO_SingleFitBase.cpp" />
+    <ClCompile Include="osDPO\DPO_BasicResidual.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CalcConfidence.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CalcConfidenceGrid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CalcConfidenceTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CompositeFit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_JacobToTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_ReadOptSimResults.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_ReadRangeSimResults.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_ResidualDiagnostic.cpp" />
+    <ClCompile Include="osDPO\DPO_ResidualHistogram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOpt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptCovar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptJacob.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptResid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptResults.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRange.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRangeCube.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRangeGrid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRTRangeCube.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRTRangeGrid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SingleFit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OsLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OsLibAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="osMain\C_Optimize.cpp" />
+    <ClCompile Include="osMain\C_OSListObj.cpp" />
+    <ClCompile Include="osMain\C_Sample.cpp" />
+    <ClCompile Include="osMain\C_Uncertain.cpp" />
+    <ClCompile Include="osMain\G_Optimize.cpp" />
+    <ClCompile Include="osMain\G_OptRange.cpp" />
+    <ClCompile Include="osMain\G_Range.cpp" />
+    <ClCompile Include="osMain\G_RealRange.cpp" />
+    <ClCompile Include="osMain\G_Sample.cpp" />
+    <ClCompile Include="osMain\G_Vary.cpp" />
+    <ClCompile Include="osMain\OptLevMar.cpp" />
+    <ClCompile Include="osMain\OptSCEM.cpp" />
+    <ClCompile Include="osMain\OptSimAnneal.cpp" />
+    <ClCompile Include="osMain\OptSimplex.cpp" />
+    <ClCompile Include="osMain\osConfigFile.cpp" />
+    <ClCompile Include="osMain\UncertFOSM.cpp" />
+    <ClCompile Include="osMain\UncertPEM.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OsLibAfx.h" />
+    <ClInclude Include="osClass\C_OptVar.h" />
+    <ClInclude Include="osClass\C_OptVarUnits.h" />
+    <ClInclude Include="osClass\C_Runnable.h" />
+    <ClInclude Include="osClass\C_SampVar.h" />
+    <ClInclude Include="osClass\C_SampVarUnits.h" />
+    <ClInclude Include="osClass\C_SimErr.h" />
+    <ClInclude Include="osClass\C_VarBase.h" />
+    <ClInclude Include="osClass\C_VaryVar.h" />
+    <ClInclude Include="osClass\C_VaryVarUnits.h" />
+    <ClInclude Include="osClass\DC_Covar.h" />
+    <ClInclude Include="osClass\DC_CovarArray.h" />
+    <ClInclude Include="osClass\DC_CubeArray.h" />
+    <ClInclude Include="osClass\DC_FitResults.h" />
+    <ClInclude Include="osClass\DC_GridArray.h" />
+    <ClInclude Include="osClass\DC_Jacobian.h" />
+    <ClInclude Include="osClass\DC_OptSimResults.h" />
+    <ClInclude Include="osClass\DC_RangeSimResults.h" />
+    <ClInclude Include="osClass\DC_UncertSimResults.h" />
+    <ClInclude Include="osClass\DO_CalcParReal.h" />
+    <ClInclude Include="osClass\DO_Covar.h" />
+    <ClInclude Include="osClass\DO_CovarArray.h" />
+    <ClInclude Include="osClass\DO_CubeArray.h" />
+    <ClInclude Include="osClass\DO_FitResults.h" />
+    <ClInclude Include="osClass\DO_GridArray.h" />
+    <ClInclude Include="osClass\DO_Jacobian.h" />
+    <ClInclude Include="osClass\DO_OptIndx.h" />
+    <ClInclude Include="osClass\DO_OptSimResults.h" />
+    <ClInclude Include="osClass\DO_RangeIndx.h" />
+    <ClInclude Include="osClass\DO_RangeSimResults.h" />
+    <ClInclude Include="osClass\DO_ResidData.h" />
+    <ClInclude Include="osClass\DO_UncertSimResults.h" />
+    <ClInclude Include="osClass\IO_OptSimResults.h" />
+    <ClInclude Include="osClass\IO_RangeSimResults.h" />
+    <ClInclude Include="osClass\IO_UncertSimResults.h" />
+    <ClInclude Include="osClass\U_Resid.h" />
+    <ClInclude Include="osDataClass\DSC_FandChiConfidence.h" />
+    <ClInclude Include="osDataClass\DSC_IndexMSSpecOpt.h" />
+    <ClInclude Include="osDataClass\DSC_IndexMSSpecRange.h" />
+    <ClInclude Include="osDFO\DFO_BasicResidual.h" />
+    <ClInclude Include="osDFO\DFO_CalcConfidence.h" />
+    <ClInclude Include="osDFO\DFO_CalcConfidenceGrid.h" />
+    <ClInclude Include="osDFO\DFO_CalcConfidenceTable.h" />
+    <ClInclude Include="osDFO\DFO_CompositeFit.h" />
+    <ClInclude Include="osDFO\DFO_FitBase.h" />
+    <ClInclude Include="osDFO\DFO_JacobToTable.h" />
+    <ClInclude Include="osDFO\DFO_ReadOptSimResults.h" />
+    <ClInclude Include="osDFO\DFO_ReadRangeSimResults.h" />
+    <ClInclude Include="osDFO\DFO_ResidualDiagnostic.h" />
+    <ClInclude Include="osDFO\DFO_ResidualHistogram.h" />
+    <ClInclude Include="osDFO\DFO_SelectOpt.h" />
+    <ClInclude Include="osDFO\DFO_SelectOptCovar.h" />
+    <ClInclude Include="osDFO\DFO_SelectOptJacob.h" />
+    <ClInclude Include="osDFO\DFO_SelectOptResid.h" />
+    <ClInclude Include="osDFO\DFO_SelectOptResults.h" />
+    <ClInclude Include="osDFO\DFO_SelectRange.h" />
+    <ClInclude Include="osDFO\DFO_SelectRangeCube.h" />
+    <ClInclude Include="osDFO\DFO_SelectRangeGrid.h" />
+    <ClInclude Include="osDFO\DFO_SelectRTRangeCube.h" />
+    <ClInclude Include="osDFO\DFO_SelectRTRangeGrid.h" />
+    <ClInclude Include="osDFO\DFO_SingleFit.h" />
+    <ClInclude Include="osDFO\DFO_SingleFitBase.h" />
+    <ClInclude Include="osDPO\DPO_BasicResidual.h" />
+    <ClInclude Include="osDPO\DPO_CalcConfidence.h" />
+    <ClInclude Include="osDPO\DPO_CalcConfidenceGrid.h" />
+    <ClInclude Include="osDPO\DPO_CalcConfidenceTable.h" />
+    <ClInclude Include="osDPO\DPO_CompositeFit.h" />
+    <ClInclude Include="osDPO\DPO_JacobToTable.h" />
+    <ClInclude Include="osDPO\DPO_ReadOptSimResults.h" />
+    <ClInclude Include="osDPO\DPO_ReadRangeSimResults.h" />
+    <ClInclude Include="osDPO\DPO_ResidualDiagnostic.h" />
+    <ClInclude Include="osDPO\DPO_ResidualHistogram.h" />
+    <ClInclude Include="osDPO\DPO_SelectOpt.h" />
+    <ClInclude Include="osDPO\DPO_SelectOptCovar.h" />
+    <ClInclude Include="osDPO\DPO_SelectOptJacob.h" />
+    <ClInclude Include="osDPO\DPO_SelectOptResid.h" />
+    <ClInclude Include="osDPO\DPO_SelectOptResults.h" />
+    <ClInclude Include="osDPO\DPO_SelectRange.h" />
+    <ClInclude Include="osDPO\DPO_SelectRangeCube.h" />
+    <ClInclude Include="osDPO\DPO_SelectRangeGrid.h" />
+    <ClInclude Include="osDPO\DPO_SelectRTRangeCube.h" />
+    <ClInclude Include="osDPO\DPO_SelectRTRangeGrid.h" />
+    <ClInclude Include="osDPO\DPO_SingleFit.h" />
+    <ClInclude Include="osMain\C_Optimize.h" />
+    <ClInclude Include="osMain\C_OSListObj.h" />
+    <ClInclude Include="osMain\C_Sample.h" />
+    <ClInclude Include="osMain\C_Uncertain.h" />
+    <ClInclude Include="osMain\G_Optimize.h" />
+    <ClInclude Include="osMain\G_OptRange.h" />
+    <ClInclude Include="osMain\G_Range.h" />
+    <ClInclude Include="osMain\G_RealRange.h" />
+    <ClInclude Include="osMain\G_Sample.h" />
+    <ClInclude Include="osMain\G_Vary.h" />
+    <ClInclude Include="osMain\OptLevMar.h" />
+    <ClInclude Include="osMain\OptSCEM.h" />
+    <ClInclude Include="osMain\OptSimAnneal.h" />
+    <ClInclude Include="osMain\OptSimplex.h" />
+    <ClInclude Include="osMain\osConfigFile.h" />
+    <ClInclude Include="osMain\UncertFOSM.h" />
+    <ClInclude Include="osMain\UncertPEM.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\genLib\GenLibX64.vcxproj">
+      <Project>{a2384617-2334-4593-a926-10b6b7c65fed}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

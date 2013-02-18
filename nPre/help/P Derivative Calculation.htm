@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> P(t) Derivative Calculation</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>P(t) Derivative Calculation </P></FONT>
+
+<P>What:   </B>Calculates the derivative of a pressure function (P(t)).</P>
+<B><P>Why:   </B>In particular, used to create constraints based on the derivative of pressure.</P>
+<B><P>Used By:  </B>Any object using XY data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppPtDerivCalc.jpg"></P>
+<B><P>Input Data:  </B>XY data, and if superposition of time is used, the output of a <B><FONT FACE="Technical" COLOR="#008000">P(t) Time Processing</B></FONT> object</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Input P(t) Data</B></FONT></TD>
+<TD CLASS=desc>The derivative is calculated for the selected input pressure time series data.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Derivative Specification</B></FONT></TD>
+<TD CLASS=desc>Master/Slave controls for the derivative specifications.  For more information, refer to <A HREF="Masters and Slaves.htm">Masters and Slaves</A>.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Derivative Type </B></FONT></TD>
+<TD CLASS=desc>One of four derivative types is selected: <I><FONT COLOR="#800050">dY/dX</I></FONT>, <I><FONT COLOR="#800050">dY/dlog10(X)</I></FONT>, <I><FONT COLOR="#800050">dlog10(Y)/dlog10(X)</I></FONT>, or <I><FONT COLOR="#800050">dY/dln(X)</I></FONT>.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Derivative Calculation</B></FONT></TD>
+<TD CLASS=desc>All derivative calculation procedures calculate the derivative at each data point based on a subset of data points on either side of the data point.  The derivative calculation will smooth noisy input data before the derivative calculation in order to produce a useful derivative.</TD
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><B><FONT COLOR="#800050">Between</I></B></FONT></TD>
+<TD CLASS=desc>The derivative is calculated based on the slope between two adjacent data points. The X value for the derivative is the linear average of the X value of the two data points.  Only useful for very smooth data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><I><FONT COLOR="#800050">2 Point</I></B></FONT></TD>
+<TD CLASS=desc>The derivative is calculated based on the average slope between the data point and two data points on either side of the data point.  The <B><FONT COLOR="#000080"># points in Window</B></FONT> parameter determines which point on either side of the data point to use.  For example, if the <B><FONT COLOR="#000080"># of point in Window</B></FONT> is 1, the points adjacent to the data point are used. If the <B><FONT COLOR="#000080"># of point in Window</B></FONT> is 2, the second point from the data point will be used.  Only useful for very smooth data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><B><FONT COLOR="#800050">Window</I></B></FONT></TD>
+<TD CLASS=desc>The data points within a window surrounding the data point are used in the derivative calculation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><B><FONT COLOR="#800050">Log % Span</I></B></FONT></TD>
+<TD CLASS=desc>All points within a specified log X distance of the data point are used in the derivative calculation.  The distance is specified by a percentage of the log range of the entire data set (log(X<SUB>max</SUB>)-log(X<SUB>min</SUB>)).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><B><FONT COLOR="#800050">Lin % Span</I></B></FONT> </TD>
+<TD CLASS=desc>All points within a specified X distance of the data point are used in the derivative calculation.  The distance is specified by a percentage of the linear range of the entire data set (X<SUB>max</SUB>-X<SUB>min</SUB>).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><B><FONT COLOR="#800050">Log Value Span</I></B></FONT></TD>
+<TD CLASS=desc>All points within a specified X distance of the data point are used in the derivative calculation. The distance is specified as an absolute log range of the entire data set (log(X<SUB>max</SUB>)-log(X<SUB>min</SUB>)).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><B><FONT COLOR="#800050">Lin Value Span</I></B></FONT></TD>
+<TD CLASS=desc>All points within a specified X distance of the data point are used in the derivative calculation.  The distance is specified as an absolute linear range of the entire data set (X<SUB>max</SUB>-X<SUB>min</SUB>).</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Windowed Calculation</B></FONT></TD>
+<TD CLASS=desc>For Window, Lin/Log % Span and Lin/Log Value Span methods, determines the derivative calculation algorithm used.  Linear, Clark and Simmons algorithms are available.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"># points in Window</B></FONT> </TD>
+<TD CLASS=desc>For 2 Point and Window calculations only, determines which points to use for a 2 Point calculation or the number of data points in the window for a Window calculation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Log Epsilon</B></FONT></TD>
+<TD CLASS=desc>Minimum Y value allowed for a log transform. If a Y value is less than log epsilon, the derivative is not calculated for that point. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Y Offset</B></FONT></TD>
+<TD CLASS=desc>Adjusts Y values above the log epsilon (e.g. increases values above zero to allow log calculations).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Lin/Log % Span Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave and expose controls for the lin/log % span value.  For more information on these controls, refer to <A HREF="Masters and Slaves.htm">Masters and Slaves</A> and <A HREF="Exposed Controls.htm">Exposed Controls</A>.<TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Lin/Log % Span Value</B></FONT></TD>
+<TD CLASS=desc>For Lin/Log % Span methods, the percentage of the linear/log range of the entire data set is entered.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Lin/Log Span Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave and expose controls for lin/log span value.  For more information on these controls, refer to <A HREF="Masters and Slaves.htm">Masters and Slaves</A> and <A HREF="Exposed Controls.htm">Exposed Controls</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Lin/Log Span Value </B></FONT></TD>
+<TD CLASS=desc>For Lin/Log Value Span methods, the absolute linear/log range of the entire data set is entered.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Time Multiplier</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">None</B></FONT></TD>
+<TD CLASS=desc>The resulting Y value of the object is the calculated derivative.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">T</B></FONT></TD>
+<TD CLASS=desc>After the derivative has been calculated, the derivative is multiplied by time for the Y output. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">delta T</B></FONT></TD>
+<TD CLASS=desc>After the derivative has been calculated, the derivative is multiplied by delta time for the Y output. </TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Time Processing</B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>Use Superposition</B></FONT></TD>
+<TD CLASS=desc>Superposition may be conducted on time.  The output of a <B><FONT FACE="Technical" COLOR="#008000">P(t) Time Processing</B></FONT> object is selected in the adjacent drop-down-box.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Options</B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">ABS(derivative Y)</B></FONT></TD>
+<TD CLASS=desc>If selected, the absolute value of the calculated derivative Y value is output. </TD>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

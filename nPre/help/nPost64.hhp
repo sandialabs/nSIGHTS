@@ -1,0 +1,526 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=nPost64.chm
+Contents file=nPost TOC.hhc
+Default topic=OverviewnPost.htm
+Display compile progress=No
+Language=0x409 English (United States)
+Title=nPost Help
+
+
+[FILES]
+2D Plot Annotation.htm
+2D Plot Object Reporting.htm
+2D XY Axes.htm
+2D XY Main Menu.htm
+3D Axes Format.htm
+3D Axes Labels.htm
+3D Lighting.htm
+3D XYZ Main Menu.htm
+Add Noise.htm
+Add XY to Array.htm
+Analytics.htm
+Annotation Plot Objects.htm
+Appendix B.htm
+Appendix D.htm
+Appendix E Object Names.htm
+Array Scale.htm
+Auto Setup Menu.htm
+Basic Concepts.htm
+Basic Fits Auto Setup.htm
+BasicSingleFit.htm
+Bitmap Output.htm
+Calculate Basic Residual.htm
+Calculate CDF of Table Column.htm
+Calculate CDF of XY Data.htm
+Calculate Joint Confidence of Grid.htm
+Calculate Joint Confidence of Opt Results.htm
+Calculate Joint Confidence of Table.htm
+Calculate Residual Diagnostic.htm
+Calculate Residual Histogram.htm
+Calculated Vars Tab.htm
+Calculation Priority.htm
+Color Legend.htm
+Composite Fit.htm
+Composite Layout.htm
+Composite Main Menu.htm
+Composite Plots.htm
+Concatenate Tables.htm
+Confidence Limits Multiple Dual.htm
+Confidence Limits Multiple Single.htm
+Confidence Limits.htm
+Configuration Input Window.htm
+Configuration Input.htm
+Convert Table To Grid.htm
+Correlations.htm
+Country Settings.htm
+Covariance List.htm
+Create BEET Response Function.htm
+Create Curve from XY Data.htm
+Create Discrete and StepWise Uniform CDF.htm
+Create Real Value.htm
+Create Sampled Table.htm
+Create XY Array.htm
+Cube Color Block.htm
+Cube Color Point.htm
+Cube Isovolume.htm
+Curve Data Functions.htm
+Curve Files Tab.htm
+DATA PROCESSING.htm
+Data Display Plot Objects.htm
+Data Labels.htm
+Data Object Concepts.htm
+Data Object Function Summary.htm
+Data Object Summary.htm
+Data Page Description.htm
+Default Data Objects.htm
+Default Plot Objects.htm
+Default Units Tab.htm
+Defining the sequence.htm
+Dual ScaleTransform.htm
+Dynamic Time Step Tab.htm
+Enter Table Data.htm
+Enter XY Data.htm
+Entering Model Input.htm
+Evaluating Model Results.htm
+Evaluation of Constraints and Fitting Parameters.htm
+Evaluation of Joint Confidence Regions.htm
+Executing The Model.htm
+Exposed Controls.htm
+Exposed List Selections.htm
+Exposed Reals.htm
+Extended Profile Color Fill.htm
+Extra Grid Lines.htm
+Extract Covariance Matrices.htm
+Extract Cube Indexes.htm
+Extract Extended Profile.htm
+Extract Grid.htm
+Extract Jacobian.htm
+Extract Optimizer Results Table.htm
+Extract Profile Grid.htm
+Extract Range Cube.htm
+Extract Range Grid.htm
+Extract Range.htm
+Extract Real from Table.htm
+Extract Residuals.htm
+Extract Sequence.htm
+Extract Table Rows.htm
+Extract Value from CDF.htm
+Extract XY from XY Results.htm
+Extract XY.htm
+Field Data Input Window.htm
+Field Data Input.htm
+Field Data Plots Auto Setup.htm
+File Menu.htm
+Fit Selection Tab.htm
+Fit Specification Input Window.htm
+Fit Specification Input.htm
+Fit Specification.htm
+Font Selection.htm
+Formatting Real Numbers.htm
+Fourier Transform on Y.htm
+Full Table Correlations.htm
+Full Table Statistics List.htm
+Gas Tab.htm
+General Object Controls.htm
+Generating Diagnostic Plots.htm
+Getting Help.htm
+Global Objects.htm
+Grid Color Block.htm
+Grid Color Fill.htm
+Grid Color Point.htm
+Grid Contour.htm
+Grid Fishnet.htm
+Help Menu.htm
+Histogram.htm
+Integrate.htm
+Interpolate Grid.htm
+Interpolate Table Columns.htm
+Interpolate XY Data from Curve.htm
+Interpolation Methods.htm
+Interpolation Tab.htm
+Jacobian List.htm
+Jacobian to Table.htm
+Label Axes.htm
+L_M Algorithm Tab.htm
+Linear Color Map.htm
+Liquid Tab.htm
+List Menu.htm
+Main Ta1.htm
+Main Ta2.htm
+Main Ta3.htm
+Main Tab.htm
+Masters and Slaves.htm
+Matrix Math.htm
+Matrix Tab.htm
+Menu Bar nPost.htm
+Merge Color Maps.htm
+Message Line.htm
+Model Runs and Simulations.htm
+Modify.htm
+Multiple Table Series.htm
+NPOST LISTS.htm
+NPOST OUTPUT.htm
+NPRE AUTO SETUP.htm
+NPRE INPUT WINDOWS.htm
+No Help.htm
+Normalize.htm
+OBJECTS.htm
+Object Concepts.htm
+Object Connections.htm
+Object Data Types.htm
+Object Description Area.htm
+Object Errors.htm
+Object Execution.htm
+Object ID.htm
+Object Menu.htm
+Object Property Window.htm
+Object Selection.htm
+Object Tree.htm
+OpenGL Fonts.htm
+OpenGL Properties.htm
+OpenGL Visual.htm
+Optimization Input Window.htm
+Optimization Results.htm
+Optimization Tab.htm
+Output File Setup Input Window.htm
+Output File Setup Input.htm
+OverviewnPost.htm
+P Barometric Compensation.htm
+P BEET Compensation.htm
+P Derivative Calculation.htm
+P Time Processing.htm
+PLOTTING.htm
+Page Menu.htm
+Pages and Objects.htm
+Parameter Input Window.htm
+Parameter Input.htm
+Partial Run Tab.htm
+Pen Set.htm
+Perturbation Analysis.htm
+Perturbation Tab.htm
+Plot Animations.htm
+Plot Cursor.htm
+Plot Interaction.htm
+Plot Labels.htm
+Plot Object Concepts.htm
+Plot Object Control.htm
+Plot Object Summary.htm
+Plot Object Types.htm
+Plot Object Visibility.htm
+Plot Objects.htm
+Plot Output.htm
+Plot PopUp Menus.htm
+Plot Tab.htm
+Plot Tool Bar.htm
+Plot View.htm
+Point Entry Tab.htm
+Postscript Output.htm
+Priority.htm
+Process_Plot Tab.htm
+Processing Setup Input Window.htm
+Production Restart Tab.htm
+Profile Contour.htm
+Program Settings.htm
+Pulse Normalization.htm
+RUNNING SIMULATIONS.htm
+Read Color Map.htm
+Read Cube Data.htm
+Read Curve File.htm
+Read Grid Data.htm
+Read MiniTroll File.htm
+Read Sequence Time Interval Data.htm
+Read Table File.htm
+Read XY Data Array.htm
+Read XY Data.htm
+Read XYZ Label Data.htm
+Read nSIGHTS Optimizer Results.htm
+Read nSIGHTS Profile Results.htm
+Read nSIGHTS Range Results.htm
+Read nSIGHTS XY Results.htm
+Real Value.htm
+Reduction.htm
+Remove Duplicates.htm
+Residual Analysis.htm
+Run Menu.htm
+RuntimeTab.htm
+Samples.htm
+Sampling Input Window.htm
+Scale.htm
+ScaleTransform Extended Profile.htm
+Scale_Transform Objects.htm
+Select Curve from File.htm
+Select Range Cube.htm
+Select Range Grid.htm
+Select XY from XY Array.htm
+Selection_Active Plot Objects.htm
+Sequence Fit.htm
+Sequence Grid Lines.htm
+Sequence Input Window.htm
+Sequence Input.htm
+Sequence Plots Auto Setup.htm
+Sequence Setup Dialog.htm
+Sequences Tab.htm
+Series Legend.htm
+Simplex Algorithm Tab.htm
+Simulation Output.htm
+Single Scale.htm
+Single Table Series.htm
+Smooth.htm
+Standard Pen Set and Linear Color Maps.htm
+Statistics.htm
+Status Bar.htm
+Sum Tables.htm
+Superposition Tab.htm
+System Information Objects.htm
+TUTORIAL.htm
+TZ Curves Tab.htm
+Table Color Series.htm
+Table Column Correlations.htm
+Table Column Math.htm
+Table Column Scale.htm
+Table Column Statistics.htm
+Table Column To Histogram.htm
+Table Columns To XY.htm
+Table Histogram.htm
+Table Horsetail.htm
+Table Labels.htm
+Table List.htm
+Table Row Index Logic.htm
+Table Row Statistics.htm
+Table Series.htm
+Tables in the Object Property Window.htm
+Test Description Tab.htm
+Test Description.htm
+Time Axes.htm
+Time Limits Extraction.htm
+Time_Base Tab.htm
+To conduct a perturbation model run.htm
+To create a histogram plot.htm
+To create an XY scatter plot.htm
+To create an XYZ scatter plot.htm
+Tolerances Tab.htm
+Tool Bar.htm
+Transpose.htm
+Transpose Table.htm
+TreeView.htm
+Uncertainty Distributions for NonFitting Parameters.htm
+Unconfined Observation Well Dialog.htm
+Units_Transform Tab.htm
+User Interface nPost.htm
+User Labels.htm
+User Manual Nomenclature.htm
+UsingnSIGHTSOverview.htm
+Validate XY Data as CDF.htm
+Value Dialog.htm
+Vector Math.htm
+View Animation Control.htm
+View Grid.htm
+View Menu.htm
+View Table Data.htm
+View XY Data.htm
+Viewing Correlation Coefficients.htm
+Window List Menu Window.htm
+Window Menu.htm
+Write Color Map.htm
+Write Curve File.htm
+Write Grid File.htm
+Write Table File.htm
+Write XY Array.htm
+Write XY File.htm
+XY Array Horsetail.htm
+XY Array Series.htm
+XY Data  Array List.htm
+XY Data  List.htm
+XY Histogram.htm
+XY Labels.htm
+XY Series.htm
+XYZ Labels.htm
+Zoom and Selection mode.htm
+fp_fr Points Parameter Input Window.htm
+nPre Control Bar.htm
+nPre Input Window.htm
+nPre Menu.htm
+nPre Simulation Objects.htm
+
+[ALIAS]
+IDH_DD_CFG_CURVEFILES=Curve Files Tab.htm
+IDH_DD_CFG_MAIN=OverviewnPost.htm
+IDH_DD_DUMMY=No Help.htm
+IDH_DR_MAINFRAME=OverviewnPost.htm
+IDH_GEN_DPO_DATAPG=Data Page Description.htm
+IDH_GEN_DPO_LINCOLORMAP=Linear Color Map.htm
+IDH_GEN_DPO_MERGECOLORMAP=Merge Color Maps.htm
+IDH_GEN_DPO_PENSET=Pen Set.htm
+IDH_GEN_DPO_READCOLORMAP=Read Color Map.htm
+IDH_GEN_PPD_2DPLOTANNO=2D Plot Annotation.htm
+IDH_GEN_PPD_2DXY=2D XY Main Menu.htm
+IDH_GEN_PPD_3DAXESFORMAT=3D Axes Format.htm
+IDH_GEN_PPD_3DAXESLABEL=3D Axes Labels.htm
+IDH_GEN_PPD_3DLIGHTING=3D Lighting.htm
+IDH_GEN_PPD_3DXYZ=3D XYZ Main Menu.htm
+IDH_GEN_PPD_COMPLAYOUT=Composite Layout.htm
+IDH_GEN_PPD_COMPOSITE=Composite Main Menu.htm
+IDH_GEN_PPD_LINLOGAXIS=2D XY Axes.htm
+IDH_GEN_PPO_COLORLEGEND=Color Legend.htm
+IDH_GEN_PPO_DATALABELS=Data Labels.htm
+IDH_GEN_PPO_GRIDLINE=Extra Grid Lines.htm
+IDH_GEN_PPO_LABELAXES=Label Axes.htm
+IDH_GEN_PPO_SERIESLEGEND=Series Legend.htm
+IDH_GEN_PPO_TIMEAXES=Time Axes.htm
+IDH_GEN_PPO_USERLABELS=User Labels.htm
+IDH_GEN_UPO_WRITECOLORMAP=Write Color Map.htm
+IDH_NO_OBJECT_HELP=No Help.htm
+IDH_NS_DPO_BAROMETRICCOMPENSATION=P Barometric Compensation.htm
+IDH_NS_DPO_BASICSEQUENCEFIT=Sequence Fit.htm
+IDH_NS_DPO_BASICTIMEEXTRACT=Time Limits Extraction.htm
+IDH_NS_DPO_BEETCOMPENSATION=P BEET Compensation.htm
+IDH_NS_DPO_CREATEBEETRESPONSEFUNCTION=Create BEET Response Function.htm
+IDH_NS_DPO_DERIVATIVE=P Derivative Calculation.htm
+IDH_NS_DPO_EXTRACTSEQUENCEINTERVAL=Extract Sequence.htm
+IDH_NS_DPO_PULSENORMALIZE=Pulse Normalization.htm
+IDH_NS_DPO_READMINITROLL=Read MiniTroll File.htm
+IDH_NS_DPO_READPROFILESIMRESULTS=Read nSIGHTS Profile Results.htm
+IDH_NS_DPO_READSEQUENCETIMES=Read Sequence Time Interval Data.htm
+IDH_NS_DPO_READXYSIMRESULTS=Read nSIGHTS XY Results.htm
+IDH_NS_DPO_SELECTPROFILEFROMPROFILESIMRESULTS=Extract Profile Grid.htm
+IDH_NS_DPO_SELECTXYFROMXYSIMRESULTS=Extract XY from XY Results.htm
+IDH_NS_DPO_TIMEPROCESS=P Time Processing.htm
+IDH_NS_PPO_SEQUENCEGRIDLINES=Sequence Grid Lines.htm
+IDH_NS_DPO_EXTPROFILESCALETRAN=ScaleTransform Extended Profile.htm
+IDH_OBJ_DPO_CDFEXTRACT=Extract Value from CDF.htm
+IDH_OBJ_DPO_CREATECURVE=Create Curve from XY Data.htm
+IDH_OBJ_DPO_CREATEREAL=Create Real Value.htm
+IDH_OBJ_DPO_CREATEXYARRAY=Create XY Array.htm
+IDH_OBJ_DPO_CUBEEXTRACTGRID=Extract Grid.htm
+IDH_OBJ_DPO_CUBEHISTOGRAM=Histogram.htm
+IDH_OBJ_DPO_CUBEMATH=Matrix Math.htm
+IDH_OBJ_DPO_CUBENORMALIZE=Normalize.htm
+IDH_OBJ_DPO_CUBESCALETRANSFORM=Scale.htm
+IDH_OBJ_DPO_CUBESTATISTICS=Statistics.htm
+IDH_OBJ_DPO_CUBETOINDEX=Extract Cube Indexes.htm
+IDH_OBJ_DPO_CURVEINTERP=Interpolate XY Data from Curve.htm
+IDH_OBJ_DPO_ENTERTABLE=Enter Table Data.htm
+IDH_OBJ_DPO_ENTERXY=Enter XY Data.htm
+IDH_OBJ_DPO_GRIDEXTRACTXY=Extract XY.htm
+IDH_OBJ_DPO_GRIDHISTOGRAM=Histogram.htm
+IDH_OBJ_DPO_GRIDINTERPOLATE=Interpolate Grid.htm
+IDH_OBJ_DPO_GRIDMATH=Matrix Math.htm
+IDH_OBJ_DPO_GRIDNORMALIZE=Normalize.htm
+IDH_OBJ_DPO_GRIDSCALETRANSFORM=Scale.htm
+IDH_OBJ_DPO_GRIDSTATISTICS=Statistics.htm
+IDH_OBJ_DPO_READCUBEDATA=Read Cube Data.htm
+IDH_OBJ_DPO_READCURVEARRAY=Read Curve File.htm
+IDH_OBJ_DPO_READGRIDDATA=Read Grid Data.htm
+IDH_OBJ_DPO_READLABELARRAY=Read XYZ Label Data.htm
+IDH_OBJ_DPO_READTABLE=Read Table File.htm
+IDH_OBJ_DPO_READXY=Read XY Data.htm
+IDH_OBJ_DPO_READXYARRAY=Read XY Data Array.htm
+IDH_OBJ_DPO_REALSCALETRANSFORM=Scale.htm
+IDH_OBJ_DPO_REALTOTABLE=Real Value.htm
+IDH_OBJ_DPO_SELECTCURVE=Select Curve from File.htm
+IDH_OBJ_DPO_SELECTXY=Select XY from XY Array.htm
+IDH_OBJ_DPO_TABLEADD=Sum Tables.htm
+IDH_OBJ_DPO_TABLECOLSCALETRANSFORM=Table Column Scale.htm
+IDH_OBJ_DPO_TABLECOLUMNCORRELATION=Table Column Correlations.htm
+IDH_OBJ_DPO_TABLECOLUMNMATH=Table Column Math.htm
+IDH_OBJ_DPO_TABLECONCAT=Concatenate Tables.htm
+IDH_OBJ_DPO_TABLEFULLCORRELATION=Full Table Correlations.htm
+IDH_OBJ_DPO_TABLEHISTOGRAM=Table Column To Histogram.htm
+IDH_OBJ_DPO_TABLEINTERPVAL=Interpolate Table Columns.htm
+IDH_OBJ_DPO_TABLEQUANTILE=Calculate CDF of Table Column.htm
+IDH_OBJ_DPO_TABLERANGEEXTRACT=Extract Table Rows.htm
+IDH_OBJ_DPO_TABLEROWINDEXLOGIC=Table Row Index Logic.htm
+IDH_OBJ_DPO_TABLEROWSTATISTICS=Table Row Statistics.htm
+IDH_OBJ_DPO_TABLESTATISTICS=Table Column Statistics.htm
+IDH_OBJ_DPO_TABLETOGRID=Convert Table To Grid.htm
+IDH_OBJ_DPO_TABLETOREAL=Extract Real from Table.htm
+IDH_OBJ_DPO_TABLETOXY=Table Columns To XY.htm
+IDH_OBJ_DPO_TABLETRANSPOSE=Transpose Table.htm
+IDH_OBJ_DPO_VIEWTABLE=View Table Data.htm
+IDH_OBJ_DPO_VIEWXY=View XY Data.htm
+IDH_OBJ_DPO_XYADDNOISE=Add Noise.htm
+IDH_OBJ_DPO_XYARRAYSCALETRANSFORM=Array Scale.htm
+IDH_OBJ_DPO_XYDUALSCALETRANSFORM=Dual ScaleTransform.htm
+IDH_OBJ_DPO_XYFOURIER=Fourier Transform on Y.htm
+IDH_OBJ_DPO_XYHISTOGRAM=Histogram.htm
+IDH_OBJ_DPO_XYINTEGRATE=Integrate.htm
+IDH_OBJ_DPO_XYMATH=Vector Math.htm
+IDH_OBJ_DPO_XYQUANTILE=Calculate CDF of XY Data.htm
+IDH_OBJ_DPO_XYRANGEEXTRACT=Extract Range.htm
+IDH_OBJ_DPO_XYREDUCTION=Reduction.htm
+IDH_OBJ_DPO_XYREMOVEDUPLICATE=Remove Duplicates.htm
+IDH_OBJ_DPO_XYSCALETRANSFORM=Single Scale.htm
+IDH_OBJ_DPO_XYSMOOTHFILTER=Smooth.htm
+IDH_OBJ_DPO_XYSTATISTICS=Statistics.htm
+IDH_OBJ_DPO_XYTOCDF=Validate XY Data as CDF.htm
+IDH_OBJ_DPO_XYTOXYARRAY=Add XY to Array.htm
+IDH_OBJ_DPO_XYTRANSPOSE=Transpose.htm
+IDH_OBJ_LPO_TABLE=Table List.htm
+IDH_OBJ_LPO_TABLESTATISTICS=Full Table Statistics List.htm
+IDH_OBJ_LPO_XYDATA=XY Data  List.htm
+IDH_OBJ_PPO_2DANALYTIC=Analytics.htm
+IDH_OBJ_PPO_2DMULTTABLES=Multiple Table Series.htm
+IDH_OBJ_PPO_2DTABLEHISTOGRAM=Table Histogram.htm
+IDH_OBJ_PPO_2DTABLESERIES=Single Table Series.htm
+IDH_OBJ_PPO_2DXYARRAY=XY Array Series.htm
+IDH_OBJ_PPO_2DXYDATA=XY Series.htm
+IDH_OBJ_PPO_3DTABLESERIES=Table Series.htm
+IDH_OBJ_PPO_3DXYDATA=XY Series.htm
+IDH_OBJ_PPO_CUBECOLORBLOCK=Cube Color Block.htm
+IDH_OBJ_PPO_CUBECOLORPOINT=Cube Color Point.htm
+IDH_OBJ_PPO_CUBEISOVOLUME=Cube Isovolume.htm
+IDH_OBJ_PPO_ENTERXYONPLOT=Modify.htm
+IDH_OBJ_PPO_GRIDCOLORBLOCKFILL=Grid Color Block.htm
+IDH_OBJ_PPO_GRIDCOLORPOINT=Grid Color Point.htm
+IDH_OBJ_PPO_GRIDCOLORRANGEFILL=Grid Color Fill.htm
+IDH_OBJ_PPO_GRIDCONTOUR=Grid Contour.htm
+IDH_OBJ_PPO_GRIDFISHNET=Grid Fishnet.htm
+IDH_OBJ_PPO_NSXYLABELS=XY Labels.htm
+IDH_OBJ_PPO_NSXYZLABELS=XYZ Labels.htm
+IDH_OBJ_PPO_TABLEHORSETAIL=Table Horsetail.htm
+IDH_OBJ_PPO_XYHISTOGRAM=XY Histogram.htm
+IDH_OBJ_PPO_XYHORSETAIL=XY Array Horsetail.htm
+IDH_OBJ_UPO_WRITECURVEARRAY=Write Curve File.htm
+IDH_OBJ_UPO_WRITEGRID=Write Grid File.htm
+IDH_OBJ_UPO_WRITETABLE=Write Table File.htm
+IDH_OBJ_UPO_WRITEXY=Write XY File.htm
+IDH_OBJ_UPO_WRITEXYARRAY=Write XY Array.htm
+IDH_OBJECT_TREE=Object Tree.htm
+IDH_OS_DPO_BASICRESIDUAL=Calculate Basic Residual.htm
+IDH_OS_DPO_CALCCONFIDENCE=Calculate Joint Confidence of Opt Results.htm
+IDH_OS_DPO_CALCCONFIDENCEGRID=Calculate Joint Confidence of Grid.htm
+IDH_OS_DPO_CALCCONFIDENCETABLE=Calculate Joint Confidence of Table.htm
+IDH_OS_DPO_COMPOSITEFIT=Composite Fit.htm
+IDH_OS_DPO_JACOBTOTABLE=Jacobian to Table.htm
+IDH_OS_DPO_READOPTSIMRESULTS=Read nSIGHTS Optimizer Results.htm
+IDH_OS_DPO_READRANGESIMRESULTS=Read nSIGHTS Range Results.htm
+IDH_OS_DPO_RESIDUALDIAGNOSTIC=Calculate Residual Diagnostic.htm
+IDH_OS_DPO_RESIDUALHISTOGRAM=Calculate Residual Histogram.htm
+IDH_OS_DPO_SELECTOPTCOVAR=Extract Covariance Matrices.htm
+IDH_OS_DPO_SELECTOPTJACOB=Extract Jacobian.htm
+IDH_OS_DPO_SELECTOPTRESID=Extract Residuals.htm
+IDH_OS_DPO_SELECTOPTRESULTS=Extract Optimizer Results Table.htm
+IDH_OS_DPO_SELECTRANGECUBE=Extract Range Cube.htm
+IDH_OS_DPO_SELECTRANGEGRID=Extract Range Grid.htm
+IDH_OS_DPO_SELECTRTRANGECUBE=Select Range Cube.htm
+IDH_OS_DPO_SELECTRTRANGEGRID=Select Range Grid.htm
+IDH_OS_DPO_SINGLEFIT=BasicSingleFit.htm
+IDH_OS_LPO_COVARIANCE=Covariance List.htm
+IDH_OS_LPO_JACOBIAN=Jacobian List.htm
+IDH_OS_LPO_OPTRUN=Optimization Results.htm
+IDH_OS_PPO_COVARLIMITS=Confidence Limits.htm
+IDH_OS_PPO_COVARLIMMATRIX=Confidence Limits Multiple Dual.htm
+IDH_OS_PPO_COVARLIMSINGLE=Confidence Limits Multiple Single.htm
+IDH_OS_PPO_TABLELABELS=Table Labels.htm
+
+[MAP]
+#include ..\..\appHelp.h
+#include ..\..\genLib\genHelp\H_Genlib.h
+#include nPre64.h
+#include ..\..\nsLib\nsHelp\H_Nslib.h
+#include ..\..\objLib\objHelp\H_Objlib.h
+#include ..\..\osLib\osHelp\H_Oslib.h
+
+[INFOTYPES]
+

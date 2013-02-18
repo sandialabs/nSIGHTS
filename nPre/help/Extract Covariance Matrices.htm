@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Extract Covariance Matrices</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Extract Covariance Matrices </P>
+
+</FONT><P>What:   </B>Extracts covariance matrices from one or multiple simulations of an nSIGHTS Optimizer Results object.  The confidence limits of the covariance matrix can be plotted using the <B><FONT FACE="Technical" COLOR="#008000">Confidence Limits</B></FONT> plot object.</P>
+<B><P>Why:   </B>For the plotting of confidence limits or the viewing of the covariance matrix in a list page.</P>
+<B><P>Used By:  <FONT FACE="Technical" COLOR="#008000">Confidence Limits</B></FONT> plot object, or <B><FONT FACE="Technical" COLOR="#008000">Covariance List </B></FONT>list object.</P>
+<B><P>Appearance: </P>
+</B><P><IMG SRC="AppExtractCovMatrices.jpg"></P>
+<B><P>Application:  </B>nPost</P>
+<B><P>Input Data:  <FONT FACE="Technical" COLOR="#008000">nSIGHTS Optimizer Results</P></FONT>
+<P>Output Data: </B>covariance data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">nSIGHTS Opt Results To Select From</B></FONT></TD>
+<TD CLASS=desc>The optimizer results from which the covariance matrices are to be extracted is selected.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Options</FONT></B>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Fit components</B></FONT></TD>
+<TD CLASS=desc>Allows the covariance matrix of sub-fits to be extracted.  A sub-fit is a single fit of a composite fit.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Estimated</B></FONT></TD>
+<TD CLASS=desc>Covariance matrices use the estimated standard deviation specified by the user for each parameter.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Actual</B></FONT></TD>
+<TD CLASS=desc>Covariance matrices use the actual standard deviation calculated during the simulation.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Index Selection Value Source</B></FONT>  </TD>
+<TD CLASS=desc>A selection box containing a list of the available simulations allows the user to select the simulation from which to extract the covariance matrix.  One or multiple selections may be made.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Mst</B></FONT></TD>
+<TD CLASS=desc>Selection of the simulations may be slaved to another extraction object.  See <A HREF="Masters and Slaves.htm">Masters and Slaves</A> for more information.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Exp</B></FONT></TD>
+<TD CLASS=desc>Selection of the simulations may be exposed.  See <A HREF="Exposed Controls.htm">Exposed Controls</A> for more information.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Multiple</B></FONT></TD>
+<TD CLASS=desc>Multiple simulations may be selected if this checkbox is selected.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">None </B></FONT></TD>
+<TD CLASS=desc>Only for multiple selections, no simulations will be selected. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">All</B></FONT></TD>
+<TD CLASS=desc>Only for multiple selections, all simulations will be selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Run</B></FONT></TD>
+<TD CLASS=desc>Only for multiple selections, all simulations with the same run identifier as the currently selected simulation will be selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Case</B></FONT></TD>
+<TD CLASS=desc>Only for multiple selections, all simulations with the same case identifier as the currently selected simulation will be selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Fit</B></FONT> </TD>
+<TD CLASS=desc>Only for multiple selections, all simulations with the same fit as the currently selected simulation will be selected.</TD>
+</TR>
+</TABLE>
+</P>
+</FONT></BODY>
+</HTML>

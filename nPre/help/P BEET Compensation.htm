@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>P(t) BE/ET Compensation</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>P(t) BE/ET Compensation</P></FONT>
+
+<P>What:   </B>Removes fluctuations in pressure data caused by barometric data and earth tide data.  Requires a unit response function. </P>
+<B><P>Why: </B>To remove the influence of barometric and earth tide fluctuations on field data.</P>
+<B><P>Used By: </B></FONT>Any object using XY data.</P>
+<B><P>Appearance: </P>
+</B></FONT><P><IMG SRC="AppPtBEETCompensation.jpg"></P>
+</FONT><B><P>Input Data: </B>XY data and response function (<B><FONT FACE="Technical" COLOR="#008000">Create BE/ET Response Function</B></FONT>)</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<P>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>P(t) Data to Compensate</B></FONT> </TD>
+<TD CLASS=desc>Barometric and earth tide fluctuations are removed from the selected input pressure time series data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Response Function</B></FONT></TD>
+<TD CLASS=desc>Response function calculated using baseline pressure data in a <B><FONT FACE="Technical" COLOR="#008000">Create BE/ET Response Function</B></FONT> object.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Barometric P(t) Data</B></FONT></TD>
+<TD CLASS=desc>XY time series containing barometric pressures.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Earth Tide Data</TD>
+<TD CLASS=desc>XY time series containing earth tide data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Status</B></FONT> </TD>
+<TD CLASS=desc>Displays the time spacing and memory associated with the response function.</TD>
+</TR>
+</TABLE>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Single Table Series</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Single Table Series</P></FONT>
+
+<P>What:</B>   In a 2D plot, displays columns of single table as XY data using symbols and/or lines. Only one column is selected as the X data column.  Multiple columns can be selected for the Y data.</P>
+<B><P>Why:</B>   Standard XY data display.</P>
+<B><P>Used By:</B>  <B><FONT FACE="Technical" COLOR="#008000">Series Legend</P></FONT>
+<P>Appearance: </P></B>
+<P><IMG SRC="App2DataSingleTableSeries.jpg"></P>
+<B><P>Input Data:</B>  table data</P>
+<B><P>Output Data:</B> series legend specifications</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Table Data</B></FONT></TD>
+<TD CLASS=desc>The table data set to be plotted is selected</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">X data column</B></FONT></TD>
+<TD CLASS=desc>The column in the input table that will form the X co-ordinate of the series.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Plot all rows</B></FONT></TD>
+<TD CLASS=desc>If toggled off, only rows 1 to the specified # of rows will be plotted.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050"># of rows to plot</B></FONT></TD>
+<TD CLASS=desc>If <B><FONT COLOR="#800050">Plot all rows</B></FONT> is toggled off, the maximum number of rows to be plotted is specified.</TD>
+</TR>
+</TABLE>
+
+Each <B><FONT FACE="Technical" COLOR="#008000">Single Table Series</B></FONT> object can plot up to 8 XY series from one table, all using the same X values specified in the <B><FONT COLOR="#000080">X data column</B></FONT>.  A different format can be used to plot each XY series selected.  The scroll box contains 8 input areas, separated by horizontal lines.  Each input area is used to describe one XY series.</P>
+
+<P>
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Select </B></FONT></TD>
+<TD CLASS=desc>The toggle box in the upper left corner of input area must be selected to plot the selected XY series.  </TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050"> Y</B></FONT></TD>
+<TD CLASS=desc>The table column from the selected table to be used as the Y data of the series.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Type</B></FONT></TD>
+<TD CLASS=desc>The XY series is plotted as lines and/or symbols.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Pen</B></FONT></TD>
+<TD CLASS=desc>Select the color of the lines and/or symbols from the plot window's plot pen set.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Symbol type</B></FONT></TD>
+<TD CLASS=desc>Available if <B><FONT COLOR="#800050">Type</B></FONT> is not <I><FONT COLOR="#800050">Line</I></FONT>, one of the available symbols is selected: X, +, square, circle, triangle, diamond, filled square, filled circle, filled triangle and filled diamond.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Symbol size</B></FONT></TD>
+<TD CLASS=desc>The approximate relative size of the symbol in pixels is  selected. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Line type</B></FONT></TD>
+<TD CLASS=desc>Available if <B><FONT COLOR="#800050">Type</B></FONT> is not <I><FONT COLOR="#800050">Symbol</I></FONT>, the line pattern is selected:  <I><FONT COLOR="#800050">Solid</I></FONT>, <I><FONT COLOR="#800050">Dashed</I></FONT>, or <I><FONT COLOR="#800050">Double-Dash</I></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Line thk</B></FONT></TD>
+<TD CLASS=desc>Thickness of the line in pixels.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">New label</B></FONT></TD>
+<TD CLASS=desc>When toggled on, the label output is entered by the user in the adjacent text box. When toggled off, the label output is the column ID of the Y data in the input table.  </TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

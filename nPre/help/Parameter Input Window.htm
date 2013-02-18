@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Parameter Input Window</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Parameter Input Window</B></FONT></P>
+
+<P>Non-fitting and fitting parameters, including their value, range or uncertainty distribution, are defined in the <B><FONT COLOR="#000080">Parameter</B></FONT> input window. </P>
+
+<P>The parameter window is divided into tabs as a means of organizing the parameter list.  The list of tabs and possible parameters in each tab varies depending on the model’s configuration.  The <A HREF="Model Parameter Summary Table.htm">Model Parameter Summary table</A> summarizes all the parameters, and the model configuration under which the parameter is available.  </P>
+
+<P>All the tabs in the <B><FONT COLOR="#000080">Parameter</B></FONT> input window contain tables, listing the parameter <B><FONT COLOR="#800050">Name</B></FONT>, <B><FONT COLOR="#800050">Type</B></FONT>, <B><FONT COLOR="#800050">Value</B></FONT> and <B><FONT COLOR="#800050">Units</B></FONT>.  Table column widths can be adjusted if necessary, by placing the cursor on the column title edge until the mouse changes to a double arrow, and then drag, or by double clicking on the column title, which automatically re-sizes the column.</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Name</B></FONT></TD>
+<TD CLASS=desc>The parameter name, as listed in the <A HREF="Model Parameter Summary Table.htm">Model Parameter Summary table</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Type</B></FONT></TD>
+<TD CLASS=desc>Determines the treatment of the variable by the model. The available types are selected from a drop-down list accessed by double-clicking on the corresponding table cell.  </TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Constant</I></FONT></TD>
+<TD CLASS=desc>Indicates a non-fitting parameter.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Suite</I></FONT></TD>
+<TD CLASS=desc>Only available for modes other than range mode. Several values for the parameter are specified, to a maximum of nine values. A simulation will be conducted for each value of the parameter.  A maximum of three parameters can by defined as type <I><FONT COLOR="#800050">Suite</I></FONT>, the priority of each parameter defined in the <B><FONT COLOR="#000080">Suite/Range</B></FONT> input window.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Range</I></FONT></TD>
+<TD CLASS=desc>Only accessible in range mode, a range of values is defined for the parameter.  A maximum of three parameters can by defined as type <I><FONT COLOR="#800050">Range</I></FONT>, the priority of each parameter defined in the </FONT><B><FONT COLOR="#000080">Suite/Range</B></FONT> input window.  It is similar to </FONT><I><FONT COLOR="#800050">Suite</I></FONT> type, except for the simulation mode (i.e. normal mode vs. range mode), and the number of real values that can be defined in the range (up to 1000).  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Optimize</I></FONT></TD>
+<TD CLASS=desc>Only accessible in optimization mode, it indicates a fitting parameter.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Sample</I></FONT></TD>
+<TD CLASS=desc>Only accessible in sampling mode, it is a parameter for which a sample is taken from a defined distribution.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">f(x) Points</I></FONT</TD>
+<TD CLASS=desc> Parameter is defined as a function of pressure (f(P)), radius (f(r) or time (f(t)).  Note that parameters cannot be defined as a function of pressure in dual porosity or leaky systems, and parameters can only be defined as function of time for 1D radial systems.  The parameter function is described in the <B><FONT COLOR="#000080">f(x) Points Parameter </B></FONT>input window.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">f(x) File</I></FONT></TD>
+<TD CLASS=desc>Parameter is defined as a function of pressure, radius or time.  The parameter function is described using curve data.  If the curve data source selected in the <B><FONT COLOR="#000080">Main</B></FONT> tab of the <B><FONT COLOR="#000080">Configuration</B></FONT> input window is <I><FONT COLOR="#800050">Object</I></FONT>, the parameter <B><FONT COLOR="#800050">Value</B></FONT> contains the available curve objects created within an object tree (<B><FONT COLOR="#000080">Plots & Data Processing</B></FONT>). Otherwise, if the curve data source selected is <I><FONT COLOR="#800050">File</I></FONT>, the curve data is obtained from the corresponding <B><FONT COLOR="#800050">f(P) parameters</B></FONT>, <B><FONT COLOR="#800050">f(r) parameters</B></FONT>, or <B><FONT COLOR="#800050">f(t) parameters</B></FONT> curve file loaded within the <B><FONT COLOR="#000080">Curve Files</B></FONT> tab of the <B><FONT COLOR="#000080">Configuration</B></FONT> input window. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Value</B></FONT></TD>
+<TD CLASS=desc>For constant parameters, the value is simply input into the corresponding cell.   For non-constant parameters (except f(P) or f(r) points), double click on the corresponding cell to open the <A HREF="Value Dialog.htm"><B><FONT COLOR="#000080">Value Dialog</B></FONT></A> specific to the parameter <B><FONT COLOR="#800050">Type</B></FONT>.  For parameters of type f(P) or f(r) points, the values are entered in the <B><FONT COLOR="#000080">f(p)/f(r) Points Parameter</B></FONT> input window. If the value input is incomplete, the parameter <B><FONT COLOR="#800050">Value</B></FONT> cell will display <FONT FACE="Courier" ><B>BAD</FONT></B>.  Before inserting a value, change the <B><FONT COLOR="#800050">Units </B></FONT>to the units of the value to be input.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Units</B></FONT></TD>
+<TD CLASS=desc>Changed by double-clicking on the table cell, which activates a drop-down list. Units are as specified on the <B><FONT COLOR="#000080">Configuration<FONT FACE="Wingdings">&#224;</FONT> Default Units</B></FONT> tab until they are explicitly overridden by the user.  Note that if the <B><FONT COLOR="#800050">Value</B></FONT> is set before the <B><FONT COLOR="#800050">Units</B></FONT> are changed, the <B><FONT COLOR="#800050">Value</B></FONT> will be converted to the new Units.</TD>
+</TR>
+</TABLE>
+
+
+</FONT></BODY>
+</HTML>

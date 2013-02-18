@@ -1,0 +1,1469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a1d25d8e-d10a-45e7-af06-ec6d3854f588}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\objClass">
+      <UniqueIdentifier>{09befedc-660a-4983-b948-f8149a4f46e2}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\objDataClass">
+      <UniqueIdentifier>{12fac0ac-e425-4e8a-a2ab-51491a1898d6}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\objDFO">
+      <UniqueIdentifier>{80653163-ae3c-44d9-a74f-3adc116023fd}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\objDPO">
+      <UniqueIdentifier>{ed336c67-4df0-4d9b-9a98-4f9c3446b0ef}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\objUFO">
+      <UniqueIdentifier>{83e10097-1998-4bad-b8b9-bec5ec3fc094}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\objUPO">
+      <UniqueIdentifier>{931ae78a-2e6e-45b5-9ac2-b71bf92b354a}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{364aaf23-b514-40a4-882a-32db9b9979fb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\objClass H">
+      <UniqueIdentifier>{78d972ae-71aa-43f7-92f3-33aad45ae743}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\objDataClass H">
+      <UniqueIdentifier>{e5ac1920-1e4b-41a8-a2ed-cad9b148894d}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\objDFO H">
+      <UniqueIdentifier>{d82a3649-0181-4aa4-8151-c6e268e2a001}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\objDPO H">
+      <UniqueIdentifier>{8f73ef41-2838-40c6-8a00-12c179211597}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\objUFO H">
+      <UniqueIdentifier>{0fcae3c5-ecc2-42c4-bb3d-f9db950068ae}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\objUPO H">
+      <UniqueIdentifier>{9046b3c2-525e-4fbc-8d79-221c30f15621}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ObjLibAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\C_Curve.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CubeData.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_Curve.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CurveArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CurveArrayIO.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CurveArrayIOText.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_DataCoord.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_GridData.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_Normalize.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_VariableArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_XYDataArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_CubeData.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_CubeIndxArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_Curve.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_CurveArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_GridData.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_Normalize.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_SampleTable.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_VariableArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_XYArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_XYDataArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_XYZArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_CubeData.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_GridData.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_VariableArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_XYDataArray.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_XYDataArrayBin.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_XYDataArrayText.cpp">
+      <Filter>Source Files\objClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_CubeInput.cpp">
+      <Filter>Source Files\objDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_GridInput.cpp">
+      <Filter>Source Files\objDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_InterpPoints.cpp">
+      <Filter>Source Files\objDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_TableColSel.cpp">
+      <Filter>Source Files\objDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_VariableProcess.cpp">
+      <Filter>Source Files\objDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_XYColSel.cpp">
+      <Filter>Source Files\objDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CDFExtract.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CombineTables.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateCurve.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateDataLabel.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateReal.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateSpecialCDF.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateXYArray.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeExtractGrid.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeHistogram.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeMath.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeNormalize.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeScaleTransform.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeStatistics.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeToIndex.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CurveInterp.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_EnterTable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_EnterXY.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ExecuteObjects.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ExecuteProcess.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridExtractIsoPoint.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridExtractXY.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridHistogram.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridInterpolate.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridMath.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridNormalize.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridScaleTransform.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridStatistics.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridTile.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_InterpTableColumn.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_Normalize.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadCubeData.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadCurveArray.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadGridData.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadLabelArray.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadTable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadTableCF.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadVariableArray.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadXY.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadXYDataArray.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_RealScaleTransform.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_RealToTable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectCurve.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectVariable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectXY.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableAdd.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableAddBase.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColScaleTransform.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColumnCorrelation.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColumnMath.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColumnSort.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableConcat.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableFullCorrelation.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableHistogram.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableIntegrate.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableInterpVal.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableQuantile.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRangeExtract.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRowAccumulate.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRowIndexLogic.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRowStatistics.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableSample.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableStatistics.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableToGrid.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableToReal.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableToXY.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableTranspose.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TransformTable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ViewGrid.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ViewTable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ViewXY.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYAddNoise.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYArrayScaleTransform.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYArrayToTable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYBase.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYConcat.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYDualScaleTransform.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYFourier.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYHistogram.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYIntegrate.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYIntegrateFMom.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYInterpVal.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYMath.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYQuantile.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYRangeExtract.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYReduction.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYRemoveDuplicate.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYScaleTransform.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYSmoothFilter.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYStatistics.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYToCDF.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYToTable.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYToXYArray.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYTranspose.cpp">
+      <Filter>Source Files\objDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CDFExtract.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CombineTables.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CreateCurve.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CreateDataLabel.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CreateReal.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CreateSpecialCDF.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CreateXYArray.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CubeExtractGrid.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CubeHistogram.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CubeMath.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CubeNormalize.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CubeScaleTransform.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CubeStatistics.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CubeToIndex.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CurveInterp.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_EnterTable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_EnterXY.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ExecuteObjects.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ExecuteProcess.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridExtractIsoPoint.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridExtractXY.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridHistogram.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridInterpolate.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridMath.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridNormalize.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridScaleTransform.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridStatistics.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_GridTile.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_InterpTableColumn.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_Normalize.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadCubeData.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadCurveArray.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadGridData.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadLabelArray.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadTable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadVariableArray.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadXY.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ReadXYDataArray.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_RealScaleTransform.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_RealToTable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_SelectCurve.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_SelectVariable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_SelectXY.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableAdd.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableAddBase.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableColScaleTransform.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableColumnCorrelation.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableColumnMath.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableColumnSort.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableConcat.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableFullCorrelation.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableHistogram.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableIntegrate.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableInterpVal.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableQuantile.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableRangeExtract.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableRowAccumulate.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableRowIndexLogic.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableRowStatistics.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableSample.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableStatistics.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableToGrid.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableToReal.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableToXY.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TableTranspose.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_TransformTable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ViewGrid.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ViewTable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_ViewXY.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYAddNoise.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYArrayScaleTransform.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYArrayToTable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYConcat.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYDualScaleTransform.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYFourier.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYHistogram.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYIntegrate.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYIntegrateFMom.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYInterpVal.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYMath.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYQuantile.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYRangeExtract.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYReduction.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYRemoveDuplicate.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYScaleTransform.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYSmoothFilter.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYStatistics.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYToCDF.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYToTable.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYToXYArray.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_XYTranspose.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objDPO\objDPOConfigFile.cpp">
+      <Filter>Source Files\objDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_VariableProcess.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteCurveArray.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteGrid.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteLabelArray.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteTable.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteTableCF.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteXY.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteXYDataArray.cpp">
+      <Filter>Source Files\objUFO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_VariableProcess.cpp">
+      <Filter>Source Files\objUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_WriteCurveArray.cpp">
+      <Filter>Source Files\objUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_WriteGrid.cpp">
+      <Filter>Source Files\objUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_WriteLabelArray.cpp">
+      <Filter>Source Files\objUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_WriteTable.cpp">
+      <Filter>Source Files\objUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_WriteXY.cpp">
+      <Filter>Source Files\objUPO</Filter>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_WriteXYDataArray.cpp">
+      <Filter>Source Files\objUPO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ObjLibAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\C_Curve.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_CubeData.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_Curve.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_CurveArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_CurveArrayIO.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_CurveArrayIOText.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_DataCoord.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_GridData.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_Normalize.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_VariableArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DC_XYDataArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_CubeData.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_CubeIndxArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_Curve.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_CurveArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_GridData.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_Normalize.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_SampleTable.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_VariableArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_XYArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_XYDataArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\DO_XYZArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\IO_CubeData.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\IO_GridData.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\IO_VariableArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\IO_XYDataArray.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\IO_XYDataArrayBin.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objClass\IO_XYDataArrayText.h">
+      <Filter>Header Files\objClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDataClass\DSC_CubeInput.h">
+      <Filter>Header Files\objDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDataClass\DSC_GridInput.h">
+      <Filter>Header Files\objDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDataClass\DSC_InterpPoints.h">
+      <Filter>Header Files\objDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDataClass\DSC_TableColSel.h">
+      <Filter>Header Files\objDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDataClass\DSC_VariableProcess.h">
+      <Filter>Header Files\objDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDataClass\DSC_XYColSel.h">
+      <Filter>Header Files\objDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CDFExtract.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CombineTables.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CreateCurve.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CreateDataLabel.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CreateReal.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CreateSpecialCDF.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CreateXYArray.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CubeExtractGrid.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CubeHistogram.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CubeMath.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CubeNormalize.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CubeScaleTransform.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CubeStatistics.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CubeToIndex.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_CurveInterp.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_EnterTable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_EnterXY.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ExecuteObjects.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ExecuteProcess.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridExtractIsoPoint.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridExtractXY.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridHistogram.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridInterpolate.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridMath.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridNormalize.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridScaleTransform.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridStatistics.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_GridTile.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_InterpTableColumn.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_Normalize.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadCubeData.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadCurveArray.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadGridData.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadLabelArray.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadTable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadVariableArray.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadXY.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ReadXYDataArray.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_RealScaleTransform.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_RealToTable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_SelectCurve.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_SelectVariable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_SelectXY.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableAdd.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableAddBase.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableColScaleTransform.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableColumnCorrelation.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableColumnMath.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableColumnSort.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableConcat.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableFullCorrelation.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableHistogram.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableIntegrate.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableInterpVal.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableQuantile.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableRangeExtract.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableRowAccumulate.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableRowIndexLogic.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableRowStatistics.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableSample.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableStatistics.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableToGrid.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableToReal.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableToXY.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TableTranspose.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_TransformTable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ViewGrid.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ViewTable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_ViewXY.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYAddNoise.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYArrayScaleTransform.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYArrayToTable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYBase.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYConcat.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYDualScaleTransform.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYFourier.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYHistogram.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYIntegrate.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYIntegrateFMom.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYInterpVal.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYMath.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYQuantile.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYRangeExtract.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYReduction.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYRemoveDuplicate.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYScaleTransform.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYSmoothFilter.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYStatistics.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYToCDF.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYToTable.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYToXYArray.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDFO\DFO_XYTranspose.h">
+      <Filter>Header Files\objDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CDFExtract.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CombineTables.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CreateCurve.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CreateDataLabel.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CreateReal.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CreateSpecialCDF.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CreateXYArray.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CubeExtractGrid.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CubeHistogram.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CubeMath.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CubeNormalize.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CubeScaleTransform.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CubeStatistics.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CubeToIndex.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_CurveInterp.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_EnterTable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_EnterXY.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ExecuteObjects.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ExecuteProcess.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridExtractIsoPoint.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridExtractXY.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridHistogram.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridInterpolate.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridMath.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridNormalize.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridScaleTransform.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridStatistics.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_GridTile.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_InterpTableColumn.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_Normalize.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadCubeData.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadCurveArray.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadGridData.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadLabelArray.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadTable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadVariableArray.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadXY.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ReadXYDataArray.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_RealScaleTransform.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_RealToTable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_SelectCurve.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_SelectVariable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_SelectXY.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableAdd.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableAddBase.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableColScaleTransform.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableColumnCorrelation.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableColumnMath.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableColumnSort.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableConcat.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableFullCorrelation.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableHistogram.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableIntegrate.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableInterpVal.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableQuantile.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableRangeExtract.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableRowAccumulate.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableRowIndexLogic.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableRowStatistics.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableSample.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableStatistics.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableToGrid.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableToReal.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableToXY.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TableTranspose.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_TransformTable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ViewGrid.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ViewTable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_ViewXY.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYAddNoise.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYArrayScaleTransform.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYArrayToTable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYConcat.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYDualScaleTransform.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYFourier.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYHistogram.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYIntegrate.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYIntegrateFMom.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYInterpVal.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYMath.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYQuantile.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYRangeExtract.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYReduction.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYRemoveDuplicate.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYScaleTransform.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYSmoothFilter.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYStatistics.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYToCDF.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYToTable.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYToXYArray.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\DPO_XYTranspose.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objDPO\objDPOConfigFile.h">
+      <Filter>Header Files\objDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUFO\UFO_VariableProcess.h">
+      <Filter>Header Files\objUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUFO\UFO_WriteCurveArray.h">
+      <Filter>Header Files\objUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUFO\UFO_WriteGrid.h">
+      <Filter>Header Files\objUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUFO\UFO_WriteLabelArray.h">
+      <Filter>Header Files\objUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUFO\UFO_WriteTable.h">
+      <Filter>Header Files\objUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUFO\UFO_WriteXY.h">
+      <Filter>Header Files\objUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUFO\UFO_WriteXYDataArray.h">
+      <Filter>Header Files\objUFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUPO\UPO_VariableProcess.h">
+      <Filter>Header Files\objUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUPO\UPO_WriteCurveArray.h">
+      <Filter>Header Files\objUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUPO\UPO_WriteGrid.h">
+      <Filter>Header Files\objUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUPO\UPO_WriteLabelArray.h">
+      <Filter>Header Files\objUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUPO\UPO_WriteTable.h">
+      <Filter>Header Files\objUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUPO\UPO_WriteXY.h">
+      <Filter>Header Files\objUPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="objUPO\UPO_WriteXYDataArray.h">
+      <Filter>Header Files\objUPO H</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

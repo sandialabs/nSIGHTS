@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Convert Table To Grid</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Convert Table To Grid </P></FONT>
+
+<P>What:   </B>Converts a table with at least 3 rows and 3 columns into a grid.  The column headers or the first row and the first column contains the grid coordinate data.</P>
+<B><P>Why: </B>To create grid data.</P>
+<B><P>Used By: </B>Any object using grid data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppConvertTableToGrid.jpg"></P>
+<B><P>Application:  </B>nPost</P>
+<B><P>Input Data:  </B>grid data</P>
+<B><P>Output Data: </B>grid data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Table Data To Use</B></FONT></TD>
+<TD CLASS=desc>The table data to be converted to a grid is selected.  The table must have at least 3 rows and 3 columns.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Conversion Format</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Grid</B></FONT> </TD>
+<TD CLASS=desc>The first column or column headers and the first row must contain the coordinate data for the grid.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">XYZ</B></FONT> </TD>
+<TD CLASS=desc>The grid is defined by an X column, Y column and Z column.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Column Coordinate Data</B></FONT></TD>
+<TD CLASS=desc>If <B><FONT COLOR="#800050">Grid</FONT> <FONT COLOR="#000080">Conversion Format</B></FONT> only.</TD>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Table Row 1</B></FONT> </TD>
+<TD CLASS=desc>Coordinate data is provided in the first row of the table. Note that the value in column 1, row 1 is ignored in this case.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Column Header</B></FONT> </TD>
+<TD CLASS=desc>Coordinate data is provided in the column headers, instead of the first row of the table.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Header Data</B></FONT></TD>
+<TD CLASS=desc>If Coordinate data is provided in the column headers, the coordinate value can be the column header value or the column header index.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid X Coordinate Data</B></FONT></TD>
+<TD CLASS=desc>If <B><FONT COLOR="#800050">Grid</FONT> <FONT COLOR="#000080">Conversion Format</B></FONT> only.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Table Rows</B></FONT> </TD>
+<TD CLASS=desc>The first row or column header contains the X coordinate data.  Correspondingly, the first column contains the Y coordinate data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Table Columns</B></FONT> </TD>
+<TD CLASS=desc>The first column contains the X coordinate data.  Correspondingly, the first row or column headers contains the Y coordinate data.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid X Column</B></FONT></TD>
+<TD CLASS=desc>The X column for <B><FONT COLOR="#800050">XYZ</FONT> <FONT COLOR="#000080">Conversion Format</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid Y Column</B></FONT></TD>
+<TD CLASS=desc>The Y column for <B><FONT COLOR="#800050">XYZ</FONT> <FONT COLOR="#000080">Conversion Format</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid Z Column</B></FONT></TD>
+<TD CLASS=desc>The Z column for <B><FONT COLOR="#800050">XYZ</FONT> <FONT COLOR="#000080">Conversion Format</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid X data ID</B></FONT></TD>
+<TD CLASS=desc>The ID provided for grid X data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid Y data ID</B></FONT></TD>
+<TD CLASS=desc>The ID provided for grid Y data.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Conversion Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">row modulus</B></FONT> </TD>
+<TD CLASS=desc>Allows reduction in the number of table rows converted to the grid.  For example, a row modulus of 2 causes every other row to be added to the grid.	</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">keep last row</B></FONT> </TD>
+<TD CLASS=desc>For a row modulus greater than 1, the last row in the table is kept.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">column modulus</B></FONT> </TD>
+<TD CLASS=desc>Allows reduction in the number of table columns converted to the grid.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">keep last column</B></FONT> </TD>
+<TD CLASS=desc>For a column modulus greater than 1, the last column in the table is kept.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid X Status</B></FONT></TD>
+<TD CLASS=desc>Provides the final dimensions of the grid in the X dimension:  linear or log increments, the number of X coordinates, the minimum X coordinate value and the maximum X coordinate value. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid Y Status</B></FONT></TD>
+<TD CLASS=desc>Provides the final dimensions of the grid in the Y dimension:  linear or log increments, the number of Y coordinates, the minimum Y coordinate value and the maximum Y coordinate value. </TD>
+</TR>
+
+</TABLE>
+</P>
+</FONT></BODY>
+</HTML>

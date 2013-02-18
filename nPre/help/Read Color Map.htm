@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Read Color Map</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Read Color Map </P></FONT>
+
+<P>What:</B>   Reads a color map from a specially formatted text file (default file extension:  *.cmap).  </P>
+<B><P>Why:</B>   Allows creation of color maps outside nSIGHTS (for example, in an Excel spreadsheet) to meet special requirements.</P>
+<B><P>Used By:</B>  Any object using a color map.</P>
+<B><P>Appearance:</P></B>
+<P><IMG SRC="AppReadColorMap.jpg"></P>
+<B><P>Input Data:</B>  external file containing a color map definition </P>
+<B><P>Output Data:</B> color map</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Color Map File Format</B></FONT></TD>
+<TD CLASS=desc>The format of the data in the input file (see <B>File Formats</B> below).</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">mView output format</B></FONT></TD>
+<TD CLASS=desc>The format produced by the object <B><FONT FACE="Technical" COLOR="#008000">Write Color Map</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">PV Wave native format</B></FONT></TD>
+<TD CLASS=desc>PV Wave format.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Color Map File</B></FONT></TD>
+<TD CLASS=desc>The name of the file (including the file path) containing the color map data is entered in the text box or the <B><FONT COLOR="#000080">Browse</B></FONT> button is used to find the file using the standard Windows open file dialog.</TD>
+</TABLE>
+
+Once the color map is read, the color map defined in the file will display in the color window.</P>
+
+<B><P>File Formats:</P>
+<P>mView Output</P></B>
+<P>The mView color map file format is as follows:</P>
+<TABLE>
+<TR>
+<TD VALIGN=TOP WIDTH=15%>Line 1:</TD>
+<TD VALIGN=TOP WIDTH=40%>ncolor</TD>
+<TD VALIGN=TOP WIDTH=45%># of RGB data in file (max 256)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%>Line 2:</TD>
+<TD VALIGN=TOP WIDTH=40%>Red 1 Green 1 Blue 1</TD>
+<TD VALIGN=TOP WIDTH=45%>RGB values: reals 0.0 to 1.0</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%></TD>
+<TD VALIGN=TOP WIDTH=40%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%></TD>
+<TD VALIGN=TOP WIDTH=40%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%></TD>
+<TD VALIGN=TOP WIDTH=40%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%>Line n+1:</TD>
+<TD VALIGN=TOP WIDTH=40%>Red n Green n Blue n.</TD>
+</TR>
+</TABLE>
+
+<B><P>PV Wave</P>
+</B><P>The PV Wave color map file format is as follows:</P>
+<TABLE>
+<TR>
+<TD VALIGN=TOP WIDTH=15%>Line 1:</TD>
+<TD VALIGN=TOP WIDTH=40%>Red 1 Green 1 Blue 1</TD>
+<TD VALIGN=TOP WIDTH=45%>RGB values: integers 0 to 255</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%></TD>
+<TD VALIGN=TOP WIDTH=40%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%></TD>
+<TD VALIGN=TOP WIDTH=40%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%></TD>
+<TD VALIGN=TOP WIDTH=40%><FONT SIZE=4><B>.</B></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=15%>Line n:</TD>
+<TD VALIGN=TOP WIDTH=40%>Red n Green n Blue n</TD>
+<TD VALIGN=TOP WIDTH=45%>where n maximum is 256.</TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

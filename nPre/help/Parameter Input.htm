@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Parameter Input</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Parameter Input</B></FONT></P>
+
+<P>Parameter values are entered into the tables provided in the tabs of this input window.  Only parameters required (based on the current model configuration) will be shown.</P>
+
+<P><IMG SRC="TutParameterWindow.jpg"></P>
+
+<P>The parameter value is entered into the <B><FONT COLOR="#800050">Value</B></FONT> cell.  Before entering the parameter value, the units should be defined in the <B><FONT COLOR="#800050">Units</B></FONT> cell.  Changing the <B><FONT COLOR="#800050">Units</B></FONT> cell after the <B><FONT COLOR="#800050">Value</B></FONT> cell will cause the value to be converted to the new units.</P>
+
+<P>Enter the parameter values, as specified in the following table (check the units!).  For parameters not specified, keep the default values.</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<B><P>Parameter</B></FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<B><P ALIGN="CENTER">Value</B></FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<B><P ALIGN="CENTER">Units</B></FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=3>
+<B><P>Formation tab</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Formation thickness</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">10</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">m</FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Flow dimension</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">1.6</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Static formation pressure</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">2000</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">kPa</FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>External boundary radius</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">1.0e+05</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">m</FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Formation conductivity</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">1.0e-05</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">m/sec</FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Formation spec. storage</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">1.0e-07</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">1/m</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=3>
+<B><P>Test-zone tab</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Well radius</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">4</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">in</FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Volume change from normal</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">0.0</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">m<SUP>3</SUP></FONT></TD>
+</TR>
+<TR><TD WIDTH="59%" VALIGN="TOP">
+<P>Test-zone compressibility</FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER">3.0E-08</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">1/Pa</FONT></TD>
+</TR>
+</TABLE>
+
+
+<P>While entering the parameters, the width of the <B><FONT COLOR="#800050">Value</B></FONT> column may need to be adjusted in order to view the value.  Place the cursor on the table heading of the <B><FONT COLOR="#800050">Value</B></FONT> column, and double click.  The column will be automatically adjusted to fit the values entered within the column.</P>
+
+<P>Each parameter also has a type, specified in the <B><FONT COLOR="#800050">Type</B></FONT> column.  The default type is <I><FONT COLOR="#800050">Constant</I></FONT>.  For an optimization simulation, fitting parameters are specified by changing the parameter type to <I><FONT COLOR="#800050">Optimize</I></FONT>.  Fitting parameters are the parameters the model adjusts in order to obtain an optimal fit to field data.  </P>
+
+<P>Once a parameter type has been changed to <I><FONT COLOR="#800050">Optimize</I></FONT>, the <B><FONT COLOR="#800050">Value</B></FONT> cell will read &quot;BAD&quot;.  Double clicking on the <B><FONT COLOR="#800050">Value</B></FONT> cell will bring up an <B><FONT COLOR="#000080">Optimized Value Dialog</B></FONT>, containing the input fields required for the parameter.  Once the optimized parameter inputs are completed correctly, and the dialog <B><FONT COLOR="#000080">OK</B></FONT> button selected, the <B><FONT COLOR="#800050">Value</B></FONT> cell will read &quot;OK&quot;.</P>
+
+<P><IMG SRC="TutOptValueDialog.jpg"></P>
+
+<P>For this tutorial, change the parameter <B><FONT COLOR="#800050">Type</B></FONT> to <I><FONT COLOR="#800050">Optimize</I></FONT> for the parameters specified in the table below.  Then for each fitting parameter, double click on the corresponding <B><FONT COLOR="#800050">Value</B></FONT> cell, and complete the required inputs of the <B><FONT COLOR="#000080">Optimized Value Dialog</B></FONT>, also specified in the table below.  Note that the <B><FONT COLOR="#800050">Best Estimate Value</B></FONT> is automatically the parameter value that was previously entered.</P>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<B><P>Parameter</B></FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<B><P ALIGN="CENTER">Minimum Value</B></FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<B><P ALIGN="CENTER">Maximum Value</B></FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<B><P ALIGN="CENTER">Best Estimate Value</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><P ALIGN="CENTER">Stepping</B></FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<B><P ALIGN="CENTER">Estimated std. dev.</B></FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=6>
+<B><P>Formation Tab</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<P>Flow dimension</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P ALIGN="CENTER">1.0</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P ALIGN="CENTER">3.0</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P ALIGN="CENTER">1.6</FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<P ALIGN="CENTER">Linear</FONT></TD>
+<TD WIDTH="15%" VALIGN="TOP">
+<P ALIGN="CENTER">1.0</FONT></TD>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<P>Formation conductivity</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-6 m/s</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-4 m/s</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-5 m/s</FONT></TD>
+<TD WIDTH="17%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">Logarithmic</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0</FONT></TD>
+</TR>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<P>Formation specific storage</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-8 1/m</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-6 1/m</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-7 1/m</FONT></TD>
+<TD WIDTH="17%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">Logarithmic</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0</FONT></TD>
+</TR>
+<TR><TD VALIGN="TOP" COLSPAN=6>
+<B><P>Test-zone tab</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="21%" VALIGN="TOP">
+<P>Test-zone compressibility</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-9 1/Pa</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0E-7 1/Pa</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">3.0E-8 1/Pa</FONT></TD>
+<TD WIDTH="17%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">Logarithmic</FONT></TD>
+<TD WIDTH="15%" VALIGN="MIDDLE">
+<P ALIGN="CENTER">1.0</FONT></TD>
+</TR>
+</TABLE>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="Fit Specification Input.htm">Fit Specification Input</A>
+</P>
+
+</FONT></BODY>
+</HTML>

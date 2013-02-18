@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>View Animation Control</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>View Animation Control</B></FONT></P>
+
+<P>For 3D plot windows, selecting the <B><FONT COLOR="#800050">View Animation</B></FONT> item on the <B><FONT COLOR="#000080">Control</B></FONT> menu will cause a new top-level dialog window to appear, as shown in the figure below. This menu is used to control the view-related aspects of the 3D display independently of the slider bars, including smooth transitions from one view to another.  This feature is useful for animations.</P>
+
+<P><IMG SRC="ViewAnimationControl.jpg"></P>
+
+<P>Each row on the menu gives two values for one element of a view.  These correspond to the start and end values for the view transition.  </P>
+
+<P>A toggle box item specifies whether log (on) or linear (off) increments are to be used for the scale component of the view.</P>
+
+<P>The other data item on the menu, <B><FONT COLOR="#000080"># of frames</B></FONT>, controls the size of the increment used in each step of the transition.  </P>
+
+<P>The push buttons perform the following:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Step</B></FONT></TD>
+<TD CLASS=desc>Add one increment to each element of the current view.  Increments are calculated as increment = (end value - start value) / # of frames.  Step is most often used with a small # of frames (20 or less) to verify the view transition before performing an animation. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Anim.</B></FONT></TD>
+<TD CLASS=desc>Set the current view to the start view then perform # of frames steps as described above.  This is most often used in conjunction with <FONT FACE="WP TypographicSymbols">A</FONT>automatic <FONT FACE="WP TypographicSymbols">@</FONT> TGA output (see <A HREF="Bitmap Output.htm">Bitmap Output</A>) to produce individual frames for creating an animation.  While animating, the text on the button will change to <FONT FACE="WP TypographicSymbols">A</FONT>Stop</FONT><FONT FACE="WP TypographicSymbols">@</FONT>.  Pressing the button will stop the current animation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">2Start</B></FONT></TD>
+<TD CLASS=desc>Changes the current view to the start view.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">2End</B></FONT></TD>
+<TD CLASS=desc>Changes the current view to the end view.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Set Start</B></FONT></TD>
+<TD CLASS=desc>Sets the start view in the dialog to the current plot view.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Set End</B></FONT></TD>
+<TD CLASS=desc>Sets the end view in the dialog to the current plot view.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">End2Start</B></FONT></TD>
+<TD CLASS=desc>Copy all end values to start values.  This feature is useful when performing multiple view change animations.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Close</B></FONT></TD>
+<TD CLASS=desc>Closes the dialog.</TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

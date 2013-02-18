@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Object Execution </TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Object Execution</B></FONT></P>
+
+<P>The nSIGHTS architecture includes an object execution algorithm that ensures objects are re-calculated as required.  For example, changing the scale in a <B><FONT FACE="Technical" COLOR="#008000">Scale/Transform</B></FONT> object will cause all objects using the resulting data to be re-calculated and all plots dependent on those objects to be re-drawn. </P>
+
+<P>The algorithm used to determine execution is fairly straightforward.  A tree is built based on inter-object references.  Tree connections are viewed using <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>
+Connections</B></FONT> or <B><FONT COLOR="#000080">Page<FONT FACE="Wingdings">&#224;</FONT>
+All Connections</B></FONT> as described in <A HREF="Object Connections.htm">Object Connections</A>.  The tree is traversed in such a manner that all input data to an object is re-calculated before an object is re-calculated.  </P>
+
+<P>An error occurs when a circular reference is detected: i.e. object A depends on object B for input, but the object B also depends upon object A.  In this case, nSIGHTS will issue a non-fatal error message of the form <B><FONT COLOR="#000080">ObjCalc - Non-blank object not found - circular reference</B></FONT>.</P>
+
+</FONT></BODY>
+</HTML>

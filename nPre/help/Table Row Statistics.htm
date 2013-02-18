@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Table Row Statistics</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Table Row Statistics </P></FONT>
+
+<P>What:   </B>Calculates basic statistics (e.g. sum, mean, minimum, maximum, etc.), as well as confidence limits and the median, for all rows of a table. The statistics are output in table format, and may be viewed as a table with the <B><FONT FACE="Technical" COLOR="#008000">View Table Data</B></FONT> object.</P>
+<B><P>Why:</B>   For examination of table row data.  Can also be included as labels for plots.</P>
+<B><P>Used By:</B>  Any object using table data.</P>
+<B><P>Appearance:</P></B>
+<P><IMG SRC="AppTableRowStats.jpg"></P>
+<B><P>Input Data:</B>  table data</P>
+<B><P>Output Data:</B> table data</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Table to Summarize</B></FONT></TD>
+<TD CLASS=desc>A table data object is selected, from which statistics will be calculated for each row of the table.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">X Column Processing </B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">skip X column</B></FONT></TD>
+<TD CLASS=desc>If selected, the specified column in the drop-down-box will be excluded from the row statistics.</TD>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Options </B></FONT></TD>
+<TD CLASS=desc>Each option determines the statistics calculated.  The statistics calculated are viewed by viewing the resulting table data with a <B><FONT FACE="Technical" COLOR="#008000">View Table Data</B></FONT> object.  At a minimum, even if none of the options are selected, the mean, min and max are output.  Each option adds additional statistics to the table. </TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">All statistics </FONT></TD>
+<TD CLASS=desc>If selected, outputs the statistics outlined for the <B><FONT FACE="Technical" COLOR="#008000">Statistics</B></FONT> object for each table row.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>normal 95 limits</FONT></B></TD>
+<TD CLASS=desc>If selected, outputs the following statistics for each table row:</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><B> Upper95 </B></TD>
+<TD CLASS=desc>Upper 95% confidence limit.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B> Lower95 </B></TD>
+<TD CLASS=desc>Lower 95% confidence limit.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B> median & mode </FONT></TD>
+<TD CLASS=desc>If selected, outputs the following statistics for each table row:</TD>
+</TABLE>
+
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>Median </B></TD>
+<TD CLASS=desc>The middle number of non-null data, i.e. half the non-null data have values greater than the median, and half have values less than the median.  If the number of non-null data is even, the median is the average of the two middle numbers.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>Mode </B></TD>
+<TD CLASS=desc>The middle number of non-null data, i.e. half the non-null data have values greater than the median, and half have values less than the median.  If the number of non-null data is even, the median is the average of the two middle numbers.  </TD>
+</TR>
+
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>CDF 99/01</FONT></TD>
+<TD CLASS=desc>If selected, outputs the following statistics for each table row:</TD>
+</TABLE>
+
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>CDF99 </B></TD>
+<TD CLASS=desc>The interpolated value of the CDF for a 99% probability.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>CDF01 </B></TD>
+<TD CLASS=desc>The interpolated value of the CDF for a 1% probability.</TD>
+</TR>
+
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>CDF 95/05</FONT></TD>
+<TD CLASS=desc>If selected, outputs the following statistics for each table row:</TD>
+</TABLE>
+
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>CDF95 </B></TD>
+<TD CLASS=desc>The interpolated value of the CDF for a 95% probability.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>CDF05 </B></TD>
+<TD CLASS=desc>The interpolated value of the CDF for a 5% probability.</TD>
+</TR>
+
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>CDF 99/01</FONT></TD>
+<TD CLASS=desc>If selected, outputs the following statistics for each table row:</TD>
+</TABLE>
+
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>CDF90 </B></TD>
+<TD CLASS=desc>The interpolated value of the CDF for a 90% probability.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B>CDF10 </B></TD>
+<TD CLASS=desc>The interpolated value of the CDF for a 10% probability.</TD>
+</TR>
+
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Quantile Type</B></FONT></TD>
+<TD CLASS=desc>If a CDF is required to calculate a row statistic, determines the quantile type used to calculate the CDF, as described in <A HREF="Calculate CDF of Table Column.htm">Calculate CDF of Table Column</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Generic Value</B></FONT></TD>
+<TD CLASS=desc>As described in <A HREF="Calculate CDF of Table Column.htm">Calculate CDF of Table Column</A></TD>
+</TR>
+
+</TABLE>
+
+</P>
+
+</FONT></BODY>
+</HTML>

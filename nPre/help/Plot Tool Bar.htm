@@ -1,0 +1,115 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Plot Tool Bar</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Plot Tool Bar</B></FONT></P>
+
+<P>Both 2D and 3D plot windows contain a tool-bar for performing common plotting functions.</P>
+
+<P><IMG SRC="PlotToolBar.jpg"></P>
+
+<P>The first three buttons help manage plot views.  As the view is changed through zooming or panning for 2D plots, and zooming or attitude/translation for 3D plots, nSIGHTS remembers previous views, in a view stack.</P>
+
+<P>These views are accessed through the tool bar buttons:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotInitialViewButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Initial view</B></FONT></TD>
+<TD CLASS=desc>Returns to the first view in the view stack.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotPrevViewButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Previous view</B></FONT></TD>
+<TD CLASS=desc>Restores the previous view.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotResetViewButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Reset view</B></FONT></TD>
+<TD CLASS=desc>Re-checks the limits of each object on the plot and performs an auto scaling operation to reset the axes limits.  Also clears the view stack. <B> This button needs to be used as you add new objects to a plot with axes auto-scaling that are outside the current axes range.</B></TD>
+</TR>
+</TABLE>
+
+<P>The next two buttons set and reset preferred views:</P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotSetAxesButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Set axes</B></FONT></TD>
+<TD CLASS=desc>Sets the current plot axes to manual and sets the manual axes limits to the current plotted axes limits.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotResetAxesButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Reset axes</B></FONT></TD>
+<TD CLASS=desc>Resets the axes limits to the preferred limits.  This button will not be available until <B><FONT COLOR="#000080">Set axes</B></FONT> has been pressed at least once.</TD>
+</TR>
+</TABLE>
+
+<P>The next three buttons help manage plot animation and bitmap file output (see <A HREF="Plot Output.htm">Plot Output</A>):</P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotSetPlotDumpButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Set Auto/Manual dump </B></FONT></TD>
+<TD CLASS=desc>When pressed in, the bitmap output method is set to <B><FONT COLOR="#800050">Auto</B></FONT> and a new bitmap file will be created every time the plot is redrawn.  When toggled out, the bitmap output method is <B><FONT COLOR="#800050">Semi-Auto</B></FONT>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotPlotDumpButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Plot Dump</B></FONT></TD>
+<TD CLASS=desc>Outputs the current plot as a bitmap file, and increments the bitmap file counter.  Note that multiple files will be created if the mode is <B><FONT COLOR="#800050">Semi-Auto</B></FONT> and <B><FONT COLOR="#000080">Dump frame count</B></FONT> on the <B><FONT COLOR="#000080">Bitmap Output File Setup</B></FONT> dialog is greater than 1.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotResetIncrButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Reset increment</B></FONT></TD>
+<TD CLASS=desc>Resets the next output increment to 0.  Useful for restarting an animation sequence after a mistake.</TD>
+</TR>
+</TABLE>
+
+<P>The next group of three buttons have special purposes:</P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotPropViewButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Propagate view</B></FONT></TD>
+<TD CLASS=desc>Updates other plot windows of the same type with the current view.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotPropSizeButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Propagate size</B></FONT></TD>
+<TD CLASS=desc>Changes the horizontal and vertical size (in pixels) of all other plot windows to match that of the current window.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotFullScreenButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Full screen</B></FONT></TD>
+<TD CLASS=desc>Toggles the plot window between full-screen mode and normal mode. </TD>
+</TR>
+</TABLE>
+
+<P>The next two buttons toggle the plot between zoom and selection mode.  At any time, only one of the two buttons will be pressed in:</P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotZoomModeButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Zoom</B></FONT></TD>
+<TD CLASS=desc>Mouse actions are zoom/unzoom.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotSelectModeButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Select</B></FONT></TD>
+<TD CLASS=desc>Mouse actions depend on active selection objects.</TD>
+</TR>
+</TABLE>
+
+<P>The final two buttons are:</P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotPrintButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Print</B></FONT></TD>
+<TD CLASS=desc>Sends the plot bitmap to the default printer.  Use <B><FONT COLOR="#000080">File<FONT FACE="Wingdings">&#224;</FONT>Print Setup</B></FONT> on the main nSIGHTS window to select the printer and corresponding settings.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><IMG SRC="PlotRefreshButton.jpg" ALIGN=TOP><B><FONT COLOR="#000080"> Refresh</B></FONT></TD>
+<TD CLASS=desc>Redraws the plot. </TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

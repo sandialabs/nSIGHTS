@@ -1,0 +1,924 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Data Object Function Summary</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Data Object Function Summary</B></FONT></P>
+
+<P>The following table summarizes the function of all the data objects available.  In addition, the required input object or data type and the created output data type is specified.  If the input or output is not an object or external file (e.g. input from user), the input or output will be specified as none. Note that for read objects, the default file extension is not required when opening a file.</P>
+
+<P>
+<A HREF="#A">A</A> |
+<A HREF="#B">B</A> |
+<A HREF="#C">C</A> |
+<A HREF="#D">D</A> |
+<A HREF="#E">E</A> |
+<A HREF="#F">F</A> |
+<A HREF="#H">H</A> |
+<A HREF="#I">I</A> |
+<A HREF="#J">J</A> |
+<A HREF="#L">L</A> |
+<A HREF="#M">M</A> |
+<A HREF="#N">N</A> |
+<A HREF="#P">P</A> |
+<A HREF="#R">R</A> |
+<A HREF="#S">S</A> |
+<A HREF="#T">T</A> |
+<A HREF="#V">V</A> |
+<A HREF="#W">W</A>
+</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B>Data Object Function Summary</B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<B>Object</B></FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+<B>Function/Input</B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="A">Add Noise</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Adds noise to Y data randomly based on a <I><FONT COLOR="#800050">Uniform</I></FONT> or <I><FONT COLOR="#800050">Normal</I></FONT> distribution.  Used to create synthetic data.  <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Add XY to Array
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a collection of XY data from a single XY data object.  Each time a change is made in the specified XY data object, the new XY data are added to the array.  For example, if an <B><FONT FACE="Technical" COLOR="#008000">Extract XY from Grid</B></FONT> object (extracts XY data from a grid) is used as input, each time the <B><FONT COLOR="#800050">Extraction Constant Value</B></FONT> in the <B><FONT FACE="Technical" COLOR="#008000">Extract XY from Grid</B></FONT> object is changed (including pressing the Apply button), the new XY data will be added to the array.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY array </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Array Scale/Transform</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Performs mathematical operations on XY array data types.<BR>
+<B>Input:</B> XY array<BR>
+<B>Output: </B>XY array</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="B">(Basic) Single Fit</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Pairs field and simulated data to be selected as a constraint by the <B><FONT COLOR="#000080">Fit Selection</B></FONT> tab in the <B><FONT COLOR="#000080">Fit Selection </B></FONT>nPre input window.  Typically used in the <B><FONT COLOR="#000080">Fit</B></FONT> tab of the <B><FONT COLOR="#000080">Plots & Data Processing </B></FONT>nPre input window.<BR>
+<B>Input: </B>XY data<BR>
+<B>Output: </B>fit specification<B>   </B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="C">Calculate Basic Residual</C></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Processes residuals from selected residual data. Residuals can be sorted in ascending (<B><FONT COLOR="#800050">Up</B></FONT>) or descending (<B><FONT COLOR="#800050">Down</B></FONT>) order, plotted versus the <B><FONT COLOR="#800050">X Value</B></FONT> or the data <B><FONT COLOR="#800050">Index</B></FONT>, and/or standardized to make the data comparable to a standard normal probability distribution. <BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Residuals<BR>
+</FONT>Output:</B> XY data </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="CDFTable">Calculate CDF of Table Column</C></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a cumulative distribution function from the specified table column data. <BR>
+<B>Input:</B> table data <BR>
+</FONT><B>Output:</B> CDF </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="CDFXY">Calculate CDF of XY Data</C></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a cumulative distribution function from either X or Y data.<BR>
+<B>Input:</B> XY data <BR>
+</FONT><B>Output:</B> CDF </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Calculate Residual Diagnostic</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates data to plot a <B><FONT COLOR="#800050">Quantile Normal</B></FONT> or <B><FONT COLOR="#800050">Standard</B></FONT> normal residual plot.  <BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Residuals<BR>
+</FONT>Output:</B> Two XY data sets, one containing the manipulated data, the second a diagnostic line (Quantile Line or CumNormDist) </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Calculate Residual Histogram</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+A special case of the <B><FONT FACE="Technical" COLOR="#008000">Histogram</B></FONT> object, creates the input data for a histogram plot based on residual data.  The actual histogram is plotted using an <B><FONT FACE="Technical" COLOR="#008000">XY Series</B></FONT> plot object on a plot page, with this object as the input. <BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Residuals<BR>
+</FONT>Output:</B> XY data </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+CDF/Quantile</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+See <A HREF="#CDFXY">Calculate CDF of XY Data</A></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Composite Fit</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Combines fit specification objects to be selected as one constraint by the <B><FONT COLOR="#000080">Fit Selection</B></FONT> tab in the <B><FONT COLOR="#000080">Fit Selection </B></FONT>nPre input window.  A fit specification object contains a pair of field and simulated data to be selected as constraint.  Typically used in the <B><FONT COLOR="#000080">Fit</B></FONT> tab of the <B><FONT COLOR="#000080">Plots & Data Processing </B></FONT>nPre input window.<BR>
+<B>Input: </FONT><FONT FACE="Technical" COLOR="#008000">Single Fit</B></FONT> or <B><FONT FACE="Technical" COLOR="#008000">Composite Fit</B></FONT> <BR>
+<B>Output:</B> fit specification</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Concatenate Tables</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Joins multiple tables into one table.  Tables may be joined to the base table by adding columns or rows to the base table.  Each table must have the same number of rows, if adding columns, or the same number of columns, if adding rows.<BR>
+<B>Input:</B>  table data <BR>
+<B>Output:</B> table data</TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Convert Table To Grid</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Converts a table with at least 3 rows and 3 columns into a grid.  The column headers or the first row and the first column contains the grid coordinate data. <BR>
+<B>Input:</B>  table data <BR>
+<B>Output:</B> grid data</TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Create BE/ET Response Function
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a response function based on baseline pressure measurement data, and  barometric pressure and/or earth tide data.  The response function can be used to correct pressure data for barometric and earth tide effects.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> response function (XY data plus additional relevant data)</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Create Curve from XY Data
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates functional approximations of XY data sets.  The functions available include: <I><FONT COLOR="#800050">Linear</I></FONT>, <I><FONT COLOR="#800050">Cubic Spline</I></FONT>, <I><FONT COLOR="#800050">Polynomial</I></FONT>, <I><FONT COLOR="#800050">Step Mid</I></FONT> and <I><FONT COLOR="#800050">Step Full</I></FONT> (see <A HREF="Curve Data Functions.htm">Curve Data Functions</A> for details).<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> curve data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Create Discrete & Step-wise Uniform CDFS
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Converts XY data representing step-wise uniform or discrete data probability distribution functions to cumulative distribution functions.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> CDF</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Create Real Value
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Outputs a single user-specified value, which can be used as input for many other objects.<BR>
+<B>Input:</B>  none<BR>
+<B>Output:</B> real value</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Create Sampled Table Data
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a single table column containing values sampled according to a specified probability distribution (Normal, Truncated normal, Log-normal, Truncated lognormal, Uniform, Log-uniform, Triangular, Log-triangular, Exponential, Poisson, Weibull, Beta, Student t, User CDF or Tabulated discrete). The column forms the only column of table or is added to an existing table (with the same number of rows).<BR>
+<B>Input:</B>  table data (optional existing table to append new column), CDF (if User CDF is selected distribution), table data (if Tabulated discrete is selected distribution)<BR>
+<B>Output:</B> table</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Create XY Array</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a collection of XY data.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY array</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="D">Dual Scale/Transform</D></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Performs mathematical operations on both the X and the Y of XY data.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="E">Enter Table Data</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Allows the user to input or modify table data.  Table data can be input or modified by hand, pasted from the clipboard, or updated from another table data-type object (see <A HREF="Tables in the Object Property Window.htm">Tables in the Object Property Window</A> for details).  <BR>
+<B>Input:</B> none or table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Enter XY Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Allows the user to input or modify XY data.  XY data can be input or modified by hand, pasted from the clipboard, or updated from another XY data-type object (see <A HREF="Tables in the Object Property Window.htm">Tables in the Object Property Window</A> for details).  <BR>
+<B>Input:</B> none or XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Covariance Matrices</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts covariance matrices from one or multiple simulations of an nSIGHTS Optimizer Results object.  <B><FONT COLOR="#800050">Estimated</B></FONT> covariance matrices use the estimated standard deviation specified by the user for each parameter.  The confidence limits of the covariance matrix can be plotted using the <B><FONT FACE="Technical" COLOR="#008000">Confidence Limits</B></FONT> plot object.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Optimizer Results<BR>
+</FONT>Output:</B> covariance data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Cube Indexes
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts cube indices from cube data within set limits.  Cube indices are used to define the cube data to be plotted in a 3D plot.<BR>
+<B>Input:</B> cube data<BR>
+<B>Output:</B>  cube indices</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Extended Profile from Case</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts an extended profile from a case (i.e. select the time step to extract the extended profile).<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Profile Grid/Case<BR>
+</FONT>Output:</B> extended profile, XY data containing water table height with radius, real value of extracted time</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Grid</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts a grid from cube data such that every point of the grid represents a specified constant value.  <BR>
+<B>Input:</B> cube data<BR>
+<B>Output:</B> grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Jacobian</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts Jacobian data from one or multiple simulations of an nSIGHTS Optimizer Results object.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Optimizer Results<BR>
+</FONT>Output:</B> Jacobian data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Optimizer Results Table</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts a table containing optimized values, case parameters and/or optimization status from one or multiple simulations of an nSIGHTS Optimizer Results object.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Optimizer Results<BR>
+</FONT>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Profile Grid/Case</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts a grid or a case of extended profiles from one or multiple simulations of an nSIGHTS Profile Results object.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Profile Results<BR>
+</FONT>Output:</B> grid data or case of extended profiles</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Range</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts XY data within a specified range.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Range Cube</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts cube data from one or multiple simulations of an nSIGHTS Range Results object.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Range Results<BR>
+</FONT>Output:</B> cube data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Range Grid</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts a grid from one or multiple simulations of an nSIGHTS Range Results object.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Range Results<BR>
+</FONT>Output:</B> grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Real from Table</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts a table column property (number of rows, minimum value, maximum value, last row value, or specified row value) and converts it to a real data-type.  The real value is displayed in the object property window, in the <B><FONT COLOR="#000080">Current Value</B></FONT> frame.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> real value</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Residuals</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts residuals (XY data) from one or multiple simulations of an nSIGHTS Optimizer Results object.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Optimizer Results<BR>
+</FONT>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Sequence(s)
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts XY data for one or multiple sequences, based on the sequences defined by sequence time data.<BR>
+<B>Input: </B>XY data and <B><FONT FACE="Technical" COLOR="#008000">Sequence Time Interval Data<BR>
+</FONT>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract Table Range</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts a range of rows from a table column based on specified limits.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="C">Extract Values from CDF</C></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts a single data value or probability from a CDF, given the corresponding probability or data value.<BR>
+<B>Input:</B> CDF <BR>
+</FONT>Output:</B> Two real values:  the input value or probability, and the output value or probability </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract XY from Grid
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts all X data from a grid corresponding to a specified constant Y value, or all Y data for a specified constant X value. <BR>
+<B>Input:</B> grid data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Extract XY from XY Results</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts one set of XY data from one or multiple simulations of an nSIGHTS XY Results object. <BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">nSIGHTS XY Results</B></FONT> <BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="F">Fourier Transform on Y</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Conducts a forward or inverse Fourier transform on Y data.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Full Table Correlations</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Calculates the Pearson R or Spearman R correlation coefficients between all column pairs within a table.  <BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="H">Histogram</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates the input data for a histogram plot based on cube, grid or XY data.  The actual histogram is plotted using an <B><FONT FACE="Technical" COLOR="#008000">XY Series</B></FONT> plot object on a plot page, with this object as the input. Note there are separate objects for each data type.<BR>
+<B>Input:</B> cube, grid or XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="I">Integrate</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Takes the integral of XY data.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Interpolate Grid</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Interpolates the data from one grid onto the grid coordinates of another grid.<BR>
+<B>Input:</B> grid data<BR>
+<B>Output:</B> grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Interpolate Table Columns</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Interpolates Y values based on a given value for X (the interpolant value value).  Values in the X table column must be in order of increasing values.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> real value</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Interpolate XY Data from Curve</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Interpolates XY values based on curve data, for a specified number of points and specified limits.  This allows curve data to be plotted.<BR>
+<B>Input: </B>curve data and if <I><FONT COLOR="#800050"><FONT FACE="Courier"><B>input X</I></FONT></FONT></B> interpolation method, XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="J">Jacobian to Table</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Converts Jacobian data to table data.<BR>
+<B>Input: </B>Jacobian data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="L">Linear Color Map</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a color map with a linear variation between starting and ending RGB or HSV values.<BR>
+<B>Input: </B> none<BR>
+<B>Output:</B> color map</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="M">Matrix Math</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Basic array mathematics (+,-,*,/) can be applied to two sets of cube data or grid data.  Note there are separate objects for each data type.<BR>
+<B>Input:</B> cube or grid data<BR>
+<B>Output:</B> cube or grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Merge Color Maps</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Combines two color maps.<BR>
+<B>Input: </B> color map<BR>
+<B>Output:</B> color map</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="N">Normalize</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Normalizes cube and grid data within specified data limits, based on a power value or both.  Note there are separate objects for each data type.<BR>
+<B>Input:</B> cube or grid data<BR>
+<B>Output:</B> cube or grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="P">P(t) Barometric Compensation</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Subtracts barometric fluctuations from well pressures.  <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="P">P(t) BE/ET Compensation</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Removes fluctuations in pressure data caused by barometric data and earth tide data.  Requires a unit response function. <BR>
+<B>Input:</B> XY data and response function (<B><FONT FACE="Technical" COLOR="#008000">Create BE/ET Response Function</B></FONT>)<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+P(t) Derivative Calculation</TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Calculates the derivative of a pressure function (P(t)). <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+P(t) Time Processing</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Applies one of four time functions to X data (<B><FONT COLOR="#800050">Horner</B></FONT>, <B><FONT COLOR="#800050">Agarwal</B></FONT>, <B><FONT COLOR="#800050">Horner Super</B></FONT> or <B><FONT COLOR="#800050">Bourdet Super</B></FONT>).  Used to create plots that require a time function for the X axis, such as a Horner plot.  <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Pen Set</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates a set of pens that can be used in plotting.  Normally, the default Standard Pen Set is all that is required.<BR>
+<B>Input: </B> none<BR>
+<B>Output:</B> pen set</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Pulse Normalization</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Normalizes pressure XY data based on one of two equations:  <B><FONT COLOR="#800050">(Pi-P(t)) / (Pi-Po)</B></FONT> and <B><FONT COLOR="#800050">1-(Pi-P(t)) / (Pi-Po)</B></FONT>, where Pi is the static pressure and Po is the initial pulse pressure.  Both Pi and Po are to be specified in the object property window.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="R">Read Color Map</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads a color map from a specially formatted text file (default file extension:  *.cmap).  This allows creation of color maps outside nSIGHTS (for example, in an Excel spreadsheet) to meet special requirements.<BR>
+<B>Input: </B> external file<BR>
+<B>Output:</B> color map</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read Cube Data
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads cube data from an input file (default file extension:  *.cube).<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> cube data </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read Curve File</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads a curve data file (default file extension:  *.nCRV).  A curve file may contain several curve data sets.<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> curve data file for <B><FONT FACE="Technical" COLOR="#008000">Select Curve File</B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read Grid Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads grid data from an input file (default file extension:  *.grd).<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read Mini-Troll Text File</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads a Mini-Troll text file and converts it to a table file.<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read nSIGHTS Optimizer Results</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads an nSIGHTS optimizer simulation results file (default file extension:  *.nOpt), specified in the <B><FONT COLOR="#000080">Output Files</B></FONT> nPre input window.<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> optimizer results file to be used <B><FONT FACE="Technical" COLOR="#008000">by Extract Covariance Matrices</B></FONT>, <B><FONT FACE="Technical" COLOR="#008000">Extract Jacobian</B></FONT>, <B><FONT FACE="Technical" COLOR="#008000">Extract Optimizer Results Table</B></FONT> and <B><FONT FACE="Technical" COLOR="#008000">Extract Residuals</B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read nSIGHTS Profile Results</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads an nSIGHTS profile simulation results file (default file extension:  *.nPro), specified in the <B><FONT COLOR="#000080">Output Files</B></FONT> nPre input window.<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> profile results file used by  <B><FONT FACE="Technical" COLOR="#008000">Extract Profile Grid/Case</B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read nSIGHTS Range Results</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads an nSIGHTS range simulation results file (default file extension:  *.nRng), specified in the <B><FONT COLOR="#000080">Output Files</B></FONT> nPre input window.<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> range results file used by <B><FONT FACE="Technical" COLOR="#008000">Extract Range Cube</B></FONT> and <B><FONT FACE="Technical" COLOR="#008000">Extract Range Grid </B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read nSIGHTS XY Results</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads an nSIGHTS XY simulation results file (default file extension:  *.nXYSim), specified in the <B><FONT COLOR="#000080">Output Files</B></FONT> nPre input window.<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> XY results file used by  <B><FONT FACE="Technical" COLOR="#008000">Extract XY from XY Results</B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read Table File
+</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads tabular data from a file.<BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read XY Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads a list of XY points from a file (default file extension: *.dat).<BR>
+<B>Input: </B> external file<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read XY Data Array</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads XY array data from a file (default file extension: *.nXYA).<BR>
+<B>Input: </B> external file<BR>
+<B>Output:</B> XY array</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Read XYZ Label Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads a list of XYZ co-ordinates and associated text labels from a file.<BR>
+<B>Input: </B> external file<BR>
+<B>Output:</B> XYZ label</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Real Value(s) To Table</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Converts real values into table data.<BR>
+<B>Input:</B> real value<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Reduction</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reduces the number of XY points by skipping points or by only keeping points with a change in value greater than a specified maximum. <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Remove Duplicates</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Removes duplicate values from X data, Y data or both.  Duplicates can be considered values that have differences less than a specified value.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="S">Scale/Transform</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Performs mathematical operations on a single real input value, cube data or grid data.</FONT> </FONT>Note there are separate objects for each data type.<BR>
+<B>Input: </B> real value, cube data or grid data<BR>
+<B>Output:</B> real value, cube data or grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="S">Scale/Transform Extended Profile</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Performs mathematical operations on an extended profile.<BR>
+<B>Input: </B> extended profile<BR>
+<B>Output:</B> extended profile</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Select Curve from File</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Selects a curve from a curve file.  A curve file may contain several sets of curve data.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Curve File<BR>
+</FONT>Output:</B> curve data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Select Range Cube</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Used in real-time processing, allows the selection of a range cube data set available during a run.  Only for range mode simulations with three variables specified as range variables.  <BR>
+<B>Input:</B> cube data<BR>
+<B>Output:</B> cube data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Select Range Grid</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Used in real-time processing, allows the selection of a range grid data set available during a run.  Only for range mode simulations with two variables specified as range variables.<BR>
+<B>Input:</B> grid data<BR>
+<B>Output:</B> grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Select XY from XY Array</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Select an XY data set from an XY array.  An XY array is a collection of XY data sets.<BR>
+<B>Input:</B> XY array<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Sequence Fit</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Similar to (Basic) Single Fit, except the fit can be limited to a range of time or sequences.  The Y data may also be interpolated based on synthetic X data (See <A HREF="Interpolation Methods.htm">Interpolation Methods</A> for details). No interpolation occurs if <I><FONT COLOR="#800050">Input X</I></FONT> is selected as the <B><FONT COLOR="#800050">Interpolation Method</B></FONT>. <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> fit specification</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Sequence Time Interval Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Reads a sequence time data file (default file extension:  *.seqt). <BR>
+<B>Input:</B> external file<BR>
+<B>Output:</B> sequence time data file for <B><FONT FACE="Technical" COLOR="#008000">Extract Sequence(s)</B></FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Single Fit</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+See <A HREF="#B">(Basic) Single Fit</A></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Single Scale/Transform</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Performs mathematical operations on either the X or the Y of XY data.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Smooth/Filter</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Filters and smoothes XY data using one of the following methods: <I><FONT COLOR="#800050">FFT smooth</I></FONT>, <I><FONT COLOR="#800050">Median smooth</I></FONT>, <I><FONT COLOR="#800050">low pass</I></FONT> and <I><FONT COLOR="#800050">high pass</I></FONT>.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Statistics</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Calculates basic statistics (e.g. sum, mean, minimum, maximum, etc.) for X, Y, cube or grid data.  Four basic statistics are selected for output as real values, typically used as data labels on a plot.<BR>
+<B>Input:</B> XY, cube or grid data<BR>
+<B>Output:</B> 4 real values</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Sum Tables</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Sums the values between multiple tables.  For example, the value in column 2, row 1 of Table A will be added to column 2, row 1 of Table B.  A specified X column will not be summed.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Table Column CDF/Quantile</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+See <A HREF="#CDFTable">Calculate CDF of Table Column</A></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="T">Table Column Correlations</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Calculates the Pearson R and Spearman R correlation coefficients between two specified columns of a table.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> real values</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="T">Table Column Math</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Basic mathematics (+,-,*,/) are applied to two table columns. <BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Table Column Scale/Transform</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Performs mathematical operations on a specified column of a table.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Table Column Statistics</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Displays basic statistics (e.g. sum, mean, minimum, maximum, etc.) for a specified column of a table. Four basic statistics are selected for output as real values, typically used as data labels on a plot.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> 4 real values</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Table Column To Histogram</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Creates the input data for a histogram plot based on a specified column of a table.  The actual histogram is plotted using an <B><FONT FACE="Technical" COLOR="#008000">XY Series</B></FONT> plot object on a plot page, with this object as the input.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Table Columns To XY</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts two specified columns from a table to create XY data.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Table Row Index Logic</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Conducts Boolean Logic (AND, OR, XOR) between two sets of table rows.<BR>
+<B>Input:</B> <B><FONT FACE="Technical" COLOR="#008000">Extract Table Rows<BR>
+</FONT>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Table Row Statistics</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Displays basic statistics (e.g. sum, mean, minimum, maximum, etc.) for a specified row of a table. Four basic statistics are selected for output as real values, typically used as data labels on a plot.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> 4 real values</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Time Limits Extraction/Interpolation</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Extracts XY data for a range of sequences or time and within specified data limits, and interpolates the extracted data.  <BR>
+<B>Input:</B> XY data and <B><FONT FACE="Technical" COLOR="#008000">Sequence Time Interval Data</B></FONT> if <B><FONT COLOR="#800050">Sequence Range Time Data</B></FONT> selected. <BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Transpose</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Switches the X and Y data (i.e. output X = input Y and output Y = input X). <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Transpose Table Columns and Rows</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Switches the column and row data (i.e. output rows = input columns and output columns = input rows).<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="C">Validate XY data as CDF</C></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Checks XY data to see if it fulfils the criteria of a CDF, and outputs that CDF.<BR>
+<B>Input:</B> XY data <BR>
+</FONT><B>Output:</B> CDF </FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+<A NAME="V">Vector Math</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Basic array mathematics (+,-,*,/) can be applied to two sets of XY data.  <BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> XY data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+View Grid Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Allows the user to view grid data created in another object.<BR>
+<B>Input:</B> grid data<BR>
+<B>Output:</B> grid data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+View Table Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Allows the user to view table data created in another object.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> table data</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+View XY Data</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Allows the user to view XY data created in another object. <BR>
+<B>Input:</B> XY data<BR>
+<B>Output: </B>XY data</FONT></TD>
+</TR>
+<TR>
+
+<TD WIDTH="32%" VALIGN="TOP">
+<A NAME="W">Write Color Map</A></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Writes a color map to a file.<BR>
+<B>Input:</B> color map<BR>
+<B>Output:</B> external file</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Write Curve File</TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Writes single or multiple curve data to a file.<BR>
+<B>Input:</B> curve data<BR>
+<B>Output:</B> external file</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Write Table File</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Writes a table to a file.<BR>
+<B>Input:</B> table data<BR>
+<B>Output:</B> external file</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Write XY File</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Writes XY data to a file.<BR>
+<B>Input:</B> XY data<BR>
+<B>Output:</B> external file</FONT></TD>
+</TR>
+
+<TR><TD WIDTH="32%" VALIGN="TOP">
+Write XY Data Array</FONT></TD>
+<TD WIDTH="68%" VALIGN="TOP">
+Writes XY array data to a file.<BR>
+<B>Input:</B> XY array<BR>
+<B>Output:</B> external file</FONT></TD>
+</TR>
+
+</TABLE>
+
+</FONT></BODY>
+</HTML>

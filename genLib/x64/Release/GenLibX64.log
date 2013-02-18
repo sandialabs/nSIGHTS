@@ -1,0 +1,325 @@
+﻿Build started 2/18/2013 1:50:31 PM.
+     1>Project "C:\nSights\nsights-free\really-final-bitbucket\nsights-free\genLib\GenLibX64.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\GenLibX64.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       MakeDirsForCl:
+         Creating directory "C:\nSights\nsights-free\really-final-bitbucket\nsights-free\genLib\.\..\obj64\GenLibX_Release".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.. /I..\genLib /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /D _WINDOWS /D _WIN32_WINNT=0x0501 /D ADCONSOLEAPP /D MSCVS2005 /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\../obj64/GenLibX_Release/" /Fd".\../obj64/GenLibX_Release/vc100.pdb" /Gd /TP /wd4355 /errorReport:prompt genApp\AppConfigFile.cpp genApp\C_AllocObj.cpp genApp\C_AllocPage.cpp genApp\C_CfgFileObj.cpp genApp\C_DataPage.cpp genApp\C_ExposedObj.cpp genApp\C_MenuObj.cpp genApp\C_MenuPage.cpp genApp\C_MenuRoot.cpp genApp\DebugUtil.cpp genApp\ExposedList.cpp genApp\ExposedReal.cpp genApp\G_AppObj.cpp genApp\G_FileNames.cpp genApp\G_Version.cpp genClass\C_BufFile.cpp genClass\C_Common.cpp genClass\C_ConvFile.cpp genClass\C_DataObj.cpp genClass\C_FuncObj.cpp genClass\C_Geometry.cpp genClass\C_GlobalFunc.cpp genClass\C_Graphic.cpp genClass\C_InteractiveObj.cpp genClass\C_MessageLog.cpp genClass\C_MPISupport.cpp genClass\C_Text.cpp genClass\C_TxtFile.cpp genClass\DC_ColorMap.cpp genClass\DC_ContourSpec.cpp genClass\DC_DataLimit.cpp genClass\DC_DateTime.cpp genClass\DC_PenSet.cpp genClass\DC_TableArray.cpp genClass\DC_TableData.cpp genClass\DC_XYCDF.cpp genClass\DC_XYData.cpp genClass\DO_ColorLimit.cpp genClass\DO_ColorMap.cpp genClass\DO_ContourSpec.cpp genClass\DO_DataLimit.cpp genClass\DO_DateTimeSpec.cpp genClass\DO_IDArray.cpp genClass\DO_Indx.cpp genClass\DO_Label.cpp genClass\DO_LabelArray.cpp genClass\DO_PenSet.cpp genClass\DO_Real.cpp genClass\DO_TableArray.cpp genClass\DO_TableData.cpp genClass\DO_XYCDF.cpp genClass\DO_XYData.cpp genClass\IO_LabelArray.cpp genClass\IO_XYData.cpp genClass\kiss_fft.cpp genClass\SC_Array.cpp genClass\SC_BoolArray.cpp genClass\SC_ColorSpec.cpp genClass\SC_CoordArray.cpp genClass\SC_DoubleArray.cpp genClass\SC_IntArray.cpp genClass\SC_LineArray.cpp genClass\SC_PercentComplete.cpp genClass\SC_PlaneCalcs.cpp genClass\SC_PointArray.cpp genClass\SC_PolyStore.cpp genClass\SC_Random.cpp genClass\SC_RealFormat.cpp genClass\SC_SampVar.cpp genClass\SC_SetupErr.cpp genClass\SC_Statistics.cpp genClass\SC_StringArray.cpp genClass\SC_Triangulation.cpp genClass\T_SC_AllocPtrArray.cpp genClass\T_SC_Array.cpp genClass\T_SC_BasicPtrArray.cpp genClass\U_Check.cpp genClass\U_File.cpp genClass\U_LaPack.cpp genClass\U_Matrix.cpp genClass\U_Real.cpp genClass\U_Str.cpp genX\U_MsgPS.cpp genDataClass\DSC_FunctionSpec.cpp genDataClass\DSC_IndexMSSpec.cpp genDataClass\DSC_IndexMSSpecBase.cpp genDataClass\DSC_Parser.cpp genDataClass\DSC_RealMSSpec.cpp genDataClass\DSC_RealMSSpecBase.cpp genDataClass\DSC_ScaleTransform.cpp genDataClass\DSC_Threshold.cpp genDataClass\DSC_TimeBase.cpp genDFO\DFO_BlendColorMap.cpp genDFO\DFO_EnterColorMap.cpp genDFO\DFO_Histogram.cpp genDFO\DFO_InterpVal.cpp genDFO\DFO_LinColorMap.cpp genDFO\DFO_MathBase.cpp genDFO\DFO_MergeColorMap.cpp genDFO\DFO_PenSet.cpp genDFO\DFO_Quantile.cpp genDFO\DFO_RangeExtract.cpp genDFO\DFO_ReadColorMap.cpp genDFO\DFO_ReadColorMapCF.cpp genDFO\DFO_ScaleTransform.cpp genDFO\DFO_SelectBase.cpp genDFO\DFO_Statistics.cpp genDPO\DPO_BlendColorMap.cpp genDPO\DPO_DataPg.cpp genDPO\DPO_EnterColorMap.cpp genDPO\DPO_Histogram.cpp genDPO\DPO_InterpVal.cpp genDPO\DPO_LinColorMap.cpp genDPO\DPO_MergeColorMap.cpp genDPO\DPO_PenSet.cpp genDPO\DPO_Quantile.cpp genDPO\DPO_RangeExtract.cpp genDPO\DPO_ReadColorMap.cpp genDPO\DPO_ScaleTransform.cpp genDPO\DPO_SelectBase.cpp genDPO\DPO_Statistics.cpp genListClass\C_ErrorListObj.cpp genListClass\C_ListDef.cpp genListClass\C_ListFactory.cpp genListClass\C_ListObj.cpp genListClass\LSC_Listing.cpp genUFO\UFO_WriteColorMap.cpp genUFO\UFO_WriteColorMapCF.cpp genUnits\C_GenUnits.cpp genUnits\C_UnitListObj.cpp genUnits\ExposedUnitReal.cpp genUnits\UnitConfigFile.cpp genUnits\UnitTableCol.cpp genUPO\UPO_WriteColorMap.cpp genClassPS\PS_FindFiles.cpp
+         AppConfigFile.cpp
+         C_AllocObj.cpp
+         C_AllocPage.cpp
+         C_CfgFileObj.cpp
+         C_DataPage.cpp
+         C_ExposedObj.cpp
+         C_MenuObj.cpp
+         C_MenuPage.cpp
+         C_MenuRoot.cpp
+         DebugUtil.cpp
+         ExposedList.cpp
+         ExposedReal.cpp
+         G_AppObj.cpp
+         G_FileNames.cpp
+         G_Version.cpp
+         C_BufFile.cpp
+         C_Common.cpp
+         C_ConvFile.cpp
+         C_DataObj.cpp
+         C_FuncObj.cpp
+         Generating Code...
+         Compiling...
+         C_Geometry.cpp
+         C_GlobalFunc.cpp
+         C_Graphic.cpp
+         C_InteractiveObj.cpp
+         C_MessageLog.cpp
+     1>genClass\C_MessageLog.cpp(93): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
+         C_MPISupport.cpp
+         C_Text.cpp
+         C_TxtFile.cpp
+         DC_ColorMap.cpp
+         DC_ContourSpec.cpp
+         DC_DataLimit.cpp
+         DC_DateTime.cpp
+         DC_PenSet.cpp
+         DC_TableArray.cpp
+         DC_TableData.cpp
+         DC_XYCDF.cpp
+         DC_XYData.cpp
+         DO_ColorLimit.cpp
+         DO_ColorMap.cpp
+         DO_ContourSpec.cpp
+         Generating Code...
+         Compiling...
+         DO_DataLimit.cpp
+         DO_DateTimeSpec.cpp
+         DO_IDArray.cpp
+         DO_Indx.cpp
+         DO_Label.cpp
+         DO_LabelArray.cpp
+         DO_PenSet.cpp
+         DO_Real.cpp
+         DO_TableArray.cpp
+         DO_TableData.cpp
+         DO_XYCDF.cpp
+         DO_XYData.cpp
+         IO_LabelArray.cpp
+         IO_XYData.cpp
+         kiss_fft.cpp
+     1>genClass\kiss_fft.cpp(121): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>genClass\kiss_fft.cpp(122): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>genClass\kiss_fft.cpp(228): warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+         SC_Array.cpp
+         SC_BoolArray.cpp
+         SC_ColorSpec.cpp
+         SC_CoordArray.cpp
+         SC_DoubleArray.cpp
+         Generating Code...
+         Compiling...
+         SC_IntArray.cpp
+         SC_LineArray.cpp
+         SC_PercentComplete.cpp
+         SC_PlaneCalcs.cpp
+         SC_PointArray.cpp
+         SC_PolyStore.cpp
+         SC_Random.cpp
+         SC_RealFormat.cpp
+         SC_SampVar.cpp
+         SC_SetupErr.cpp
+         SC_Statistics.cpp
+         SC_StringArray.cpp
+         SC_Triangulation.cpp
+         T_SC_AllocPtrArray.cpp
+         T_SC_Array.cpp
+         T_SC_BasicPtrArray.cpp
+         U_Check.cpp
+         U_File.cpp
+     1>genClass\U_File.cpp(102): warning C4996: '_open': This function or variable may be unsafe. Consider using _sopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(240) : see declaration of '_open'
+         U_LaPack.cpp
+         U_Matrix.cpp
+         Generating Code...
+         Compiling...
+         U_Real.cpp
+         U_Str.cpp
+         U_MsgPS.cpp
+         DSC_FunctionSpec.cpp
+         DSC_IndexMSSpec.cpp
+         DSC_IndexMSSpecBase.cpp
+         DSC_Parser.cpp
+         DSC_RealMSSpec.cpp
+         DSC_RealMSSpecBase.cpp
+         DSC_ScaleTransform.cpp
+         DSC_Threshold.cpp
+         DSC_TimeBase.cpp
+         DFO_BlendColorMap.cpp
+         DFO_EnterColorMap.cpp
+         DFO_Histogram.cpp
+         DFO_InterpVal.cpp
+         DFO_LinColorMap.cpp
+         DFO_MathBase.cpp
+         DFO_MergeColorMap.cpp
+         DFO_PenSet.cpp
+         Generating Code...
+         Compiling...
+         DFO_Quantile.cpp
+         DFO_RangeExtract.cpp
+         DFO_ReadColorMap.cpp
+         DFO_ReadColorMapCF.cpp
+         DFO_ScaleTransform.cpp
+         DFO_SelectBase.cpp
+         DFO_Statistics.cpp
+         DPO_BlendColorMap.cpp
+         DPO_DataPg.cpp
+         DPO_EnterColorMap.cpp
+         DPO_Histogram.cpp
+         DPO_InterpVal.cpp
+         DPO_LinColorMap.cpp
+         DPO_MergeColorMap.cpp
+         DPO_PenSet.cpp
+         DPO_Quantile.cpp
+         DPO_RangeExtract.cpp
+         DPO_ReadColorMap.cpp
+         DPO_ScaleTransform.cpp
+         DPO_SelectBase.cpp
+         Generating Code...
+         Compiling...
+         DPO_Statistics.cpp
+         C_ErrorListObj.cpp
+         C_ListDef.cpp
+         C_ListFactory.cpp
+         C_ListObj.cpp
+         LSC_Listing.cpp
+         UFO_WriteColorMap.cpp
+         UFO_WriteColorMapCF.cpp
+         C_GenUnits.cpp
+         C_UnitListObj.cpp
+         ExposedUnitReal.cpp
+         UnitConfigFile.cpp
+         UnitTableCol.cpp
+         UPO_WriteColorMap.cpp
+         PS_FindFiles.cpp
+         Generating Code...
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\mpi /I.. /I..\genLib /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /D _WINDOWS /D _WIN32_WINNT=0x0501 /D ADCONSOLEAPP /D MSCVS2005 /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\../obj64/GenLibX_Release/" /Fd".\../obj64/GenLibX_Release/vc100.pdb" /Gd /TP /wd4355 /errorReport:prompt genApp\MPIAppSupport.cpp
+         MPIAppSupport.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\nSights\nsights-free\really-final-bitbucket\nsights-free\genLib\x64\Release\GenLibX64.lib) does not match the Library's OutputFile property value (C:\nSights\nsights-free\really-final-bitbucket\nsights-free\lib\Release\GenLibX64.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"../lib/Release/GenLibX64.lib" blas.lib lapack.lib /LIBPATH:C:\Software\lapack\libraries\Release /NOLOGO /MACHINE:X64 .\../obj64/GenLibX_Release/AppConfigFile.obj
+         .\../obj64/GenLibX_Release/C_AllocObj.obj
+         .\../obj64/GenLibX_Release/C_AllocPage.obj
+         .\../obj64/GenLibX_Release/C_CfgFileObj.obj
+         .\../obj64/GenLibX_Release/C_DataPage.obj
+         .\../obj64/GenLibX_Release/C_ExposedObj.obj
+         .\../obj64/GenLibX_Release/C_MenuObj.obj
+         .\../obj64/GenLibX_Release/C_MenuPage.obj
+         .\../obj64/GenLibX_Release/C_MenuRoot.obj
+         .\../obj64/GenLibX_Release/DebugUtil.obj
+         .\../obj64/GenLibX_Release/ExposedList.obj
+         .\../obj64/GenLibX_Release/ExposedReal.obj
+         .\../obj64/GenLibX_Release/G_AppObj.obj
+         .\../obj64/GenLibX_Release/G_FileNames.obj
+         .\../obj64/GenLibX_Release/G_Version.obj
+         .\../obj64/GenLibX_Release/MPIAppSupport.obj
+         .\../obj64/GenLibX_Release/C_BufFile.obj
+         .\../obj64/GenLibX_Release/C_Common.obj
+         .\../obj64/GenLibX_Release/C_ConvFile.obj
+         .\../obj64/GenLibX_Release/C_DataObj.obj
+         .\../obj64/GenLibX_Release/C_FuncObj.obj
+         .\../obj64/GenLibX_Release/C_Geometry.obj
+         .\../obj64/GenLibX_Release/C_GlobalFunc.obj
+         .\../obj64/GenLibX_Release/C_Graphic.obj
+         .\../obj64/GenLibX_Release/C_InteractiveObj.obj
+         .\../obj64/GenLibX_Release/C_MessageLog.obj
+         .\../obj64/GenLibX_Release/C_MPISupport.obj
+         .\../obj64/GenLibX_Release/C_Text.obj
+         .\../obj64/GenLibX_Release/C_TxtFile.obj
+         .\../obj64/GenLibX_Release/DC_ColorMap.obj
+         .\../obj64/GenLibX_Release/DC_ContourSpec.obj
+         .\../obj64/GenLibX_Release/DC_DataLimit.obj
+         .\../obj64/GenLibX_Release/DC_DateTime.obj
+         .\../obj64/GenLibX_Release/DC_PenSet.obj
+         .\../obj64/GenLibX_Release/DC_TableArray.obj
+         .\../obj64/GenLibX_Release/DC_TableData.obj
+         .\../obj64/GenLibX_Release/DC_XYCDF.obj
+         .\../obj64/GenLibX_Release/DC_XYData.obj
+         .\../obj64/GenLibX_Release/DO_ColorLimit.obj
+         .\../obj64/GenLibX_Release/DO_ColorMap.obj
+         .\../obj64/GenLibX_Release/DO_ContourSpec.obj
+         .\../obj64/GenLibX_Release/DO_DataLimit.obj
+         .\../obj64/GenLibX_Release/DO_DateTimeSpec.obj
+         .\../obj64/GenLibX_Release/DO_IDArray.obj
+         .\../obj64/GenLibX_Release/DO_Indx.obj
+         .\../obj64/GenLibX_Release/DO_Label.obj
+         .\../obj64/GenLibX_Release/DO_LabelArray.obj
+         .\../obj64/GenLibX_Release/DO_PenSet.obj
+         .\../obj64/GenLibX_Release/DO_Real.obj
+         .\../obj64/GenLibX_Release/DO_TableArray.obj
+         .\../obj64/GenLibX_Release/DO_TableData.obj
+         .\../obj64/GenLibX_Release/DO_XYCDF.obj
+         .\../obj64/GenLibX_Release/DO_XYData.obj
+         .\../obj64/GenLibX_Release/IO_LabelArray.obj
+         .\../obj64/GenLibX_Release/IO_XYData.obj
+         .\../obj64/GenLibX_Release/kiss_fft.obj
+         .\../obj64/GenLibX_Release/SC_Array.obj
+         .\../obj64/GenLibX_Release/SC_BoolArray.obj
+         .\../obj64/GenLibX_Release/SC_ColorSpec.obj
+         .\../obj64/GenLibX_Release/SC_CoordArray.obj
+         .\../obj64/GenLibX_Release/SC_DoubleArray.obj
+         .\../obj64/GenLibX_Release/SC_IntArray.obj
+         .\../obj64/GenLibX_Release/SC_LineArray.obj
+         .\../obj64/GenLibX_Release/SC_PercentComplete.obj
+         .\../obj64/GenLibX_Release/SC_PlaneCalcs.obj
+         .\../obj64/GenLibX_Release/SC_PointArray.obj
+         .\../obj64/GenLibX_Release/SC_PolyStore.obj
+         .\../obj64/GenLibX_Release/SC_Random.obj
+         .\../obj64/GenLibX_Release/SC_RealFormat.obj
+         .\../obj64/GenLibX_Release/SC_SampVar.obj
+         .\../obj64/GenLibX_Release/SC_SetupErr.obj
+         .\../obj64/GenLibX_Release/SC_Statistics.obj
+         .\../obj64/GenLibX_Release/SC_StringArray.obj
+         .\../obj64/GenLibX_Release/SC_Triangulation.obj
+         .\../obj64/GenLibX_Release/T_SC_AllocPtrArray.obj
+         .\../obj64/GenLibX_Release/T_SC_Array.obj
+         .\../obj64/GenLibX_Release/T_SC_BasicPtrArray.obj
+         .\../obj64/GenLibX_Release/U_Check.obj
+         .\../obj64/GenLibX_Release/U_File.obj
+         .\../obj64/GenLibX_Release/U_LaPack.obj
+         .\../obj64/GenLibX_Release/U_Matrix.obj
+         .\../obj64/GenLibX_Release/U_Real.obj
+         .\../obj64/GenLibX_Release/U_Str.obj
+         .\../obj64/GenLibX_Release/U_MsgPS.obj
+         .\../obj64/GenLibX_Release/DSC_FunctionSpec.obj
+         .\../obj64/GenLibX_Release/DSC_IndexMSSpec.obj
+         .\../obj64/GenLibX_Release/DSC_IndexMSSpecBase.obj
+         .\../obj64/GenLibX_Release/DSC_Parser.obj
+         .\../obj64/GenLibX_Release/DSC_RealMSSpec.obj
+         .\../obj64/GenLibX_Release/DSC_RealMSSpecBase.obj
+         .\../obj64/GenLibX_Release/DSC_ScaleTransform.obj
+         .\../obj64/GenLibX_Release/DSC_Threshold.obj
+         .\../obj64/GenLibX_Release/DSC_TimeBase.obj
+         .\../obj64/GenLibX_Release/DFO_BlendColorMap.obj
+         .\../obj64/GenLibX_Release/DFO_EnterColorMap.obj
+         .\../obj64/GenLibX_Release/DFO_Histogram.obj
+         .\../obj64/GenLibX_Release/DFO_InterpVal.obj
+         .\../obj64/GenLibX_Release/DFO_LinColorMap.obj
+         .\../obj64/GenLibX_Release/DFO_MathBase.obj
+         .\../obj64/GenLibX_Release/DFO_MergeColorMap.obj
+         .\../obj64/GenLibX_Release/DFO_PenSet.obj
+         .\../obj64/GenLibX_Release/DFO_Quantile.obj
+         .\../obj64/GenLibX_Release/DFO_RangeExtract.obj
+         .\../obj64/GenLibX_Release/DFO_ReadColorMap.obj
+         .\../obj64/GenLibX_Release/DFO_ReadColorMapCF.obj
+         .\../obj64/GenLibX_Release/DFO_ScaleTransform.obj
+         .\../obj64/GenLibX_Release/DFO_SelectBase.obj
+         .\../obj64/GenLibX_Release/DFO_Statistics.obj
+         .\../obj64/GenLibX_Release/DPO_BlendColorMap.obj
+         .\../obj64/GenLibX_Release/DPO_DataPg.obj
+         .\../obj64/GenLibX_Release/DPO_EnterColorMap.obj
+         .\../obj64/GenLibX_Release/DPO_Histogram.obj
+         .\../obj64/GenLibX_Release/DPO_InterpVal.obj
+         .\../obj64/GenLibX_Release/DPO_LinColorMap.obj
+         .\../obj64/GenLibX_Release/DPO_MergeColorMap.obj
+         .\../obj64/GenLibX_Release/DPO_PenSet.obj
+         .\../obj64/GenLibX_Release/DPO_Quantile.obj
+         .\../obj64/GenLibX_Release/DPO_RangeExtract.obj
+         .\../obj64/GenLibX_Release/DPO_ReadColorMap.obj
+         .\../obj64/GenLibX_Release/DPO_ScaleTransform.obj
+         .\../obj64/GenLibX_Release/DPO_SelectBase.obj
+         .\../obj64/GenLibX_Release/DPO_Statistics.obj
+         .\../obj64/GenLibX_Release/C_ErrorListObj.obj
+         .\../obj64/GenLibX_Release/C_ListDef.obj
+         .\../obj64/GenLibX_Release/C_ListFactory.obj
+         .\../obj64/GenLibX_Release/C_ListObj.obj
+         .\../obj64/GenLibX_Release/LSC_Listing.obj
+         .\../obj64/GenLibX_Release/UFO_WriteColorMap.obj
+         .\../obj64/GenLibX_Release/UFO_WriteColorMapCF.obj
+         .\../obj64/GenLibX_Release/C_GenUnits.obj
+         .\../obj64/GenLibX_Release/C_UnitListObj.obj
+         .\../obj64/GenLibX_Release/ExposedUnitReal.obj
+         .\../obj64/GenLibX_Release/UnitConfigFile.obj
+         .\../obj64/GenLibX_Release/UnitTableCol.obj
+         .\../obj64/GenLibX_Release/UPO_WriteColorMap.obj
+         .\../obj64/GenLibX_Release/PS_FindFiles.obj
+     1>lapack.lib(liblapack.dll) : warning LNK4006: xerbla_array_ already defined in blas.lib(libblas.dll); second definition ignored
+     1>lapack.lib(liblapack.dll) : warning LNK4006: __imp_xerbla_array_ already defined in blas.lib(libblas.dll); second definition ignored
+     1>lapack.lib(liblapack.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>lapack.lib(liblapack.dll) : warning LNK4006: xerbla_ already defined in blas.lib(libblas.dll); second definition ignored
+     1>lapack.lib(liblapack.dll) : warning LNK4006: __imp_xerbla_ already defined in blas.lib(libblas.dll); second definition ignored
+     1>lapack.lib(liblapack.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>lapack.lib(liblapack.dll) : warning LNK4006: lsame_ already defined in blas.lib(libblas.dll); second definition ignored
+     1>lapack.lib(liblapack.dll) : warning LNK4006: __imp_lsame_ already defined in blas.lib(libblas.dll); second definition ignored
+     1>lapack.lib(liblapack.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>lapack.lib(liblapack.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in blas.lib(libblas.dll); second definition ignored
+     1>lapack.lib(liblapack.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>DO_IDArray.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>DebugUtil.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         GenLibX64.vcxproj -> C:\nSights\nsights-free\really-final-bitbucket\nsights-free\genLib\x64\Release\GenLibX64.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\GenLibX64.unsuccessfulbuild".
+         Touching "x64\Release\GenLibX64.lastbuildstate".
+     1>Done Building Project "C:\nSights\nsights-free\really-final-bitbucket\nsights-free\genLib\GenLibX64.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:01.87

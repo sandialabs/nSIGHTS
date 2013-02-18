@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Liquid Tab</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Liquid Tab</B></FONT></P>
+
+<P>The <B><FONT COLOR="#000080">Liquid</B></FONT> tab is only accessible if <I><FONT COLOR="#800050">Liquid</I></FONT> was selected as the <B><FONT COLOR="#800050">Phase to Simulate</B></FONT> in the <B><FONT COLOR="#000080">Main</B></FONT> tab.</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Permeability/hydraulic conductivity</FONT></B></TD>
+<TD CLASS=desc><I><FONT COLOR="#800050">Hydraulic Conductivity</I></FONT> can be entered directly, or calculated from <I><FONT COLOR="#800050">Permeability</I></FONT>.  Values for conductivity or permeability are entered in the <B><FONT COLOR="#000080">Parameter</B></FONT> input window.</TD>
+</TABLE>
+
+<B><FONT COLOR="#800050">Storage Parameter</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Specific Storage</I></FONT></TD>
+<TD CLASS=desc>Specific storage is entered directly as a parameter in the <B><FONT COLOR="#000080">Parameter</B></FONT> input window.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Porosity*Total Compressibility</I></FONT></TD>
+<TD CLASS=desc>Specific storage is calculated from porosity and compressibility, which are entered in the <B><FONT COLOR="#000080">Parameter</B></FONT> input window.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Compensate flow dimension geometry</B></FONT></TD>
+<TD CLASS=desc>Compensation is used in two cases:  for flow geometries that vary with radius, and for flow geometries which would incorrectly calculate the area at the bore-hole.  For example, a spherical flow geometry (n=3) would incorrectly calculate the area of a cylindrical borehole.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Test zone volume</B></FONT></TD>
+<TD CLASS=desc>For <I><FONT COLOR="#800050">varying</I></FONT> test zone volumes, curve data (volume of test zone vs. time) are required to describe the boundary conditions of pulse or flow sequences with isolated well-bore storage. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Test zone compressibility</B></FONT></TD>
+<TD CLASS=desc>For <I><FONT COLOR="#800050">varying</I></FONT> test zone compressibility, curve data (test zone compressibility vs. time) are required to describe the boundary conditions of pulse or flow sequences with isolated well-bore storage.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Test zone temperature</B></FONT></TD>
+<TD CLASS=desc>For <I><FONT COLOR="#800050">varying</I></FONT> test zone temperature, curve data (temperature vs. time) are required to describe the boundary conditions of pulse sequences with non-isothermal test zone thermal conditions.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Default temperature</B></FONT></TD>
+<TD CLASS=desc>The default temperature is entered in the text input box, with the temperature units, either degrees Celsius (C) or degrees Fahrenheit (F), specified in the drop-down-box.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Solution variable</B></FONT></TD>
+<TD CLASS=desc><I><FONT COLOR="#800050">Pressure</I></FONT> or <I><FONT COLOR="#800050">Head</TD>
+</I></FONT>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Default liquid density</B></FONT></TD>
+<TD CLASS=desc>Unavailable unless <I><FONT COLOR="#800050">Head</I></FONT> is selected as the <B><FONT COLOR="#800050">Solution Variable</B></FONT>. The default liquid density is entered in the text input box, with the liquid density units (kg/m<SUP>3</SUP>, g/cm<SUP>3</SUP>, lb/ft<SUP>3</SUP> or lb/in<SUP>3</SUP>) specified in the drop-down-box.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Allow -ve pressure/head or unconfined minimum thickness</B></FONT></TD>
+<TD CLASS=desc>Simulation continues with negative pressure/head or a minimum thickness if the formation is sucked dry.</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

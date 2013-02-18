@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Object Connections</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Object Connections</B></FONT></P>
+
+<P>The input/output connections between objects are viewed by icons in the tree, or by selecting the <B><FONT COLOR="#000080">Connections</B></FONT> command in the <B><FONT COLOR="#000080">Object</B></FONT> menu. </P>
+
+<P>The icons in the tree will only display if <B><FONT COLOR="#000080">Settings<FONT FACE="Wingdings">&#224;</FONT>Tree View<FONT FACE="Wingdings">&#224;</FONT>Show connected objects</B></FONT> is selected.  If selected, the tree will display a magenta diamond over the object icon of all objects used as input to the selected object, and will display a red square over the object icon of all objects using the selected object as input. </P>
+
+<P>The <B><FONT COLOR="#000080">Connections</B></FONT> command will display a text top-level window that provides information on the connections of the currently selected object: the objects used as input, and the objects which use the currently selected object’s output as input.  </P>
+
+<P>Similar to object selection, each object in the top-level window is defined by:
+<UL>
+<LI>the object ID </LI>
+<LI>the object type (or output ID if there is more than one output of the same type from a single object)</LI>
+<LI>the name of the page where the object is located</LI>
+<LI>in nPre only, the nPre input window where the page is located</LI>
+</UL>
+
+<P>An example of a connection window for a <B><FONT FACE="Technical" COLOR="#008000">P(t) Derivative Calculation</B></FONT> object, named <I>F_01_fdP/dlnt </I>created in the <I>F_01_process</I> page of the <FONT COLOR="#000080"><B>Sequence</B></FONT> tab (<FONT COLOR="#000080"><B>Plots & Data Processing</B></FONT> input window), is provided below:</P>
+<P></P>
+<P><IMG SRC="ObjectConnections.jpg"></P>
+<P></P>
+<P>Based on the example object connections window, <I>F_01_fdP/dlnt</I> uses as input an <B><FONT FACE="Technical" COLOR="#008000">Extract Sequence(s)</B></FONT> object, named <I>F_01_fPDAT</I>, from the same page. Three objects use the <I>F_01_fdP/dlnt</I> object output as input:
+</P>
+<UL>
+<LI>A <B><FONT FACE="Technical" COLOR="#008000">P(t) Derivative Calculation</B></FONT> object, <I>F_01_sdPDAT/dlnt</I>, in the same page.  The connection is displayed green, to indicate that this object is a slave to <I>F_01_fPDAT</I>.</LI>
+<LI>An <B><FONT FACE="Technical" COLOR="#008000">XY Data Series</B></FONT> object, named <I>dlnP</I>, from the <I>F_01_diag </I>page in the <B><FONT COLOR="#000080">Sequence</B></FONT> tab.
+<LI>A <B><FONT FACE="Technical" COLOR="#008000">Single Scale/Transform</B></FONT> object, named <I>log_F_01_fdP/dlnt</I>, from the <I>Constraints</I> page in the nPre <B><FONT COLOR="#000080">Fit</B></FONT> tab (<B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window).</LI></UL>
+
+<P>Note that the object name used in the connections page relates to the object identifier within the object tree, which may differ from the object name in the <B><FONT COLOR="#000080">Object</B></FONT> menu (see <A HREF="Appendix E Object Names.htm">Appendix E</A> for tables of alternative object names).  All object names used within this manual refer to the object name used in the <B><FONT COLOR="#000080">Object</B></FONT> menu.</LI>
+<P></P>
+<P>The connections for all objects within the currently selected page are similarly viewed by selecting <B><FONT COLOR="#000080">Page<FONT FACE="Wingdings">&#224;</FONT>
+All Connections</B></FONT>.</P>
+</FONT></BODY>
+</HTML>

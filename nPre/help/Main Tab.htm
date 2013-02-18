@@ -1,0 +1,333 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Main Tab Configuration</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Main Tab</B></FONT></P>
+
+<P>Defines the basic options of the model, and its basic physical configuration:</P>
+
+<P><IMG SRC="ConfigMainTab.jpg"></P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<B><FONT COLOR="#000080">General</B></FONT></P>
+
+<P>
+<B><FONT COLOR="#800050">Simulation Type</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Forward</I></FONT></TD>
+<TD CLASS=desc>The model simulates a hydraulic test response based on user input.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Optimization</I></FONT></TD>
+<TD CLASS=desc>The model adjusts the values of user-specified parameters to obtain an optimal fit to field data.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Simulation sub-type</B></FONT></TD>
+<TD CLASS=desc>Simulation sub-types <I><FONT COLOR="#800050">Normal</I></FONT>, <I><FONT COLOR="#800050">Range</I></FONT> or <I><FONT COLOR="#800050">Sampling</I></FONT> are accessible for both <I><FONT COLOR="#800050">Forward</I></FONT> and <I><FONT COLOR="#800050">Optimization</I></FONT> simulation types, resulting in six possible simulation modes.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I>Forward–<FONT COLOR="#800050">Normal</I></FONT></TD>
+<TD CLASS=desc>The simulation is based on user-input parameter values.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I>Forward–<FONT COLOR="#800050">Range</I></FONT></TD>
+<TD CLASS=desc>A range of values and the number of intervals per range is assigned to two or three input parameters. (Note that input parameters may include sequence data, such as flow rate or pressure boundary conditions.)  Forward simulations are performed for each combination of range variables. For each simulation, a fit metric is calculated based on a comparison of simulated results with a user-defined constraint.  A map of all these fit metrics, also called parameter-space maps or fit surfaces, is used to determine the optimal fitting-parameter combination.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I>Forward–<FONT COLOR="#800050">Sampling</I></FONT></TD>
+<TD CLASS=desc>Uncertainty ranges and distributions are assigned to input parameters of interest.  (Note that input parameters may include sequence data, such as flow rate or pressure boundary conditions.)  The input parameter distributions are sampled a specified number of times, and a forward simulation is produced for each sample set.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I>Optimization–<FONT COLOR="#800050">Normal</I></FONT></TD>
+<TD CLASS=desc>A number of simulations are conducted, in which user-specified parameters (fitting parameters) are adjusted for each simulation to obtain an optimal fit between simulated results and field data.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I>Optimization–<FONT COLOR="#800050">Range</I></FONT></TD>
+<TD CLASS=desc>Two or three input parameters are specified with a range of values, and additional parameters are specified as fitting parameters.  For each combination of range variables, optimization simulations are conducted (i.e. the fitting parameters are adjusted for each simulation to obtain an optimal fit).  For each simulation, a fit metric is calculated in addition to optimization results.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I>Optimization–<FONT COLOR="#800050">Sampling </I></FONT></TD>
+<TD CLASS=desc>Used to investigate the correlation between fitting and non-fitting parameters.  Uncertainty distributions are assigned to non-fitting parameters of interest, and fitting parameters are defined. The non-fitting parameter distributions are sampled a specified number of times, and for each sample set of non-fitting parameters, optimization simulations are conducted (i.e. the fitting parameters are adjusted for each simulation to obtain an optimal fit).  </TD>
+</TR>
+</TABLE>
+
+
+<B><FONT COLOR="#800050">Phase to Simulate</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Liquid</I></FONT></TD>
+<TD CLASS=desc>Indicates that a liquid phase simulation will be conducted.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Gas</I></FONT></TD>
+<TD CLASS=desc>Indicates that a gas phase simulation will be conducted.  </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Dimensionality</B></FONT></TD>
+<TD CLASS=desc>For liquid simulations only.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">1D Radial</I></FONT></TD>
+<TD CLASS=desc>Indicates that a 1D radial simulation will be conducted.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">2D Radial</I></FONT></TD>
+<TD CLASS=desc>Indicates that a 2D radial simulation will be conducted.  </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Skin Effects</FONT></B></TD>
+<TD CLASS=desc>If <I><FONT COLOR="#800050">yes</I></FONT>, a zone surrounding the well-bore is differentiated from the formation, for which characteristic parameters need to be defined.</TD>
+</TR>
+</TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">External Boundary</B></FONT></TD>
+<TD CLASS=desc>Specified external radius is either at <I><FONT COLOR="#800050">Fixed Pressure</I></FONT> or <I><FONT COLOR="#800050">Zero Flow</I></FONT>.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#800050">Curve data source</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Objects</I></FONT></TD>
+<TD CLASS=desc>Curve data input is obtained from a curve object defined in an object tree.  This allows the user to read, create and/or manipulate curves within nPre for use as curve input.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">File</I></FONT></TD>
+<TD CLASS=desc>Curve data is obtained from a curve file selected as input in the <B><FONT COLOR="#000080">Curve Files</B></FONT> tab (<B><FONT COLOR="#000080">Configuration</B></FONT> input window).  This option assumes pre-existing curve files for wellbore boundary conditions, f(P) parameters, f(r) parameters and/or f(t) parameters.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Liquid 2D System Properties</B></FONT></TD>
+<TD CLASS=desc>For 2D radial liquid simulations only.</TD>
+</TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Aquifer type</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Confined</I></FONT></TD>
+<TD CLASS=desc>A confined solution will be conducted.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Unconfined</I></FONT></TD>
+<TD CLASS=desc>An unconfined simulation will be conducted.  The unconfined solution assume a non-leaky, single porosity system with a flow dimension of 2.   </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Aquifer permeability</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Isotropic</I></FONT></TD>
+<TD CLASS=desc>Vertical permeability is assumed to be equal to horizontal permeability.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Anisotropic</I></FONT></TD>
+<TD CLASS=desc>An additional parameter for vertical permeability or hydraulic conductivity is provided.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Well penetration</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Full</I></FONT></TD>
+<TD CLASS=desc>The pumping well penetrates the full length of the formation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Partial</I></FONT></TD>
+<TD CLASS=desc>The pumping well only penetrates a sub-section of the formation.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Penetration type</B></FONT></TD>
+<TD CLASS=desc>For partial well penetration only.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Top</I></FONT></TD>
+<TD CLASS=desc>The pumping well screen length extends from the water table to an offset above the bottom of the formation.  The number of vertical nodes in the well and below the well are defined.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Middle</I></FONT></TD>
+<TD CLASS=desc>The pumping well screen length does not extend to the top or the bottom of the formation.  The number of vertical nodes above the well, in the well and below the well are defined.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Bottom</I></FONT></TD>
+<TD CLASS=desc>The pumping well screen length extends from an offset below the water table to the bottom of the formation.  The number of vertical nodes above the well and in the well.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Well model</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Analytic</I></FONT></TD>
+<TD CLASS=desc>The hydraulic conductivity in the well is obtained from the Hagen-Poiseuille formula:  K = r<SUP>2</SUP><FONT FACE='Symbol'>r</FONT>g/8<FONT FACE='Symbol'>m</FONT>, where r is the well radius.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">kV Multiplier</I></FONT></TD>
+<TD CLASS=desc>The hydraulic conductivity in the well is obtained by multiplying the vertical hydraulic conductivity by the <B><I>Well conductance multiplier</B></I>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Uniform</I></FONT></TD>
+<TD CLASS=desc>The well flow rate is distributed uniformly along each node of the well.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Liquid 2D Matrix Solver Properties</B></FONT></TD>
+<TD CLASS=desc>For 2D radial liquid simulations only.</TD>
+</TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Matrix Solver</B></FONT></TD>
+<TD CLASS=desc>Selects the solver to be used.</TD>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Banded</I></FONT></TD>
+<TD CLASS=desc>A direct solver based on a compact band-diagonal matrix.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Cholesky</I></FONT></TD>
+<TD CLASS=desc>A direct solver for positive definite matrices, and is therefore limited to confined aquifers. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">PCG</I></FONT></TD>
+<TD CLASS=desc>A Preconditioned Conjugate Gradient (PCG) numeric solver for symetric matrices, and is therefore limited to confined aquifers.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">PBCG</I></FONT></TD>
+<TD CLASS=desc>A Preconditioned Bi-Conjugate Gradient (PBCG) numeric solver.  Although slower than PCG, will work with both symmetric and non-symmetric matrices (i.e. both confined and unconfined aquifers).</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Re-Order</B></FONT></TD>
+<TD CLASS=desc>For all matrix solvers except the banded solver, provides the option to re-oder the matrix before solving.  Re-ordering the matrix can significantly shorten the time required to solve.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Convergence Criteria</B></FONT></TD>
+<TD CLASS=desc>For numeric solvers, the PCG amd PBCG, determines the convergence criteria: </TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050"></I></FONT></TD>
+<TD CLASS=desc>|Ax - b|/|b|</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050"></I></FONT></TD>
+<TD CLASS=desc>Preconditioned |Ax - b|/|b|, i.e. |Ã<sup>-1</sup> <sup>.</sup> (Ax - b)|/|Ã<sup>-1</sup> <sup>.</sup> b|</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050"></I></FONT></TD>
+<TD CLASS=desc>|error in x|/|x| </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050"></I></FONT></TD>
+<TD CLASS=desc>max error in x/x, where the absolute values of the error in x and x are used
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Matrix Preconditioner</B></FONT></TD>
+<TD CLASS=desc>For numeric solvers (PCG and PBCG) only.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Simple</I></FONT></TD>
+<TD CLASS=desc>A simple preconditioner based on the diagonal of A. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Modified Cholesky</I></FONT></TD>
+<TD CLASS=desc>A preconditioner based on an incomplete Cholesky factorization.  A faster approach than the Simple preconditioner, the Modified Cholesky preconditioner is limited to positive definite matrices (i.e. confined aquifers).</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Drop Tolerance</B></FONT></TD>
+<TD CLASS=desc>For the Modified Cholesky matrix preconditioner, determines the tolerance for removing small matrix elements.  A drop tolerance of zero would result in a complete Cholesky factorization.</TD>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Liquid 1D System Properties</B></FONT></TD>
+<TD CLASS=desc>For 1D radial liquid simulations only.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">System porosity</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Single</I></FONT></TD>
+<TD CLASS=desc>The model only considers one component of the media: the formation. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Dual</I></FONT></TD>
+<TD CLASS=desc>The model considers two components of a fractured medium:  the fracture and the matrix.  Parameters need to be specified for each component.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Leakage</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">None</I></FONT></TD>
+<TD CLASS=desc>The aquifer is assumed to be confined; there are no leaky layers above or below the model system.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Single</I></FONT></TD>
+<TD CLASS=desc>A single leaky layer above the model system.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Upper/Lower </I></FONT></TD>
+<TD CLASS=desc>Layers above and below the model system are leaky.</TD>
+</TR>
+</TABLE>
+
+
+</FONT></BODY>
+</HTML>

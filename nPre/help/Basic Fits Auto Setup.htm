@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Basic Fits Auto Setup</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Basic Fits Auto Setup</B></FONT></P>
+
+<P>In optimization mode, the <B><FONT COLOR="#000080">Auto Setup<FONT FACE="Wingdings">&#224;</FONT>
+Basic Fits</B></FONT> command will create fit data objects in the <B><FONT COLOR="#000080">Fit </B></FONT> tab of the <B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window, as well as to define fits to use in the <B><FONT COLOR="#000080">Fit Selection</B></FONT> input window.  The <B><FONT COLOR="#000080">Auto Setup<FONT FACE="Wingdings">&#224;</FONT>
+Basic Fits</B></FONT> command is not available until sequences have been defined.</P>
+
+<P>The <B><FONT COLOR="#000080">Fit Specification Setup</B></FONT> dialog, which appears upon selection of the <B><FONT COLOR="#000080">Auto Setup<FONT FACE="Wingdings">&#224;</FONT>
+Basic Fits</B></FONT> command, contains frames for each type of sequence containing checkboxes for possible fits for that sequence type. The frame and checkboxes for sequence types which have not been defined will be hidden.  In addition, there is a <B><FONT COLOR="#000080">Cartesian Fits</B></FONT> frame, with associated checkboxes, which will produce fits for all defined sequences (the entire test).</P>
+
+<P><IMG SRC="AutoBasicFits.jpg"></P>
+
+<p>Within the <B><FONT COLOR="#000080">Data to Process</B></FONT> frame,  the option is given to process pressure or flow data.  As flow, pulse and slug sequences output pressure data, the fits associated with these sequences are only available if <B><FONT COLOR="#800050">Test zone pressure</B></FONT> is selected.  Similarly, history sequences output flow data, and the history sequence fits are only available if <B><FONT COLOR="#800050">Test zone flow</B></FONT> is selected.  If the <B><FONT COLOR="#800050">observation well pressure</B></FONT> toggle is selected, fits are created for each defined observation well, in addition to the main well.</P>
+
+<P>No fit objects will be created for a sequence type or <B><FONT COLOR="#000080">Cartesian Fits</B></FONT> unless the <B><FONT COLOR="#800050">Fit</B></FONT> checkbox is selected. Each fit to be created is then selected with a checkbox. Fit objects are only created for a sequence if the <B><FONT COLOR="#800050">Auto</B></FONT> checkbox is selected for the sequence in the <B><FONT COLOR="#000080">Sequences</B></FONT> tab of the <B><FONT COLOR="#000080">Sequences</B></FONT> input window.</P>
+
+<P>For each sequence type selected (i.e. <B><FONT COLOR="#800050">Fit</B></FONT> is checkmarked), a data page is created.  The data page will contain a <B><FONT FACE="Technical" COLOR="#008000">Single Fit</B></FONT> object for each type of fit specified in the checkboxes. The checkbox <B><FONT COLOR="#800050">Combined</B></FONT> will combine all the single fits defined for each sequence type into a <B><FONT FACE="Technical" COLOR="#008000">Composite Fit</B></FONT> object.</P>
+
+<P>For <B><FONT COLOR="#000080">Cartesian Fits</B></FONT>, two <B><FONT FACE="Technical" COLOR="#008000">Extract Sequence(s)</B></FONT> objects will be created for both field and simulated data, in order to extract all the sequences for the <B><FONT FACE="Technical" COLOR="#008000">Single Fit</B></FONT> object. The user is required to specify the applicable field and simulated data, but the correct sequences have been automatically selected. <B><FONT FACE="Technical" COLOR="#008000">Extract Sequence(s)</B></FONT> objects are not created for any other sequence type, as it is assumed that <B><FONT COLOR="#000080">Auto Setup <FONT FACE="Wingdings">&#224;</FONT>
+ Sequence Plots </B></FONT>has been previously conducted, and the output from the <B><FONT FACE="Technical" COLOR="#008000">Extract Sequence(s)</B></FONT> objects created in the <B><FONT COLOR="#000080">Sequence</B></FONT> tab of the <B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window will be used as required.</P>
+
+<P>The type of fit (e.g. <B><FONT COLOR="#800050">log Pressure</B></FONT> in <B><FONT COLOR="#000080">Flow Sequence Fits</B></FONT>) refers to the data transformation of both field and simulated data before input into a <B><FONT FACE="Technical" COLOR="#008000">Single Fit</B></FONT> object.  If the data transformation was not already conducted in the <B><FONT COLOR="#000080">Sequence</B></FONT> tab of the <B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window, <B><FONT FACE="Technical" COLOR="#008000">Scale/Transform</B></FONT> objects will be created for both field and simulated data to perform the data transformation required.</P>
+
+<P>In addition to the creation of fit objects, auto setup will fill the <B><FONT COLOR="#000080">Fit Selection</B></FONT> tab, in a manner similar to pressing the <B><FONT COLOR="#800050">Auto Fill</B></FONT> button.  All fits created will be included, one per line in the <B><FONT COLOR="#000080">Fit Selection</B></FONT> tab.  If composite fits were created, the single fits of those composites will not be included.</P>
+</FONT></BODY>
+</HTML>

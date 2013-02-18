@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Histogram</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Histogram </P></FONT>
+
+<P>What:   </B>Creates the input data for a histogram plot based on cube, grid or XY data.  The actual histogram is plotted using an <B><FONT FACE="Technical" COLOR="#008000">XY Series</B></FONT> plot object on a plot page, with this object as the input. Note there are separate objects for each data type.</P>
+<B><P>Why:   </B>Manipulates data in order to plot a histogram.<B> </P>
+<P>Used By:  </B>Any object using XY data.  In particular, the <B><FONT FACE="Technical" COLOR="#008000">XY Histogram</B></FONT> plot object is used to plot the histogram.</P>
+<B><P>Appearance: </B>The appearance is identical for each data type, except for the name of the input data frame, and an extra frame for XY data.  The appearance is shown for XY data:</P>
+<P><IMG SRC="AppHistXY.jpg"></P>
+<B><P>Input Data:  </B>cube, grid or XY data</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Cube</B></FONT>/<B><FONT COLOR="#000080">Grid</B></FONT>/<B><FONT COLOR="#000080">XY Input Data</B></FONT></TD>
+<TD CLASS=desc>The input data set to be converted to a histogram is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Component to Operate On</B></FONT></TD>
+<TD CLASS=desc>XY data only.  The value frequency of X data or Y data may be calculated for the histogram.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Histogram Limits </B></FONT></TD>
+<TD CLASS=desc>Bin minimum and maximums are <B><FONT COLOR="#800050">Specified</B></FONT> or <B><FONT COLOR="#800050">Automatic</B></FONT>.</TD>
+<TR>
+</TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"># of bins</B></FONT></TD>
+<TD CLASS=desc>The number of bins for the histogram are entered in the text box.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">auto</B></FONT></TD>
+<TD CLASS=desc>The number of bins for the histogram are determined automatically.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Output X Value</B></FONT></TD>
+<TD CLASS=desc>The X value of the histogram is the Bin Value or the Bin Index.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Bin Minimum Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave Controls for the bin minimum, if specified.  See <A HREF="Masters and Slaves.htm">Masters and Slaves</A> for more information.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Bin Minimum Value</B></FONT></TD>
+<TD CLASS=desc>If specified, the bin minimum is entered in the text box. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Bin Maximum Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave Controls for the bin maximum, if specified.  See <A HREF="Masters and Slaves.htm">Masters and Slaves</A> for more information .</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Bin Maximum Value</B></FONT></TD>
+<TD CLASS=desc>If specified, the bin maximum is entered in the text box.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log Histogram</B></FONT></TD>
+<TD CLASS=desc>The log of the X or Y data is calculated before the frequency is calculated.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Cumulative</B></FONT></TD>
+<TD CLASS=desc>Cumulative frequencies are calculated.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Normalize</B></FONT></TD>
+<TD CLASS=desc>Frequencies are calculated for normalized values.  </TD>
+</TR>
+</TABLE>
+
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Calculated Bin Width</B></FONT></TD>
+<TD CLASS=desc>Displays the calculated bin width.</TD>
+</TR>
+</TABLE>
+</P>
+</FONT></BODY>
+</HTML>

@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Concatenate Tables</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Concatenate Tables </P></FONT>
+
+<P>What:   </B>Joins multiple tables into one table.  Tables may be joined to the base table by adding columns or rows to the base table.  Each table must have the same number of rows, if adding columns, or the same number of columns, if adding rows.</P>
+<B><P>Why: </B>To join mulitple tables.</P>
+<B><P>Used By: </B>Any object using table data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppConcatentateTables.jpg"></P>
+<B><P>Application:  </B>nPost</P>
+<B><P>Input Data:  </B>table data</P>
+<B><P>Output Data: </B>table data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Base Table</B></FONT></TD>
+<TD CLASS=desc>The table data to which tables will be joined.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Concatenate Operation</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Columns</B></FONT> </TD>
+<TD CLASS=desc>Tables are concatenated by columns, that is the columns of the selected tables to concatenate are added to the base table.    Each selected table must have the same number of rows as the base table.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Rows</B></FONT> </TD>
+<TD CLASS=desc>Tables are concatenated by rows, that is the rows of the selected tables to concatenate are added to the base table.  Each selected table must have the same number of columns as the base table.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Options</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">skip first column when adding </B></FONT> </TD>
+<TD CLASS=desc>When concatenating by columns, the first column of each selected table is not added to the new table.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Tables to Concatenate</B></FONT></TD>
+<TD CLASS=desc>Selects the tables to add to the base table.</TD>
+</TR>
+</TABLE>
+
+</P>
+</FONT></BODY>
+</HTML>

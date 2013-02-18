@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Remove Duplicates</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Remove Duplicates </P></FONT>
+
+<P>What:   </B>Removes duplicate values from X data, Y data or both.  Duplicates are considered values that have differences less than a specified value.</P>
+<B><P>Why:</B>   Reduces the size of the data set, or improves its appearance in plotting.</P>
+<B><P>Used By:  </B>Any object using XY data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppRemoveDup.jpg"></P>
+<B><P>Input Data:  </B>XY data</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>XY Remove Duplicate</B></FONT></TD>
+<TD CLASS=desc>Duplicates will be removed from the XY data selected in the drop-down list.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">X Values</B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Remove Duplicate X Values</B></FONT></TD>
+<TD CLASS=desc>X duplicates are only removed if <B><FONT COLOR="#800050">Yes</B></FONT> is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Data Reduction Operation</B></FONT></TD>
+<TD CLASS=desc>Determines which duplicate X value to keep: the <I><FONT COLOR="#800050">Minimum</I></FONT>, <I><FONT COLOR="#800050">Maximum</I></FONT>, <I><FONT COLOR="#800050">Average</I></FONT>, <I><FONT COLOR="#800050">First</I></FONT> or <I><FONT COLOR="#800050">Last</I></FONT> Y value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Duplicate X Limit</B></FONT></TD>
+<TD CLASS=desc>Duplicates are considered values that have  differences less than this specified value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Remove Out of Sequence X Points</B></FONT></TD>
+<TD CLASS=desc>X points are assumed to be ordered in ascending order.  Points that do not fit within this ascending order will be removed if <B><FONT COLOR="#800050">Yes</B></FONT> is selected.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Y Values</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Remove Duplicate Y Values</B></FONT></TD>
+<TD CLASS=desc>Y duplicates are only removed if <B><FONT COLOR="#800050">Yes</B></FONT> is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Duplicate Y Limit</B></FONT></TD>
+<TD CLASS=desc>Duplicates are considered values that have differences less than this specified value.</TD
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Output Description</B></FONT></TD>
+<TD CLASS=desc>Provides a description of the object, which will be used as the object type in drop-down lists, and the label of the object in a <B><FONT FACE="Technical" COLOR="#008000">Series Legend</B></FONT>.</TD
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Reduction Status</B></FONT></TD>
+<TD CLASS=desc>The number of input points and output points are displayed, indicating the number of duplicates removed.</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

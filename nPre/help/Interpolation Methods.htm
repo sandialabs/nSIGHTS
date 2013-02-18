@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Interpolation Methods</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Interpolation Methods</B></FONT></P>
+
+<B><FONT FACE="Technical" COLOR="#008000"><P>Interpolate XY data from Curve</B></FONT>, <B><FONT FACE="Technical" COLOR="#008000">Time Limits Extraction/Interpolation</B></FONT> and <B><FONT FACE="Technical" COLOR="#008000">Sequence Fit</B></FONT> use common interpolation methods, described below:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Linear </I></FONT></TD>
+<TD CLASS=desc>Conducts a linear interpolation of the Y data for a specified number of X points, within specified X limits.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Log (Absolute)</I></FONT></TD>
+<TD CLASS=desc>Conducts a linear interpolation of the Y data for a specified number of log X points, within specified X limits.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Log (Relative)</I></FONT></TD>
+<TD CLASS=desc>Conducts a linear interpolation of the Y data for a specified number of newly created log X points, within specified X limits. X points are created using log steps starting from a specified start value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Input X</I></FONT></TD>
+<TD CLASS=desc>Conducts a linear interpolation of the Y data for given X values from XY input data.  For <B><FONT FACE="Technical" COLOR="#008000">Time Limits Extraction/ Interpolation</B></FONT> and <B><FONT FACE="Technical" COLOR="#008000">Sequence Fit</B></FONT>, this method results in no interpolation.</TD>
+</TR>
+</TABLE>
+
+<P>The <B><FONT FACE="Technical" COLOR="#008000">Interpolate Table Column</B></FONT> object uses different interpolation methods (note that X data must be in ascending order):</P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Linear</I></FONT></TD>
+<TD CLASS=desc>Linearly interpolates a Y value corresponding to an X value equal to the specified interpolant value. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Previous</I></FONT></TD>
+<TD CLASS=desc>Obtains the Y value corresponding to the X value of the row above the specified interpolant value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Next</I></FONT></TD>
+<TD CLASS=desc>Obtains the Y value corresponding to the X value of the next row below the specified interpolant value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Closest</I></FONT></TD>
+<TD CLASS=desc>Obtains the Y value corresponding to the X value closest to the specified interpolant value.</TD>
+</TR>
+</TABLE>
+
+<P>The interpolation methods used by <B><FONT FACE="Technical" COLOR="#008000">Create Curve from XY Data</B></FONT>, are described in <A HREF="Curve Data Functions.htm">Curve Data Functions</A>.</P>
+
+
+</FONT></BODY>
+</HTML>

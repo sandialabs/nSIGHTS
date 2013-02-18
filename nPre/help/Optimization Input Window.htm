@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Optimization Input Window</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Optimization Input Window</B></FONT></P>
+
+<P>In the <B><FONT COLOR="#000080">Optimization</B></FONT> input window, a fitting algorithm for optimization mode simulations is selected, and algorithm options specified.  The input window is only available for optimization mode simulations.</P>
+</FONT>
+
+<P>Several inverse-fitting algorithms are available, each with different advantages and disadvantages: </P>
+<OL>
+<LI><B>Downhill Simplex:</B>  Generally slow, however will generally converge to a solution regardless of the initial estimates of the fitting parameters. </LI>
+<LI><B>Levenberg-Marquardt:</B>  A quick algorithm that will fail if the intial estimates of the fitting parameters are far from the solution. </LI>
+<LI><B>MINPACK Levenberg-Marquardt:</B>  The MINPACK implementation of Levenberg-Marquardt which is more stable than the previous Levenberg-Marquardt algorithm, minimizing failures for initial estimates far from the solution. </LI>
+<LI><B>Simulated Annealing:</B>  The major advantage is an ability to avoid becoming trapped at local minima.</LI>
+<LI><B>NL2SOL:</B>  A modified Levenburg-Marquardt algorithm, well suited for highly non-linear problems that return large residual values for the initial guess.  </LI>
+<LI><B>SCEM:</B>  A Shuffled Complex Evolution algorithm combining a Nelder/Mead simplex algorithm with the concepts of controlled random search, competitive evolution and complex shuffling.  It is generally more efficient and more likely to find the global (rather than local) optimum than the simplex algorithm.</LI>
+</OL>
+
+<P>The inverse-fitting algorithms may also be combined, to take advantage of the robustness of one algorithm, and the speed of another once close to a solution.</P>
+<P>Parameters are normalized to a value range of 0 to 1 before optimization.</P>
+
+<P>
+<A HREF="Main Ta2.htm">Main Tab</A> |
+<A HREF="Tolerances Tab.htm">Tolerances Tab</A> |
+<A HREF="L_M Algorithm Tab.htm">L-M Tab</A> |
+<A HREF="Simplex Algorithm Tab.htm">Simplex Tab</A> |
+<A HREF="Simulated Annealing Tab.htm">S-A Tab</A> |
+<A HREF="NL2SOL Tab.htm">NL2SOL Tab</A> |
+<A HREF="SCEM Tab.htm">SCEM Tab</A> |
+<A HREF="Perturbation Tab.htm">Perturbation Tab</A> |
+<A HREF="Calculated Vars Tab.htm">Calculated Vars Tab</A>
+</P>
+
+</FONT></BODY>
+</HTML>

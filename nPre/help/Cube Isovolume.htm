@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Cube Color Isovolume</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Cube Color Isovolume </P></FONT>
+
+<P>What:</B>   Displays a smooth color isovolume at the specified cube value.  The volume is analogous to a 3D filled contour.</P>
+<B><P>Why:</B>   Displays cube data in a 3D plot window.</P>
+<B><P>Used By:</B>  <B><FONT FACE="Technical" COLOR="#008000">Color Legend</P></FONT>
+<P>Appearance:</P></B>
+<P><IMG SRC="App2CubeIsoVolume.jpg"></P>
+<B><P>Input Data:</B>  cube data and color map</P>
+<B><P>Output Data:</B> color map limit specifications</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Cube Data To Plot</B></FONT></TD>
+<TD CLASS=desc>The cube data set to be plotted is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Isovalue Value Source</B></FONT></TD>
+<TD CLASS=desc>A master/slave and expose controls for the <B><FONT COLOR="#000080">Isovalue Value</B></FONT>. These controls are described in <A HREF="General Object Controls.htm">General Object Controls</A>.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Isovalue Value</B></FONT></TD>
+<TD CLASS=desc>The value at which the volume is created.  The volume connects all points in the cube data at this value (points are interpolated from the cube node values where required).</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Isovolume Color</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Color Map</B></FONT></TD>
+<TD CLASS=desc>The isovolume color is based on the limit specifications and the specified color map.  Note that the isovolume will be a solid color, dependent upon where the isovalue lays within the limit specifications.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Selected Pen</B></FONT></TD>
+<TD CLASS=desc>The isovolume color is the color specified as the <B><FONT COLOR="#800050">Single Color Pen</B></FONT>. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Single Color Pen</B></FONT></TD>
+<TD CLASS=desc>The color of the isovolume if the <B><FONT COLOR="#000080">Isovolume Color</B></FONT> is <B><FONT COLOR="#800050">Selected Pen</B></FONT>.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Interpolate Transform</B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">log 10</B></FONT></TD>
+<TD CLASS=desc>Interpolation of volume points is conducted on log 10 cube data.</TD>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Limit Selection</B></FONT></TD>
+<TD CLASS=desc>Only if the <B><FONT COLOR="#000080">Isovolume Color</B></FONT> is <B><FONT COLOR="#800050">Color Map</B></FONT>. A master/slave control to connect the data limits to those specified in another object (e.g. <B><FONT FACE="Technical" COLOR="#008000">Cube Color Point</B></FONT>, <B><FONT FACE="Technical" COLOR="#008000">Grid Color Block</B></FONT>, etc.). Master/Slave controls are described in <A HREF="Masters and Slaves.htm">Masters and Slaves</A>.</TD>
+</TR>
+</TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Color Map  </B></FONT></TD>
+<TD CLASS=desc>If the <B><FONT COLOR="#000080">Isovolume Color</B></FONT> is <B><FONT COLOR="#800050">Color Map</B></FONT>, the color map used to associate colors with data values is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Limits</B></FONT></TD>
+<TD CLASS=desc>Only if the <B><FONT COLOR="#000080">Isovolume Color</B></FONT> is <B><FONT COLOR="#800050">Color Map</B></FONT>.  Controls how data values in the input data are mapped to colors in the input color map.  This involves minimum and maximum data limit values that correspond to the first and last color in the color map respectively.  </TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Auto</B></FONT></TD>
+<TD CLASS=desc>If set, then the data limits are extracted from the data, based on the <B><FONT COLOR="#800050">Auto Source</B></FONT>. If not set, then the data limits specified by the <B><FONT COLOR="#800050">Min</B></FONT> and <B><FONT COLOR="#800050">Max</B></FONT> properties are used.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log</B></FONT></TD>
+<TD CLASS=desc>Option is handled by the <B><FONT COLOR="#000080">Interpolate Transform</B></FONT> option.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Auto Source</B></FONT></TD>
+<TD CLASS=desc>The method for determining the data limits automatically.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">All Data</I></FONT></TD>
+<TD CLASS=desc>The data limits are based on all data values.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Min</B></FONT></TD>
+<TD CLASS=desc>Minimum data value for color mapping.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Max</B></FONT></TD>
+<TD CLASS=desc>Maximum data value for color mapping. </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Out-of-Range</B></FONT></TD>
+<TD CLASS=desc>Not available for this object.</TD>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">3D co-ordinate Mapping</B></FONT></TD>
+<TD CLASS=desc>Determines which cube variable is plotted as the X, Y and Z axis.  Once the input data has been selected and applied, the three <B><FONT COLOR="#800050">Cube</B></FONT> dialog prompts will be replaced with the name of each cube variable.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Offset </B></FONT></TD>
+<TD CLASS=desc>For 3D plot object, XYZ offset is used to improve visibility of objects (see discussion of 3D plot object visibility in <A HREF="Plot Object Visibility.htm">Plot Object Visibility</A>).</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

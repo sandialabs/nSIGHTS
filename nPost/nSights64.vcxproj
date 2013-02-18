@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>nPost64</ProjectName>
+    <ProjectGuid>{EAD9DFED-7172-46CE-8E06-E489D55C9852}</ProjectGuid>
+    <RootNamespace>nPost64</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\exe\$(Platform)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\nPost_Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\obj64\nPost_Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\exe\$(Platform)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\nPost_Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\exe\debug/nPost.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_GLPRHARDCOPY_;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj\nPost_Debug/nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj\nPost_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj\nPost_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj\nPost_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>GenLib.Lib;ObjLib.lib;nsLib.lib;osLib.lib;glprMD.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;ijl15.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPost.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\Debug;..\ijl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>ijl15.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\..\exe\debug/nPost.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\..\exe\debug/nPost.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0501;WINVER=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj64\nPost_Debug/nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj64\nPost_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj64\nPost_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj64\nPost_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>GenLib64.Lib;ObjLib64.lib;nsLib64.lib;osLib64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost64.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>ijl15.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\..\exe\debug/nPost64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\exe\release/nPost.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj\nPost_Release/nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj\nPost_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj\nPost_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj\nPost_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>GenLib.Lib;ObjLib.lib;nsLib.lib;osLib.lib;HtmlHelp.lib;Delayimp.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies);c:\MinGW\lib\libmingwex.a;c:\MinGW\lib\gcc\mingw32\4.7.0\libgcc.a</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPost.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\Release;..\ijl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\..\exe\release/nPost.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\..\exe\release/nPost.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0501;_WIN32_WINNT=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj64\nPost_Release/nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj64\nPost_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj64\nPost_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj64\nPost_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>GenLib64.Lib;ObjLib64.lib;nsLib64.lib;osLib64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPost64.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\..\exe\release/nPost64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="nPost.cpp" />
+    <ClCompile Include="ProjectDoc.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BarometricCompensation.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_BasicResidual.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BasicSequenceFit.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BasicTimeExtract.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BEETCompensation.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_BlendColorMap.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_CalcConfidence.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_CalcConfidenceGrid.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_CalcConfidenceTable.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CDFExtract.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CombineTables.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_CompositeFit.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_CreateBEETResponseFunction.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CreateCurve.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CreateReal.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CreateSpecialCDF.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeExtractGrid.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeHistogram.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeMath.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeNormalize.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeScaleTransform.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeStatistics.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeToIndex.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CurveInterp.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_Derivative.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_EnterColorMap.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_EnterTable.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_EnterXY.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ExtendedProfileScaleTransform.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ExtractSequenceInterval.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridExtractXY.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridHistogram.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridInterpolate.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridMath.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridNormalize.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridScaleTransform.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridStatistics.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_JacobToTable.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_LinColorMap.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_MergeColorMap.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_PenSet.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_PulseNormalize.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_ReadColorMap.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadCubeData.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadCurveArray.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadGridData.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadLabelArray.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ReadMiniTroll.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_ReadOptSimResults.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ReadProfileSimResults.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_ReadRangeSimResults.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ReadSequenceTimes.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadTable.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadXY.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadXYDataArray.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ReadXYSimResults.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_RealScaleTransform.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_RealToTable.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_ResidualDiagnostic.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_ResidualHistogram.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_SelectCurve.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_SelectExtendedProfile.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectOptCovar.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectOptJacob.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectOptResid.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectOptResults.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_SelectProfilefromProfileSimResults.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectRangeCube.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectRangeGrid.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_SelectXY.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_SelectXYfromXYSimResults.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SingleFit.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableAdd.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableColScaleTransform.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableColumnCorrelation.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableColumnMath.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableColumnSort.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableConcat.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableFullCorrelation.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableHistogram.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableIntegrate.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableInterpVal.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableQuantile.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableRangeExtract.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableRowAccumulate.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableRowIndexLogic.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableRowStatistics.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableSample.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableStatistics.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableToGrid.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableToReal.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableToXY.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableTranspose.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_TimeProcess.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TransformTable.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ViewGrid.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ViewTable.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ViewXY.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYAddNoise.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYArrayScaleTransform.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYConcat.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYDualScaleTransform.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYFourier.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYHistogram.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYIntegrate.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYInterpVal.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYMath.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYQuantile.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYRangeExtract.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYReduction.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYRemoveDuplicate.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYScaleTransform.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYSmoothFilter.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYStatistics.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYToCDF.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYToTable.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYToXYArray.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYTranspose.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_LPO_Covariance.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_LPO_Jacobian.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_LPO_OptRun.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_LPO_Table.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_LPO_TableStatistics.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_LPO_XYData.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_LPO_XYDataArray.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_2DAnalytic.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_2DMultTables.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_2DTableSeries.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_2DXYData.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_2DXYDataArray.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_3DTableSeries.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_3DXYData.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_ColorCubeIsovolume.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_ColorLegend.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_PPO_CovarLimits.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_PPO_CovarLimMatrix.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_CubeColorBlock.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_CubeColorPoint.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_DataLabels.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_EnterXYOnPlot.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_PPO_ExtendedProfileColorRangeFill.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_PPO_ExtendedProfileContour.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_GridColorBlockFill.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_GridColorPoint.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_GridColorRangeFill.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_GridContour.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_GridFishnet.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_GridLine.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_LabelAxes.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_NSXYLabels.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_NSXYZLabels.cpp" />
+    <ClCompile Include="..\nsLib\nsAlloc\A_PPO_SequenceGridLines.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_SeriesLegend.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_ShadeRegion.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_PPO_SingleConfLimits.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_TableColorSeries.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_TableErrorBars.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_TableHistogram.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_TableHorsetail.cpp" />
+    <ClCompile Include="..\osLib\osAlloc\A_PPO_TableLabels.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_TimeAxes.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_PPO_UserLabels.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_XYHistogram.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_PPO_XYHorsetail.cpp" />
+    <ClCompile Include="..\genLib\genAlloc\A_UPO_WriteColorMap.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteCurveArray.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteGrid.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteTable.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteXY.cpp" />
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteXYDataArray.cpp" />
+    <ClCompile Include="App\AppFuncObj.cpp" />
+    <ClCompile Include="App\AppPages.cpp" />
+    <ClCompile Include="App\G_Version.cpp" />
+    <ClCompile Include="App\nPostAppMenu.cpp" />
+    <ClCompile Include="App\nPostFile.cpp" />
+    <ClCompile Include="App\nPostRoot.cpp" />
+    <ClCompile Include="..\genLib\genHelp\H_Genlib.cpp" />
+    <ClCompile Include="..\nsLib\nsHelp\H_Nslib.cpp" />
+    <ClCompile Include="..\objLib\objHelp\H_Objlib.cpp" />
+    <ClCompile Include="..\osLib\osHelp\H_Oslib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="nPost.h" />
+    <ClInclude Include="ProjectDoc.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="App\AppPages.h" />
+    <ClInclude Include="App\nPostAppMenu.h" />
+    <ClInclude Include="App\nPostFile.h" />
+    <ClInclude Include="App\nPostRoot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\nPost.ico" />
+    <None Include="res\nPostDoc.ico" />
+    <None Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nPost.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\genLib\GenLib64.vcxproj">
+      <Project>{8f27c566-1e41-45a7-958e-6bb27a421184}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\nsLib\nsLib64.vcxproj">
+      <Project>{ff14738a-8253-449c-84b8-3c81ecf36f8a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\objLib\ObjLib64.vcxproj">
+      <Project>{406c03d3-5796-4298-8cd9-8a425ef4a560}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\osLib\osLib64.vcxproj">
+      <Project>{cfad6758-0109-4256-93ca-bd84a434e62b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

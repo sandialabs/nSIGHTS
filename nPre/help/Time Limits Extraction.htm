@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Time Limits Extraction/Interpolation</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Time Limits Extraction/Interpolation </P></FONT>
+
+<P>What:   </B>Extracts XY data for a range of sequences or time and within specified data limits, and interpolates the extracted data.</P>
+<B><P>Why:   </B>Allows the examination of XY within a specified time frame.<B>  </P>
+<P>Used By:  </B>Any object using XY data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppTimeLimExtrInterp.jpg"></P>
+<B><P>Input Data:  </B>XY data and sequence time interval data if <B><FONT COLOR="#800050">Sequence Range </B></FONT> time data selected.</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>XY Input Data</B></FONT></TD>
+<TD CLASS=desc>Select XY data to extract and/or interpolate. </TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Time Data To Use
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">All Input</B></FONT></TD>
+<TD CLASS=desc>XY data are not limited by time or sequences, i.e. all data are used for interpolation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Sequence Range</B></FONT></TD>
+<TD CLASS=desc>XY data are limited by one or more sequences, as defined in the <B><FONT COLOR="#000080">Sequence Range</B></FONT> frame.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Time Range</B></FONT></TD>
+<TD CLASS=desc>XY data are limited by a time range defined by a minimum and maximum time in the <B><FONT COLOR="#000080">Time Range</B></FONT> frame.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Sequence Range</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Seq times</B></FONT></TD>
+<TD CLASS=desc>The sequence time data set to be used is selected. In nPre, the sequence time data are by default a system object defined in the <B><FONT COLOR="#000080">Sequence</B></FONT> input window. In nPost, the sequence time data must be read in with a <B><FONT FACE="Technical" COLOR="#008000">Sequence Time Interval Data</B></FONT> object, or with XY or profile simulation results.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Start</B></FONT></TD>
+<TD CLASS=desc>The sequences available in the specified <B><FONT COLOR="#000080">Sequence Time Data</B></FONT> will be listed in the drop-down-box, and the starting sequence is selected. XY data starting at this sequence is extracted.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">End</B></FONT></TD>
+<TD CLASS=desc>The sequences available in the specified <B><FONT COLOR="#000080">Sequence Time Data</B></FONT> will be listed in the drop-down-box, and the ending sequence is selected. XY data up to the end of this sequence is extracted.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Time Range</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Minimum</B></FONT></TD>
+<TD CLASS=desc>Minimum time of the time range extracted.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Maximum</B></FONT></TD>
+<TD CLASS=desc>Maximum time of the time range extracted.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Interpolation Method</B></FONT></TD>
+<TD CLASS=desc>Interpolation method is selected, described in detail in <A HREF="Interpolation Methods.htm">Interpolation Methods</A>.  If no interpolation is desired, select the <I><FONT COLOR="#800050">Input X</I></FONT> method. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Number of points</B></FONT></TD>
+<TD CLASS=desc>For all interpolation methods except <I><FONT COLOR="#800050">Input X</I></FONT>, determines the number of equally spaced X values and corresponding interpolated Y values. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Log relative start </B></FONT></TD>
+<TD CLASS=desc>For <I><FONT COLOR="#800050">Log (Relative)</I></FONT> interpolation method only, determines the value of the first log X value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Limit Settings</B></FONT></TD>
+<TD CLASS=desc>For all interpolation methods except <I><FONT COLOR="#800050">Input X</I></FONT></TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Specified</B></FONT></TD>
+<TD CLASS=desc>The minimum and maximum X values are specified in the <B><FONT COLOR="#800050">Minimum</B></FONT> and <B><FONT COLOR="#800050">Maximum</B></FONT> text boxes.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">From Input</B></FONT></TD>
+<TD CLASS=desc>Determines the minimum and maximum X values automatically from the input data.</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

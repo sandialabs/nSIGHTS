@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Calculate CDF of Table Column</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Calculate CDF of Table Column</P>
+</FONT><P>What: </B>Creates a cumulative distribution function from the specified table column data.</P>
+<B><P>Why: </B>To create a cumulative distribution function.</P>
+<B><P>Used By: </B>Any object using CDF or XY data.  Note that once a CDF is processed by an object with XY data as output, it is no longer a CDF.  Use the <B><FONT FACE="Technical"  COLOR="#008000">Validate XY Data as CDF</B></FONT> object to re-create the CDF.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppCalcCDFfromTable.jpg"></P>
+<B><P>Input Data:  </B>table data</P>
+<B><P>Output Data: </B>CDF</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Table Data To Use</B></FONT></TD>
+<TD CLASS=desc>The table data set containing the column used for the CDF calculation is selected.</TD>
+</TR>
+</TABLE>
+<B><FONT COLOR="#000080">CDF Type</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">normal</B></FONT>  </TD>
+<TD CLASS=desc>The CDF is calulated using the <B><FONT COLOR="#000080">Data Column</B></FONT> and the plotting position formula (based on the <B><FONT COLOR="#000080">Quantile Type</B></FONT>).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">area weighted</B></FONT>  </TD>
+<TD CLASS=desc>The CDF is determined by sorting the table based on the <B><FONT COLOR="#000080">Data Column</B></FONT>, and calculating the quantile from a cumulative normalized <B><FONT COLOR="#000080">Area Column</B></FONT> value.</TD>
+</TR>
+</TABLE>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Table Column</B></FONT></TD>
+<TD CLASS=desc>The table column used to calculate the CDF is selected in the drop-down box.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Area Column</B></FONT></TD>
+<TD CLASS=desc>The table column used in the area weighted CDF calculation is selected in the drop-down box.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Quantile Type</B></FONT></TD>
+<TD CLASS=desc>The following formula is used to determine the plotting position:
+(i + 1 - <B><FONT COLOR="#000080">Quantile Value</B></FONT>)/(n + 1 - 2*<B><FONT COLOR="#000080">Quantile Value</B></FONT>).
+The <B><FONT COLOR="#000080">Quantile Value</B></FONT> may be a standard value
+(0 for <B><FONT COLOR="#800050">Weibull</B></FONT>, 0.5 for <B><FONT COLOR="#800050">Hazen</B></FONT>, 1.0 for <B><FONT COLOR="#800050">Excel</B></FONT>),
+or may be specified (<B><FONT COLOR="#800050">Generic</B></FONT> type).</TD>
+</TR>
+</TABLE>
+<B><FONT COLOR="#000080">Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Take log of data</B></FONT>  </TD>
+<TD CLASS=desc>The log of the data is taken before the CDF is created.</TD>
+</TR>
+</TABLE>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Quantile Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave and expose controls for the <B><FONT COLOR="#000080">Quantile Value</B></FONT>.
+For more information on these controls, refer to <A HREF="Masters and Slaves.htm">Masters and Slaves</A> and <A HREF="Exposed Controls.htm">Exposed Controls</A></TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Quantile Value</B></FONT></TD>
+<TD CLASS=desc>For <B><FONT COLOR="#800050">Generic</FONT> <FONT COLOR="#000080">Quantile Type</B></FONT> only.</TD>
+</TR>
+</TABLE>
+</P>
+</BODY>
+</HTML>

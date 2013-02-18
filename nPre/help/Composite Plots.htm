@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Composite Plots</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Composite Plots</B></FONT></P>
+
+<P>A composite plot contains multiple 2D XY and/or 3D XYZ  plots within a single plot window.  For example, the following figure shows a composite plot window containing four plots, with the layout grid displayed as light grey lines:</P>
+
+<P><IMG SRC="CompositePlotEx.jpg"></P>
+
+<P>Once a composite plot page is created, plots are added to the composite plot page by nesting 2D XY and 3D XYZ plot pages within the composite plot (i.e. plot pages are dragged and dropped into the composite page).</p>
+
+<P>By default, the composite plot layout is formatted to include four plots in row/column format, as shown in the figure above.   Up to 10 rows and 10 columns can be specified for row/column format in the <B><FONT FACE="Technical" COLOR="#008000">CompositeLayout</B></FONT> property window.  The location of each plot within the row/columns is based on the order of the plot pages within the object tree (i.e. first plot page in the tree is in the first row, first column (top left corner), the second plot is in the first row, second column, etc.).  </P>
+
+<P>The composite plot layout can also be freeform (specified within the <B><FONT FACE="Technical" COLOR="#008000">Composite</B></FONT> default object), with the X and Y location of the bottom left corner and width of each plot specified.  Locations and widths are specified in a 0-100 coordinate system, similar to annotation objects, within the <B><FONT FACE="Technical" COLOR="#008000">CompositeLayout</B></FONT> property window. </P>
+
+<P>Objects are added to each individual plot page, in the same manner as if the plot page was not part of the composite.  As well, annotation objects can be added to the composite plot, such as a legend or plot title.</P>
+
+<P>Zoom and pan capabilities are available for each plot, once the cursor is place over the plot.  However, for 3D plots, the plot view is changed using the original 3D plot attitude control bar. The 3D plot attitude control bar for a plot within a composite plot is accessed by selecting the original plot from the Window menu; the top-level window will contain the plot window, including the control bar, without the plot view.  Reporting in 2D plots can be accessed in the same manner. </P>
+
+</FONT></BODY>
+</HTML>

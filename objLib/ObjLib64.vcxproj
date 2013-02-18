@@ -1,0 +1,2822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{406C03D3-5796-4298-8CD9-8A425EF4A560}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\ObjLib_Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\ObjLib_Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\lib\debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\lib\debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\ObjLib_Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\ObjLib_Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\..\obj64\ObjLib_Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\..\obj64\ObjLib_Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\genLib\;..\objLib\;..;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_GLPRHARDCOPY_;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ObjLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj\ObjLib_Debug/ObjLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj\ObjLib_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj\ObjLib_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj\ObjLib_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\Debug\ObjLib.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\genLib\;..\objLib\;..;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WINVER=0x0501;_WIN32_WINNT =0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ObjLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj64\ObjLib_Debug/ObjLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj64\ObjLib_Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj64\ObjLib_Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj64\ObjLib_Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\debug\ObjLib64.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\genLib\;..\objLib\;..;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ObjLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj\ObjLib_Release/ObjLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj\ObjLib_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj\ObjLib_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj\ObjLib_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\Release\ObjLib.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>C:\Software\lapack\libraries\Release;C:\nSights\Kris\OpenBLAS-dynamic-arch-2threads-32bit</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libopenblas.lib;liblapack.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\genLib\;..\objLib\;..;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0501;_WIN32_WINNT=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ObjLibAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\obj64\ObjLib_Release/ObjLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\obj64\ObjLib_Release/</AssemblerListingLocation>
+      <ObjectFileName>.\..\obj64\ObjLib_Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\obj64\ObjLib_Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\Release\ObjLib64.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ObjLibAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\C_Curve.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CubeData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_Curve.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CurveArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CurveArrayIO.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_CurveArrayIOText.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_DataCoord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_GridData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_Normalize.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_VariableArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DC_XYDataArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_CubeData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_CubeIndxArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_Curve.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_CurveArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_GridData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_Normalize.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_SampleTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_VariableArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_XYArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_XYDataArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\DO_XYZArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_CubeData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_GridData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_VariableArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_XYDataArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_XYDataArrayBin.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objClass\IO_XYDataArrayText.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_CubeInput.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_GridInput.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_InterpPoints.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_TableColSel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_VariableProcess.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDataClass\DSC_XYColSel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CDFExtract.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ChooseTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CombineTables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateCurve.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateDataLabel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateReal.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateSpecialCDF.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CreateXYArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeExtractGrid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeHistogram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeMath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeNormalize.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeScaleTransform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeStatistics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CubeToIndex.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_CurveInterp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_EnterTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_EnterXY.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ExecuteObjects.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ExecuteProcess.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridExtractIsoPoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridExtractXY.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridHistogram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridInterpolate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridMath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridNormalize.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridScaleTransform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridStatistics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_GridTile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_InterpTableColumn.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_Normalize.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadCubeData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadCurveArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadGridData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadLabelArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadTableCF.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadVariableArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadXY.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ReadXYDataArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_RealScaleTransform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_RealToDateTime.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_RealToTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_RealToVariableArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectCurve.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectLabelArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectVariable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectVariableArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_SelectXY.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableAdd.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableAddBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableCalibrationStatistics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColAccumulate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColScaleTransform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColumnCorrelation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColumnMath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableColumnSort.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableConcat.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableFullCorrelation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableHistogram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableIntegrate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableInterpVal.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableMath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableQuantile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRangeExtract.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRowAccumulate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRowIndexLogic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableRowStatistics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableSample.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableStatistics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableToGrid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableToReal.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableToXY.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TableTranspose.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_TransformTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ViewGrid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ViewTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_ViewXY.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYAddNoise.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYArrayScaleTransform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYArrayToTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYConcat.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYDualScaleTransform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYFourier.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYHistogram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYIntegrate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYIntegrateFMom.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYInterpVal.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYMath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYQuantile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYRangeExtract.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYReduction.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYRemoveDuplicate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYScaleTransform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYSmoothFilter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYSort.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYStatistics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYToCDF.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYToTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYToXYArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDFO\DFO_XYTranspose.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objDPO\DPO_CDFExtract.cpp" />
+    <ClCompile Include="objDPO\DPO_CDFExtractPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ChooseTable.cpp" />
+    <ClCompile Include="objDPO\DPO_ChooseTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_CombineTables.cpp" />
+    <ClCompile Include="objDPO\DPO_CombineTablesPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateCurve.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateCurvePS.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateDataLabel.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateDataLabelPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateReal.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateRealPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateSpecialCDF.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateSpecialCDFPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateXYArray.cpp" />
+    <ClCompile Include="objDPO\DPO_CreateXYArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeExtractGrid.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeExtractGridPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeHistogram.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeHistogramPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeMath.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeMathPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeNormalize.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeNormalizePS.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeScaleTransform.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeScaleTransformPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeStatistics.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeStatisticsPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeToIndex.cpp" />
+    <ClCompile Include="objDPO\DPO_CubeToIndexPS.cpp" />
+    <ClCompile Include="objDPO\DPO_CurveInterp.cpp" />
+    <ClCompile Include="objDPO\DPO_CurveInterpPS.cpp" />
+    <ClCompile Include="objDPO\DPO_EnterTable.cpp" />
+    <ClCompile Include="objDPO\DPO_EnterTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_EnterXY.cpp" />
+    <ClCompile Include="objDPO\DPO_EnterXYPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ExecuteObjects.cpp" />
+    <ClCompile Include="objDPO\DPO_ExecuteObjectsPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ExecuteProcess.cpp" />
+    <ClCompile Include="objDPO\DPO_ExecuteProcessPS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridExtractIsoPoint.cpp" />
+    <ClCompile Include="objDPO\DPO_GridExtractIsoPointPS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridExtractXY.cpp" />
+    <ClCompile Include="objDPO\DPO_GridExtractXYPS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridHistogram.cpp" />
+    <ClCompile Include="objDPO\DPO_GridHistogramPS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridInterpolate.cpp" />
+    <ClCompile Include="objDPO\DPO_GridInterpolatePS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridMath.cpp" />
+    <ClCompile Include="objDPO\DPO_GridMathPS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridNormalize.cpp" />
+    <ClCompile Include="objDPO\DPO_GridNormalizePS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridScaleTransform.cpp" />
+    <ClCompile Include="objDPO\DPO_GridScaleTransformPS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridStatistics.cpp" />
+    <ClCompile Include="objDPO\DPO_GridStatisticsPS.cpp" />
+    <ClCompile Include="objDPO\DPO_GridTile.cpp" />
+    <ClCompile Include="objDPO\DPO_GridTilePS.cpp" />
+    <ClCompile Include="objDPO\DPO_InterpTableColumn.cpp" />
+    <ClCompile Include="objDPO\DPO_InterpTableColumnPS.cpp" />
+    <ClCompile Include="objDPO\DPO_Normalize.cpp" />
+    <ClCompile Include="objDPO\DPO_NormalizePS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadCubeData.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadCubeDataPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadCurveArray.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadCurveArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadGridData.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadGridDataPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadLabelArray.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadLabelArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadTable.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadVariableArray.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadVariableArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadXY.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadXYDataArray.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadXYDataArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ReadXYPS.cpp" />
+    <ClCompile Include="objDPO\DPO_RealScaleTransform.cpp" />
+    <ClCompile Include="objDPO\DPO_RealScaleTransformPS.cpp" />
+    <ClCompile Include="objDPO\DPO_RealToDateTime.cpp" />
+    <ClCompile Include="objDPO\DPO_RealToDateTimePS.cpp" />
+    <ClCompile Include="objDPO\DPO_RealToTable.cpp" />
+    <ClCompile Include="objDPO\DPO_RealToTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_RealToVariableArray.cpp" />
+    <ClCompile Include="objDPO\DPO_RealToVariableArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectCurve.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectCurvePS.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectLabelArray.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectLabelArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectVariable.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectVariableArray.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectVariableArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectVariablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectXY.cpp" />
+    <ClCompile Include="objDPO\DPO_SelectXYPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableAdd.cpp" />
+    <ClCompile Include="objDPO\DPO_TableAddBase.cpp" />
+    <ClCompile Include="objDPO\DPO_TableAddBasePS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableAddPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableCalibrationStatistics.cpp" />
+    <ClCompile Include="objDPO\DPO_TableCalibrationStatisticsPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColAccumulate.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColAccumulatePS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColScaleTransform.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColScaleTransformPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColumnCorrelation.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColumnCorrelationPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColumnMath.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColumnMathPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColumnSort.cpp" />
+    <ClCompile Include="objDPO\DPO_TableColumnSortPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableConcat.cpp" />
+    <ClCompile Include="objDPO\DPO_TableConcatPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableFullCorrelation.cpp" />
+    <ClCompile Include="objDPO\DPO_TableFullCorrelationPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableHistogram.cpp" />
+    <ClCompile Include="objDPO\DPO_TableHistogramPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableIntegrate.cpp" />
+    <ClCompile Include="objDPO\DPO_TableIntegratePS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableInterpVal.cpp" />
+    <ClCompile Include="objDPO\DPO_TableInterpValPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableMath.cpp" />
+    <ClCompile Include="objDPO\DPO_TableMathPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableQuantile.cpp" />
+    <ClCompile Include="objDPO\DPO_TableQuantilePS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRangeExtract.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRangeExtractPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRowAccumulate.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRowAccumulatePS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRowIndexLogic.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRowIndexLogicPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRowStatistics.cpp" />
+    <ClCompile Include="objDPO\DPO_TableRowStatisticsPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableSample.cpp" />
+    <ClCompile Include="objDPO\DPO_TableSamplePS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableStatistics.cpp" />
+    <ClCompile Include="objDPO\DPO_TableStatisticsPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableToGrid.cpp" />
+    <ClCompile Include="objDPO\DPO_TableToGridPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableToReal.cpp" />
+    <ClCompile Include="objDPO\DPO_TableToRealPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableToXY.cpp" />
+    <ClCompile Include="objDPO\DPO_TableToXYPS.cpp" />
+    <ClCompile Include="objDPO\DPO_TableTranspose.cpp" />
+    <ClCompile Include="objDPO\DPO_TableTransposePS.cpp" />
+    <ClCompile Include="objDPO\DPO_TransformTable.cpp" />
+    <ClCompile Include="objDPO\DPO_TransformTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_ViewGrid.cpp" />
+    <ClCompile Include="objDPO\DPO_ViewGridPS.cpp" />
+    <ClCompile Include="objDPO\DPO_ViewTable.cpp" />
+    <ClCompile Include="objDPO\DPO_ViewTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_ViewXY.cpp" />
+    <ClCompile Include="objDPO\DPO_ViewXYPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYAddNoise.cpp" />
+    <ClCompile Include="objDPO\DPO_XYAddNoisePS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYArrayScaleTransform.cpp" />
+    <ClCompile Include="objDPO\DPO_XYArrayScaleTransformPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYArrayToTable.cpp" />
+    <ClCompile Include="objDPO\DPO_XYArrayToTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYBasePS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYConcat.cpp" />
+    <ClCompile Include="objDPO\DPO_XYConcatPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYDualScaleTransform.cpp" />
+    <ClCompile Include="objDPO\DPO_XYDualScaleTransformPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYFourier.cpp" />
+    <ClCompile Include="objDPO\DPO_XYFourierPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYHistogram.cpp" />
+    <ClCompile Include="objDPO\DPO_XYHistogramPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYIntegrate.cpp" />
+    <ClCompile Include="objDPO\DPO_XYIntegrateFMom.cpp" />
+    <ClCompile Include="objDPO\DPO_XYIntegrateFMomPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYIntegratePS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYInterpVal.cpp" />
+    <ClCompile Include="objDPO\DPO_XYInterpValPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYMath.cpp" />
+    <ClCompile Include="objDPO\DPO_XYMathPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYQuantile.cpp" />
+    <ClCompile Include="objDPO\DPO_XYQuantilePS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYRangeExtract.cpp" />
+    <ClCompile Include="objDPO\DPO_XYRangeExtractPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYReduction.cpp" />
+    <ClCompile Include="objDPO\DPO_XYReductionPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYRemoveDuplicate.cpp" />
+    <ClCompile Include="objDPO\DPO_XYRemoveDuplicatePS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYScaleTransform.cpp" />
+    <ClCompile Include="objDPO\DPO_XYScaleTransformPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYSmoothFilter.cpp" />
+    <ClCompile Include="objDPO\DPO_XYSmoothFilterPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYSort.cpp" />
+    <ClCompile Include="objDPO\DPO_XYSortPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYStatistics.cpp" />
+    <ClCompile Include="objDPO\DPO_XYStatisticsPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYToCDF.cpp" />
+    <ClCompile Include="objDPO\DPO_XYToCDFPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYToTable.cpp" />
+    <ClCompile Include="objDPO\DPO_XYToTablePS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYToXYArray.cpp" />
+    <ClCompile Include="objDPO\DPO_XYToXYArrayPS.cpp" />
+    <ClCompile Include="objDPO\DPO_XYTranspose.cpp" />
+    <ClCompile Include="objDPO\DPO_XYTransposePS.cpp" />
+    <ClCompile Include="objDPO\objDPOConfigFile.cpp" />
+    <ClCompile Include="objDPO\objDPOUtil.cpp" />
+    <ClCompile Include="objLFO\LFO_ObjectOutput.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objLFO\LFO_Table.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objLFO\LFO_TableStatistics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objLFO\LFO_XYData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objLFO\LFO_XYDataArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objLPO\LPO_ObjectOutput.cpp" />
+    <ClCompile Include="objLPO\LPO_ObjectOutputPS.cpp" />
+    <ClCompile Include="objLPO\LPO_Table.cpp" />
+    <ClCompile Include="objLPO\LPO_TablePS.cpp" />
+    <ClCompile Include="objLPO\LPO_TableStatistics.cpp" />
+    <ClCompile Include="objLPO\LPO_TableStatisticsPS.cpp" />
+    <ClCompile Include="objLPO\LPO_XYData.cpp" />
+    <ClCompile Include="objLPO\LPO_XYDataArray.cpp" />
+    <ClCompile Include="objLPO\LPO_XYDataArrayPS.cpp" />
+    <ClCompile Include="objLPO\LPO_XYDataPS.cpp" />
+    <ClCompile Include="objPFO\PFO_2DAnalytic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_2DMultTables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_2DTableSeries.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_2DXYData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_2DXYDataArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_3DTableSeries.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_3DXYData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_ColorCubeIsovolume.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_CubeColorBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_CubeColorBlock.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_CubeColorPoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_EnterXYOnPlot.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_GridColorBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_GridColorBlockFill.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_GridColorPoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_GridColorRangeFill.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_GridContour.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_GridFishnet.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_NSLabels.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_NSXYLabels.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_NSXYZLabels.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_TableColorSeries.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_TableErrorBars.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_TableHistogram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_TableHorsetail.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_VariableArrayGridLines.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_XYHistogram.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFO\PFO_XYHorsetail.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFOGL\PFO_2DAnalyticGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_2DMultTablesGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_2DTableSeriesGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_2DXYDataArrayGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_2DXYDataGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_3DTableSeriesGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_3DXYDataGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_ColorCubeIsovolumeGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_CubeColorBlockGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_CubeColorPointGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_EnterXYOnPlotGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_GridColorBlockFillGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_GridColorPointGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_GridColorRangeFillGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_GridContourGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_GridFishnetGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_NSXYLabelsGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_NSXYZLabelsGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_TableColorSeriesGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_TableErrorBarsGL.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPFOGL\PFO_TableHistogramGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_TableHorsetailGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_VariableArrayGridLinesGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_XYHistogramGL.cpp" />
+    <ClCompile Include="objPFOGL\PFO_XYHorsetailGL.cpp" />
+    <ClCompile Include="objPlotClass\PSC_3DCoordMap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPlotClass\PSC_3DCubeData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPlotClass\PSC_3DGridData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPlotClass\PSC_Horsetail.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objPPO\objPPOConfigFile.cpp" />
+    <ClCompile Include="objPPO\objPPOUtil.cpp" />
+    <ClCompile Include="objPPO\PPO_2DAnalytic.cpp" />
+    <ClCompile Include="objPPO\PPO_2DAnalyticPS.cpp" />
+    <ClCompile Include="objPPO\PPO_2DMultTables.cpp" />
+    <ClCompile Include="objPPO\PPO_2DMultTablesPS.cpp" />
+    <ClCompile Include="objPPO\PPO_2DTableSeries.cpp" />
+    <ClCompile Include="objPPO\PPO_2DTableSeriesPS.cpp" />
+    <ClCompile Include="objPPO\PPO_2DXYData.cpp" />
+    <ClCompile Include="objPPO\PPO_2DXYDataArray.cpp" />
+    <ClCompile Include="objPPO\PPO_2DXYDataArrayPS.cpp" />
+    <ClCompile Include="objPPO\PPO_2DXYDataPS.cpp" />
+    <ClCompile Include="objPPO\PPO_3DTableSeries.cpp" />
+    <ClCompile Include="objPPO\PPO_3DTableSeriesPS.cpp" />
+    <ClCompile Include="objPPO\PPO_3DXYData.cpp" />
+    <ClCompile Include="objPPO\PPO_3DXYDataPS.cpp" />
+    <ClCompile Include="objPPO\PPO_ColorCubeIsovolume.cpp" />
+    <ClCompile Include="objPPO\PPO_ColorCubeIsovolumePS.cpp" />
+    <ClCompile Include="objPPO\PPO_CubeColorBasePS.cpp" />
+    <ClCompile Include="objPPO\PPO_CubeColorBlock.cpp" />
+    <ClCompile Include="objPPO\PPO_CubeColorBlockPS.cpp" />
+    <ClCompile Include="objPPO\PPO_CubeColorPoint.cpp" />
+    <ClCompile Include="objPPO\PPO_CubeColorPointPS.cpp" />
+    <ClCompile Include="objPPO\PPO_EnterXYOnPlot.cpp" />
+    <ClCompile Include="objPPO\PPO_EnterXYOnPlotPS.cpp" />
+    <ClCompile Include="objPPO\PPO_GridColorBasePS.cpp" />
+    <ClCompile Include="objPPO\PPO_GridColorBlockFill.cpp" />
+    <ClCompile Include="objPPO\PPO_GridColorBlockFillPS.cpp" />
+    <ClCompile Include="objPPO\PPO_GridColorPoint.cpp" />
+    <ClCompile Include="objPPO\PPO_GridColorPointPS.cpp" />
+    <ClCompile Include="objPPO\PPO_GridColorRangeFill.cpp" />
+    <ClCompile Include="objPPO\PPO_GridColorRangeFillPS.cpp" />
+    <ClCompile Include="objPPO\PPO_GridContour.cpp" />
+    <ClCompile Include="objPPO\PPO_GridContourPS.cpp" />
+    <ClCompile Include="objPPO\PPO_GridFishnet.cpp" />
+    <ClCompile Include="objPPO\PPO_GridFishnetPS.cpp" />
+    <ClCompile Include="objPPO\PPO_NSXYLabels.cpp" />
+    <ClCompile Include="objPPO\PPO_NSXYLabelsPS.cpp" />
+    <ClCompile Include="objPPO\PPO_NSXYZLabels.cpp" />
+    <ClCompile Include="objPPO\PPO_NSXYZLabelsPS.cpp" />
+    <ClCompile Include="objPPO\PPO_TableColorSeries.cpp" />
+    <ClCompile Include="objPPO\PPO_TableColorSeriesPS.cpp" />
+    <ClCompile Include="objPPO\PPO_TableErrorBars.cpp" />
+    <ClCompile Include="objPPO\PPO_TableErrorBarsPS.cpp" />
+    <ClCompile Include="objPPO\PPO_TableHistogram.cpp" />
+    <ClCompile Include="objPPO\PPO_TableHistogramPS.cpp" />
+    <ClCompile Include="objPPO\PPO_TableHorsetail.cpp" />
+    <ClCompile Include="objPPO\PPO_TableHorsetailPS.cpp" />
+    <ClCompile Include="objPPO\PPO_VariableArrayGridLines.cpp" />
+    <ClCompile Include="objPPO\PPO_VariableArrayGridLinesPS.cpp" />
+    <ClCompile Include="objPPO\PPO_XYHistogram.cpp" />
+    <ClCompile Include="objPPO\PPO_XYHistogramPS.cpp" />
+    <ClCompile Include="objPPO\PPO_XYHorsetail.cpp" />
+    <ClCompile Include="objPPO\PPO_XYHorsetailPS.cpp" />
+    <ClCompile Include="objUFO\UFO_VariableProcess.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteCurveArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteGrid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteLabelArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteTable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteTableCF.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteXY.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUFO\UFO_WriteXYDataArray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="objUPO\UPO_VariableProcess.cpp" />
+    <ClCompile Include="objUPO\UPO_VariableProcessPS.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteCurveArray.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteCurveArrayPS.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteGrid.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteGridPS.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteLabelArray.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteLabelArrayPS.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteTable.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteTablePS.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteXY.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteXYDataArray.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteXYDataArrayPS.cpp" />
+    <ClCompile Include="objUPO\UPO_WriteXYPS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="objClass\C_Curve.h" />
+    <ClInclude Include="objClass\DC_CubeData.h" />
+    <ClInclude Include="objClass\DC_Curve.h" />
+    <ClInclude Include="objClass\DC_CurveArray.h" />
+    <ClInclude Include="objClass\DC_CurveArrayIO.h" />
+    <ClInclude Include="objClass\DC_CurveArrayIOText.h" />
+    <ClInclude Include="objClass\DC_DataCoord.h" />
+    <ClInclude Include="objClass\DC_GridData.h" />
+    <ClInclude Include="objClass\DC_Normalize.h" />
+    <ClInclude Include="objClass\DC_VariableArray.h" />
+    <ClInclude Include="objClass\DC_XYDataArray.h" />
+    <ClInclude Include="objClass\DO_CubeData.h" />
+    <ClInclude Include="objClass\DO_CubeIndxArray.h" />
+    <ClInclude Include="objClass\DO_Curve.h" />
+    <ClInclude Include="objClass\DO_CurveArray.h" />
+    <ClInclude Include="objClass\DO_GridData.h" />
+    <ClInclude Include="objClass\DO_Normalize.h" />
+    <ClInclude Include="objClass\DO_SampleTable.h" />
+    <ClInclude Include="objClass\DO_VariableArray.h" />
+    <ClInclude Include="objClass\DO_XYArray.h" />
+    <ClInclude Include="objClass\DO_XYDataArray.h" />
+    <ClInclude Include="objClass\DO_XYZArray.h" />
+    <ClInclude Include="objClass\IO_CubeData.h" />
+    <ClInclude Include="objClass\IO_GridData.h" />
+    <ClInclude Include="objClass\IO_VariableArray.h" />
+    <ClInclude Include="objClass\IO_XYDataArray.h" />
+    <ClInclude Include="objClass\IO_XYDataArrayBin.h" />
+    <ClInclude Include="objClass\IO_XYDataArrayText.h" />
+    <ClInclude Include="objDataClass\DSC_CubeInput.h" />
+    <ClInclude Include="objDataClass\DSC_GridInput.h" />
+    <ClInclude Include="objDataClass\DSC_InterpPoints.h" />
+    <ClInclude Include="objDataClass\DSC_TableColSel.h" />
+    <ClInclude Include="objDataClass\DSC_VariableProcess.h" />
+    <ClInclude Include="objDataClass\DSC_XYColSel.h" />
+    <ClInclude Include="objDFO\DFO_CDFExtract.h" />
+    <ClInclude Include="objDFO\DFO_ChooseTable.h" />
+    <ClInclude Include="objDFO\DFO_CombineTables.h" />
+    <ClInclude Include="objDFO\DFO_CreateCurve.h" />
+    <ClInclude Include="objDFO\DFO_CreateDataLabel.h" />
+    <ClInclude Include="objDFO\DFO_CreateReal.h" />
+    <ClInclude Include="objDFO\DFO_CreateSpecialCDF.h" />
+    <ClInclude Include="objDFO\DFO_CreateXYArray.h" />
+    <ClInclude Include="objDFO\DFO_CubeExtractGrid.h" />
+    <ClInclude Include="objDFO\DFO_CubeHistogram.h" />
+    <ClInclude Include="objDFO\DFO_CubeMath.h" />
+    <ClInclude Include="objDFO\DFO_CubeNormalize.h" />
+    <ClInclude Include="objDFO\DFO_CubeScaleTransform.h" />
+    <ClInclude Include="objDFO\DFO_CubeStatistics.h" />
+    <ClInclude Include="objDFO\DFO_CubeToIndex.h" />
+    <ClInclude Include="objDFO\DFO_CurveInterp.h" />
+    <ClInclude Include="objDFO\DFO_EnterTable.h" />
+    <ClInclude Include="objDFO\DFO_EnterXY.h" />
+    <ClInclude Include="objDFO\DFO_ExecuteObjects.h" />
+    <ClInclude Include="objDFO\DFO_ExecuteProcess.h" />
+    <ClInclude Include="objDFO\DFO_GridExtractIsoPoint.h" />
+    <ClInclude Include="objDFO\DFO_GridExtractXY.h" />
+    <ClInclude Include="objDFO\DFO_GridHistogram.h" />
+    <ClInclude Include="objDFO\DFO_GridInterpolate.h" />
+    <ClInclude Include="objDFO\DFO_GridMath.h" />
+    <ClInclude Include="objDFO\DFO_GridNormalize.h" />
+    <ClInclude Include="objDFO\DFO_GridScaleTransform.h" />
+    <ClInclude Include="objDFO\DFO_GridStatistics.h" />
+    <ClInclude Include="objDFO\DFO_GridTile.h" />
+    <ClInclude Include="objDFO\DFO_InterpTableColumn.h" />
+    <ClInclude Include="objDFO\DFO_Normalize.h" />
+    <ClInclude Include="objDFO\DFO_ReadCubeData.h" />
+    <ClInclude Include="objDFO\DFO_ReadCurveArray.h" />
+    <ClInclude Include="objDFO\DFO_ReadGridData.h" />
+    <ClInclude Include="objDFO\DFO_ReadLabelArray.h" />
+    <ClInclude Include="objDFO\DFO_ReadTable.h" />
+    <ClInclude Include="objDFO\DFO_ReadVariableArray.h" />
+    <ClInclude Include="objDFO\DFO_ReadXY.h" />
+    <ClInclude Include="objDFO\DFO_ReadXYDataArray.h" />
+    <ClInclude Include="objDFO\DFO_RealScaleTransform.h" />
+    <ClInclude Include="objDFO\DFO_RealToDateTime.h" />
+    <ClInclude Include="objDFO\DFO_RealToTable.h" />
+    <ClInclude Include="objDFO\DFO_RealToVariableArray.h" />
+    <ClInclude Include="objDFO\DFO_SelectCurve.h" />
+    <ClInclude Include="objDFO\DFO_SelectLabelArray.h" />
+    <ClInclude Include="objDFO\DFO_SelectVariable.h" />
+    <ClInclude Include="objDFO\DFO_SelectVariableArray.h" />
+    <ClInclude Include="objDFO\DFO_SelectXY.h" />
+    <ClInclude Include="objDFO\DFO_TableAdd.h" />
+    <ClInclude Include="objDFO\DFO_TableAddBase.h" />
+    <ClInclude Include="objDFO\DFO_TableCalibrationStatistics.h" />
+    <ClInclude Include="objDFO\DFO_TableColAccumulate.h" />
+    <ClInclude Include="objDFO\DFO_TableColScaleTransform.h" />
+    <ClInclude Include="objDFO\DFO_TableColumnCorrelation.h" />
+    <ClInclude Include="objDFO\DFO_TableColumnMath.h" />
+    <ClInclude Include="objDFO\DFO_TableColumnSort.h" />
+    <ClInclude Include="objDFO\DFO_TableConcat.h" />
+    <ClInclude Include="objDFO\DFO_TableFullCorrelation.h" />
+    <ClInclude Include="objDFO\DFO_TableHistogram.h" />
+    <ClInclude Include="objDFO\DFO_TableIntegrate.h" />
+    <ClInclude Include="objDFO\DFO_TableInterpVal.h" />
+    <ClInclude Include="objDFO\DFO_TableMath.h" />
+    <ClInclude Include="objDFO\DFO_TableQuantile.h" />
+    <ClInclude Include="objDFO\DFO_TableRangeExtract.h" />
+    <ClInclude Include="objDFO\DFO_TableRowAccumulate.h" />
+    <ClInclude Include="objDFO\DFO_TableRowIndexLogic.h" />
+    <ClInclude Include="objDFO\DFO_TableRowStatistics.h" />
+    <ClInclude Include="objDFO\DFO_TableSample.h" />
+    <ClInclude Include="objDFO\DFO_TableStatistics.h" />
+    <ClInclude Include="objDFO\DFO_TableToGrid.h" />
+    <ClInclude Include="objDFO\DFO_TableToReal.h" />
+    <ClInclude Include="objDFO\DFO_TableToXY.h" />
+    <ClInclude Include="objDFO\DFO_TableTranspose.h" />
+    <ClInclude Include="objDFO\DFO_TransformTable.h" />
+    <ClInclude Include="objDFO\DFO_ViewGrid.h" />
+    <ClInclude Include="objDFO\DFO_ViewTable.h" />
+    <ClInclude Include="objDFO\DFO_ViewXY.h" />
+    <ClInclude Include="objDFO\DFO_XYAddNoise.h" />
+    <ClInclude Include="objDFO\DFO_XYArrayScaleTransform.h" />
+    <ClInclude Include="objDFO\DFO_XYArrayToTable.h" />
+    <ClInclude Include="objDFO\DFO_XYBase.h" />
+    <ClInclude Include="objDFO\DFO_XYConcat.h" />
+    <ClInclude Include="objDFO\DFO_XYDualScaleTransform.h" />
+    <ClInclude Include="objDFO\DFO_XYFourier.h" />
+    <ClInclude Include="objDFO\DFO_XYHistogram.h" />
+    <ClInclude Include="objDFO\DFO_XYIntegrate.h" />
+    <ClInclude Include="objDFO\DFO_XYIntegrateFMom.h" />
+    <ClInclude Include="objDFO\DFO_XYInterpVal.h" />
+    <ClInclude Include="objDFO\DFO_XYMath.h" />
+    <ClInclude Include="objDFO\DFO_XYQuantile.h" />
+    <ClInclude Include="objDFO\DFO_XYRangeExtract.h" />
+    <ClInclude Include="objDFO\DFO_XYReduction.h" />
+    <ClInclude Include="objDFO\DFO_XYRemoveDuplicate.h" />
+    <ClInclude Include="objDFO\DFO_XYScaleTransform.h" />
+    <ClInclude Include="objDFO\DFO_XYSmoothFilter.h" />
+    <ClInclude Include="objDFO\DFO_XYSort.h" />
+    <ClInclude Include="objDFO\DFO_XYStatistics.h" />
+    <ClInclude Include="objDFO\DFO_XYToCDF.h" />
+    <ClInclude Include="objDFO\DFO_XYToTable.h" />
+    <ClInclude Include="objDFO\DFO_XYToXYArray.h" />
+    <ClInclude Include="objDFO\DFO_XYTranspose.h" />
+    <ClInclude Include="objDPO\DPO_CDFExtract.h" />
+    <ClInclude Include="objDPO\DPO_CDFExtractPS.h" />
+    <ClInclude Include="objDPO\DPO_ChooseTable.h" />
+    <ClInclude Include="objDPO\DPO_ChooseTablePS.h" />
+    <ClInclude Include="objDPO\DPO_CombineTables.h" />
+    <ClInclude Include="objDPO\DPO_CombineTablesPS.h" />
+    <ClInclude Include="objDPO\DPO_CreateCurve.h" />
+    <ClInclude Include="objDPO\DPO_CreateCurvePS.h" />
+    <ClInclude Include="objDPO\DPO_CreateDataLabel.h" />
+    <ClInclude Include="objDPO\DPO_CreateDataLabelPS.h" />
+    <ClInclude Include="objDPO\DPO_CreateReal.h" />
+    <ClInclude Include="objDPO\DPO_CreateRealPS.h" />
+    <ClInclude Include="objDPO\DPO_CreateSpecialCDF.h" />
+    <ClInclude Include="objDPO\DPO_CreateSpecialCDFPS.h" />
+    <ClInclude Include="objDPO\DPO_CreateXYArray.h" />
+    <ClInclude Include="objDPO\DPO_CreateXYArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_CubeExtractGrid.h" />
+    <ClInclude Include="objDPO\DPO_CubeExtractGridPS.h" />
+    <ClInclude Include="objDPO\DPO_CubeHistogram.h" />
+    <ClInclude Include="objDPO\DPO_CubeHistogramPS.h" />
+    <ClInclude Include="objDPO\DPO_CubeMath.h" />
+    <ClInclude Include="objDPO\DPO_CubeMathPS.h" />
+    <ClInclude Include="objDPO\DPO_CubeNormalize.h" />
+    <ClInclude Include="objDPO\DPO_CubeNormalizePS.h" />
+    <ClInclude Include="objDPO\DPO_CubeScaleTransform.h" />
+    <ClInclude Include="objDPO\DPO_CubeScaleTransformPS.h" />
+    <ClInclude Include="objDPO\DPO_CubeStatistics.h" />
+    <ClInclude Include="objDPO\DPO_CubeStatisticsPS.h" />
+    <ClInclude Include="objDPO\DPO_CubeToIndex.h" />
+    <ClInclude Include="objDPO\DPO_CubeToIndexPS.h" />
+    <ClInclude Include="objDPO\DPO_CurveInterp.h" />
+    <ClInclude Include="objDPO\DPO_CurveInterpPS.h" />
+    <ClInclude Include="objDPO\DPO_EnterTable.h" />
+    <ClInclude Include="objDPO\DPO_EnterTablePS.h" />
+    <ClInclude Include="objDPO\DPO_EnterXY.h" />
+    <ClInclude Include="objDPO\DPO_EnterXYPS.h" />
+    <ClInclude Include="objDPO\DPO_ExecuteObjects.h" />
+    <ClInclude Include="objDPO\DPO_ExecuteObjectsPS.h" />
+    <ClInclude Include="objDPO\DPO_ExecuteProcess.h" />
+    <ClInclude Include="objDPO\DPO_ExecuteProcessPS.h" />
+    <ClInclude Include="objDPO\DPO_GridExtractIsoPoint.h" />
+    <ClInclude Include="objDPO\DPO_GridExtractIsoPointPS.h" />
+    <ClInclude Include="objDPO\DPO_GridExtractXY.h" />
+    <ClInclude Include="objDPO\DPO_GridExtractXYPS.h" />
+    <ClInclude Include="objDPO\DPO_GridHistogram.h" />
+    <ClInclude Include="objDPO\DPO_GridHistogramPS.h" />
+    <ClInclude Include="objDPO\DPO_GridInterpolate.h" />
+    <ClInclude Include="objDPO\DPO_GridInterpolatePS.h" />
+    <ClInclude Include="objDPO\DPO_GridMath.h" />
+    <ClInclude Include="objDPO\DPO_GridMathPS.h" />
+    <ClInclude Include="objDPO\DPO_GridNormalize.h" />
+    <ClInclude Include="objDPO\DPO_GridNormalizePS.h" />
+    <ClInclude Include="objDPO\DPO_GridScaleTransform.h" />
+    <ClInclude Include="objDPO\DPO_GridScaleTransformPS.h" />
+    <ClInclude Include="objDPO\DPO_GridStatistics.h" />
+    <ClInclude Include="objDPO\DPO_GridStatisticsPS.h" />
+    <ClInclude Include="objDPO\DPO_GridTile.h" />
+    <ClInclude Include="objDPO\DPO_GridTilePS.h" />
+    <ClInclude Include="objDPO\DPO_InterpTableColumn.h" />
+    <ClInclude Include="objDPO\DPO_InterpTableColumnPS.h" />
+    <ClInclude Include="objDPO\DPO_Normalize.h" />
+    <ClInclude Include="objDPO\DPO_NormalizePS.h" />
+    <ClInclude Include="objDPO\DPO_ReadCubeData.h" />
+    <ClInclude Include="objDPO\DPO_ReadCubeDataPS.h" />
+    <ClInclude Include="objDPO\DPO_ReadCurveArray.h" />
+    <ClInclude Include="objDPO\DPO_ReadCurveArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_ReadGridData.h" />
+    <ClInclude Include="objDPO\DPO_ReadGridDataPS.h" />
+    <ClInclude Include="objDPO\DPO_ReadLabelArray.h" />
+    <ClInclude Include="objDPO\DPO_ReadLabelArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_ReadTable.h" />
+    <ClInclude Include="objDPO\DPO_ReadTablePS.h" />
+    <ClInclude Include="objDPO\DPO_ReadVariableArray.h" />
+    <ClInclude Include="objDPO\DPO_ReadVariableArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_ReadXY.h" />
+    <ClInclude Include="objDPO\DPO_ReadXYDataArray.h" />
+    <ClInclude Include="objDPO\DPO_ReadXYDataArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_ReadXYPS.h" />
+    <ClInclude Include="objDPO\DPO_RealScaleTransform.h" />
+    <ClInclude Include="objDPO\DPO_RealScaleTransformPS.h" />
+    <ClInclude Include="objDPO\DPO_RealToDateTime.h" />
+    <ClInclude Include="objDPO\DPO_RealToDateTimePS.h" />
+    <ClInclude Include="objDPO\DPO_RealToTable.h" />
+    <ClInclude Include="objDPO\DPO_RealToTablePS.h" />
+    <ClInclude Include="objDPO\DPO_RealToVariableArray.h" />
+    <ClInclude Include="objDPO\DPO_RealToVariableArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_SelectCurve.h" />
+    <ClInclude Include="objDPO\DPO_SelectCurvePS.h" />
+    <ClInclude Include="objDPO\DPO_SelectLabelArray.h" />
+    <ClInclude Include="objDPO\DPO_SelectLabelArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_SelectVariable.h" />
+    <ClInclude Include="objDPO\DPO_SelectVariableArray.h" />
+    <ClInclude Include="objDPO\DPO_SelectVariableArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_SelectVariablePS.h" />
+    <ClInclude Include="objDPO\DPO_SelectXY.h" />
+    <ClInclude Include="objDPO\DPO_SelectXYPS.h" />
+    <ClInclude Include="objDPO\DPO_TableAdd.h" />
+    <ClInclude Include="objDPO\DPO_TableAddBase.h" />
+    <ClInclude Include="objDPO\DPO_TableAddBasePS.h" />
+    <ClInclude Include="objDPO\DPO_TableAddPS.h" />
+    <ClInclude Include="objDPO\DPO_TableCalibrationStatistics.h" />
+    <ClInclude Include="objDPO\DPO_TableCalibrationStatisticsPS.h" />
+    <ClInclude Include="objDPO\DPO_TableColAccumulate.h" />
+    <ClInclude Include="objDPO\DPO_TableColAccumulatePS.h" />
+    <ClInclude Include="objDPO\DPO_TableColScaleTransform.h" />
+    <ClInclude Include="objDPO\DPO_TableColScaleTransformPS.h" />
+    <ClInclude Include="objDPO\DPO_TableColumnCorrelation.h" />
+    <ClInclude Include="objDPO\DPO_TableColumnCorrelationPS.h" />
+    <ClInclude Include="objDPO\DPO_TableColumnMath.h" />
+    <ClInclude Include="objDPO\DPO_TableColumnMathPS.h" />
+    <ClInclude Include="objDPO\DPO_TableColumnSort.h" />
+    <ClInclude Include="objDPO\DPO_TableColumnSortPS.h" />
+    <ClInclude Include="objDPO\DPO_TableConcat.h" />
+    <ClInclude Include="objDPO\DPO_TableConcatPS.h" />
+    <ClInclude Include="objDPO\DPO_TableFullCorrelation.h" />
+    <ClInclude Include="objDPO\DPO_TableFullCorrelationPS.h" />
+    <ClInclude Include="objDPO\DPO_TableHistogram.h" />
+    <ClInclude Include="objDPO\DPO_TableHistogramPS.h" />
+    <ClInclude Include="objDPO\DPO_TableIntegrate.h" />
+    <ClInclude Include="objDPO\DPO_TableIntegratePS.h" />
+    <ClInclude Include="objDPO\DPO_TableInterpVal.h" />
+    <ClInclude Include="objDPO\DPO_TableInterpValPS.h" />
+    <ClInclude Include="objDPO\DPO_TableMath.h" />
+    <ClInclude Include="objDPO\DPO_TableMathPS.h" />
+    <ClInclude Include="objDPO\DPO_TableQuantile.h" />
+    <ClInclude Include="objDPO\DPO_TableQuantilePS.h" />
+    <ClInclude Include="objDPO\DPO_TableRangeExtract.h" />
+    <ClInclude Include="objDPO\DPO_TableRangeExtractPS.h" />
+    <ClInclude Include="objDPO\DPO_TableRowAccumulate.h" />
+    <ClInclude Include="objDPO\DPO_TableRowAccumulatePS.h" />
+    <ClInclude Include="objDPO\DPO_TableRowIndexLogic.h" />
+    <ClInclude Include="objDPO\DPO_TableRowIndexLogicPS.h" />
+    <ClInclude Include="objDPO\DPO_TableRowStatistics.h" />
+    <ClInclude Include="objDPO\DPO_TableRowStatisticsPS.h" />
+    <ClInclude Include="objDPO\DPO_TableSample.h" />
+    <ClInclude Include="objDPO\DPO_TableSamplePS.h" />
+    <ClInclude Include="objDPO\DPO_TableStatistics.h" />
+    <ClInclude Include="objDPO\DPO_TableStatisticsPS.h" />
+    <ClInclude Include="objDPO\DPO_TableToGrid.h" />
+    <ClInclude Include="objDPO\DPO_TableToGridPS.h" />
+    <ClInclude Include="objDPO\DPO_TableToReal.h" />
+    <ClInclude Include="objDPO\DPO_TableToRealPS.h" />
+    <ClInclude Include="objDPO\DPO_TableToXY.h" />
+    <ClInclude Include="objDPO\DPO_TableToXYPS.h" />
+    <ClInclude Include="objDPO\DPO_TableTranspose.h" />
+    <ClInclude Include="objDPO\DPO_TableTransposePS.h" />
+    <ClInclude Include="objDPO\DPO_TransformTable.h" />
+    <ClInclude Include="objDPO\DPO_TransformTablePS.h" />
+    <ClInclude Include="objDPO\DPO_ViewGrid.h" />
+    <ClInclude Include="objDPO\DPO_ViewGridPS.h" />
+    <ClInclude Include="objDPO\DPO_ViewTable.h" />
+    <ClInclude Include="objDPO\DPO_ViewTablePS.h" />
+    <ClInclude Include="objDPO\DPO_ViewXY.h" />
+    <ClInclude Include="objDPO\DPO_ViewXYPS.h" />
+    <ClInclude Include="objDPO\DPO_XYAddNoise.h" />
+    <ClInclude Include="objDPO\DPO_XYAddNoisePS.h" />
+    <ClInclude Include="objDPO\DPO_XYArrayScaleTransform.h" />
+    <ClInclude Include="objDPO\DPO_XYArrayScaleTransformPS.h" />
+    <ClInclude Include="objDPO\DPO_XYArrayToTable.h" />
+    <ClInclude Include="objDPO\DPO_XYArrayToTablePS.h" />
+    <ClInclude Include="objDPO\DPO_XYBasePS.h" />
+    <ClInclude Include="objDPO\DPO_XYConcat.h" />
+    <ClInclude Include="objDPO\DPO_XYConcatPS.h" />
+    <ClInclude Include="objDPO\DPO_XYDualScaleTransform.h" />
+    <ClInclude Include="objDPO\DPO_XYDualScaleTransformPS.h" />
+    <ClInclude Include="objDPO\DPO_XYFourier.h" />
+    <ClInclude Include="objDPO\DPO_XYFourierPS.h" />
+    <ClInclude Include="objDPO\DPO_XYHistogram.h" />
+    <ClInclude Include="objDPO\DPO_XYHistogramPS.h" />
+    <ClInclude Include="objDPO\DPO_XYIntegrate.h" />
+    <ClInclude Include="objDPO\DPO_XYIntegrateFMom.h" />
+    <ClInclude Include="objDPO\DPO_XYIntegrateFMomPS.h" />
+    <ClInclude Include="objDPO\DPO_XYIntegratePS.h" />
+    <ClInclude Include="objDPO\DPO_XYInterpVal.h" />
+    <ClInclude Include="objDPO\DPO_XYInterpValPS.h" />
+    <ClInclude Include="objDPO\DPO_XYMath.h" />
+    <ClInclude Include="objDPO\DPO_XYMathPS.h" />
+    <ClInclude Include="objDPO\DPO_XYQuantile.h" />
+    <ClInclude Include="objDPO\DPO_XYQuantilePS.h" />
+    <ClInclude Include="objDPO\DPO_XYRangeExtract.h" />
+    <ClInclude Include="objDPO\DPO_XYRangeExtractPS.h" />
+    <ClInclude Include="objDPO\DPO_XYReduction.h" />
+    <ClInclude Include="objDPO\DPO_XYReductionPS.h" />
+    <ClInclude Include="objDPO\DPO_XYRemoveDuplicate.h" />
+    <ClInclude Include="objDPO\DPO_XYRemoveDuplicatePS.h" />
+    <ClInclude Include="objDPO\DPO_XYScaleTransform.h" />
+    <ClInclude Include="objDPO\DPO_XYScaleTransformPS.h" />
+    <ClInclude Include="objDPO\DPO_XYSmoothFilter.h" />
+    <ClInclude Include="objDPO\DPO_XYSmoothFilterPS.h" />
+    <ClInclude Include="objDPO\DPO_XYSort.h" />
+    <ClInclude Include="objDPO\DPO_XYSortPS.h" />
+    <ClInclude Include="objDPO\DPO_XYStatistics.h" />
+    <ClInclude Include="objDPO\DPO_XYStatisticsPS.h" />
+    <ClInclude Include="objDPO\DPO_XYToCDF.h" />
+    <ClInclude Include="objDPO\DPO_XYToCDFPS.h" />
+    <ClInclude Include="objDPO\DPO_XYToTable.h" />
+    <ClInclude Include="objDPO\DPO_XYToTablePS.h" />
+    <ClInclude Include="objDPO\DPO_XYToXYArray.h" />
+    <ClInclude Include="objDPO\DPO_XYToXYArrayPS.h" />
+    <ClInclude Include="objDPO\DPO_XYTranspose.h" />
+    <ClInclude Include="objDPO\DPO_XYTransposePS.h" />
+    <ClInclude Include="objDPO\objDPOConfigFile.h" />
+    <ClInclude Include="objDPO\objDPOUtil.h" />
+    <ClInclude Include="objHelp\H_Objlib.h" />
+    <ClInclude Include="objLFO\LFO_ObjectOutput.h" />
+    <ClInclude Include="objLFO\LFO_Table.h" />
+    <ClInclude Include="objLFO\LFO_TableStatistics.h" />
+    <ClInclude Include="objLFO\LFO_XYData.h" />
+    <ClInclude Include="objLFO\LFO_XYDataArray.h" />
+    <ClInclude Include="objLPO\LPO_ObjectOutput.h" />
+    <ClInclude Include="objLPO\LPO_ObjectOutputPS.h" />
+    <ClInclude Include="objLPO\LPO_Table.h" />
+    <ClInclude Include="objLPO\LPO_TablePS.h" />
+    <ClInclude Include="objLPO\LPO_TableStatistics.h" />
+    <ClInclude Include="objLPO\LPO_TableStatisticsPS.h" />
+    <ClInclude Include="objLPO\LPO_XYData.h" />
+    <ClInclude Include="objLPO\LPO_XYDataArray.h" />
+    <ClInclude Include="objLPO\LPO_XYDataArrayPS.h" />
+    <ClInclude Include="objLPO\LPO_XYDataPS.h" />
+    <ClInclude Include="objPFO\PFO_2DAnalytic.h" />
+    <ClInclude Include="objPFO\PFO_2DMultTables.h" />
+    <ClInclude Include="objPFO\PFO_2DTableSeries.h" />
+    <ClInclude Include="objPFO\PFO_2DXYData.h" />
+    <ClInclude Include="objPFO\PFO_2DXYDataArray.h" />
+    <ClInclude Include="objPFO\PFO_3DTableSeries.h" />
+    <ClInclude Include="objPFO\PFO_3DXYData.h" />
+    <ClInclude Include="objPFO\PFO_ColorCubeIsovolume.h" />
+    <ClInclude Include="objPFO\PFO_CubeColorBase.h" />
+    <ClInclude Include="objPFO\PFO_CubeColorBlock.h" />
+    <ClInclude Include="objPFO\PFO_CubeColorPoint.h" />
+    <ClInclude Include="objPFO\PFO_EnterXYOnPlot.h" />
+    <ClInclude Include="objPFO\PFO_GridColorBase.h" />
+    <ClInclude Include="objPFO\PFO_GridColorBlockFill.h" />
+    <ClInclude Include="objPFO\PFO_GridColorPoint.h" />
+    <ClInclude Include="objPFO\PFO_GridColorRangeFill.h" />
+    <ClInclude Include="objPFO\PFO_GridContour.h" />
+    <ClInclude Include="objPFO\PFO_GridFishnet.h" />
+    <ClInclude Include="objPFO\PFO_NSLabels.h" />
+    <ClInclude Include="objPFO\PFO_NSXYLabels.h" />
+    <ClInclude Include="objPFO\PFO_NSXYZLabels.h" />
+    <ClInclude Include="objPFO\PFO_TableColorSeries.h" />
+    <ClInclude Include="objPFO\PFO_TableErrorBars.h" />
+    <ClInclude Include="objPFO\PFO_TableHistogram.h" />
+    <ClInclude Include="objPFO\PFO_TableHorsetail.h" />
+    <ClInclude Include="objPFO\PFO_VariableArrayGridLines.h" />
+    <ClInclude Include="objPFO\PFO_XYHistogram.h" />
+    <ClInclude Include="objPFO\PFO_XYHorsetail.h" />
+    <ClInclude Include="objPFOGL\PFO_2DAnalyticGL.h" />
+    <ClInclude Include="objPFOGL\PFO_2DMultTablesGL.h" />
+    <ClInclude Include="objPFOGL\PFO_2DTableSeriesGL.h" />
+    <ClInclude Include="objPFOGL\PFO_2DXYDataArrayGL.h" />
+    <ClInclude Include="objPFOGL\PFO_2DXYDataGL.h" />
+    <ClInclude Include="objPFOGL\PFO_3DTableSeriesGL.h" />
+    <ClInclude Include="objPFOGL\PFO_3DXYDataGL.h" />
+    <ClInclude Include="objPFOGL\PFO_ColorCubeIsovolumeGL.h" />
+    <ClInclude Include="objPFOGL\PFO_CubeColorBlockGL.h" />
+    <ClInclude Include="objPFOGL\PFO_CubeColorPointGL.h" />
+    <ClInclude Include="objPFOGL\PFO_EnterXYOnPlotGL.h" />
+    <ClInclude Include="objPFOGL\PFO_GridColorBlockFillGL.h" />
+    <ClInclude Include="objPFOGL\PFO_GridColorPointGL.h" />
+    <ClInclude Include="objPFOGL\PFO_GridColorRangeFillGL.h" />
+    <ClInclude Include="objPFOGL\PFO_GridContourGL.h" />
+    <ClInclude Include="objPFOGL\PFO_GridFishnetGL.h" />
+    <ClInclude Include="objPFOGL\PFO_NSXYLabelsGL.h" />
+    <ClInclude Include="objPFOGL\PFO_NSXYZLabelsGL.h" />
+    <ClInclude Include="objPFOGL\PFO_TableColorSeriesGL.h" />
+    <ClInclude Include="objPFOGL\PFO_TableErrorBarsGL.h" />
+    <ClInclude Include="objPFOGL\PFO_TableHistogramGL.h" />
+    <ClInclude Include="objPFOGL\PFO_TableHorsetailGL.h" />
+    <ClInclude Include="objPFOGL\PFO_VariableArrayGridLinesGL.h" />
+    <ClInclude Include="objPFOGL\PFO_XYHistogramGL.h" />
+    <ClInclude Include="objPFOGL\PFO_XYHorsetailGL.h" />
+    <ClInclude Include="objPlotClass\PSC_3DCoordMap.h" />
+    <ClInclude Include="objPlotClass\PSC_3DCubeData.h" />
+    <ClInclude Include="objPlotClass\PSC_3DGridData.h" />
+    <ClInclude Include="objPlotClass\PSC_Horsetail.h" />
+    <ClInclude Include="objPPO\objPPOConfigFile.h" />
+    <ClInclude Include="objPPO\objPPOUtil.h" />
+    <ClInclude Include="objPPO\PPO_2DAnalytic.h" />
+    <ClInclude Include="objPPO\PPO_2DAnalyticPS.h" />
+    <ClInclude Include="objPPO\PPO_2DMultTables.h" />
+    <ClInclude Include="objPPO\PPO_2DMultTablesPS.h" />
+    <ClInclude Include="objPPO\PPO_2DTableSeries.h" />
+    <ClInclude Include="objPPO\PPO_2DTableSeriesPS.h" />
+    <ClInclude Include="objPPO\PPO_2DXYData.h" />
+    <ClInclude Include="objPPO\PPO_2DXYDataArray.h" />
+    <ClInclude Include="objPPO\PPO_2DXYDataArrayPS.h" />
+    <ClInclude Include="objPPO\PPO_2DXYDataPS.h" />
+    <ClInclude Include="objPPO\PPO_3DTableSeries.h" />
+    <ClInclude Include="objPPO\PPO_3DTableSeriesPS.h" />
+    <ClInclude Include="objPPO\PPO_3DXYData.h" />
+    <ClInclude Include="objPPO\PPO_3DXYDataPS.h" />
+    <ClInclude Include="objPPO\PPO_ColorCubeIsovolume.h" />
+    <ClInclude Include="objPPO\PPO_ColorCubeIsovolumePS.h" />
+    <ClInclude Include="objPPO\PPO_CubeColorBasePS.h" />
+    <ClInclude Include="objPPO\PPO_CubeColorBlock.h" />
+    <ClInclude Include="objPPO\PPO_CubeColorBlockPS.h" />
+    <ClInclude Include="objPPO\PPO_CubeColorPoint.h" />
+    <ClInclude Include="objPPO\PPO_CubeColorPointPS.h" />
+    <ClInclude Include="objPPO\PPO_EnterXYOnPlot.h" />
+    <ClInclude Include="objPPO\PPO_EnterXYOnPlotPS.h" />
+    <ClInclude Include="objPPO\PPO_GridColorBasePS.h" />
+    <ClInclude Include="objPPO\PPO_GridColorBlockFill.h" />
+    <ClInclude Include="objPPO\PPO_GridColorBlockFillPS.h" />
+    <ClInclude Include="objPPO\PPO_GridColorPoint.h" />
+    <ClInclude Include="objPPO\PPO_GridColorPointPS.h" />
+    <ClInclude Include="objPPO\PPO_GridColorRangeFill.h" />
+    <ClInclude Include="objPPO\PPO_GridColorRangeFillPS.h" />
+    <ClInclude Include="objPPO\PPO_GridContour.h" />
+    <ClInclude Include="objPPO\PPO_GridContourPS.h" />
+    <ClInclude Include="objPPO\PPO_GridFishnet.h" />
+    <ClInclude Include="objPPO\PPO_GridFishnetPS.h" />
+    <ClInclude Include="objPPO\PPO_NSXYLabels.h" />
+    <ClInclude Include="objPPO\PPO_NSXYLabelsPS.h" />
+    <ClInclude Include="objPPO\PPO_NSXYZLabels.h" />
+    <ClInclude Include="objPPO\PPO_NSXYZLabelsPS.h" />
+    <ClInclude Include="objPPO\PPO_TableColorSeries.h" />
+    <ClInclude Include="objPPO\PPO_TableColorSeriesPS.h" />
+    <ClInclude Include="objPPO\PPO_TableErrorBars.h" />
+    <ClInclude Include="objPPO\PPO_TableErrorBarsPS.h" />
+    <ClInclude Include="objPPO\PPO_TableHistogram.h" />
+    <ClInclude Include="objPPO\PPO_TableHistogramPS.h" />
+    <ClInclude Include="objPPO\PPO_TableHorsetail.h" />
+    <ClInclude Include="objPPO\PPO_TableHorsetailPS.h" />
+    <ClInclude Include="objPPO\PPO_VariableArrayGridLines.h" />
+    <ClInclude Include="objPPO\PPO_VariableArrayGridLinesPS.h" />
+    <ClInclude Include="objPPO\PPO_XYHistogram.h" />
+    <ClInclude Include="objPPO\PPO_XYHistogramPS.h" />
+    <ClInclude Include="objPPO\PPO_XYHorsetail.h" />
+    <ClInclude Include="objPPO\PPO_XYHorsetailPS.h" />
+    <ClInclude Include="objUFO\UFO_VariableProcess.h" />
+    <ClInclude Include="objUFO\UFO_WriteCurveArray.h" />
+    <ClInclude Include="objUFO\UFO_WriteGrid.h" />
+    <ClInclude Include="objUFO\UFO_WriteLabelArray.h" />
+    <ClInclude Include="objUFO\UFO_WriteTable.h" />
+    <ClInclude Include="objUFO\UFO_WriteXY.h" />
+    <ClInclude Include="objUFO\UFO_WriteXYDataArray.h" />
+    <ClInclude Include="objUPO\UPO_VariableProcess.h" />
+    <ClInclude Include="objUPO\UPO_VariableProcessPS.h" />
+    <ClInclude Include="objUPO\UPO_WriteCurveArray.h" />
+    <ClInclude Include="objUPO\UPO_WriteCurveArrayPS.h" />
+    <ClInclude Include="objUPO\UPO_WriteGrid.h" />
+    <ClInclude Include="objUPO\UPO_WriteGridPS.h" />
+    <ClInclude Include="objUPO\UPO_WriteLabelArray.h" />
+    <ClInclude Include="objUPO\UPO_WriteLabelArrayPS.h" />
+    <ClInclude Include="objUPO\UPO_WriteTable.h" />
+    <ClInclude Include="objUPO\UPO_WriteTablePS.h" />
+    <ClInclude Include="objUPO\UPO_WriteXY.h" />
+    <ClInclude Include="objUPO\UPO_WriteXYDataArray.h" />
+    <ClInclude Include="objUPO\UPO_WriteXYDataArrayPS.h" />
+    <ClInclude Include="objUPO\UPO_WriteXYPS.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

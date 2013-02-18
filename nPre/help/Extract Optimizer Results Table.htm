@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Extract Optimizer Results Table</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Extract Optimizer Results Table </P>
+
+</FONT><P>What:   </B>Extracts a table containing optimized values, case parameters and/or optimization status from one or multiple simulations of an nSIGHTS Optimizer Results object.</P>
+<B><P>Why:   </B>To examine optimization results.<B>  </P>
+<P>Used By:  </B>Any object using table data, and the <B><FONT FACE="Technical" COLOR="#008000">Optimization Results</B></FONT> list object.</P>
+<B><P>Appearance: </P>
+</B><P><IMG SRC="AppExtractOptResults.jpg"></P>
+<B><P>Application:  </B>nPost</P>
+<B><P>Input Data:  <FONT FACE="Technical" COLOR="#008000">nSIGHTS Optimizer Results</P></FONT>
+<P>Output Data: </B>2 tables, one containing the basic table results, the second containing the initial and final fitting parameter values for each optimization (start/end output).</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>nSIGHTS Opt Results To Select From</B></FONT></TD>
+<TD CLASS=desc>The optimizer results from which the optimization results are to be extracted is selected.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Table Columns</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Optimized values</B></FONT></TD>
+<TD CLASS=desc>If selected, includes optimized values in the extraction.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Case par</B></FONT></TD>
+<TD CLASS=desc>If selected, includes the values of case parameters (e.g. suite, range or sampled values for the simulation) in the extraction.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Opt status</B></FONT></TD>
+<TD CLASS=desc>If selected, includes optimization status in the extraction.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Start/End Table Output</B></FONT></TD>
+<TD CLASS=desc>The start/end output table contains the initial and final fitting parameter values for each optimization.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">None</B></FONT></TD>
+<TD CLASS=desc>No start/end table is output.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Regular - Segment Table</B></FONT></TD>
+<TD CLASS=desc>The start/end table is output. There is one column per fitting parameter, and three rows for each simulation (start value in row 1, end value in row 2, and null delimiter in row 3).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Normalized - Segment Table</B></FONT></TD>
+<TD CLASS=desc>The start/end table is output, with normalized initial and final optimization values.  There is one column per fitting parameter, and three rows for each simulation (start value in row 1, end value in row 2, and null delimiter in row 3).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Regular - Segment Table</B></FONT></TD>
+<TD CLASS=desc>The start/end table is output. There is a Start and End column for each fitting parameter, and a row  for each selected simulation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Normalized - Segment Table</B></FONT></TD>
+<TD CLASS=desc>The start/end table is output, with normalized initial and final optimization values.  There is a Start and End column for each fitting parameter, and a row  for each selected simulation.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Index Selection Value Source</B></FONT></TD>
+<TD CLASS=desc>A selection box containing a list of the available simulations allows the user to select the simulation from which to extract the optimization results.  One or multiple selections may be made.</TD>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Mst</B></FONT></TD>
+<TD CLASS=desc>Selection of the simulations may be slaved to another extraction object.  See <A HREF="Masters and Slaves.htm">Masters and Slaves</A> for more information.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Exp</B></FONT></TD>
+<TD CLASS=desc>Selection of the simulations may be exposed.  See <A HREF="Exposed Controls.htm">Exposed Controls</A> for more information.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">None </B></FONT></TD>
+<TD CLASS=desc>All simulations are unselected. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">All</B></FONT></TD>
+<TD CLASS=desc>All simulations are selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Run</B></FONT></TD>
+<TD CLASS=desc>All simulations with the same run identifier as the currently selected simulation are selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Case</B></FONT></D>
+<TD CLASS=desc>All simulations with the same case identifier as the currently selected simulation are selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Fit</B></FONT></TD>
+<TD CLASS=desc>All simulations with the same fit as the currently selected simulation are selected.</TD>
+</TR>
+</TABLE>
+</P>
+</FONT></BODY>
+</HTML>

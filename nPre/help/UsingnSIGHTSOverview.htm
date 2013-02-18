@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>UsingNsightsOverview</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Overview</B></FONT></P>
+
+<P>The general steps to creating a model run, executing a model run, and viewing the output are outlined below. </P>
+
+<P>(1)  Open nPre.  nPre is used to pre-process input data, select model run options and execute the model run.</P>
+
+<P>(2) Complete input requirements through nPre input Windows.  For all simulation modes, the following input is required:</P>
+
+<UL>
+<LI>define general model options and physical configuration <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Configuration</B></FONT> input window</LI>
+<LI>specify simulation output options <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Wells and Output</B></FONT> input window</LI>
+<LI>import field data and develop constraints and diagnostic plots <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Field Data</B></FONT> tab of the </FONT><B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window</LI>
+<LI>define test sequences <FONT FACE="Wingdings">&#224;</FONT>
+</FONT><B><FONT COLOR="#000080">Sequence</B></FONT> input window</LI>
+<LI>enter parameter values <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Parameter</B></FONT> input window and if applicable, </FONT><B><FONT COLOR="#000080">f(x) Points Parameter</B></FONT> input window </LI>
+<LI>if suite or range parameters are defined, specify related options <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Suite/Range</B></FONT> input window</LI>
+<LI>specify output files to be created during simulation <FONT FACE="Wingdings">&#224;</FONT>
+</FONT><B><FONT COLOR="#000080">Output Files</B></FONT> input window</LI>
+<LI>create plots for viewing during simulation <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Runtime</B></FONT> tab of the </FONT><B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window</LI></UL>
+
+<DIR>
+<P>Depending on the simulation mode, further input may be required:</P>
+</DIR>
+
+<UL>
+<LI>if optimization or forward-range mode is selected, pair field data and simulated data for comparison <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Fit</B></FONT> tab of the </FONT><B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window and the </FONT><B><FONT COLOR="#000080">Fit Selection</B></FONT> input window</LI>
+<LI>if optimization mode is selected, specify optimization options <FONT FACE="Wingdings">&#224;</FONT>
+ </FONT><B><FONT COLOR="#000080">Optimization</B></FONT> input window</LI>
+<LI>if sampling mode is selected, specify sampling options <FONT FACE="Wingdings">&#224;</FONT>
+</FONT><B><FONT COLOR="#000080">Sampling </B></FONT>input window</LI></UL>
+
+
+<P>(3) Execute the model.  Select the </FONT><B><FONT COLOR="#000080">Minimal</B></FONT> or </FONT><B><FONT COLOR="#000080">Verbose</B></FONT> command from the </FONT><B><FONT COLOR="#000080">Run</B></FONT> menu.  </FONT><B><FONT COLOR="#000080">Minimal</B></FONT> shows minimal information during the simulation, whereas </FONT><B><FONT COLOR="#000080">Verbose </B></FONT>provides detailed information at the cost of slightly increased execution time. </P>
+
+<P>(4)  Examine diagnostic plots.  If required, make necessary adjustments to the input and repeat step (3). </P>
+<P> </P>
+<P>(5)  Close nPre.</P>
+
+<P>(6)  Open nPost.  nPost is a post-processor for simulation results, and contains many statistical tools to examine the results.   </P>
+
+<P>(7)  Read simulation results into nPost.  Analyze and plot the results.</P>
+
+<P>(8)  Examine results.  If necessary, return to nPre, make necessary changes to the input, and repeat from step (3).</P>
+
+</FONT></BODY>
+</HTML>

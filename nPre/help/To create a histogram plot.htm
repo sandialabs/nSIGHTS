@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>To create a histogram plot</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>To create a histogram plot</B></FONT></P>
+
+<STYLE>
+ul{list-style-type: square}
+</STYLE>
+
+<OL>
+
+<LI>Within nPost, and the <I>Input Data </I>page, create a new object:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Read Input<FONT FACE="Wingdings">&#224;</FONT>Read nSIGHTS Optimizer Results</B></FONT>.  The optimization results output file of the perturbation model run will be imported within this object.</LI>
+
+<UL>
+<LI>Select the file TutorialPerturb.nOpt using the browse button.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>Create a new data page.  Rename the page </FONT><FONT FACE="Courier"><B>Perturb Results</FONT></B>.</LI>
+<P></P>
+
+<LI>Within the <I>Perturb Results</I> data page, create a new object:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>
+ nSIGHTS Results Extraction<FONT FACE="Wingdings">&#224;</FONT>
+Extract Optimizer Results Table</B></FONT>.</LI>
+
+<UL>
+<LI>Select <I><FONT COLOR="#800050">SimOptResults TutorialPerturb.nOpt</I></FONT> as the <B><FONT COLOR="#000080">nSIGHTS Opt Results to Select From</B></FONT>.</LI>
+<LI>At the bottom of the property input window, select the <B><FONT COLOR="#000080">All</B></FONT> button.  All cases included within the optimizer results file will be selected.</LI>
+<LI>Select the <B><FONT COLOR="#800050">Opt status</B></FONT> checkbox.  This will include fit value data within the table (e.g. SSE).</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+
+<P><IMG SRC="TutExtractOptPerturb.jpg"></P>
+
+<LI>Within the <I>Perturb Results</I> data page, create a new object:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>
+Table Processing<FONT FACE="Wingdings">&#224;</FONT>
+Table Column To Histogram</B></FONT>.</LI>
+
+<UL>
+<LI>Change the <B><FONT COLOR="#000080">Object ID</B></FONT> to </FONT><FONT FACE="Courier"><B>KTableHistogram</FONT></B>.</LI>
+<LI>Select <I><FONT COLOR="#800050">Output table SelectOptResults \Perturb Results</I></FONT> as the <B><FONT COLOR="#000080">Table Data To Use</B></FONT>. </LI>
+<LI>Select <I><FONT COLOR="#800050">Formation conductivity</I></FONT> from the <B><FONT COLOR="#000080">Table Column</B></FONT> drop-down-box.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+
+<P><IMG SRC="TutHistogram.jpg"></P>
+
+<LI>Create a 2D plot page (<B><FONT COLOR="#000080">Page<FONT FACE="Wingdings">&#224;</FONT>New 2D XY Plot</B></FONT>).  </LI>
+
+<UL>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">2D-XY</B></FONT> object, change the name of the page to </FONT><FONT FACE="Courier"><B>K Perturb Histogram</FONT></B>.  Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">X Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Increment Label Format </B></FONT>to <I><FONT COLOR="#800050">Scientific</I></FONT> and <I><FONT COLOR="#800050">0.0E+00</I></FONT>, and select <B><FONT COLOR="#000080">Apply</B></FONT>. </LI>
+<LI>Select the <B><FONT FACE="Technical" COLOR="#008000">2D Plot Anno</B></FONT> object.  Check the <B><FONT COLOR="#800050">Axis Labels</B></FONT> box, and type </FONT><FONT FACE="Courier"><B>Hydraulic Conductivity (m/s) </FONT></B>for the X axis and </FONT><FONT FACE="Courier"><B>Frequency </FONT></B>for the Y axis labels. Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>Create a new object in the <I>K Perturb Histogram </I>plot page:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Data: XY Histogram</B></FONT>.</LI>
+
+<UL>
+<LI>Select <I><FONT COLOR="#800050">K Table Histogram \Perturb Results </I></FONT>from the <B><FONT COLOR="#800050">XY Data to Plot</B></FONT> drop-down-box.</LI>
+<LI>Select <I><FONT COLOR="#800050">%Avail</I></FONT> for <B><FONT COLOR="#800050">Histogram width</B></FONT>. Check <I><FONT COLOR="#800050">Plot</I></FONT> in the <B><FONT COLOR="#800050">Edges</B></FONT> frame. </LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.  </LI></UL>
+<P></P>
+
+<LI>View the plot by selecting the <I>K Perturb Histogram </I>plot page from the <B><FONT COLOR="#000080">Window</B></FONT> menu, or from the <B><FONT COLOR="#000080">Window List </B></FONT>window.  The axes limits will need to be reset (select <B><FONT COLOR="#000080">Axes-&gt;Data Limits</B></FONT> in the 2D window pop-up menu).</LI>
+
+<P><IMG SRC="TutHistogramPlot.jpg"></P>
+
+<LI>Histogram plots can be created for other parameters, by repeating steps (4) to (7).</LI></OL>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="To create an XY scatter plot.htm">To create an XY scatter plot</A></P>
+
+</FONT></BODY>
+</HTML>

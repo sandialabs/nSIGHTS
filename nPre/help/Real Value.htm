@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Real Value(s) To Table</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Real Value(s) To Table </P></FONT>
+<P>What:   </B>Converts real values into table data.</P>
+<B><P>Why:   </B>Collects real values from an object with changing input and configures the real values in table format.  For example, the statistics of an XY slice of a grid can be stored in a table for several different grid slices.</P>
+<B><P>Used By:  </B>Any object using table data.  In particular, the table may be viewed using the <B><FONT FACE="Technical" COLOR="#008000">View Table Data</B></FONT> object.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppRealToTable.jpg"></P>
+<B><P>Input Data:  </B>real value</P>
+<B><P>Output Data: </B>table data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<FONT COLOR="#000080"><B>Table Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Clear Rows</B></FONT></TD>
+<TD CLASS=desc>Clears the table.  A subsequent change in the real values defined in the <B><FONT COLOR="#000080">Table Columns</B></FONT> frame will add a new row to the table.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Save table data</B></FONT></TD>
+<TD CLASS=desc>Saves the current table values in the nSIGHTS configuration file.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Table Columns</B></FONT></TD>
+<TD CLASS=desc>In each line, a real value object can be selected from the drop-down list.  The column header is input into the adjacent text box.  The line is activated/deactivated with the checkbox at the beginning of the line.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Status  </B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050"># of rows</FONT></B></TD>
+<TD CLASS=desc>The number of rows represents the number of table rows created.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050"># of columns</B></FONT></TD>
+<TD CLASS=desc>The number of columns will reflect the number of table columns defined in the <B><FONT COLOR="#000080">Table Columns</B></FONT> frame.  </TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Apply</B></FONT></TD>
+<TD CLASS=desc>Will add one row to the table, containing the current values of the real values in each table column.</TD>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

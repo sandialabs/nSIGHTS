@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Formatting Real Numbers</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Formatting Real Numbers</B></FONT></P>
+
+<P>There are many cases where it is desirable to control the format used to convert numeric values to strings.  Examples include axes increment labels, posted data points on plots, etc. nSIGHTS uses a common control for this task:</P>
+
+<P><IMG SRC="RealNumberFormatting.jpg"></P>
+
+<P>The first field is a drop-down list that specifies the general formatting type, while the second field is used to specify the number of decimal places:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">General</I></FONT></TD>
+<TD CLASS=desc>Conversion depends upon the value of number being converted. Generally, decimal conversion is used for numbers of absolute value less than 1.0E+11 and greater than 1.0E-05 (or 0), while scientific notation is used for all others.  Trailing zeroes are generally eliminated, except that integer values less than 100 have a single decimal place (e.g. 99.0).  The second field is not used for general.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Decimal</I></FONT></TD>
+<TD CLASS=desc>A fixed number of places after the decimal are specified. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Scientific</I></FONT></TD>
+<TD CLASS=desc>A fixed number of digits precision is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Scientific 2</I></FONT></TD>
+<TD CLASS=desc>Same as <I><FONT COLOR="#800050">Scientific</I></FONT> except uses mantissa x 10**X format in subscript/superscript notation.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Exponent</I></FONT></TD>
+<TD CLASS=desc>Expressed as 10 to a power using subscript/superscript notation.  Note that the mantissa will be dropped.  This is intended primarily for log axes and log data labels.  Note that 10**0 will be converted to 1.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Exponent 2</I></FONT></TD>
+<TD CLASS=desc>Same as <I><FONT COLOR="#800050">Exponent</I></FONT> only values with exponents between -1 and 2 will appear as 0.1, 1, 10, and 100.</TD>
+</TR>
+</TABLE>
+
+<P>Note that the <I><FONT COLOR="#800050">Scientific 2</I></FONT>, <I><FONT COLOR="#800050">Exponent</I></FONT>, and <I><FONT COLOR="#800050">Exponent 2</I></FONT> notations are only available for objects plotting labels.</P>
+
+<P>The second field appears as follows:</P>
+
+<TABLE>
+<TR>
+<TD><I><FONT COLOR="#800050">Decimal</I></FONT></TD>
+<TD><I><FONT COLOR="#800050">Scientific</I></FONT></TD>
+<TD><I><FONT COLOR="#800050">Scientific 2</I></FONT>  </TD>
+</TD>
+</TR>
+<TR>
+<TD><IMG SRC="RealDecimalFormat.jpg"></TD>
+<TD><IMG SRC="RealSciFormat.jpg"></TD>
+<TD><IMG SRC="RealSci2Format.jpg"></TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

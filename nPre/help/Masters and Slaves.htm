@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Masters and Slaves</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Masters and Slaves</B></FONT></P>
+
+<P>Master and slave capabilities allow the internal settings of one object (the <B><I><FONT FACE="RomanS" COLOR="#ff0000">master</B></I></FONT>) to control those of another object (the <B><I><FONT FACE="RomanS" COLOR="#ff0000">slave</B></I></FONT>).  In many cases, data processing objects and visualizations are created that may contain several instances of a set of object properties.  o compare these objects, they need to have the same object properties. For example, to compare the derivative of pressure for field data and model results, two <B><FONT FACE="Technical" COLOR="#008000">P(t) Derivative Calculation</B></FONT> objects are required, one for each set of data.  To ensure both derivative objects have the same derivative specifications, the master and slave facility allows the object properties of the slave object to be automatically updated to correspond with any  changes to the master object.</P>
+<P></P>
+<P>For example, the two <B><FONT FACE="Technical" COLOR="#008000">P(t) Derivative Calculation </B></FONT>objects described above could be linked as follow:</P>
+<P></P>
+<OL>
+
+<P><LI>A <B><FONT FACE="Technical" COLOR="#008000">P(t) Derivative Calculation </B></FONT>object for the field data derivative calculation is created: the <B><FONT COLOR="#800050">Object ID</B></FONT> is set to </FONT><FONT FACE="Courier"><B>dPField</FONT></B>, the pressure field data source is selected, and the appropriate derivative options selected.  By default, the object will be a master (i.e. the <B><FONT COLOR="#800050">Master</B></FONT> toggle is turned on).</LI></P>
+<P></P>
+<P><IMG SRC="MasterSlaveExMaster.jpg"></P>
+<P></P>
+<P><LI>Another <B><FONT FACE="Technical" COLOR="#008000">P(t) Derivative Calculation </B></FONT>object for the model results is created: the <B><FONT COLOR="#800050">Object ID</B></FONT> set to </FONT><FONT FACE="Courier"><B>dPModel</FONT></B>, and the model data source is selected. The <B><FONT COLOR="#800050">Master</B></FONT> toggle is turned off, and the </FONT><I><FONT COLOR="#800050"><FONT FACE="Courier"><B>dPfield</I></FONT></FONT></B> object is selected from the drop-down menu.</LI></P>
+<P></P>
+<P><IMG SRC="MasterSlaveExSlave.jpg"></P>
+<P></P>
+</OL>
+<P>Master/Slave capability is available for most object properties where property variation is likely to be required.  There are two variations of the master/slave frame depending upon the window layout. Both variations are shown in the object property of the <B><FONT FACE="Technical" COLOR="#008000">P(t) Derivative Calculation</B></FONT> object shown in the above example, and are shown in detail here:</P>
+<P></P>
+<P><IMG SRC="MasterSlaveLong.jpg"></P>
+<P></P>
+<P><IMG SRC="MasterSlaveShort.jpg"></P>
+<P></P>
+<P>Note that many master/slave controls also contain an <B><FONT COLOR="#800050">Expose</B></FONT> toggle.  Selecting the <B><FONT COLOR="#800050">Expose</B></FONT> toggle will create an exposed version of the control as described in <A HREF="Exposed Controls.htm">Exposed Controls</A>.  Only master controls can be exposed.</P>
+
+</FONT></BODY>
+</HTML>

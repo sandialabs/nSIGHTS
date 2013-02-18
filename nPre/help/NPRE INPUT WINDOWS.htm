@@ -1,0 +1,314 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>NPRE INPUT WINDOWS</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>nPre Input windows</B></FONT></P>
+
+<P>The nPre input windows contain dialog prompts, an object tree and its corresponding object property window, or tables, to define the input for a model run. Different input windows are used as a means of organizing input data, and each window may be further organized into tabs. This section describes the different nPre input windows and their function, summarized in the following table.</P>
+<P></P>
+<P>The nPre input windows are accessed by selecting a command from the <B><FONT COLOR="#000080">nPre</B></FONT> menu, or the </FONT><B><FONT COLOR="#000080">nPre</B></FONT> control bar.  Not all input commands are accessible.  Input commands, as well as tabs and dialog prompts, are hidden if they are not required for the current set of selected options. For example, the </FONT><B><FONT COLOR="#000080">Optimization</B></FONT> input window remains hidden unless </FONT><I><FONT COLOR="#800050">Optimization</I></FONT> is selected as the </FONT><B><FONT COLOR="#800050">Simulation Sub-Type</B></FONT> in the </FONT><B><FONT COLOR="#000080">Main</FONT> </B>tab of the </FONT><B><FONT COLOR="#000080">Configuration</B></FONT> input window.  A hidden command or tab is either faded and cannot be selected, or completely hidden from view. </P>
+
+<P> Shortcuts to Input Windows in the table: </P>
+<P>
+<A HREF="#Configuration">Configuration</A> |
+<A HREF="#Wells and Output">Wells and Output</A> |
+<A HREF="#Sequence">Sequences</A> |
+<A HREF="#Parameter">Parameter</A> |
+<A HREF="#Points Parameter">f(p)/f(r) Points Parameter</A> |
+<A HREF="#Fit Specification">Fit Specification</A> |
+<A HREF="#Optimization">Optimization</A> |
+<A HREF="#Sampling">Sampling</A> |
+<A HREF="#Suite/Range">Suite/Range</A> |
+<A HREF="#Output File Setup">Output Files</A> |
+<A HREF="#Processing Setup">Plots & Data Processing</A>
+</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=9 WIDTH=729>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B><P>Summary of nPre Input Windows and Functions</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<B><P>Input Windows and Tabs</B></FONT></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<B><P>Function</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Configuration" HREF="Configuration Input Window.htm"><B>Configuration</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Defines model function and general options for the model run.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Main</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Sets basic model options, such as simulation mode.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Liquid</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options specific to liquid phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Gas</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options specific to gas phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Matrix</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options specific to the matrix of dual porosity systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Default Units</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Sets default units for the model run.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Curve Files</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Only if curve data source is a file (<B><FONT COLOR="#000080">Main tab</FONT></B> of the <B><FONT COLOR="#000080">Configuration</FONT></B> input window).  Loads XY files containing time-variable boundary conditions, and pressure- or radius-variable parameters.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Test Description</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Documentation of the model run.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Wells and Output" HREF="Simulation Output.htm"><B><P>Wells and Output</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Defines the wells in the model, and the associated output for each well to be calculated by the model.
+</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Main</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Defines the wells in the model, and the associated output for each well to be calculated by the model.
+</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Production Restart</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Restarts production integration at specified times (for production output).</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Superposition</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Only for pressure superposition output type, the</FONT> </FONT><B><FONT COLOR="#000080">Superposition</B></FONT> </FONT>tab provides a table to input radii at which pressures will be summed, and related options.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Sequence" HREF="Sequence Input Window.htm"><B>Sequences</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Sequence definition. Sequences are discrete time intervals representing a set of well-bore boundary conditions.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Time-Base</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options for defining sequences.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Sequences</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Defines the sequences.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">TZ Curves</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Associates curve data (time-variable boundary conditions) with sequences.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Dynamic Time Step</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Controls for automatic adjustment of the time step during simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Partial Run</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Controls to simulate only a subset of the defined sequences.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Parameter" HREF="Parameter Input Window.htm"><B>Parameter</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Establishes fitting and non-fitting parameters, and defines these parameter values, ranges or distributions. </FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Formation</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Formation parameters.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Fracture</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Fracture parameters, only for dual porosity systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Matrix</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Matrix parameters, only for dual porosity systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Fluid</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Fluid parameters, only for liquid phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Gas</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Gas parameters, only for gas phase simulations.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Leaky Layer</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Leaky layer parameters, only for single leakage systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Upper Leaky Layer</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Upper leaky layer parameters, only for upper/lower leakage systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Lower Leaky Layer</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Lower leaky layer parameters, only for upper/lower leakage systems.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Skin Zone</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Skin zone parameters, only for simulations with a skin zone.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Test-Zone</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Test-zone parameters.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Numeric</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Numeric parameters.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Points Parameter" HREF="fp_fr Points Parameter Input Window.htm"><B>f(x) Points Parameter</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Defines parameter functions that vary with pressure or radius.  Only accessible if parameters are defined as points functions in the </FONT><B><FONT COLOR="#000080">Parameter</B></FONT> input window.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Points Entry</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Enter XY points to define the function.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Interpolation</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Defines an interpolation function for the XY points.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Units/Transform</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>The units and transforms of the XY points.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Optimization</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Controls for the optimization of points defining the parameter function.  Optimization modes only.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Fit Specification" HREF="Fit Specification Input Window.htm"><B>Fit Selection</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Determines which field and simulated data paired are to be used for regression analysis.  The pairing of field and simulated data, conducted within the Fit tab of the </FONT><B><FONT COLOR="#000080">Plots and Data Processing</B></FONT> input window, indicates the field data to which the regression model should fit simulation results.  Only for optimization modes or forward-range mode.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Optimization" HREF="Optimization Input Window.htm"><B>Optimization</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Optimization solver options. Only for optimization modes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Main</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Selection of algorithm, and general options.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Tolerances</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options for optimizer tolerances. </FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">L-M </TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options for the Levenburg-Marquardt and the MINPACK Levenburg-Marquardt algorithms.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Simplex </TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options for the downhill simplex algorithm.</FONT></TD>
+</TR>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">S-A </TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options for the Simulated Annealing algorithm.</FONT></TD>
+</TR>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">NL2SOL</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options for the NL2SOL algorithm.</FONT></TD>
+</TR>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">SCEM </TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Options for the SCEM algorithm.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Perturbation</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Initiates perturbation mode.  Only for optimization-normal mode.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Calculated Vars</TD>
+<TD WIDTH="70%" VALIGN="TOP"></FONT></TD>
+</TR>
+<P>Determines the calculated variables included in output.
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Sampling" HREF="Sampling Input Window.htm"><B>Sampling</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Sets up the sampling of a parameter.  The parameters to be sampled are defined in the </FONT><B><FONT COLOR="#000080">Parameter</B></FONT> or </FONT><B><FONT COLOR="#000080">Sequence</B></FONT> input windows.  Only accessible for sampling modes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Main</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Selection of sampling options, such as the sampling procedure and the number of times a parameter is to be sampled.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Correlations</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>The simulation program will force the correlation between two parameters to the correlation values specified in this tab.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Samples</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Provides a table of the sampled values to be used by the model.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Suite/Range" HREF="Priority.htm"><B>Suite/Range</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Determines the priority of suite or range parameters.</P>
+<P>Not accessible for sampling modes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Priority</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Sets the priority of suite or range parameters.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Output File Setup" HREF="Output File Setup Input Window.htm"><B>Output Files</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Defines model output files.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">XY Data</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Determines which XY array data to output to a file. All modes except range modes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Profile</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Creates a profile output file, which outputs a grid of pressure as a function of time (X axis) and radius (Y axis).  Only for forward-normal modes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Range</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Creates a range output file, which contains grid (2 range variables) or cube (3 range variables) data of residuals (between simulation and field data). Only for range modes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Optimization</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Creates a file containing fit results.  May also include residuals, covariance matrices, Jacobian data and specified calculated variables.  Only for optimization-normal and optimization-sampling modes.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">
+<A NAME="Processing Setup" HREF="Processing Setup Input Window.htm"><B>Plots & Data Processing</B></A></TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Contains 4 tabs, each containing an object tree.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Field Data</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Object tree to create constraints and diagnostic plots from field data.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Sequence</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Object tree to create simulated data sets that correspond with the field data constraints defined in the </FONT><B><FONT COLOR="#000080">Field Data</B></FONT> tab and to create simulated data diagnostic plots.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Fit</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Pairs field and simulated data, indicates the field data to which a regression model should fit simulation results.</FONT></TD>
+</TR>
+<TR><TD WIDTH="30%" VALIGN="TOP">Runtime</TD>
+<TD WIDTH="70%" VALIGN="TOP">
+<P>Object tree to create plots to monitor the real-time progress of the model.</FONT></TD>
+</TR>
+</TABLE>
+
+
+<P></P>
+</FONT><P>&nbsp;</P></FONT></BODY>
+</HTML>

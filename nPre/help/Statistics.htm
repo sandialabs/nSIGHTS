@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Statistics</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Statistics </P></FONT>
+
+<P>What:</B>   Calculates basic statistics (e.g. sum, mean, minimum, maximum, etc.) for XY, cube or grid data.  Four basic statistics are selected for output as real values, typically used as data labels on a plot.</P>
+<B><P>Why:</B>   For examination of data.  Can also be included as labels for plots.</P>
+<B><P>Used By:</B>  Any object using real values.</P>
+<B><P>Appearance: </B>The appearance is identical for each data type, except for the name of the input data frame, an extra input frame for XY data, and status frames for cube and grid data.  The appearance is shown for XY data:</P>
+<P><IMG SRC="AppStatXY.jpg"></P>
+<B><P>Input Data:</B>  XY, cube or grid data</P>
+<B><P>Output Data:</B> 4 real values</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Cube</B></FONT>/<B><FONT COLOR="#000080">Grid</B></FONT>/<B><FONT COLOR="#000080">XY Input Data</B></FONT></TD>
+<TD CLASS=desc>Statistics are computed for the input data selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data Component to Operate On</B></FONT></TD>
+<TD CLASS=desc>XY data only.  Statistics are calculated for X data or Y data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Data to Output</B></FONT></TD>
+<TD CLASS=desc>The statistics to output as real values are selected from four drop-down-boxes (four real values are output).</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>log Data</B></FONT></TD>
+<TD CLASS=desc>If selected, statistics are calculated on the log (natural or base 10) of the input data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>natural log</B></FONT></TD>
+<TD CLASS=desc>If <FONT COLOR="#800050"><B>log Data</B></FONT> is selected, the natural logarithm of the input is calculated.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>log base 10</B></FONT></TD>
+<TD CLASS=desc>If <FONT COLOR="#800050"><B>log Data</B></FONT> is selected, the base 10 logarithm of the input is calculated.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><B>calc median and mode</B></FONT></TD>
+<TD CLASS=desc>If selected, the median and mode are calculated.  The calculation of the median and mode is an option due to the large computational requirements for large data sets.</TD>
+</TR>
+</TABLE>
+
+<B><FONT COLOR="#000080">Result Values</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Sum</B></FONT></TD>
+<TD CLASS=desc>The total of all non-null values.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Minimum</B></FONT></TD>
+<TD CLASS=desc>Minimum non-null value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Maximum</B></FONT></TD>
+<TD CLASS=desc>Maximum non-null value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Mean</B></FONT></TD>
+<TD CLASS=desc>Sum / N</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Variance</B></FONT></TD>
+<TD CLASS=desc>Sum((y<SUB>i</SUB> - Mean)<SUP>2</SUP>) /N, where y<SUB>i</SUB> = ith non-null value.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Std.  dev.</B></FONT></TD>
+<TD CLASS=desc>Sqrt(Sum((y<SUB>i</SUB> - Mean)<SUP>2</SUP>) /(N -1)) </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Range</FONT></TD>
+<TD CLASS=desc>Maximum - Minimum</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">N</B></FONT></TD>
+<TD CLASS=desc>Number of non-null data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">N null</B></FONT></TD>
+<TD CLASS=desc>Number of null data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">% non-null</B></FONT></TD>
+<TD CLASS=desc>N/(N + N_null) * 100.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Median</B></FONT></TD>
+<TD CLASS=desc>Value in the middle of sorted data. Only calculated if specified in the <FONT COLOR="#000080"><B>Options</B></FONT> frame.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Mode</B></FONT></TD>
+<TD CLASS=desc>Most frequently occurring value in a set of data. Only calculated if specified in the <FONT COLOR="#000080"><B>Options</B></FONT> frame.</TD>
+</TR>
+</TABLE>
+
+
+Note that only N, N Null and % non-null will be calculated if N = 0.  Variance and Std. dev. are only calculated if N &gt; 1. </P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Grid/Cube X/Y/Z Status</B></FONT></TD>
+<TD CLASS=desc>Displays the grid/cube status, see <FONT FACE="Technical" COLOR="#008000"><B>Read Cube Data</FONT></B> and <B><FONT FACE="Technical" COLOR="#008000">Read Grid Data objects</FONT></B>. </TD>
+</TR>
+<TABLE>
+
+</FONT></BODY>
+</HTML>

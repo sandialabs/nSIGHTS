@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Main Tab Simulation Output</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Main Tab</B></FONT></P>
+
+<P>The </FONT><B><FONT COLOR="#000080">Main</B></FONT> tab of the </FONT><B><FONT COLOR="#000080">Wells and Output</B></FONT> input window defines the wells in the model, and the output to be calculated by the model for each well.  It consists of a table where the type of output is defined:</P>
+
+<P><IMG SRC="SimulationOutputMainTab.jpg"></P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+table.subsection2 {font: 10 pt Arial; margin-left: 0.75 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Well ID</B></FONT></TD>
+<TD CLASS=desc>The ID identifies the well associated with the output.  A default ID of <B><FONT COLOR="Courier">DAT</B></FONT> is used for the default well output. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Output Type</B></FONT>, <B><FONT COLOR="#800050">Sub-type</B></FONT></TD>
+<TD CLASS=desc>Determines the type of output to be calculated:</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TD><I><FONT COLOR="#800050"> Pressure</I></FONT></TD>
+</TABLE>
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><I>Test Zone</I></FONT></TD>
+<TD CLASS=desc>Pressure in the well-bore.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Observation Well</I></FONT></TD>
+<TD CLASS=desc>Pressure at a specified distance from the well-bore.  The specified distance is input in the <B><FONT COLOR="#800050">Radius</B></FONT> column.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Superposition</I></FONT></TD>
+<TD CLASS=desc>Sums pressures at specified radii.  Superposition radii and options are input in the <B><FONT COLOR="#000080">Superposition</B></FONT> tab.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TD><I><FONT COLOR="#800050">Flow</I></FONT></TD>
+</TABLE>
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><I>Well</I></FONT></TD>
+<TD CLASS=desc>Flow into or out of the well, including <I><FONT COLOR="#800050">Formation</I></FONT>, <I><FONT COLOR="#800050">Test-zone</I></FONT> and </FONT><I><FONT COLOR="#800050">Well-bore storage </I></FONT>flows.  For flow sequences, the well flow is specified.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Formation</I></FONT></TD>
+<TD CLASS=desc>Flow into the well-bore from the formation, or out of the well-bore to the formation. Test zone and well-bore storage flows are not included.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Test Zone  </I></FONT></TD>
+<TD CLASS=desc>Flow in the well-bore due to volume changes in the test-zone.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Well-bore Storage</I></FONT></TD>
+<TD CLASS=desc>Flow due to well-bore storage.  For example, a pressure change will generate flow from the well-bore storage due to the change in the compressibility of the liquid or gas.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">Production</I></FONT></TD>
+<TD CLASS=desc>Integrated flow rate (i.e. total volume).  Same sub-types as <I><FONT COLOR="#800050">Flow</I></FONT>.</TD>
+</TR>
+<TR>
+<TD><I><FONT COLOR="#800050">Test Zone</FONT></I></TD>
+</TR>
+</TABLE>
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><I>TZ Temp.</I></FONT></TD>
+<TD CLASS=desc>Temperature in the test zone.  Simply echoes variable test zone temperature curve data.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">TZ Comp.</I></FONT></TD>
+<TD CLASS=desc>Compressibility in the test zone.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><I><FONT COLOR="#800050">TZ Volume</I></FONT></TD>
+<TD CLASS=desc>Volume in the test zone.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD><I><FONT COLOR="#800050">Water Table</FONT></I></TD>
+</TR>
+</TABLE>
+<TABLE CLASS=subsection2>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#800050"><I>Observation Well</I></FONT></TD>
+<TD CLASS=desc>Water table elevation (from the bottom of the formation) at a specified distance from the well-bore.  The specified distance is input in the <B><FONT COLOR="#800050">Radius</B></FONT> column.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Radius</B></FONT></TD>
+<TD CLASS=desc>Determines the radius from the well-bore at which pressure will be output.  For pressure observation wells or water table observation wells only.  For partially penetrating wells, the radius is specified in the <A HREF="Unconfined Observation Well Dialog.htm"><B><FONT COLOR="#000080">2D Observation Well Dialog</B></FONT></A>.  To access the dialog, double click in the <B><FONT COLOR="#800050">Radius</B></FONT> cell.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Radius Units</B></FONT></TD>
+<TD CLASS=desc>Units of the radius are selected from a drop-down list.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Output Units</B></FONT></TD>
+<TD CLASS=desc>Units for the output are selected from a drop-down list.</TD>
+</TR>
+</TABLE>
+</P>
+
+<P>Table rows are inserted, deleted or duplicated using the right click pop-up menu.</P>
+</FONT></BODY>
+</HTML>

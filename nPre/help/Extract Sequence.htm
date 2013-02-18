@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Extract Sequence(s)</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4>
+<P>Extract Sequence(s) </P></FONT>
+
+<P>What:   </B>Extracts XY data for one or multiple sequences, based on the sequences defined by sequence time data.</P>
+<B><P>Why:   </B>To examine simulation results within one or a set of defined sequences.<B>  </P>
+<P>Used By:  </B>Any object using XY data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppExtractSequences.jpg"></P>
+<B><P>Input Data:  </B>XY data and sequence time interval data</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>XY Data To Extract From </B></FONT></TD>
+<TD CLASS=desc>The XY data set from which data are extracted is selected.  </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Sequence Time Data</B></FONT></TD>
+<TD CLASS=desc>The sequence time data set is selected.  In nPre, the sequence time data set is by default a system object defined in the <B><FONT COLOR="#000080">Sequence</B></FONT> input window.  In nPost, the sequence time data must be read in with a <B><FONT FACE="Technical" COLOR="#008000">Sequence Time Interval Data</B></FONT> object, or with XY or profile simulation results.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"># of Sequences </B></FONT></TD>
+<TD CLASS=desc><B><FONT COLOR="#800050">Single</B></FONT> or </FONT><B><FONT COLOR="#800050">Multiple</B></FONT> sequences may be selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Time Adjustment</B></FONT></TD>
+<TD CLASS=desc>The extracted X values, or time, may be adjusted by resetting the start time, or by removing duplicate times.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Pressure/Flow Rate Adjustment</B></FONT></TD>
+<TD CLASS=desc>The extracted Y values, or pressure or flow rate, may be adjusted.</TD>
+</TR>
+</TABLE>
+
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Adjust Start</B></FONT></TD>
+<TD CLASS=desc>If selected, all pressure or flow rate values are decreased by the starting pressure/flow rate value, or offset by the entered value. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Start</B></FONT></TD>
+<TD CLASS=desc>Pressure/flow rates are decreased by the starting pressure/flow rate value</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Offset</B></FONT></TD>
+<TD CLASS=desc>Pressure/flow rates are offset by the value entered in the adjacent text box.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">ABS(Y)</B></FONT></TD>
+<TD CLASS=desc>If selected, the extracted Y values are the absolute value of the adjusted pressure/flow rates.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">log10(Y)</B></FONT></TD>
+<TD CLASS=desc>If selected, the log of the adjusted pressure/flow rates is extracted.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Set final</B></FONT></TD>
+<TD CLASS=desc>If selected, the final pressure/flow rate is specified in the adjacent text box.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Start Sequence Value Source</B></FONT> </TD>
+<TD CLASS=desc>The sequences available in the specified <B><FONT COLOR="#000080">Sequence Time Data</B></FONT> are listed, and the starting sequence is selected.  XY data will be extracted starting at this sequence. </TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">End Sequence Value Source</B></FONT></TD>
+<TD CLASS=desc>The sequences available in the specified <B><FONT COLOR="#000080">Sequence Time Data</B></FONT> are listed, and if multiple sequences were specified, the end sequence is selected.</TD>
+</TR>
+</TABLE>
+
+</P></FONT></BODY>
+</HTML>

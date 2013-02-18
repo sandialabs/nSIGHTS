@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Field Data Input</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Field Data Input</B></FONT></P>
+
+<P>At this point, existing field data are imported and plotted using the <B><FONT COLOR="#000080">Auto Setup<FONT FACE="Wingdings">&#224;</FONT>Field Data Plots</B></FONT> command.  </P>
+
+<OL>
+
+<LI>Select the <B><FONT COLOR="#000080">Auto Setup<FONT FACE="Wingdings">&#224;</FONT>Field Data Plots</B></FONT>.  </LI>
+<P></P>
+<LI>A dialog will appear:</LI>
+
+<P><IMG SRC="AutoFieldData.jpg"></P>
+
+<P>Toggle off <B><FONT COLOR="#800050">Flow</B></FONT> in the <B><FONT COLOR="#000080">Data to Read</B></FONT>, and select <B><FONT COLOR="#000080">OK</B></FONT>.</P>
+
+<LI>Two pages will be created in the <B><FONT COLOR="#000080">Field Data</B></FONT> tab of the <B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window: one data page and one plot page.  In the first data page, <I>P_input</I>, select the <B><FONT FACE="Technical" COLOR="#008000">Read XY Data </B></FONT>object, <I>fPDAT</I>.</LI>
+
+<STYLE>
+ul{list-style-type: square}
+</STYLE>
+
+<UL >
+<LI>Use the browse button to find the file &quot;PMP.DAT&quot;.</LI>
+<LI>Select the <B><FONT COLOR="#000080">Apply</B></FONT> button.  <B><FONT COLOR="#000080">Data Status</B></FONT> will indicate that 251 point have been read.</LI>
+</UL>
+
+<P><IMG SRC="TutReadFieldData.jpg"></P>
+
+<LI>Within the <I>P_Cartesian</I> plot page, select the <I>Pressure</I> <B><FONT FACE="Technical" COLOR="#008000">XY Data Series</B></FONT> object.  Auto setup has already selected the field data pressure and the simulated data pressure.  Upon selection of the object, its status will be updated to normal (due to the successful reading of data within the fPDAT object in step 3).</LI>
+
+<P><IMG SRC="TutFieldXYInput.jpg"></P>
+
+<LI>The <I>Sequences</I> <B><FONT FACE="Technical" COLOR="#008000">Sequence Grid Lines </B></FONT>object will plot grid lines defining the beginning/ending of all sequences, once sequences are defined.</LI>
+<P></P>
+<LI>To view the field data plot, select the 2D plot window (<B><FONT COLOR="#000080">Window<FONT FACE="Wingdings">&#224;</FONT>
+Fld::P_Cartesian</B></FONT>).  The window should appear blank, with both axes set at a scale of 0 to 10.  To re-scale the axes, select the <B><FONT COLOR="#000080">Reset View</B></FONT> button (<IMG SRC="PlotResetViewButton.jpg">), or <B><FONT COLOR="#000080">Axes-&gt;Data Limits</B></FONT> from the 2D pop-up menu (right click within the 2D plot window).</LI>
+
+<P><IMG SRC="TutPlotWinFieldData.jpg"></P>
+
+<LI>To add axes labels to the plot, select the <B><FONT FACE="Technical" COLOR="#008000">2DplotAnno</B></FONT> object in the <I>P_Cartesian</I> 2D plot page.  In the <B><FONT COLOR="#000080">Format</B></FONT> frame, toggle on the <B><FONT COLOR="#800050">Axis Labels</B></FONT> checkbox.  In the <B><FONT COLOR="#000080">Labels</B></FONT> frame, type </FONT><FONT FACE="Courier"><B>Time (hours)</FONT></B> for the <B><FONT COLOR="#800050">X Axis</B></FONT> label, and </FONT><FONT FACE="Courier"><B>Pressure (kPa)</FONT></B> for the <B><FONT COLOR="#800050">Y Axis</B></FONT> label.  Select the <B><FONT COLOR="#000080">Apply</B></FONT> button.  For the Y axis labels to fit within the plot window, the left margin may need to be increased in the <B><FONT FACE="Technical" COLOR="#008000">2D-XY </B></FONT>object.</LI>
+
+<P><IMG SRC="TutFldPlotAnno.jpg"></P>
+
+<LI>To change the title of the plot, select the <I>Title</I> <B><FONT FACE="Technical" COLOR="#008000">User Labels</B></FONT> object in the <I>P_Cartesian</I> 2D plot page.  Change the </FONT><FONT FACE="Courier"><B>Enter Title</FONT></B> text to </FONT><FONT FACE="Courier"><B>Field Pressure Data Time Series</FONT></B>.  Select the <B><FONT COLOR="#000080">Apply</B></FONT> button.</LI>
+</OL>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="Sequence Input.htm">Sequence Input</A></P>
+
+</FONT></BODY>
+</HTML>

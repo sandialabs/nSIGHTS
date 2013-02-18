@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Read XY Data Array</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Read XY Data Array</P></FONT>
+
+<P>What:</B>   Reads XY array data from a file (default file extension: *.nXYA).</P>
+<B><P>Why:</B>   Allows use of XY array data created or manipulated outside the current nSIGHTS application (for example, in another nSIGHTS application or a spreadsheet).</P>
+<B><P>Used By:</B>  Any object using XY array data.</P>
+<B><P>Appearance:</P></B>
+<P><IMG SRC="AppReadXYArray.jpg"></P>
+<B><P>Application:</B>  nPost</P>
+<B><P>Input Data:</B>  external file containing XY data</P>
+<B><P>Output:</B>  XY data</P>
+<B><P>Properties:</P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>XY Data Array File</B></FONT></TD>
+<TD CLASS=desc>The name of the file (including the file path) containing the XY array data is entered in the text box or the <B><FONT COLOR="#000080">Browse</B></FONT> button is used to find the file using the standard Windows open file dialog.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Status</B></FONT></TD>
+<TD CLASS=desc>Once the XY array data file is loaded, the number of XY sets within the array, and the total number of XY points is displayed.  </TD>
+</TABLE>
+</P>
+
+<B><P>File Format:</P>
+<P>The mView format is as follows:</P>
+<TABLE>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 1:</TD>
+<TD VALIGN=TOP WIDTH=30%>Header </TD>
+<TD VALIGN=TOP WIDTH=50%>For example: ‘Text XY Data Array File’</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 2: 	</TD>
+<TD VALIGN=TOP WIDTH=30%>V1  V2   </TD>
+<TD VALIGN=TOP WIDTH=50%>V1 and V2 are the major and minor version numbers</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 3: 	</TD>
+<TD VALIGN=TOP WIDTH=30%>n	</TD>
+<TD VALIGN=TOP WIDTH=50%>Number of XY data sets in array</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 4:	</TD>
+<TD VALIGN=TOP WIDTH=30%>XY data set ID 1	</TD>
+<TD VALIGN=TOP WIDTH=50%>ID of the first XY data set</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 5:	</TD>
+<TD VALIGN=TOP WIDTH=30%>n1	</TD>
+<TD VALIGN=TOP WIDTH=50%>Number of XY points in the first data set.</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line 6:	</TD>
+<TD VALIGN=TOP WIDTH=30%>x11 y11		 </TD>
+<TD VALIGN=TOP WIDTH=50%>First data points of the first XY data set</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=30%><B>.</B></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=30%><B>.</B></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line a:	</TD>
+<TD VALIGN=TOP WIDTH=30%>x1n y1n	</TD>
+<TD VALIGN=TOP WIDTH=50%>Last data points of the first XY data set</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line a+1:	</TD>
+<TD VALIGN=TOP WIDTH=30%>XY data set ID 2	</TD>
+<TD VALIGN=TOP WIDTH=50%>ID of the second XY data set</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%>Line a+2:	</TD>
+<TD VALIGN=TOP WIDTH=30%>n2	</TD>
+<TD VALIGN=TOP WIDTH=50%>Number of XY points in the second data set.</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=30%><B>.</B></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP WIDTH=20%></TD>
+<TD VALIGN=TOP WIDTH=30%><B>.</B></TD>
+</TR>
+</TABLE>
+
+</FONT></BODY>
+</HTML>

@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Calculate Joint Confidence of Opt Results</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Calculate Joint Confidence of Opt Results</P></FONT>
+
+<P>What:   </B>Calculates confidence of optimization results by the F-test method or Log-Likelihood method, relative to a best fit case.</P>
+<B><P>Why: </B>To estimate confidence regions.</P>
+<B><P>Used By: </B></FONT>Any object using table data. </P>
+<B><P>Appearance: </P>
+</B></FONT><P><IMG SRC="AppCalcConfOptResults.jpg"></P>
+</FONT><B><P>Input Data: </B><B><FONT FACE="Technical" COLOR="#008000">nSIGHTS Optimizer Results</B></FONT></P>
+<B><P>Output Data: </B>table data</P>
+<B><P>Properties: </P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<P>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>nSIGHTS Opt Results To Select From</B></FONT> </TD>
+<TD CLASS=desc>Confidence is calculated for each opimization result found in the optimizer results selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Options</B></FONT></TD>
+<TD CLASS=desc></TD>
+</TR>
+</TABLE>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">automatically determine best fit case</FONT></B></TD>
+<TD CLASS=desc>If selected, the best fit case with the smallest SSE will be selected as the best fit case.  Otherwise, the case selected in the <B><FONT COLOR="#000080">Select Best Fit Case</FONT></B> list will be used as the best fit case.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">F-test method</FONT></B></TD>
+<TD CLASS=desc>If selected, confidence is calculated using the F-test method.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Log-likelihood method</FONT></B></TD>
+<TD CLASS=desc>If selected, confidence is calculated using the Log-likelihood method.</TD>
+</TR>
+</TABLE>
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Select Run</B></FONT></TD>
+<TD CLASS=desc>Confidence calculations are performed on a single run, selected from the optimization results here.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Select Fit</TD>
+<TD CLASS=desc>Confidence calculation are performed on a single fit (may be composite).</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Select Best Fit Case</B></FONT> </TD>
+<TD CLASS=desc>If not automatically determined, the best fit case is selected here.</TD>
+</TR>
+</TABLE>
+</P>
+</BODY>
+</HTML>

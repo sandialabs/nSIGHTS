@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Extract XY from Grid</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Extract XY from Grid</P></FONT>
+
+<P>What:   </B>Extracts data from a grid corresponding to a specified constant grid axes X or Y value.  The resulting X value will be based on one of the grid axes, and the resulting Y value is based on the value at each grid point.</P>
+<B><P>Why:   </B>To view a slice of grid data.<B>  </P>
+<P>Used By:  </B>Any object using XY data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppExtractXY.jpg"></P>
+<B><P>Input Data:  </B>grid data</P>
+<B><P>Output Data: </B>XY data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Grid Input Data</B></FONT></TD>
+<TD CLASS=desc>The grid data set from which the XY data are extracted is selected. </TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">Extraction Options</B></FONT>
+<TABLE CLASS=subsection>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Constant:</B></FONT></TD>
+<TD CLASS=desc>The grid axes to be used as the extraction constant is selected.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">Interp on log data</B></FONT></TD>
+<TD CLASS=desc>Linear interpolation between two grid points is based on the log of the grid point values.</TD>
+</TR>
+</TABLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Extraction Constant Value Source</B></FONT></TD>
+<TD CLASS=desc>Master/Slave and expose controls.  See <A HREF="Masters and Slaves.htm">Masters and Slaves</A> and <A HREF="Exposed Controls.htm">Exposed Controls</A> for more information on these controls.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080"><P>Extraction Constant Value</B></FONT></TD>
+<TD CLASS=desc>X and Y values are extracted for constant values of the grid axes specified as <B><FONT COLOR="#800050">Constant:</B></FONT> at this entered value. If the constant value occurs between two grid points, the resulting XY point is linearly interpolated.</TD>
+</TR>
+</TABLE>
+</P>
+
+</FONT></FONT></BODY>
+</HTML>

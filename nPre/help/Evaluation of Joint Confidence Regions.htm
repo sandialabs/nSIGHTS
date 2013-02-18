@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Evaluation of Joint Confidence Regions</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Evaluation of Joint Confidence Regions</B></FONT></P>
+
+<P>Joint confidence regions delineate areas that have a specified probability of containing the true parameter values. They evaluate the uncertainty in fitting parameter values due to fitting parameter correlations and data noise.  This section will describe how confidence regions are plotted.  Correlation coefficients are only calculated if there are multiple cases (e.g. perturbation analysis or sampling mode), and the viewing of correlation coefficients will be shown in <A HREF="Viewing Correlation Coefficients.htm">Viewing Correlation Coefficients</A> on perturbation analysis. </P>
+
+<OL>
+<STYLE>
+ul{list-style-type: square}
+</STYLE>
+
+<LI>Create a new data page.  Rename the page <B><FONT COLOR="#000080">Confidence Region Data</B></FONT>.</LI>
+<P></P>
+
+<LI>Within the <I>Confidence Region Data</I> data page, create a new object:<B><FONT COLOR="#000080">  Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>
+nSIGHTS Results Extraction<FONT FACE="Wingdings">&#224;</FONT>
+Extract Covariance Matrices</B></FONT>.  Joint confidence regions are obtained from the covariance matrix, stored in the optimization results file already imported into nPost.</LI>
+
+<UL>
+<LI>Keep the defaults, and select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI></UL>
+<P></P>
+
+<LI>Create a 2D plot page (<B><FONT COLOR="#000080">Page<FONT FACE="Wingdings">&#224;</FONT>
+New 2D XY Plot</B></FONT>).  </LI>
+
+<UL>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">2D-XY</B></FONT> object, change the name of the page to </FONT><FONT FACE="Courier"><B>K and n Confidence Region</FONT></B>, change the left margin to 100.  Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">X Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Increment Label Format </B></FONT>to <I><FONT COLOR="#800050">Scientific</I></FONT> and <I><FONT COLOR="#800050">0.00E+00</I></FONT>, and select <B><FONT COLOR="#000080">Apply</B></FONT>. </LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">Y Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Increment Label Format </B></FONT>to <I><FONT COLOR="#800050">Decimal</I></FONT> and <I><FONT COLOR="#800050">0.0000</I></FONT>, and select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>Select the <B><FONT FACE="Technical" COLOR="#008000">2D Plot Anno</B></FONT> object.  Check the <B><FONT COLOR="#800050">Axis Labels</B></FONT> box, and type </FONT><FONT FACE="Courier"><B>Hydraulic Conductivity (m/s) </FONT></B>for the X axis and </FONT><FONT FACE="Courier"><B>Flow Dimension </FONT></B>for the Y axis labels. Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI></UL>
+
+<P></P>
+
+<LI>Create a new object in the <I>K and n Confidence Region </I>plot page:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Data: Confidence Limits Two Parameter</B></FONT>.</LI>
+
+<UL>
+<LI>Select <I><FONT COLOR="#800050">Formation Conductivity </I></FONT>for the <B><FONT COLOR="#000080">X Variable </B></FONT>and <I><FONT COLOR="#800050">Flow Dimension</I></FONT> for the <B><FONT COLOR="#000080">Y Variable</B></FONT>.</LI>
+<LI>Select <I><FONT COLOR="#800050">Dual</I></FONT> as the <B><FONT COLOR="#000080">Limit Type</B></FONT>.  This will create an ellipse surrounding the confidence region.  <I><FONT COLOR="#800050">Single</I></FONT> will display an error bar for each axes. </LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.  </LI></UL>
+<P></P>
+
+<LI>Create a legend for the plot: <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Anno: Series Legend</B></FONT>.</LI>
+
+<UL>
+<LI>Select the first checkbox.  Select <I><FONT COLOR="#800050">SeriesLegend Covar Limits K and n Confidence Region</I></FONT> from the adjacent drop-down-box.</LI>
+<LI>Change the <B><FONT COLOR="#000080">Legend Font</B></FONT> <B><FONT COLOR="#800050">Size</B></FONT> to <I><FONT COLOR="#800050">12</I></FONT> point.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>View the plot by selecting the <I>K and n Confidence Region</I> plot page from the <B><FONT COLOR="#000080">Window</B></FONT> menu, or from the <B><FONT COLOR="#000080">Window List </B></FONT>window. The axes limits will need to be reset (select <B><FONT COLOR="#000080">Axes<FONT FACE="Wingdings">&#224;</FONT>Data Limits</B></FONT> in the 2D window pop-up menu), and the legend moved to an appropriate location (simply drag with the mouse).  As well, the plot may need to be resized in order to see the X axis increments (simply drag a corner of the plot window).</LI>
+
+<P><IMG SRC="TutKnConfidencePlot.jpg"></P>
+
+<LI>Steps (3) to (6) can be repeated for other parameter combinations.</LI></OL>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="Perturbation Analysis.htm">Perturbation Analysis</A></P>
+
+</FONT></BODY>
+</HTML>

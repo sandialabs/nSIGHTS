@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Residual Analysis</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Residual Analysis</B></FONT></P>
+
+<P>Residuals are analyzed to determine whether the conceptual model sufficiently describes the observed data.  Residuals should reflect random noise in the data, and be approximately randomly distributed (assuming the random noise to have a normal distribution).  If the data are not normal, the conceptual model needs to be re-examined, or a reason for the non-normal behavior found (e.g. equipment problems that cannot be included in the conceptual model).</P>
+
+<OL>
+
+<LI>Create a new data page.  Rename the page <B><FONT COLOR="#000080">Residual Data</B></FONT>.</LI>
+<P></P>
+
+<LI>In the <I>Residual Data</I> page, create a new object:<B><FONT COLOR="#000080">  Object<FONT FACE="Wingdings">&#224;</FONT>
+New<FONT FACE="Wingdings">&#224;</FONT>nSIGHTS Results Extraction<FONT FACE="Wingdings">&#224;</FONT>Extract Residuals</B></FONT>.  Residuals are obtained from the optimization results file, already imported into nPost.</LI>
+
+<STYLE>
+ul{list-style-type: square}
+</STYLE>
+<UL>
+<LI>Change the <B><FONT COLOR="#000080">Object ID</B></FONT> to </FONT><FONT FACE="Courier"><B>Cart Residuals</FONT></B>.</LI>
+<LI>Select the first fit, <B><FONT COLOR="#800050">Run #1 Only Case Cart_DAT_P OK Cart_DAT_P</B></FONT>.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>Create a new object:<B><FONT COLOR="#000080">  Object<FONT FACE="Wingdings">&#224;</FONT>New<FONT FACE="Wingdings">&#224;</FONT>Residual Processing<FONT FACE="Wingdings">&#224;</FONT>Calculate Residual Diagnostic</B></FONT>.</LI>
+
+<P><IMG SRC="TutResDiagCalc.jpg"></P>
+
+<UL>
+<LI>Change the <B><FONT COLOR="#000080">Object ID</B></FONT> to <FONT FACE="Courier"><B>Cart Res Diag</FONT></B>.</LI>
+<LI>Keep the default input and settings, and select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>Create a 2D plot page (<B><FONT COLOR="#000080">Page<FONT FACE="Wingdings">&#224;</FONT>New 2D XY Plot</B></FONT>).  </LI>
+
+<UL>
+<LI>Change the name of the page to </FONT><FONT FACE="Courier"><B>Cart Res Diag</FONT></B> and change the left margin to 125.  Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">X Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Increment Label Format </B></FONT>to <I><FONT COLOR="#800050">Decimal</I></FONT> and <I><FONT COLOR="#800050">0.000</I></FONT>, and select <B><FONT COLOR="#000080">Apply</B></FONT>. </LI>
+<LI>In the <B><FONT FACE="Technical" COLOR="#008000">Y Axis</B></FONT> object, change the <B><FONT COLOR="#000080">Increment Label Format </B></FONT>to <I><FONT COLOR="#800050">Decimal</I></FONT> and <I><FONT COLOR="#800050">0.000</I></FONT>, and select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+<LI>Select the <B><FONT FACE="Technical" COLOR="#008000">2D Plot Anno</B></FONT> object.  Check the <B><FONT COLOR="#800050">Axis Labels</B></FONT> box, and type </FONT><FONT FACE="Courier"><B>Normal Distribution</FONT></B> for the X axis and </FONT><FONT FACE="Courier"><B>Residuals</FONT></B> for the Y axis labels. Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>Create a new object in the <I>Cart Res Diag</I> plot page:  <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>
+New<FONT FACE="Wingdings">&#224;</FONT>Data: XY Series</B></FONT>.</LI>
+
+<UL>
+<LI>Select the first two check boxes.  Select <I><FONT COLOR="#800050">Quantile-Normal Cart Res Diag</I></FONT> and <I><FONT COLOR="#800050">QuantileLine Cart Res Diag</I></FONT> in the adjacent drop-down-boxes.</LI>
+<LI>Change the <I><FONT COLOR="#800050">Quantile-Normal Cart Res Diag </I></FONT> XY data representation from <I><FONT COLOR="#800050">Line</I></FONT> to <I><FONT COLOR="#800050">Symbol</I></FONT>.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.  </LI></UL>
+
+<P><IMG SRC="TutResDiagXYPlotObj.jpg"></P>
+
+<LI>Create a legend for the plot: <B><FONT COLOR="#000080">Object<FONT FACE="Wingdings">&#224;</FONT>
+New<FONT FACE="Wingdings">&#224;</FONT>
+Anno: Series Legend</B></FONT>.</LI>
+
+<UL>
+<LI>Select the first checkbox.  Select <I><FONT COLOR="#800050">SeriesLegend XY Data Series \Cart Res Diag</I></FONT> from the adjacent drop-down-box.</LI>
+<LI>Change the <B><FONT COLOR="#000080">Legend Font</B></FONT> <B><FONT COLOR="#800050">Size</B></FONT> to <I><FONT COLOR="#800050">12</I></FONT> point.</LI>
+<LI>Select <B><FONT COLOR="#000080">Apply</B></FONT>.</LI>
+</UL>
+<P></P>
+
+<LI>View the plot by selecting the <I>Cart Res Diag</I> plot page from the <B><FONT COLOR="#000080">Window</B></FONT> menu, or from the <B><FONT COLOR="#000080">Window List </B></FONT>window.  The axes limits will need to be reset (select <B><FONT COLOR="#000080">Axes-&gt;Data Limits</B></FONT> in the 2D window pop-up menu), and the legend moved to an appropriate location (simply drag with the mouse).</LI>
+
+<P><IMG SRC="TutResDiagPlot.jpg"></P>
+
+</OL>
+
+<HR></HR>
+
+<P>Next step:  <A HREF="Evaluation of Joint Confidence Regions.htm">Evaluation of Joint Confidence Regions</A></P>
+
+</FONT></BODY>
+</HTML>

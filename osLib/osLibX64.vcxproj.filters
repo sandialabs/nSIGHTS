@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fcf2aaf9-701e-40b3-abb1-b26f6f2713d7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\osClass">
+      <UniqueIdentifier>{31da6829-a117-40f3-b77e-6ecf3db97c2d}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\osDataClass">
+      <UniqueIdentifier>{f7fd37f1-4ee9-454b-a066-017eb1da3f77}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\osDFO">
+      <UniqueIdentifier>{8b688d82-4f28-4790-9476-5911b6a3805c}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\osDPO">
+      <UniqueIdentifier>{f7baf949-66b4-4dcb-b3d0-1c1ad401efb2}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\osMain">
+      <UniqueIdentifier>{6d9e0045-8627-49aa-ba23-74d3bea8d349}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{716dca0c-5869-43b4-a25b-77864d9886dd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\osClass H">
+      <UniqueIdentifier>{e8d9d6a5-8e6f-42d3-801d-63cb397dca33}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\osDataClass H">
+      <UniqueIdentifier>{55e28309-26e8-4bd6-9f3d-576740175380}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\osDFO H">
+      <UniqueIdentifier>{82eea908-31c4-422d-b18c-fe10c3b21d2f}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\osDPO H">
+      <UniqueIdentifier>{3bde40ff-5f9d-45fd-98f7-cd7866be33c8}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\osMain H">
+      <UniqueIdentifier>{8855354c-ef42-45bf-b6d9-8bc6bc1c9eac}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OsLibAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_OptVar.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_OptVarUnits.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_Runnable.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_SampVar.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_SampVarUnits.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_SimErr.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_VarBase.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_VaryVar.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\C_VaryVarUnits.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_Covar.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_CovarArray.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_CubeArray.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_FitResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_GridArray.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_Jacobian.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_OptSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_RangeSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DC_UncertSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_CalcParReal.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_Covar.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_CovarArray.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_CubeArray.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_FitResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_GridArray.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_Jacobian.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_OptIndx.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_OptSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_RangeIndx.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_RangeSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_ResidData.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\DO_UncertSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\IO_OptSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\IO_RangeSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\IO_UncertSimResults.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osClass\U_Resid.cpp">
+      <Filter>Source Files\osClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osDataClass\DSC_FandChiConfidence.cpp">
+      <Filter>Source Files\osDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osDataClass\DSC_IndexMSSpecOpt.cpp">
+      <Filter>Source Files\osDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osDataClass\DSC_IndexMSSpecRange.cpp">
+      <Filter>Source Files\osDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_BasicResidual.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_CalcConfidence.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_CalcConfidenceGrid.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_CalcConfidenceTable.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_CompositeFit.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_FitBase.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_JacobToTable.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_ReadOptSimResults.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_ReadRangeSimResults.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_ResidualDiagnostic.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_ResidualHistogram.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectOpt.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectOptCovar.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectOptJacob.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectOptResid.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectOptResults.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectRange.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectRangeCube.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectRangeGrid.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectRTRangeCube.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SelectRTRangeGrid.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SingleFit.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDFO\DFO_SingleFitBase.cpp">
+      <Filter>Source Files\osDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_BasicResidual.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CalcConfidence.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CalcConfidenceGrid.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CalcConfidenceTable.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_CompositeFit.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_JacobToTable.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_ReadOptSimResults.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_ReadRangeSimResults.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_ResidualDiagnostic.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_ResidualHistogram.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOpt.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptCovar.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptJacob.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptResid.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectOptResults.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRange.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRangeCube.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRangeGrid.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRTRangeCube.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SelectRTRangeGrid.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osDPO\DPO_SingleFit.cpp">
+      <Filter>Source Files\osDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\C_Optimize.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\C_OSListObj.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\C_Sample.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\C_Uncertain.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\G_Optimize.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\G_OptRange.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\G_Range.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\G_RealRange.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\G_Sample.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\G_Vary.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\OptLevMar.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\OptSCEM.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\OptSimAnneal.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\OptSimplex.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\osConfigFile.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\UncertFOSM.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+    <ClCompile Include="osMain\UncertPEM.cpp">
+      <Filter>Source Files\osMain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OsLibAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_OptVar.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_OptVarUnits.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_Runnable.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_SampVar.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_SampVarUnits.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_SimErr.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_VarBase.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_VaryVar.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\C_VaryVarUnits.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_Covar.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_CovarArray.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_CubeArray.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_FitResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_GridArray.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_Jacobian.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_OptSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_RangeSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DC_UncertSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_CalcParReal.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_Covar.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_CovarArray.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_CubeArray.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_FitResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_GridArray.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_Jacobian.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_OptIndx.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_OptSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_RangeIndx.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_RangeSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_ResidData.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\DO_UncertSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\IO_OptSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\IO_RangeSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\IO_UncertSimResults.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osClass\U_Resid.h">
+      <Filter>Header Files\osClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDataClass\DSC_FandChiConfidence.h">
+      <Filter>Header Files\osDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDataClass\DSC_IndexMSSpecOpt.h">
+      <Filter>Header Files\osDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDataClass\DSC_IndexMSSpecRange.h">
+      <Filter>Header Files\osDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_BasicResidual.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_CalcConfidence.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_CalcConfidenceGrid.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_CalcConfidenceTable.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_CompositeFit.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_FitBase.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_JacobToTable.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_ReadOptSimResults.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_ReadRangeSimResults.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_ResidualDiagnostic.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_ResidualHistogram.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectOpt.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectOptCovar.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectOptJacob.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectOptResid.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectOptResults.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectRange.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectRangeCube.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectRangeGrid.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectRTRangeCube.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SelectRTRangeGrid.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SingleFit.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDFO\DFO_SingleFitBase.h">
+      <Filter>Header Files\osDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_BasicResidual.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_CalcConfidence.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_CalcConfidenceGrid.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_CalcConfidenceTable.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_CompositeFit.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_JacobToTable.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_ReadOptSimResults.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_ReadRangeSimResults.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_ResidualDiagnostic.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_ResidualHistogram.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectOpt.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectOptCovar.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectOptJacob.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectOptResid.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectOptResults.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectRange.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectRangeCube.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectRangeGrid.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectRTRangeCube.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SelectRTRangeGrid.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osDPO\DPO_SingleFit.h">
+      <Filter>Header Files\osDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\C_Optimize.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\C_OSListObj.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\C_Sample.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\C_Uncertain.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\G_Optimize.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\G_OptRange.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\G_Range.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\G_RealRange.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\G_Sample.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\G_Vary.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\OptLevMar.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\OptSCEM.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\OptSimAnneal.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\OptSimplex.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\osConfigFile.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\UncertFOSM.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+    <ClInclude Include="osMain\UncertPEM.h">
+      <Filter>Header Files\osMain H</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

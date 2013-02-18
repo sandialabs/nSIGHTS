@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Value Dialog</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Value Dialog</B></FONT></P>
+
+<P>The <B><FONT COLOR="#000080">Value Dialog</B></FONT> depends on the parameter </FONT><B><FONT COLOR="#800050">Type</B></FONT>.  The dialog for each parameter type is described in the following table.</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+</STYLE>
+
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4>
+<TR><TD VALIGN="TOP" COLSPAN=2>
+<B><P>Value Dialog inputs based on Parameter Type</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP">
+<B><P>Parameter Type</B></FONT></TD>
+<TD WIDTH="86%" VALIGN="TOP">
+<B><P>Required Inputs</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP">
+<P>Suite</FONT></TD>
+<TD WIDTH="86%" VALIGN="TOP">
+<P>The dialog contains a table, into which suite values are entered, to a maximum of nine values.</FONT></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP">
+<P>Range</FONT></TD>
+<TD WIDTH="86%" VALIGN="TOP">
+<P>The range of values is defined by specifying the minimum, maximum, and number of steps between the minimum and maximum values.  Stepping is linear or logarithmic. </FONT></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP">
+<P>Optimize</FONT></TD>
+<TD WIDTH="86%" VALIGN="TOP">
+<P>The range of possible values is defined by the minimum and maximum, and the optimization begins with a parameter value set at the best estimate value.  The value stepping to find the next estimate may be linear or logarithmic.  The estimate of the standard  deviation is required to calculate Jacobian data, and is used to calculate the estimated covariance matrix.</FONT></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP">
+<P>Sample</FONT></TD>
+<TD WIDTH="86%" VALIGN="TOP">
+<P>The distribution of values is set as Normal, Log-Normal, Uniform, Log-Uniform, Triangular, or Log-Triangular.  The distribution characteristics are also required, such as the mean and standard deviation for a normal distribution.</FONT></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP">
+<P>f(x) Object</FONT></TD>
+<TD WIDTH="86%" VALIGN="TOP">
+<P>The curve object to be used is specified in the drop-down list, containing all curve objects available.  Curve objects are created within object trees of the </FONT><B><FONT COLOR="#000080">Plots & Data Processing</B></FONT> input window.  The curve data should have pressure (f(P)),  distance from the borehole (f(r)), or time (f(t)) as the X data, and the corresponding dependent variable as the Y data. The X and/or the Y data in the curve data may be transformed into log 10. The X and Y variable units are also specified in this dialog.</FONT></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="TOP">
+<P>f(x) File</FONT></TD>
+<TD WIDTH="86%" VALIGN="TOP">
+<P>The curve to be used is specified by the curve ID.  A drop-down list will specify the curve IDs available from the parameter curve files loaded in the </FONT><B><FONT COLOR="#000080">Curve Files</B></FONT> tab of the </FONT><B><FONT COLOR="#000080">Configuration</B></FONT> input window.  The curve data should have pressure (f(P)),  distance from the borehole (f(r)), or time (f(t)) as the X data, and the corresponding dependent variable as the Y data. The X and/or the Y data in the curve file may be transformed into log 10. The X and Y variable units are also specified in this dialog.</FONT></TD>
+</TR>
+</TABLE>
+
+
+<P>Note that for the parameter type </FONT><I><FONT COLOR="#800050">f(P) Point </I></FONT>and </FONT><I><FONT COLOR="#800050">f(r) Points</I></FONT>, the values are entered in the </FONT><B><FONT COLOR="#000080">f(p)/f(r) Points Parameter</B></FONT> input window.</P>
+</FONT></BODY>
+</HTML>

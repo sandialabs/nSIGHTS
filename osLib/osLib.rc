@@ -1,0 +1,538 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "osLibResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "osLibResource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPT_TOLERANCE DIALOGEX 0, 0, 316, 176
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Derivative adjustment tolerance",IDC_STATIC,9,120,99,8
+    LTEXT           "Maximum # of simulations",IDC_STATIC,9,137,103,8
+    EDITTEXT        IDC_EDIT_FIT_TOLERANCE,181,23,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,182,115,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,182,136,74,14,ES_AUTOHSCROLL
+    LTEXT           "First stage transition tolerance multiplier",IDC_STATIC,
+                    9,101,169,8
+    EDITTEXT        IDC_EDIT1,182,98,74,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK_FIT_TOLERANCE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,26,16,8
+    LTEXT           "Fit tolerance",IDC_STATIC_FIT_TOLERANCE,34,26,102,8
+    EDITTEXT        IDC_EDIT_PARAMETER_TOLERANCE,181,39,74,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK_PARAMETER_TOLERANCE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,42,16,8
+    LTEXT           "Parameter tolerance",IDC_STATIC_PARAMETER_TOLERANCE,34,
+                    42,102,8
+    LTEXT           "Tolerance combination",IDC_STATIC,9,62,70,8
+    COMBOBOX        IDC_COMBO1,181,58,75,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Convergence Tolerances",IDC_STATIC,5,14,262,64
+    GROUPBOX        "OtherTolerances",IDC_STATIC,5,83,262,73
+END
+
+IDD_OPT_SIMPLEXALG DIALOGEX 0, 0, 209, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Initial vertex span",IDC_STATIC,12,22,84,8
+    EDITTEXT        IDC_EDIT1,112,19,74,14,ES_AUTOHSCROLL
+    LTEXT           "Reflection coefficient",IDC_STATIC,12,62,87,8
+    EDITTEXT        IDC_EDIT2,112,59,74,14,ES_AUTOHSCROLL
+    LTEXT           "Contraction coefficient",IDC_STATIC,12,82,87,8
+    EDITTEXT        IDC_EDIT3,112,79,74,14,ES_AUTOHSCROLL
+    LTEXT           "Expansion coefficient",IDC_STATIC,12,102,87,8
+    EDITTEXT        IDC_EDIT4,112,99,74,14,ES_AUTOHSCROLL
+    LTEXT           "Simplex algorithm",IDC_STATIC,12,41,87,8
+    COMBOBOX        IDC_COMBO1,112,39,74,31,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Shrinkage factor",IDC_STATIC,12,121,87,8
+    EDITTEXT        IDC_EDIT5,112,118,74,14,ES_AUTOHSCROLL
+END
+
+IDD_OPT_PERTURBATION DIALOGEX 0, 0, 191, 120
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "# of perturbations",IDC_STATIC,7,38,84,8
+    LTEXT           "Perturbation span",IDC_STATIC,7,54,99,8
+    LTEXT           "Perturb from",IDC_STATIC,7,69,84,8
+    EDITTEXT        IDC_EDIT1,106,35,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,106,51,74,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,106,67,74,48,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "Do optimization perturbations",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,16,103,10
+    LTEXT           "Random # seed",IDC_STATIC,7,98,84,8
+    EDITTEXT        IDC_EDIT3,106,95,74,14,ES_AUTOHSCROLL
+    LTEXT           "Multiple fit start points",IDC_STATIC,7,83,84,8
+    COMBOBOX        IDC_COMBO2,106,81,74,48,CBS_DROPDOWNLIST | WS_TABSTOP
+END
+
+IDD_OPT_MAIN DIALOGEX 0, 0, 225, 227
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "First stage optimizer type",IDC_STATIC,14,35,80,8
+    LTEXT           "Calculate confidence limits",IDC_STATIC,14,84,95,8
+    LTEXT           "Covariance matrix calculation",IDC_STATIC,14,99,98,8
+    COMBOBOX        IDC_COMBO2,138,33,66,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,139,82,66,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,139,97,66,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Covariance derivative span",IDC_STATIC,14,114,117,8
+    COMBOBOX        IDC_COMBO6,139,112,66,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Fixed span",IDC_STATIC,14,130,87,8
+    EDITTEXT        IDC_EDIT1,139,127,66,14,ES_AUTOHSCROLL
+    LTEXT           "Multiple fit start point",IDC_STATIC,15,178,98,8
+    COMBOBOX        IDC_COMBO7,139,176,66,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Update best estimates",IDC_STATIC,15,193,98,8
+    COMBOBOX        IDC_COMBO8,139,191,66,37,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Approach",IDC_STATIC,14,18,66,8
+    COMBOBOX        IDC_COMBO1,138,16,66,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Second stage optimizer type",IDC_STATIC,14,52,99,8
+    COMBOBOX        IDC_COMBO3,138,50,66,74,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Optimization",IDC_STATIC,6,7,204,60
+    GROUPBOX        "Confidence Limits",IDC_STATIC,6,72,204,93
+    GROUPBOX        "Options",IDC_STATIC,6,168,204,40
+    LTEXT           "Initial span for calculation",IDC_STATIC,14,147,87,8
+    EDITTEXT        IDC_EDIT2,139,144,66,14,ES_AUTOHSCROLL
+END
+
+IDD_OPT_LMALG DIALOGEX 0, 0, 255, 170
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Lambda factor multiplier",IDC_STATIC,9,22,84,8
+    LTEXT           "Minimum lambda factor",IDC_STATIC,9,54,99,8
+    LTEXT           "Relative change tolerance",IDC_STATIC,9,70,103,8
+    EDITTEXT        IDC_EDIT1,159,19,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,159,51,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,159,67,74,14,ES_AUTOHSCROLL
+    LTEXT           "Maximum derivative span",IDC_STATIC,9,102,103,8
+    EDITTEXT        IDC_EDIT5,159,99,74,14,ES_AUTOHSCROLL
+    LTEXT           "Initial lambda factor",IDC_STATIC,9,38,84,8
+    EDITTEXT        IDC_EDIT2,159,35,74,14,ES_AUTOHSCROLL
+    LTEXT           "Use final LM deriv span in covar estimate",IDC_STATIC,9,
+                    131,143,8
+    COMBOBOX        IDC_COMBO1,159,129,74,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "MINPACK Lambda (factor)",IDC_STATIC,9,86,103,8
+    EDITTEXT        IDC_EDIT6,159,83,74,14,ES_AUTOHSCROLL
+    LTEXT           "Normalize MINPACK input parameters",IDC_STATIC,9,145,
+                    143,8
+    COMBOBOX        IDC_COMBO2,159,143,74,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Calculate Derivative Span?",IDC_STATIC,9,117,143,8
+    COMBOBOX        IDC_COMBO3,159,115,74,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_OPT_FITSEL DIALOG  0, 0, 259, 191
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         " ",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    18,18,10
+    COMBOBOX        IDC_COMBO1,51,17,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Auto Fill",IDC_BUTTON1,2,169,50,14
+    CONTROL         " ",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    36,18,10
+    CONTROL         " ",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    54,18,10
+    CONTROL         " ",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    72,18,10
+    CONTROL         " ",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    90,18,10
+    CONTROL         " ",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    108,18,10
+    CONTROL         " ",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    126,18,10
+    CONTROL         " ",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    144,18,10
+    COMBOBOX        IDC_COMBO2,51,35,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,51,71,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,51,53,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,51,89,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,51,125,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,51,107,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,51,143,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Optimize?",IDC_STATIC,7,4,31,8
+    LTEXT           "Defined Fits To Use",IDC_STATIC,50,4,193,8
+END
+
+IDD_OPT_CALCVARSEL DIALOGEX 0, 0, 259, 191
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         " ",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    18,18,10
+    COMBOBOX        IDC_COMBO1,51,17,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Auto Fill",IDC_BUTTON1,2,169,50,14
+    CONTROL         " ",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    36,18,10
+    CONTROL         " ",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    54,18,10
+    CONTROL         " ",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    72,18,10
+    CONTROL         " ",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    90,18,10
+    CONTROL         " ",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    108,18,10
+    CONTROL         " ",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    126,18,10
+    CONTROL         " ",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    144,18,10
+    COMBOBOX        IDC_COMBO2,51,35,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,51,71,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,51,53,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,51,89,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,51,125,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,51,107,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,51,143,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Include",IDC_STATIC,7,4,31,8
+    LTEXT           "Calculated Variable",IDC_STATIC,50,4,193,8
+END
+
+IDD_SAMP_SAMPLES DIALOG  0, 0, 219, 194
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Grid",IDC_GRID,"GRID",WS_TABSTOP,7,7,205,180
+END
+
+IDD_SAMPL_MAIN DIALOGEX 0, 0, 230, 164
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Uncertainty Propagation Technique",IDC_STATIC,9,29,120,
+                    8
+    COMBOBOX        IDC_COMBO1,140,26,72,76,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_SAMP_CORRMAT DIALOG  0, 0, 219, 194
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Grid",IDC_GRID,"GRID",WS_TABSTOP,7,7,205,180
+END
+
+IDD_OPT_SIMANNEAL DIALOGEX 0, 0, 209, 243
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Reflection coefficient",IDC_STATIC,20,20,87,8
+    EDITTEXT        IDC_EDIT1,116,17,74,14,ES_AUTOHSCROLL
+    LTEXT           "Contraction coefficient",IDC_STATIC,20,36,87,8
+    EDITTEXT        IDC_EDIT2,116,33,74,14,ES_AUTOHSCROLL
+    LTEXT           "Expansion coefficient",IDC_STATIC,20,52,87,8
+    EDITTEXT        IDC_EDIT3,116,49,74,14,ES_AUTOHSCROLL
+    LTEXT           "Schedule",IDC_STATIC,20,116,87,8
+    COMBOBOX        IDC_COMBO1,117,114,74,125,CBS_DROPDOWNLIST | WS_TABSTOP
+    GROUPBOX        "Nelder/Mead Parameters",IDC_STATIC,13,8,183,90
+    GROUPBOX        "Temperature Schedule",IDC_STATIC,13,105,183,122
+    LTEXT           "Initial temperature",IDC_STATIC,20,131,87,8
+    EDITTEXT        IDC_EDIT6,117,128,74,14,ES_AUTOHSCROLL
+    LTEXT           "Iteration budget (N)",IDC_STATIC,20,147,87,8
+    EDITTEXT        IDC_EDIT7,117,144,74,14,ES_AUTOHSCROLL
+    LTEXT           "NR  m increment ",IDC_STATIC,20,163,87,8
+    EDITTEXT        IDC_EDIT8,117,160,74,14,ES_AUTOHSCROLL
+    LTEXT           "NR epsilon",IDC_STATIC,20,179,87,8
+    EDITTEXT        IDC_EDIT9,117,176,74,14,ES_AUTOHSCROLL
+    LTEXT           "Luke TN",IDC_STATIC,20,211,87,8
+    EDITTEXT        IDC_EDIT11,117,208,74,14,ES_AUTOHSCROLL
+    LTEXT           "Random # seed",IDC_STATIC,20,83,87,8
+    EDITTEXT        IDC_EDIT5,116,80,74,14,ES_AUTOHSCROLL
+    LTEXT           "Shrinkage factor",IDC_STATIC,20,68,87,8
+    EDITTEXT        IDC_EDIT4,116,65,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,117,192,74,14,ES_AUTOHSCROLL
+    LTEXT           "NR alpha",IDC_STATIC,20,195,87,8
+END
+
+IDD_OPT_NL2SOLALG DIALOGEX 0, 0, 255, 150
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Tuner 1",IDC_STATIC,9,22,84,8
+    LTEXT           "Tuner 3",IDC_STATIC,9,54,99,8
+    EDITTEXT        IDC_EDIT1,159,19,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,159,51,74,14,ES_AUTOHSCROLL
+    LTEXT           "Tuner 2",IDC_STATIC,9,38,84,8
+    EDITTEXT        IDC_EDIT2,159,35,74,14,ES_AUTOHSCROLL
+    LTEXT           "Normalize input parameters",IDC_STATIC,9,70,98,8
+    COMBOBOX        IDC_COMBO1,158,68,75,37,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_OPT_SCEMALG DIALOGEX 0, 0, 238, 152
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "# of complexes (p)",IDC_STATIC,12,22,84,8
+    EDITTEXT        IDC_EDIT1,145,19,74,14,ES_AUTOHSCROLL
+    LTEXT           "# of points per complex (m)",IDC_STATIC,12,41,129,8
+    EDITTEXT        IDC_EDIT2,145,38,74,14,ES_AUTOHSCROLL
+    LTEXT           "# of points per sub-complex (q)",IDC_STATIC,12,60,125,8
+    EDITTEXT        IDC_EDIT3,145,57,74,14,ES_AUTOHSCROLL
+    LTEXT           "CCE alpha",IDC_STATIC,12,79,87,8
+    EDITTEXT        IDC_EDIT4,145,76,74,14,ES_AUTOHSCROLL
+    LTEXT           "CCE beta",IDC_STATIC,12,98,87,8
+    EDITTEXT        IDC_EDIT5,145,95,74,14,ES_AUTOHSCROLL
+    LTEXT           "Random # seed",IDC_STATIC,14,116,87,8
+    EDITTEXT        IDC_EDIT6,145,113,74,14,ES_AUTOHSCROLL
+END
+
+IDD_UNCERT_METRICSEL DIALOGEX 0, 0, 259, 191
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         " ",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    18,18,10
+    COMBOBOX        IDC_COMBO1,51,17,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         " ",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    36,18,10
+    CONTROL         " ",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    54,18,10
+    CONTROL         " ",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    72,18,10
+    CONTROL         " ",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    90,18,10
+    CONTROL         " ",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    108,18,10
+    CONTROL         " ",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    126,18,10
+    CONTROL         " ",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    144,18,10
+    COMBOBOX        IDC_COMBO2,51,35,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,51,71,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,51,53,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,51,89,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,51,125,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,51,107,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,51,143,193,101,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Select?",IDC_STATIC,7,4,31,8
+    LTEXT           "Defined Metrics To Use",IDC_STATIC,50,4,193,8
+END
+
+IDD_SAMPL_MONTECARLO DIALOGEX 0, 0, 230, 164
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Sampling procedure",IDC_STATIC,9,29,80,8
+    COMBOBOX        IDC_COMBO1,120,26,92,76,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Number of trials",IDC_STATIC,9,50,80,8
+    EDITTEXT        IDC_EDIT1,146,47,66,12,ES_AUTOHSCROLL
+    LTEXT           "Random number seed",IDC_STATIC,9,65,80,8
+    EDITTEXT        IDC_EDIT2,146,62,66,12,ES_AUTOHSCROLL
+    LTEXT           "User specified variable correlations",IDC_STATIC,9,101,
+                    119,8
+    COMBOBOX        IDC_COMBO2,146,98,66,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Sample",IDC_BUTTON1,8,141,50,14
+    LTEXT           "Single run realization",IDC_STATIC,9,80,80,8
+    EDITTEXT        IDC_EDIT3,146,77,66,12,ES_AUTOHSCROLL
+    LTEXT           "Force non-specified correlations to 0.0",IDC_STATIC,9,
+                    116,119,8
+    COMBOBOX        IDC_COMBO3,146,113,66,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_SAMPL_FOSM DIALOGEX 0, 0, 230, 164
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Calculate Derivative Span?",IDC_STATIC,9,29,96,8
+    COMBOBOX        IDC_COMBO1,120,26,92,76,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Initial Normalized Derivative Span",IDC_STATIC,9,50,80,
+                    8
+    EDITTEXT        IDC_EDIT1,144,47,66,12,ES_AUTOHSCROLL
+    LTEXT           "Force non-specified correlations to 0.0",IDC_STATIC,9,
+                    65,119,8
+    COMBOBOX        IDC_COMBO3,144,62,68,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OPT_PERTURBATION DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x7473, 0x7261, 0x0074, 
+    IDC_COMBO1, 0x403, 9, 0
+0x616c, 0x7473, 0x6620, 0x7469, "\000" 
+    IDC_COMBO2, 0x403, 6, 0
+0x7473, 0x7261, 0x0074, 
+    IDC_COMBO2, 0x403, 9, 0
+0x616c, 0x7473, 0x6620, 0x7469, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPT_TOLERANCE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 290
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_OPT_SIMPLEXALG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 184
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_OPT_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 218
+    END
+
+    IDD_OPT_LMALG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_OPT_SIMANNEAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 196
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_OPT_SCEMALG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 229
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

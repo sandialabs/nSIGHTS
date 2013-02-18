@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ee1da3d6-9619-4b6e-980c-bd79e0c027cb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\nsClass">
+      <UniqueIdentifier>{aa84fb75-e5af-4f6c-ae46-e48e60462abf}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\nsDataClass">
+      <UniqueIdentifier>{1900cb9e-d656-4228-a6d5-a8b9979dd78b}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\nsDFO">
+      <UniqueIdentifier>{638e5369-8279-4ac1-9a95-e97ede4210a3}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\nsDPO">
+      <UniqueIdentifier>{e3e6c65d-b7eb-49e2-abd9-f1a1425c6133}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3d19d963-cee3-45b7-b4e0-54f5356f4649}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\nsClass H">
+      <UniqueIdentifier>{7dae189d-91e3-424b-ab44-abce7247f476}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\nsDataClass H">
+      <UniqueIdentifier>{030bac25-45ae-4819-bb00-421692d9f9a9}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\nsDFO H">
+      <UniqueIdentifier>{96217a66-6a16-46f5-a302-3be730804ef7}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\nsDPO H">
+      <UniqueIdentifier>{14b6be53-6d9d-43bb-bf25-862862919284}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nsClass\C_Derivative.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\C_TimeProcess.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DC_Derivative.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DC_ExtendedProfile.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DC_ProfileSimResults.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DC_SequenceTimes.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DC_TimeProcess.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DC_XYResponseFunction.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DC_XYSimResults.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_Derivative.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_ExtendedProfile.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_ExtendedProfileCase.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_ProfileSimResults.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_SeqIndx.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_SequenceTimes.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_TimeProcess.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_XYResponseFunction.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\DO_XYSimResults.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\IO_ProfileSimResults.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\IO_XYSimResults.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsClass\nSightConst.cpp">
+      <Filter>Source Files\nsClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDataClass\DSC_IndexMSSpecSeq.cpp">
+      <Filter>Source Files\nsDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDataClass\DSC_TimeLimits.cpp">
+      <Filter>Source Files\nsDataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_BarometricCompensation.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_BasicSequenceFit.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_BasicTimeExtract.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_BEETCompensation.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_CreateBEETResponseFunction.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_Derivative.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ExtendedProfileScaleTransform.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ExtractSequenceInterval.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_PulseNormalize.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ReadMiniTroll.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ReadMiniTrollCF.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ReadProfileSimResults.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ReadSequenceTimes.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ReadSequenceTimesCF.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_ReadXYSimResults.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_SelectExtendedProfile.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_SelectProfilefromProfileSimResults.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_SelectXYfromXYSimResults.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDFO\DFO_TimeProcess.cpp">
+      <Filter>Source Files\nsDFO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_BarometricCompensation.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_BasicSequenceFit.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_BasicTimeExtract.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_BEETCompensation.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_CreateBEETResponseFunction.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_Derivative.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_ExtendedProfileScaleTransform.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_ExtractSequenceInterval.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_PulseNormalize.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_ReadMiniTroll.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_ReadProfileSimResults.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_ReadSequenceTimes.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_ReadXYSimResults.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_SelectExtendedProfile.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_SelectProfilefromProfileSimResults.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_SelectXYfromXYSimResults.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\DPO_TimeProcess.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+    <ClCompile Include="nsDPO\nsDPOConfigFile.cpp">
+      <Filter>Source Files\nsDPO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nsLibAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\C_Derivative.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\C_TimeProcess.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DC_Derivative.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DC_ExtendedProfile.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DC_ProfileSimResults.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DC_SequenceTimes.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DC_TimeProcess.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DC_XYResponseFunction.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DC_XYSimResults.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_Derivative.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_ExtendedProfile.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_ExtendedProfileCase.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_ProfileSimResults.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_SeqIndx.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_SequenceTimes.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_TimeProcess.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_XYResponseFunction.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\DO_XYSimResults.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\IO_ProfileSimResults.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\IO_XYSimResults.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsClass\nSightConst.h">
+      <Filter>Header Files\nsClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDataClass\DSC_IndexMSSpecSeq.h">
+      <Filter>Header Files\nsDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDataClass\DSC_TimeLimits.h">
+      <Filter>Header Files\nsDataClass H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_BarometricCompensation.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_BasicSequenceFit.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_BasicTimeExtract.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_BEETCompensation.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_CreateBEETResponseFunction.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_Derivative.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_ExtendedProfileScaleTransform.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_ExtractSequenceInterval.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_PulseNormalize.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_ReadMiniTroll.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_ReadProfileSimResults.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_ReadXYSimResults.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_SelectExtendedProfile.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_SelectProfilefromProfileSimResults.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_SelectXYfromXYSimResults.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDFO\DFO_TimeProcess.h">
+      <Filter>Header Files\nsDFO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_BarometricCompensation.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_BasicTimeExtract.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_BEETCompensation.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_CreateBEETResponseFunction.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_Derivative.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_ExtendedProfileScaleTransform.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_ExtractSequenceInterval.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_PulseNormalize.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_ReadMiniTroll.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_ReadProfileSimResults.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_ReadSequenceTimes.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_ReadXYSimResults.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_SelectExtendedProfile.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_SelectProfilefromProfileSimResults.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_SelectXYfromXYSimResults.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\DPO_TimeProcess.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+    <ClInclude Include="nsDPO\nsDPOConfigFile.h">
+      <Filter>Header Files\nsDPO H</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0bcdf6da-1f0d-45d1-ac75-99ea6fd5d2e1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\App H">
+      <UniqueIdentifier>{fa79e15a-c6dc-4a3a-8aba-41d62a78419c}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Sim H">
+      <UniqueIdentifier>{4657ed64-1106-4e9a-bef7-2b12a2be4895}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Var H">
+      <UniqueIdentifier>{68dfa6c7-3372-443a-aa73-19bfce7e0956}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Run H">
+      <UniqueIdentifier>{1ea37b43-bf23-4ebd-a832-79441b4d5f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a8086af0-add5-4dd4-93b7-45ace857fa1e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{db80ab7e-f0f2-4b32-8978-ef6db057abd2}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AppAlloc">
+      <UniqueIdentifier>{353a5fb3-6c3a-478d-9a08-dfe5fc85386b}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Sim">
+      <UniqueIdentifier>{bdf31990-11dd-4c73-b056-42c195c80810}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Var">
+      <UniqueIdentifier>{de632812-0c19-4974-a32b-d46890e0337c}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Run">
+      <UniqueIdentifier>{a8d1eecf-da54-4abb-bbc6-c0316f774f9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App\AppPages.h">
+      <Filter>Header Files\App H</Filter>
+    </ClInclude>
+    <ClInclude Include="App\nPreFile.h">
+      <Filter>Header Files\App H</Filter>
+    </ClInclude>
+    <ClInclude Include="App\nPreRoot.h">
+      <Filter>Header Files\App H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_DynamicTS.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SimCore.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell1D.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell1DLinear.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell1DNonLinear.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell1DNonLinearGas.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell1DNonLinearLiquid.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell2D.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell2DConfined.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_SingleWell2DUnconfined.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_StaticCondensation.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_WorkCommon.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_WorkDataCapture.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_WorkParameter.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\C_WorkSequence.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\G_ParameterCurveOutput.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Sim\G_SimulatorRadiiOutput.h">
+      <Filter>Header Files\Sim H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\C_CurveFile.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\C_DataCapture.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\C_FileOutput.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\C_Parameter.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\C_Sequence.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\C_TestZoneCurve.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\C_Units.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\E_Parameter.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_CalcParameter.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_Control.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_CurveFiles.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_DataCapture.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_OptOutput.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_OutputFiles.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_Parameter.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_PreConfigFile.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_ProfileOutput.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_RangeOutput.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_Sequence.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="Var\G_XYOutput.h">
+      <Filter>Header Files\Var H</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLine\Collect.h">
+      <Filter>Header Files\Run H</Filter>
+    </ClInclude>
+    <ClInclude Include="Run\RunCommon.h">
+      <Filter>Header Files\Run H</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLine\RunControl.h">
+      <Filter>Header Files\Run H</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App\AppFuncObj.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="App\AppPages.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLine\G_VersionX.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="App\nPreFile.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="App\nPreRoot.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BarometricCompensation.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BasicSequenceFit.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BasicTimeExtract.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_BEETCompensation.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_BlendColorMap.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CDFExtract.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_CompositeFit.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_CreateBEETResponseFunction.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CreateCurve.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CreateReal.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CreateXYArray.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeExtractGrid.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeHistogram.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeMath.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeNormalize.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeScaleTransform.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeStatistics.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CubeToIndex.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_CurveInterp.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_Derivative.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_EnterTable.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_EnterXY.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ExtractSequenceInterval.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridExtractXY.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridHistogram.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridMath.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridNormalize.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridScaleTransform.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_GridStatistics.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_LinColorMap.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_MergeColorMap.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_PenSet.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_PulseNormalize.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genLib\genAlloc\A_DPO_ReadColorMap.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadCurveArray.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadGridData.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadLabelArray.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_ReadMiniTroll.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadTable.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadXY.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ReadXYDataArray.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_RealScaleTransform.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_RealToTable.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_SelectCurve.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectRTRangeCube.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SelectRTRangeGrid.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_SelectXY.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\osLib\osAlloc\A_DPO_SingleFit.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableAdd.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableColScaleTransform.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableColumnCorrelation.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableColumnMath.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableFullCorrelation.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableHistogram.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableInterpVal.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableQuantile.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableRangeExtract.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableRowIndexLogic.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableRowStatistics.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableStatistics.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableToReal.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_TableToXY.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nsLib\nsAlloc\A_DPO_TimeProcess.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ViewGrid.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ViewTable.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_ViewXY.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYAddNoise.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYConcat.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYDualScaleTransform.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYFourier.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYHistogram.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYIntegrate.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYMath.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYQuantile.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYRangeExtract.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYReduction.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYRemoveDuplicate.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYScaleTransform.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYSmoothFilter.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYStatistics.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYToCDF.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_DPO_XYTranspose.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\genLib\genAlloc\A_UPO_WriteColorMap.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteCurveArray.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteTable.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteXY.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\objLib\objAlloc\A_UPO_WriteXYDataArray.cpp">
+      <Filter>Source Files\AppAlloc</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_DynamicTS.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SimCore.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell1D.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell1DLinear.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell1DNonLinear.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell1DNonLinearGas.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell1DNonLinearLiquid.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell2D.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell2DConfined.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_SingleWell2DUnconfined.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_StaticCondensation.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_WorkCommon.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_WorkDataCapture.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_WorkParameter.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\C_WorkSequence.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\G_ParameterCurveOutput.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Sim\G_SimulatorRadiiOutput.cpp">
+      <Filter>Source Files\Sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\C_CurveFile.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\C_DataCapture.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\C_FileOutput.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\C_Parameter.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\C_Sequence.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\C_TestZoneCurve.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\C_Units.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\E_Parameter.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_CalcParameter.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_Control.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_CurveFiles.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_DataCapture.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_OptOutput.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_OutputFiles.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_Parameter.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_PreConfigFile.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_ProfileOutput.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_RangeOutput.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_Sequence.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="Var\G_XYOutput.cpp">
+      <Filter>Source Files\Var</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLine\Collect.cpp">
+      <Filter>Source Files\Run</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLine\MainMPI.cpp">
+      <Filter>Source Files\Run</Filter>
+    </ClCompile>
+    <ClCompile Include="Run\RunCommon.cpp">
+      <Filter>Source Files\Run</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLine\RunControl.cpp">
+      <Filter>Source Files\Run</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

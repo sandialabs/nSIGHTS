@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Output Files Input Window</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Output Files Input Window</B></FONT></P>
+
+<P>Output files from nPre can be read into nPost for visualization and post-processing.  The output files are all binary.  </P>
+
+<P>Four output files can be created, each with its own tab:</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">XY Output</B></FONT></TD>
+<TD CLASS=desc>Any XY array (a collection of XY data) created within nPre is output into a file with the default file extension *.nXYsim.  The default <I><FONT COLOR="#800050">XYDataArray f(t) Table System:f(t)Output</I></FONT> consists of all the simulation output defined in the <B><FONT COLOR="#000080">Main</B></FONT> tab of the <B><FONT COLOR="#000080">Wells and Output</B></FONT> input window.  Not available in range mode.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Profile</B></FONT></TD>
+<TD CLASS=desc>A grid containing pressure as a function of time (X axis) and radius (Y axis) is output to a file with the default file extension *.nPro.  The grid can contain a subset of time, by limiting the number of sequences.  As grid data can be quite large, the data may be reduced according to a <B><FONT COLOR="#800050">Time step modulus</B></FONT>, reducing the number of X (time) points, or a <B><FONT COLOR="#800050">Node modulus</B></FONT>, reducing the number of Y (radius) points.  Available in forward-normal mode only.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Range</B></FONT></TD>
+<TD CLASS=desc>Outputs grid or cube data of residuals (error between simulated and field data) into a file with the default file extension *.nRng.  In optimization mode, grid or cube data of optimized values and the main diagonal of the covariance matrix (if calculated) are also written to the file.  If two range variables are defined, grid data are output, if three range variables are defined, cube data are output.  Available in range mode only.</TD>
+</TR>
+<TR>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Optimization</B></FONT></TD>
+<TD CLASS=desc>Fit results, residuals, covariance matrix, Jacobian data and specified calculated variables are output to a file with the default file extension *.nOpt.  Available in optimization-forward or optimization-sampling mode only.</TD>
+</TR>
+</TABLE>
+
+<P>To write the file during simulation, check the checkbox at the top of each tab.  For all output files, data are created in a new file, or appended to an existing file. Data can only be appended to an existing file if:</P>
+
+<UL>
+<LI>The current run is the same mode as the runs existing within the file (e.g. all runs within the file are forward-normal).</LI>
+<LI>The data to be output for the current run is the same as the data output for the existing runs (e.g. all runs within an appended file write the XYDataArray f(t) Table System:f(t)Output, with the same simulation output defined).  </LI>
+</UL>
+
+<P>For files containing appended data, each run is identified by the <B><FONT COLOR="#800050">Run identifier</B></FONT>.  Within nPost, the data for any one run can be selected, with each run identified by its run identifier.  For runs with multiple cases (e.g. sampling mode runs, multiple fit optimizations), each case will have an identifier in addition to the run identifier.  </P>
+
+</FONT></BODY>
+</HTML>

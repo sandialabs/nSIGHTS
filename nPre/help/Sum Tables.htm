@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE> Sum Tables</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Sum Tables </P></FONT>
+
+<P>What:   </B>Sums the values between multiple tables.  For example, the value in column 2, row 1 of Table A will be added to column 2, row 1 of Table B.  A specified X column will not be summed.  A maximum of 24 tables may be summed, including the base table.</P>
+<B><P>Why:   </B>To combine data within a table.</P>
+<B><P>Used By:  </B>Any object using table data.</P>
+<B><P>Appearance: </P></B>
+<P><IMG SRC="AppSumTables.jpg"></P>
+<B><P>Input Data:  </B>table data<B> </P>
+<P>Output Data: </B>table data</P>
+<B><P>Properties: </P></B>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+table.subsection {font: 10 pt Arial; margin-left: 0.25 in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><FONT COLOR="#000080"><B>Base Table</B></FONT></TD>
+<TD CLASS=desc>Selects the table to which the tables specified in the <B><FONT COLOR="#000080">Tables to Add</B></FONT> frame are added.  The X column and table size are obtained from this base table.</TD>
+</TABLE>
+
+<B><FONT COLOR="#000080">X Column Processing</B></FONT>
+<TABLE CLASS=subsection>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#800050">skip X column</B></FONT></TD>
+<TD CLASS=desc>If selected, the specified column in the drop-down-box will be excluded from table addition.  The column will appear in the output table as it appears in the base table.</TD>
+</TABLE>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><B><FONT COLOR="#000080">Tables to Add</B></FONT></TD>
+<TD CLASS=desc>A checkbox and associated drop-down-box indicates the tables to sum with the base table.  Each table selected must be the same size as the base table (i.e. equal number of rows and columns).</TD>
+</TABLE>
+</P>
+
+</FONT></BODY>
+</HTML>

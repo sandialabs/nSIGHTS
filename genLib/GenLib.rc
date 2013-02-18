@@ -1,0 +1,686 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "GenLibRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "GenLibRes.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PS_FILE_OUTPUT DIALOGEX 0, 0, 306, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_CONTEXTHELP
+CAPTION "Postscript Output File Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "File Format",IDC_STATIC,8,3,234,23
+    CONTROL         "PS",IDC_PS,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,13,35,10
+    CONTROL         "EPS",IDC_EPS,"Button",BS_AUTORADIOBUTTON,100,13,35,10
+    CONTROL         "EPS/Win",IDC_EPS_WIN,"Button",BS_AUTORADIOBUTTON,179,13,49,10
+    GROUPBOX        "Orientation",IDC_STATIC,8,26,108,21
+    CONTROL         "Landscape",IDC_LANDSCAPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,34,58,10
+    CONTROL         "Portrait",IDC_PORTRAIT,"Button",BS_AUTORADIOBUTTON,62,34,38,10
+    GROUPBOX        "Output Size && Margins",IDC_STATIC,8,49,234,62
+    LTEXT           "Width",IDC_STATIC,14,65,20,8
+    EDITTEXT        IDC_WIDTH,76,62,40,14,ES_AUTOHSCROLL
+    LTEXT           "Left Margin",IDC_STATIC,14,81,36,8
+    EDITTEXT        IDC_LEFT_MARGIN,76,78,40,14,ES_AUTOHSCROLL
+    LTEXT           "Right",IDC_STATIC,14,97,18,8
+    EDITTEXT        IDC_RIGHT,76,94,40,14,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,137,65,22,8
+    EDITTEXT        IDC_HEIGHT,193,62,40,14,ES_AUTOHSCROLL
+    LTEXT           "Top Margin",IDC_STATIC,137,81,37,8
+    EDITTEXT        IDC_TOP_MARGIN,193,78,40,14,ES_AUTOHSCROLL
+    LTEXT           "Bottom",IDC_STATIC,137,97,23,8
+    EDITTEXT        IDC_BOTTOM,193,94,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Output File",IDC_STATIC,8,172,234,30
+    EDITTEXT        IDC_FULLPATHNAME,12,184,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BROWSE,245,181,50,14
+    LTEXT           "Line Width Multipler",IDC_STATIC,11,124,63,8
+    EDITTEXT        IDC_LINE_WIDTH_MULT,85,121,40,14,ES_AUTOHSCROLL
+    LTEXT           "Gamma Correction",IDC_STATIC,11,141,59,8
+    EDITTEXT        IDC_GAMMA_CORRECT,85,139,40,14,ES_AUTOHSCROLL
+    LTEXT           "Z Buffer Multiplier",IDC_STATIC,135,124,56,8
+    EDITTEXT        IDC_Z_BUFFER_MULT,200,121,40,14,ES_AUTOHSCROLL
+    LTEXT           "Text Multiplier",IDC_STATIC,135,141,44,8
+    EDITTEXT        IDC_TEXT_MULT,200,139,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Print",IDOK,245,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,245,45,50,14
+    GROUPBOX        "Controls",IDC_STATIC,8,114,234,58
+    GROUPBOX        "Options",IDC_STATIC,115,26,127,21
+    CONTROL         "Arial as Helvetica",IDC_ARIAL_AS_HELVETCA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,34,69,10
+    PUSHBUTTON      "Accept",IDC_ACCEPT,245,26,50,14
+    LTEXT           "Next auto increment",IDC_STATIC,11,158,59,8
+    EDITTEXT        IDC_AUTO_INCREMENT,85,156,40,14,ES_AUTOHSCROLL
+END
+
+IDD_TGA_FILE_OUTPUT DIALOGEX 0, 0, 292, 123
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_CONTEXTHELP
+CAPTION "Bitmap Output File Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Output File Format",IDC_STATIC,4,0,220,19
+    CONTROL         "TGA",IDC_TGA,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,30,8,31,10
+    CONTROL         "JPEG",IDC_JPEG,"Button",BS_AUTORADIOBUTTON,94,8,34,10
+    CONTROL         "BMP",IDC_BMP,"Button",BS_AUTORADIOBUTTON,162,8,31,10
+    GROUPBOX        "Output Method",IDC_METHOD_GROUP,4,19,220,19
+    CONTROL         "Auto",IDC_AUTO,"Button",BS_AUTORADIOBUTTON | BS_LEFT | WS_GROUP | WS_TABSTOP,30,27,50,10
+    CONTROL         "Semi-Auto",IDC_SEMI_AUTO,"Button",BS_AUTORADIOBUTTON | BS_LEFT,94,27,50,10
+    CONTROL         "Manual",IDC_MANUAL,"Button",BS_AUTORADIOBUTTON | BS_LEFT,162,27,50,10
+    GROUPBOX        "Root File Name",IDC_OUTPUT_GROUP,4,38,220,30
+    EDITTEXT        IDC_FULLPATHNAME,8,51,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BROWSE,168,51,50,14
+    LTEXT           "Next increment",IDC_STATIC,4,73,48,8
+    EDITTEXT        IDC_NEXT_INCREMENT,170,70,54,14,ES_AUTOHSCROLL
+    LTEXT           "Dump frame count",IDC_STATIC,4,90,59,8
+    EDITTEXT        IDC_DUMP_COUNT,170,87,54,14,ES_AUTOHSCROLL
+    LTEXT           "JPEG Quality",IDC_STATIC,4,108,64,8
+    EDITTEXT        IDC_JPEG_QUALITY,170,105,54,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,232,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,232,25,50,14
+END
+
+IDD_SHELL_DIALOG DIALOG  0, 0, 186, 142
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Shell"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PP_PLOT_SETTINGS DIALOG  0, 0, 153, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Plot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Small Fonts for control part",IDC_CHECK_SMALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,23,118,10
+    CONTROL         "Slider1",IDC_SLIDER_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,15,68,100,11
+    EDITTEXT        IDC_EDIT_ALPHA,119,66,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Alpha blending coeff or WindowSelector",IDC_STATIC,7,50,139,39
+END
+
+IDD_PP_TREVIEW_SETTINGS DIALOGEX 0, 0, 183, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "TreeView"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Single line for menu objects",IDC_CHECK_SINGLE_LINE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,20,118,10
+    GROUPBOX        "Show for single line",IDC_STATIC,14,36,137,26
+    CONTROL         "ID",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,48,39,10
+    CONTROL         "Type",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,60,48,39,10
+    CONTROL         "Both",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,99,48,39,10
+    CONTROL         "Show unused objects",IDC_CHECK_INDICATE_UNUSED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,71,118,10
+    CONTROL         "Show connected objects",IDC_CHECK_SHOW_CONNECTIONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,85,118,10
+END
+
+IDD_PP_OPENGL DIALOGEX 0, 0, 178, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "OpenGL Visual"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Idx   R  G  B   Cn  Zn  Sngl/Dbl   Stereo ",IDC_STATIC,7,20,164,8
+    COMBOBOX        IDC_COMBO_PFD,7,30,144,242,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Version",IDC_STATIC_VERSION,7,51,49,8
+    EDITTEXT        IDC_EDIT_VERSION,7,60,76,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Vendor",IDC_STATIC_VENDOR,7,76,67,8
+    EDITTEXT        IDC_EDIT_VENDOR,7,86,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Renderer",IDC_STATIC_RENDERER,91,51,49,8
+    EDITTEXT        IDC_EDIT_RENDERER,91,60,76,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PP_BMFONT_SETTINGS DIALOG  0, 0, 163, 100
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OpenGL Fonts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Bitmap Font Adjustment",IDC_STATIC,18,13,128,73
+    CONTROL         "Automatic",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,31,30,46,10
+    CONTROL         "Windows 95/98/ME",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,31,47,80,10
+    CONTROL         "Windows NT/2000/XP",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,31,64,105,10
+END
+
+IDD_PP_CALCPRIORITY_SETTINGS DIALOG  0, 0, 163, 100
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculation  Priority"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Calculation Thread Priority",IDC_STATIC,18,13,128,73
+    CONTROL         "Highest",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,28,24,39,10
+    CONTROL         "Above Normal",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,28,35,80,10
+    CONTROL         "Normal",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,28,46,105,10
+    CONTROL         "Below Normal",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,28,57,105,10
+    CONTROL         "Lowest",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,28,68,105,10
+END
+
+IDD_PP_OPENGL_PROPERTY DIALOG  0, 0, 178, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "OpenGL Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Anti-alias 2D lines",IDC_CHECK_2DANTIALIAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,118,10
+    CONTROL         "Anti-alias 3D lines",IDC_CHECK_3DANTIALIAS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,23,118,10
+END
+
+IDD_PP_COUNTRY_SETTINGS DIALOG  0, 0, 178, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Country Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "European real delimiters",IDC_CHECK_EUROPEANREALS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,118,10
+END
+
+IDD_FILE_UPDATEFILEPATHS DIALOGEX 0, 0, 262, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Update File Paths"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_CURRENTPATHS,14,17,234,242,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Current File Paths",IDC_STATIC,7,7,248,27
+    DEFPUSHBUTTON   "OK",IDOK,142,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,129,50,14
+    GROUPBOX        "New Path Name ",IDC_OUTPUT_GROUP,7,67,248,30
+    EDITTEXT        IDC_NEWUPDATEPATH,14,77,178,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BROWSE,198,77,50,14
+    GROUPBOX        "Current Path To Update",IDC_OUTPUT_GROUP2,7,36,248,30
+    EDITTEXT        IDC_CURRENTUPDATEPATH,14,46,234,14,ES_AUTOHSCROLL
+    CONTROL         "Execute objects on OK",IDC_CHECK_EXECUTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,104,118,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_VIEW_2D MENU 
+BEGIN
+    POPUP "&Standard"
+    BEGIN
+        MENUITEM "Init View",                   ID_PLOT_INIT_VIEW
+        MENUITEM "Previous View",               ID_PLOT_PREVIOUS_VIEW
+        MENUITEM "Reset View",                  ID_PLOT_RESET_VIEW
+        MENUITEM "Set Axes",                    ID_PLOT_SETAXES
+        MENUITEM "Reset Axes",                  ID_PLOT_RESETAXES
+        MENUITEM "Is:Semi",                     ID_PLOT_RESET_DUMP
+        MENUITEM "Plot Dump",                   ID_PLOT_DUMP
+        MENUITEM "Propagate View",              ID_PLOT_PROPAGATE_VIEW
+        MENUITEM "Propagate Size",              ID_PLOT_PROPAGATE_SIZE
+        MENUITEM "Full Screen",                 ID_PLOT_FULL_SCREEN
+        MENUITEM "Mouse: Zoom",                 ID_PLOT_MOUSE_ZOOM
+        MENUITEM "Mouse:Select",                ID_PLOT_MOUSE_SELECT
+        MENUITEM "Print",                       ID_PLOT_PRINT
+        MENUITEM "Refresh",                     ID_PLOT_REFRESH
+    END
+    POPUP "&Output"
+    BEGIN
+        MENUITEM "&Bitmap",                     ID_TGA_OUTPUT
+        MENUITEM "&Postscript",                 ID_PS_OUTPUT
+    END
+    POPUP "Control"
+    BEGIN
+        MENUITEM "&Plot Object",                ID_CONTROL_PLOT_OBJECT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_PLOT_TOOLBAR
+        MENUITEM "&Control Bar",                ID_PLOT_CONTROLBAR
+        MENUITEM SEPARATOR
+        MENUITEM "S&ettings...",                ID_PLOT_SETTINGS
+    END
+END
+
+IDR_TEST_MENU MENU 
+BEGIN
+    MENUITEM "File",                        65535
+END
+
+IDR_PROJECT_TREE_POPUP MENU 
+BEGIN
+    POPUP "Project Tree"
+    BEGIN
+        MENUITEM "&Set Current",                ID_PROJECTTREE_SETCURRENT
+        MENUITEM SEPARATOR
+        MENUITEM "Copy",                        ID_PROJECTTREE_COPY
+        MENUITEM "Copy Add",                    ID_PROJECTTREE_COPYADD
+        MENUITEM "Delete",                      ID_PROJECTTREE_DELETE
+    END
+END
+
+IDR_VIEW_3D MENU 
+BEGIN
+    POPUP "&Standard"
+    BEGIN
+        MENUITEM "Init View",                   ID_PLOT_INIT_VIEW
+        MENUITEM "Previous View",               ID_PLOT_PREVIOUS_VIEW
+        MENUITEM "Reset View",                  ID_PLOT_RESET_VIEW
+        MENUITEM "Set Axes",                    ID_PLOT_SETAXES
+        MENUITEM "Reset Axes",                  ID_PLOT_RESETAXES
+        MENUITEM "Is:Semi",                     ID_PLOT_RESET_DUMP
+        MENUITEM "Plot Dump",                   ID_PLOT_DUMP
+        MENUITEM "Propagate View",              ID_PLOT_PROPAGATE_VIEW
+        MENUITEM "Propagate Size",              ID_PLOT_PROPAGATE_SIZE
+        MENUITEM "Full Screen",                 ID_PLOT_FULL_SCREEN
+        MENUITEM "Print",                       ID_PLOT_PRINT
+        MENUITEM "Refresh",                     ID_PLOT_REFRESH
+    END
+    POPUP "&Output"
+    BEGIN
+        MENUITEM "&Bitmap",                     ID_TGA_OUTPUT
+        MENUITEM "&Postscript",                 ID_PS_OUTPUT
+    END
+    POPUP "Control"
+    BEGIN
+        MENUITEM "&Plot Object",                ID_CONTROL_PLOT_OBJECT
+        MENUITEM "&View Animation",             ID_CONTROL_ANIMATION
+        MENUITEM "Transparency",                ID_CONTROL_TRANSPARENCY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_PLOT_TOOLBAR
+        MENUITEM "&Control Bar",                ID_PLOT_CONTROLBAR
+        MENUITEM SEPARATOR
+        MENUITEM "S&ettings...",                ID_PLOT_SETTINGS
+    END
+END
+
+IDR_LIST MENU 
+BEGIN
+    POPUP "&Output"
+    BEGIN
+        MENUITEM "Print",                       ID_LIST_PRINT
+        MENUITEM "Print Setup",                 ID_LIST_PRINTSETUP
+        MENUITEM "Print Preview",               ID_VIEW_PRINTPREVIEW
+        MENUITEM "Save As",                     ID_PREVIEW_SAVE_AS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_LIST_TOOLBAR
+        MENUITEM SEPARATOR
+        MENUITEM "S&ettings...",                ID_PLOT_SETTINGS
+        POPUP "Fonts"
+        BEGIN
+            MENUITEM "Largest",                     ID_VIEW_FONTS_LARGEST
+            MENUITEM "Large",                       ID_VIEW_FONTS_LARGE
+            MENUITEM "Medium",                      ID_VIEW_FONTS_MEDIUM
+            MENUITEM "Small",                       ID_VIEW_FONTS_SMALL
+            MENUITEM "Smallest",                    ID_VIEW_FONTS_SMALLEST
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PROJECT_TREE_IMAGES BITMAP                  "res\\bitmap1.bmp"
+IDB_OVERLAY_IMAGES      BITMAP                  "res\\project_.bmp"
+IDB_PP_PINNED           BITMAP                  "res\\pin1.bmp"
+IDB_PP_UNPINNED         BITMAP                  "res\\pin3.bmp"
+IDB_CHECK_95            BITMAP                  "RES\\GXCHK95.BMP"
+IDB_CHECK_NT            BITMAP                  "RES\\GXCHKNT.BMP"
+IDR_WINDOW_SELECTOR_TOOLBAR BITMAP                  "res\\window_s.bmp"
+IDR_PLOT_TOOLBAR        BITMAP                  "res\\plot_toolbar.bmp"
+IDB_MENUCHK             BITMAP                  "res\\menuchk.bmp"
+IDR_LISTING_TOOLBAR     BITMAP                  "res\\listing.bmp"
+IDR_OUTBAR              BITMAP                  "res\\outbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PS_FILE_OUTPUT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 303
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_PP_PLOT_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_PP_TREVIEW_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_PP_OPENGL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_PP_BMFONT_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_PP_CALCPRIORITY_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_PP_OPENGL_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_PP_COUNTRY_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_FILE_UPDATEFILEPATHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_2DPLOT              ICON                    "res\\2dPlot.ico"
+IDI_3DPLOT              ICON                    "res\\3dplot.ico"
+IDI_CALC                ICON                    "res\\CALC.ICO"
+IDI_COMPOSITEPLOT       ICON                    "res\\compositeplot.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_WINDOW_SELECTOR_TOOLBAR TOOLBAR  11, 5
+BEGIN
+    BUTTON      ID_MINIMIZE_ALL_PLOTS
+    BUTTON      ID_TILE_ALL_PLOTS_HORZ
+    BUTTON      ID_TILE_ALL_PLOTS_VERT
+    BUTTON      ID_CASCADE_ALL_PLOTS
+    BUTTON      ID_TOGGLE_TRANSPARENCY
+END
+
+IDR_PLOT_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_PLOT_INIT_VIEW
+    BUTTON      ID_PLOT_PREVIOUS_VIEW
+    BUTTON      ID_PLOT_RESET_VIEW
+    SEPARATOR
+    BUTTON      ID_PLOT_SETAXES
+    BUTTON      ID_PLOT_RESETAXES
+    SEPARATOR
+    BUTTON      ID_PLOT_RESET_DUMP
+    BUTTON      ID_PLOT_DUMP
+    BUTTON      ID_PLOT_DUMP_RESETINCCOUNT
+    SEPARATOR
+    BUTTON      ID_PLOT_PROPAGATE_VIEW
+    BUTTON      ID_PLOT_PROPAGATE_SIZE
+    BUTTON      ID_PLOT_FULL_SCREEN
+    SEPARATOR
+    BUTTON      ID_PLOT_MOUSE_ZOOM
+    BUTTON      ID_PLOT_MOUSE_SELECT
+    SEPARATOR
+    BUTTON      ID_PLOT_PRINT_TB
+    BUTTON      ID_PLOT_REFRESH
+    SEPARATOR
+    BUTTON      ID_PS_OUTPUT
+    BUTTON      ID_PS_OUTPUT_AUTO
+    BUTTON      ID_COPYTOCLIPBOARD
+END
+
+IDR_LISTING_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_LIST_PRINT
+    BUTTON      ID_PREVIEW_SAVE_AS
+END
+
+IDR_OUTBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_UIX_LARGEICON
+    BUTTON      ID_UIX_SMALLICON
+END
+
+IDB_OVERLAY_IMAGES TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_BUTTON52830
+    BUTTON      ID_BUTTON52831
+    BUTTON      ID_BUTTON52832
+    BUTTON      ID_BUTTON52833
+    BUTTON      ID_BUTTON52834
+    BUTTON      ID_BUTTON52835
+    BUTTON      ID_BUTTON52836
+    BUTTON      ID_BUTTON52837
+    BUTTON      ID_BUTTON52838
+    BUTTON      ID_BUTTON52839
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NODRAGGING          CURSOR                  "res\\nodraggi.cur"
+IDC_HANDCUR             CURSOR                  "res\\icr_hand.cur"
+IDC_DRAGGING            CURSOR                  "res\\dragging.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_TGA_OUTPUT           "Bitmap output used to create AVI animations\nTGA/JPEG Output"
+    ID_PS_OUTPUT            "Postscript Output\nDisplay the Postscript output menu"
+    ID_CONTROL_PLOT_OBJECT  "Plot Object control"
+    ID_MINIMIZE_ALL_PLOTS   "Minimize all windows\nMinimize all windows"
+    ID_TILE_ALL_PLOTS       "Tile all plots vertically\nTile all plots vertically"
+    ID_TILE_ALL_PLOTS_VERT  "Tile all plots vertically\nTile all plots vertically"
+    ID_TILE_ALL_PLOTS_HORZ  "Tile all plots horizontally\nTile all plots horizontally"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PLOT_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PLOT_INIT_VIEW       "Initialize View\nReset axes to defaults, clear view stack"
+    ID_PLOT_PREVIOUS_VIEW   "Previous View\nDisplay the previous view in the view stack"
+    ID_PLOT_RESET_VIEW      "Reset View\nReset View"
+    ID_PLOT_RESET_DUMP      "Set auto/manual dump\nSet auto/manual dump"
+    ID_PLOT_DUMP            "Plot Dump\nCreate one or more bitmap files of the current plot"
+    ID_PLOT_PROPAGATE_VIEW  "Propagate View\nCopy the current view to all other plots of the same type"
+    ID_PLOT_PROPAGATE_SIZE  "Propagate Size\nChange the plot size of all other plots of the same type"
+    ID_PLOT_FULL_SCREEN     "Full Screen\nFull Screen"
+    ID_PLOT_CONTROLBAR      "Control Bar\nControl Bar"
+    ID_CASCADE_ALL_PLOTS    "Cascade all plot windows\nCascade all plots"
+    ID_PLOT_DUMP_RESETINCCOUNT 
+                            "Reset file count of plot dump\nReset file counter of plot dump"
+    ID_PLOT_MOUSE_ZOOM      "Use mouse to zoom/unzoom\nUse mouse to zoom/unzoom"
+    ID_TOGGLE_TRANSPARENCY  "Toggle transparency\nToggle transparency"
+    ID_LIST_PRINT           "Print listing\nPrint"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PREVIEW_SAVE_AS      "Save listing\nSave listing"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PLOT_SETAXES         "Set axes\nSet axes to manual at current limits"
+    ID_PLOT_RESETAXES       "Reset axes\nReset axes to preferred limits"
+    ID_PLOT_PRINT           "Print plot\nPrint Plot"
+    ID_PLOT_PRINT_TB        "Print plot\\bSend current plot to default printer"
+    ID_PLOT_REFRESH         "Redraw plot\nRedraw plot"
+    ID_PLOT_MOUSE_SELECT    "Use mouse to select\nUse mouse to select"
+    ID_PS_OUTPUT_AUTO       "Auto Postscript\nCreate postscript file of current plot, increment counter"
+    ID_COPYTOCLIPBOARD      "Copy to clipboard\nCopy current plot bitmap to the Windows clipboard"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENC)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PP_TEMPLATE_SETTINGS DIALOGEX 0, 0, 314, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Template Directory"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Template Directory",IDC_STATIC,12,12,234,30
+    EDITTEXT        IDC_FULLPATHNAME,18,24,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BROWSE,252,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PP_TEMPLATE_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

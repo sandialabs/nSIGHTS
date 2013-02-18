@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Object Tree</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4>Object Tree</B></FONT></P>
+
+<P>The object tree is a means of visually organizing pages and objects.</P>
+<P></P>
+<P><IMG SRC="ObjectTree.jpg" BORDER=1 ALIGN=left HSPACE=20 VSPACE=20></P>
+
+<P>The pages in an nSIGHTS visualization are represented as first level icons or greater in the tree (nested pages can be second, third etc. level icons).  The different types of pages are indicated by the following icons:    </P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: 0.25in}
+</STYLE>
+
+<TABLE>
+<TR>
+<TD><IMG SRC="DataPageIcon.jpg"></TD><TD>data pages, list pages, output pages and plot object folders</TD>
+</TR>
+<TR>
+<TD><IMG SRC="2DPlotPageIcon.jpg"></TD><TD>2D plot pages</TD>
+</TR>
+<TR>
+<TD><IMG SRC="3DPlotPageIcon.jpg"></TD><TD> 3D plot pages</TD>
+</TR>
+<TR>
+<TD><IMG SRC="CompositePlotIcon.jpg"></TD><TD> composite plot pages</TD>
+</TR>
+</TABLE>
+
+<P>Pages are created using the commands in the <B><FONT COLOR="#000080">Page</B></FONT> menu.  Upon selecting a new page command, an icon and ID representing the page appears in the object tree and the properties of the first default object appears in the property window. For plot and list pages, a new top-level window for the plot/list is also created. </P>
+
+<P>Pages can be nested into other pages by selecting a page and dragging it to any object on another page of a compatible type.  Nested pages can be moved within a page in a similar manner.  Data pages can only be nested into data pages, plot object folders can only be nested within plot pages, and 2D or 3D plot pages can only be nested into a composite plot page.</P>
+
+<P>A plot object folder is neither a page nor an object.  Used for organizing plot objects, they only exist as nested folders to a plot page, and are created using the <B><FONT COLOR="#000080">Create Plot Object Folder</B></FONT> command in the <B><FONT COLOR="#000080">Object</B></FONT> menu.</P>
+
+<P><IMG SRC="ObjectIcon.jpg"> icons of the tree represent objects associated with each page.  Objects can be hidden/unhidden if the tree node for the page is toggled. All objects can be hidden using the <B><FONT COLOR="#000080">Collapse Tree</B></FONT> command in the <B><FONT COLOR="#000080">Page</B></FONT> menu.</P>
+
+<P>Both page and object icons are followed by a text identifier.  The text identifier contains an <B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">object ID</B></I></FONT> followed by the name of the page or object.  The object ID is specified in the top left hand corner of the object property window.  For pages, the object ID for the first object in the page will also be the ID for the page.</P>
+
+<P>New objects are created using the </FONT><B><FONT COLOR="#000080">New</B></FONT> command in the </FONT><B><FONT COLOR="#000080">Object</B></FONT> menu.  The command results in a list of available objects being presented, from which the user may pick one.  An icon and ID representing the object then appears in the object tree and its properties appear in the property window. </P>
+
+<P>Selecting an object causes its properties to appear in the object property window. The selected object (also known as the current object) is indicated by a black square around the icon, as shown below for the <I>XY Data::XY Data </I>object.  Note that the current page also has a black square around its icon.   </P>
+
+<P><IMG SRC="SelectObject.jpg" BORDER=1 HSPACE=20></P>
+
+<P>The object of type <B><FONT FACE="Technical" COLOR="#008000">Read XY Data</B></FONT> is selected in the figure above.  Usually only one object is selected, but multiple objects may be selected by holding down the shift key when selecting objects.  Selecting multiple objects is useful only for copy, delete, and duplicate operations (see <A HREF="Object Menu.htm">Object Menu</A>).  When multiple objects are selected, only the object property window for the last object selected is shown.</P>
+
+<P>As with pages, objects can be moved within the current page or a page of compatible type by selecting and dragging the object.</P>
+
+<P>An object's icon reflects its status.  Available status indicators are as follows:</P>
+
+<TABLE>
+<TR>
+<TD><IMG SRC="ObjectIcon.jpg"></TD><TD>Normal Status</TD>
+</TR>
+<TR>
+<TD><IMG SRC="IncorrectObjectPropIcon.jpg"></TD><TD>Incorrect Object Properties</TD>
+</TR>
+<TR>
+<TD><IMG SRC="ObjectErrorIcon.jpg"></TD><TD>Error in Object Calculation</TD>
+</TR>
+<TR>
+<TD><IMG SRC="ExposedObjectIcon.jpg"></TD><TD>Exposed Properties</TD>
+</TR>
+<TR>
+<TD><IMG SRC="ObjectNotUsedIcon.jpg"></TD><TD>Object Not Used</TD>
+</TR>
+</TABLE>
+<P>If the object status is OK (all object properties are set correctly and all object input is satisfied) the icon will be displayed normally.  Otherwise a green question mark may appear over the icon if the object properties are not set correctly, or a red X if the object calculation resulted in an error.  Other status indicators are a black XP if the object contains exposed properties (see <A HREF="Exposed Controls.htm">Exposed Controls</A>), and a green circle if the object is not used by any other object in the configuration file (only if this option is switched on, see <A HREF="TreeView.htm">Tree View Settings</A>).  Some objects may appear with a pink Q overlaying the icon, indicating that the object's quality assurance status is to be verified.</P>
+</FONT></BODY>
+</HTML>

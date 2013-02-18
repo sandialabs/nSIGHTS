@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Curve Data Functions</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Curve Data Functions</FONT></B></P>
+
+<P>When creating curve data (<B><FONT FACE="Technical" COLOR="#008000">Create Curve from XY Data</B></FONT>), several data functions or interpolation methods are available.  Examples based on the same set of XY data, are shown for each data function.</P>
+
+<P>
+<A HREF="#Cubic Spline"><I><FONT COLOR="#800050">Cubic Spline</I></FONT></A> |
+<A HREF="#Polynomial"><I><FONT COLOR="#800050">Polynomial</I></FONT></A> |
+<A HREF="#Linear"><I><FONT COLOR="#800050">Linear</I></FONT></A> |
+<A HREF="#StepMid"><I><FONT COLOR="#800050">StepMid</I></FONT></A> |
+<A HREF="#StepFull"><I><FONT COLOR="#800050">StepFull</I></FONT></A>
+</P>
+
+<STYLE>
+table {font: 10pt Arial; margin-left: -0.0225in}
+td{padding-bottom: 0.1in;padding-top: 0in}
+td.desc {padding-bottom: 0.1in;padding-left: 0.1 in}
+</STYLE>
+<P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><A NAME="Cubic Spline"><I><FONT COLOR="#800050">Cubic Spline</I></FONT></A></TD>
+<TD CLASS=desc>A piece-wise polynomial approximation of XY data, continuous in the first and second derivatives, provides a smooth approximation.  Parameters are available for this curve type to influence the function slopes at the extremes of the function and the spline tension.</TD>
+</TABLE>
+<P><IMG SRC="CubicSplineEx.jpg"></P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><A NAME="Polynomial"><I><FONT COLOR="#800050">Polynomial</I></FONT></A></TD>
+<TD CLASS=desc>Linear regression of XY data at a specified polynomial order.  A polynomial order, between 1 to 10, is specified.</TD>
+</TABLE>
+<P><IMG SRC="PolynomialEx.jpg"></P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><A NAME="Linear"><I><FONT COLOR="#800050">Linear </I></FONT></A></TD>
+<TD CLASS=desc>A series of straight lines joining consecutive XY points.</TD>
+</TABLE>
+<P><IMG SRC="LinearEx.jpg"></P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><A NAME="StepMid"><I><FONT COLOR="#800050">StepMid</I></FONT></A></TD>
+<TD CLASS=desc>Step function with value change at the linear midpoint between adjacent points.</TD>
+</TABLE>
+<P><IMG SRC="StepMidEx.jpg"></P>
+
+<TABLE>
+<TD NOWRAP VALIGN=TOP><A NAME="StepFull"><I><FONT COLOR="#800050">StepFull</I></FONT></A></TD>
+<TD CLASS=desc>Step function with value change at each XY point.</TD>
+</TABLE>
+<P><IMG SRC="StepFull.jpg"></P>
+
+</FONT></BODY>
+</HTML>

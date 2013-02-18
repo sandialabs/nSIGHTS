@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Pages and Objects</TITLE>
+<BASEFONT FACE="Arial" SIZE=2>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=4><P>Pages and Objects</B></FONT></P>
+
+<P>The nSIGHTS approach to data visualization and data processing is based on the conceptual paradigm of </FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">pages</B></I></FONT> and </FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">objects</B></I></FONT>.  These pages and objects are organized in an  <A HREF="Object Tree.htm">object tree</A>.</P>
+<P></P>
+<P>An object has a defined function related to data input/output, data manipulation, or plot construction.  For example, a data object may read a file containing a table of pressure data, while a plot object may plot pressure with respect to time.  <A HREF="OBJECTS.htm">Objects</A> describes object basics.</P>
+<P></P>
+<P>A page contains a collection of related or similar objects. nSIGHTS contains four types of pages: </FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">data pages</B></I></FONT>, </FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">plot pages</B></I></FONT>, </FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">list pages</B></I></FONT> (nPost only) and </FONT><B><I><FONT FACE="RomanS" SIZE=2 COLOR="#ff0000">output pages</B></I></FONT> (nPost only).</P>
+<P></P>
+<P>Data pages are used to collect objects that do not in themselves create a visual representation.  For example, table input data are represented by an object named</FONT><B><FONT FACE="Technical" COLOR="#008000"> Read Table File</B></FONT>.  There is always at least one data page (the default data page), however the user can add as many data pages as desired.  Multiple and nested data pages are used to better organize objects (more than 15 objects to a page can be cluttered).  Data objects are further described in <A HREF="Data Processing.htm">Data Processing:  Data Objects</A>.</P>
+
+<P>Plot pages contain objects that result in a visual representation appearing upon a single plot.  Plot objects may be organized within a plot page using plot object folders.  Associated with each plot page is a top-level window that contains the actual plot.  Only those objects on a specific plot page will appear on the plot.   Plot pages and objects are further described in <A HREF="Plotting.htm">Plotting</A>.</P>
+<P></P>
+<P>Output pages (nPost only) contain objects whose primary purpose is to write data to a file.  The output page, and associated output objects are further described in <A HREF="nPost Output.htm">nPost Output</A>. </P>
+
+<P>A list page (nPost only) performs a similar function to the </FONT><B><FONT COLOR="#000080">List</B></FONT> menu in nPre.  For each list page, an associated top-level window is created, displaying text information.  The text information is defined by list objects.  The list page and associated objects are further described in <A HREF="nPost Lists.htm">nPost Lists</A>. </P>
+</FONT></BODY>
+</HTML>
