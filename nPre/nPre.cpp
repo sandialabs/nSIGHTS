@@ -244,8 +244,8 @@ BOOL CAboutDlg::OnInitDialog()
 {
     CDialog::OnInitDialog();
 
-    m_hyperMail.SetURL(_T("mailto:rmrober@sandia.gov?Subject=nSIGHTS"));
-    m_hyperWWW.SetURL(_T("http://www.sandia.gov"));
+    m_hyperMail.SetURL(_T("mailto:nsights.free@gmail.com?Subject=nSIGHTS"));
+    m_hyperWWW.SetURL(_T("https://github.com/nsights/nSIGHTS"));
 
     return TRUE;
 }
