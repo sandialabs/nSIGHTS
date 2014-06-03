@@ -17,7 +17,7 @@ Documentation
 
 nSIGHTS includes a large amount of documentation in Windows Help format (found as [nPre64.chm](exe/x64/Release/nPre64.chm) and [nPost64.chm](exe/x64/Release/nPost64.chm) in the exe/x64/Release directory (follow link and click "view raw" to download help files), and also available from inside the program at run time), and as design documents in the "documents" folder. 
 
-- [The User's Manual](documents/nSIGHTS_Users_Manual_V2.41a.pdf) (follow link and click "view raw" to download pdf) is a 495-page document that includes description of most features in the nSIGHTS code, and some basic description of how to carry out basic workflows.
+- [The User's Manual](documents/nSIGHTS_Users_Manual_V2.41a.pdf) (follow link and click "view raw" to download pdf) is a 495-page document that includes description of most features in the nSIGHTS program (nPre, nPost, and nPreX), and some basic description of how to carry out basic workflows.
 
 - [The Program Design Document](documents/nSIGHTS_Program_Design_V2.41a.pdf) (follow link and click "view raw" to download pdf) is a 54-page description of the structure of the C++ source code, including listing of GUI menu items.
 
