@@ -90,8 +90,8 @@ void MessageLogC::AddMessage(const char* messageType,
         }
     else
         {
-            tm localTime = *localtime(&currTime);
-            strftime(timeStr, 80, "%H:%M:%S", &localTime);
+            tm localTime_s = *localtime(&currTime);
+            strftime(timeStr, 80, "%H:%M:%S", &localTime_s);
         }
 
     int lastIndex =  loggedMessages.Size();
