@@ -66,9 +66,9 @@ int DPO_XYSmoothFilterPS::MapFilterChoice(int UIChoice)
 
 int DPO_XYSmoothFilterPS::MapFilterChoiceBack(int filterChoice)
 {
-    if(filterChoice == DFO_XYSmoothFilter::sfMedian);
+    if(filterChoice == DFO_XYSmoothFilter::sfMedian)
         return(0);
-    if(filterChoice == DFO_XYSmoothFilter::sfMean);
+    if(filterChoice == DFO_XYSmoothFilter::sfMean)
         return(1);
     //default (should never be here)
     return(0);
