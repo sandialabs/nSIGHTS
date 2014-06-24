@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>nPost64</ProjectName>
+    <ProjectName>nPost</ProjectName>
     <ProjectGuid>{EAD9DFED-7172-46CE-8E06-E489D55C9852}</ProjectGuid>
     <RootNamespace>nPost64</RootNamespace>
     <Keyword>MFCProj</Keyword>
@@ -60,17 +60,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\exe\$(Platform)\$(Configuration)</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\nPost_Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Platform)\$(Configuration)\nPost\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\obj64\nPost_Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\obj\$(Platform)\$(Configuration)\nPost\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\exe\$(Platform)\$(Configuration)</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\nPost_Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Platform)\$(Configuration)\nPost\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\obj\$(Platform)\$(Configuration)\nPost\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
   </PropertyGroup>
@@ -84,16 +84,16 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_GLPRHARDCOPY_;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\GenLib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0502;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj\nPost_Debug/nPost.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj\nPost_Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj\nPost_Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj\nPost_Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPost\nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPost\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -106,15 +106,16 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>GenLib.Lib;ObjLib.lib;nsLib.lib;osLib.lib;glprMD.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;ijl15.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPost.exe</OutputFile>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Debug;..\ijl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <DelayLoadDLLs>ijl15.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\..\exe\debug/nPost.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPost.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -123,20 +124,20 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>.\..\exe\debug/nPost.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPost.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0501;WINVER=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\GenLib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0600;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj64\nPost_Debug/nPost.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj64\nPost_Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj64\nPost_Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj64\nPost_Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPost\nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPost\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -149,14 +150,14 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions>/MACHINE:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>GenLib64.Lib;ObjLib64.lib;nsLib64.lib;osLib64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost64.exe</OutputFile>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <DelayLoadDLLs>ijl15.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\..\exe\debug/nPost64.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPost.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
@@ -167,24 +168,24 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\..\exe\release/nPost.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPost.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\GenLib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0502;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj\nPost_Release/nPost.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj\nPost_Release/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj\nPost_Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj\nPost_Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPost\nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPost\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CallingConvention>Cdecl</CallingConvention>
@@ -197,13 +198,14 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>GenLib.Lib;ObjLib.lib;nsLib.lib;osLib.lib;HtmlHelp.lib;Delayimp.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies);c:\MinGW\lib\libmingwex.a;c:\MinGW\lib\gcc\mingw32\4.7.0\libgcc.a</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPost.exe</OutputFile>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;HtmlHelp.lib;Delayimp.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Release;..\ijl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ProgramDatabaseFile>.\..\exe\release/nPost.pdb</ProgramDatabaseFile>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPost.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -212,25 +214,25 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>.\..\exe\release/nPost.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPost.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>.\;..;..\GenLib;..\osLib;..\nsLib;..\objLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0501;_WIN32_WINNT=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\GenLib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0600;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj64\nPost_Release/nPost.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj64\nPost_Release/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj64\nPost_Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj64\nPost_Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPost\nPost.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPost\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPost\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CallingConvention>Cdecl</CallingConvention>
@@ -243,13 +245,13 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions>/MACHINE:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>GenLib64.Lib;ObjLib64.lib;nsLib64.lib;osLib64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPost64.exe</OutputFile>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ProgramDatabaseFile>.\..\exe\release/nPost64.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPost.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
