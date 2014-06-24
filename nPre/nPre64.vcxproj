@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -22,6 +22,7 @@
     <ProjectGuid>{7E2E0837-0A77-4196-B42F-5F05D2C173EC}</ProjectGuid>
     <RootNamespace>nPre64</RootNamespace>
     <Keyword>MFCProj</Keyword>
+    <ProjectName>nPre</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -58,17 +59,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\exe\debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\nPre_Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\obj64\nPre_Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\exe\release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\nPre_Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\exe\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -77,26 +78,27 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\..\exe\debug/nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\;..;..\Genlib;..\osLib;..\nsLib;..\objLib;..\..;..\genClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_GLPRHARDCOPY_;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\Genlib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0502;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\..\obj\nPre_Debug/nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj\nPre_Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj\nPre_Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj\nPre_Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
       <BrowseInformation>true</BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
       <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -104,12 +106,12 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>GenLib.Lib;ObjLib.lib;osLib.lib;nsLib.lib;glprMD.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;ijl15.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPre.exe</OutputFile>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Debug;..\ijl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\..\exe\debug/nPre.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
@@ -120,27 +122,27 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>.\..\exe\debug/nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\;..;..\Genlib;..\osLib;..\nsLib;..\objLib;..\..;..\genClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0501;WINVER=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\Genlib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0600;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\..\obj64\nPre_Debug/nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj64\nPre_Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj64\nPre_Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj64\nPre_Debug/</ProgramDataBaseFileName>
-      <BrowseInformation>
-      </BrowseInformation>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
+      <BrowseInformation></BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
       <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -148,43 +150,43 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions>/MACHINE:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>GenLib64.Lib;ObjLib64.lib;osLib64.lib;nsLib64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPre64.exe</OutputFile>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)/nPre64.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\..\exe\release/nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>.\;..;..\Genlib;..\osLib;..\nsLib;..\objLib;..\..;..\genClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\Genlib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0502;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\..\obj\nPre_Release/nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj\nPre_Release/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj\nPre_Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj\nPre_Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
       <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -192,41 +194,41 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>GenLib.Lib;ObjLib.lib;osLib.lib;nsLib.lib;HtmlHelp.lib;Delayimp.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies);c:\MinGW\lib\libmingwex.a;c:\MinGW\lib\gcc\mingw32\4.7.0\libgcc.a</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)/nPre.exe</OutputFile>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;HtmlHelp.lib;Delayimp.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Release;..\ijl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ProgramDatabaseFile>.\..\exe\release/nPre.pdb</ProgramDatabaseFile>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>.\..\exe\release/nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>.\;..;..\Genlib;..\osLib;..\nsLib;..\objLib;..\..;..\genClass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0501;WINVER=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\Genlib;..\osLib;..\nsLib;..\objLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0600;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>.\..\obj64\nPre_Release/nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj64\nPre_Release/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj64\nPre_Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj64\nPre_Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
       <DisableSpecificWarnings>4355;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
     </ClCompile>
     <ResourceCompile>
@@ -235,13 +237,13 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions>/MACHINE:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>GenLib64.Lib;ObjLib64.lib;osLib64.lib;nsLib64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre64.exe</OutputFile>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>..\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ProgramDatabaseFile>.\..\exe\release/nPre64.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>

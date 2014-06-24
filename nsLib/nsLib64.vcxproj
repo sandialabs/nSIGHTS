@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -22,6 +22,7 @@
     <ProjectGuid>{FF14738A-8253-449C-84B8-3C81ECF36F8A}</ProjectGuid>
     <RootNamespace>nsLib64</RootNamespace>
     <Keyword>MFCProj</Keyword>
+    <ProjectName>nsLib</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -62,29 +63,29 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\NsLib_Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\obj\NsLib_Debug\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\lib\debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\lib\debug\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\NsLib_Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\obj\NsLib_Release\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\..\obj64\NsLib_Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\..\obj64\NsLib_Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Platform)\$(Configuration)\NsLib\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\obj\$(Platform)\$(Configuration)\NsLib\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Platform)\$(Configuration)\NsLib\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\obj\$(Platform)\$(Configuration)\NsLib\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\nsLib;..;..\genLib;..\objLib;..\osLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_GLPRHARDCOPY_;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\genLib;..\objLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WINVER=0x0502;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>nsLibAfx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj\NsLib_Debug/nsLib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj\NsLib_Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj\NsLib_Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj\NsLib_Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\NsLib\nsLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\NsLib\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -96,9 +97,11 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\lib\Debug\nsLib.lib</OutputFile>
+      <OutputFile>..\lib\$(Platform)\$(Configuration)\nsLib.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\repos\mingw-x86-blas-lapack;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -107,17 +110,17 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\nsLib;..;..\genLib;..\objLib;..\osLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WINVER=0x0501;_WIN32_WINNT =0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\genLib;..\objLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_WIN32_WINNT=0x0600;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>nsLibAfx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj64\NsLib_Debug/nsLib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj64\NsLib_Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj64\NsLib_Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj64\NsLib_Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\NsLib\nsLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\NsLib\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -129,10 +132,11 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\lib\debug\nsLib64.lib</OutputFile>
+      <OutputFile>..\lib\$(Platform)\$(Configuration)\nsLib.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalDependencies>BLAS.lib;LAPACK.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Software\lapack\libraries\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\repos\mingw-x64-blas-lapack;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -140,18 +144,18 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>..\nsLib;..;..\genLib;..\objLib;..\osLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0500;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\genLib;..\objLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0502;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>nsLibAfx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj\NsLib_Release/nsLib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj\NsLib_Release/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj\NsLib_Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj\NsLib_Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\NsLib\nsLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\NsLib\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
@@ -162,10 +166,11 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\lib\Release\nsLib.lib</OutputFile>
+      <OutputFile>..\lib\$(Platform)\$(Configuration)\nsLib.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalDependencies>libopenblas.lib;liblapack.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Software\lapack\libraries\Release;C:\nSights\Kris\OpenBLAS-dynamic-arch-2threads-32bit</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\repos\mingw-x86-blas-lapack;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -176,18 +181,18 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>..\nsLib;..;..\genLib;..\objLib;..\osLib;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WINVER=0x0501;_WIN32_WINNT=0x0501;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\genLib;..\objLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0600;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>nsLibAfx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\..\obj64\NsLib_Release/nsLib.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\..\obj64\NsLib_Release/</AssemblerListingLocation>
-      <ObjectFileName>.\..\obj64\NsLib_Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\..\obj64\NsLib_Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\NsLib\nsLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\NsLib\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\NsLib\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
@@ -198,10 +203,11 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>..\lib\Release\nsLib64.lib</OutputFile>
+      <OutputFile>..\lib\$(Platform)\$(Configuration)\nsLib.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalDependencies>BLAS.lib;LAPACK.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Software\lapack\libraries\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\repos\mingw-x64-blas-lapack;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -855,6 +861,10 @@
       <Project>{406c03d3-5796-4298-8cd9-8a425ef4a560}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\exe\$(Platform)\$(Configuration)\libblas.lib" />
+    <Library Include="..\exe\$(Platform)\$(Configuration)\liblapack.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
