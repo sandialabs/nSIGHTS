@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0428901551A84AE88CCD3B0C348A9307"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_20E694E416B04462BB61FFD40BDEAE0B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_22472187E00784944A46C3899F378485"
         "OwnerKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
         "MsmSig" = "8:_UNDEFINED"
@@ -23,6 +35,12 @@
         {
         "MsmKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2F2909BB3AAB496DA0918037355683E9"
+        "OwnerKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -39,8 +57,20 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_F774AB9B346841C2B88836AF0E0DC944"
+        "MsmKey" = "8:_8600F3B5134E4CDD945BFD8D1794558F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D415EF132D160ECDA5B5DEFDA3C3941B"
         "OwnerKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EE308167F1D645DA964651581C3378CF"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -51,7 +81,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\Setup_nSIGHTS.msi"
+        "OutputFilename" = "8:Win32\\Debug\\Setup_nSIGHTS.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -78,7 +108,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\Setup_nSIGHTS.msi"
+        "OutputFilename" = "8:Win32\\Release\\Setup_nSIGHTS.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -130,6 +160,46 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0428901551A84AE88CCD3B0C348A9307"
+            {
+            "SourcePath" = "8:..\\..\\mingw-x86-blas-lapack\\libblas.dll"
+            "TargetName" = "8:libblas.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_20E694E416B04462BB61FFD40BDEAE0B"
+            {
+            "SourcePath" = "8:C:\\MinGW\\bin\\libgfortran-3.dll"
+            "TargetName" = "8:libgfortran-3.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_22472187E00784944A46C3899F378485"
             {
             "SourcePath" = "8:mpich2mpi.dll"
@@ -152,7 +222,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_447DEDEFD9E94700A26DF883E1E198AE"
             {
-            "SourcePath" = "8:..\\exe\\release\\nPost64.chm"
+            "SourcePath" = "8:..\\exe\\Win32\\release\\nPost64.chm"
             "TargetName" = "8:nPost64.chm"
             "Tag" = "8:"
             "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
@@ -172,8 +242,68 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4590CEE7183B424C94920E816ABD7FC1"
             {
-            "SourcePath" = "8:..\\exe\\release\\nPre64.chm"
+            "SourcePath" = "8:..\\exe\\Win32\\release\\nPre64.chm"
             "TargetName" = "8:nPre64.chm"
+            "Tag" = "8:"
+            "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8600F3B5134E4CDD945BFD8D1794558F"
+            {
+            "SourcePath" = "8:..\\..\\mingw-x86-blas-lapack\\libgcc_s_dw2-1.dll"
+            "TargetName" = "8:libgcc_s_dw2-1.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D415EF132D160ECDA5B5DEFDA3C3941B"
+            {
+            "SourcePath" = "8:liblapack.dll"
+            "TargetName" = "8:liblapack.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EE308167F1D645DA964651581C3378CF"
+            {
+            "SourcePath" = "8:C:\\MinGW\\bin\\libquadmath-0.dll"
+            "TargetName" = "8:libquadmath-0.dll"
             "Tag" = "8:"
             "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
             "Condition" = "8:"
@@ -247,7 +377,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:nSIGHTS (32)"
         "ProductCode" = "8:{F3FBF40A-6D47-41C3-9205-B37994F55437}"
-        "PackageCode" = "8:{2C68E423-1196-4071-8E67-3DAF4DD15741}"
+        "PackageCode" = "8:{685E53C6-23F1-40CF-B177-6955039780F0}"
         "UpgradeCode" = "8:{F91EEDC5-3869-402F-9067-979C5E3FBB66}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -255,15 +385,15 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Sandia National Labs"
+        "Manufacturer" = "8:Sandia National Laboratories"
         "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
+        "ARPHELPLINK" = "8:https://github.com/nsights/nSIGHTS"
         "Title" = "8:Setup_nSIGHTS"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Sandia National Labs"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
-        "ARPURLINFOABOUT" = "8:"
+        "ARPURLINFOABOUT" = "8:http://www.sandia.gov"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -763,7 +893,7 @@
         }
         "MergeModule"
         {
-            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_F774AB9B346841C2B88836AF0E0DC944"
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_2F2909BB3AAB496DA0918037355683E9"
             {
             "UseDynamicProperties" = "11:TRUE"
             "IsDependency" = "11:TRUE"
@@ -782,7 +912,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2705DA17D38341FD83760833CB2E5E86"
             {
-            "SourcePath" = "8:..\\exe\\release\\nPreX.exe"
+            "SourcePath" = "8:..\\exe\\Win32\\Release\\nPreX.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
@@ -810,7 +940,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_632D566B4D8E458F815C79E4548C27A8"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\exe\\Win32\\Release\\nPost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"
@@ -838,7 +968,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B914F07B8AE14DF68BC695EE3B8D078E"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\exe\\Win32\\Release\\nPre.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6557A944FEBC48FEA9189ACAC8D6B276"

@@ -908,9 +908,6 @@
     <ClCompile Include="genMFC\BasicView.cpp">
       <Filter>Source Files\genMFC</Filter>
     </ClCompile>
-    <ClCompile Include="genMFC\DLLLOAD.CPP">
-      <Filter>Source Files\genMFC</Filter>
-    </ClCompile>
     <ClCompile Include="genMFC\HelpDialog.cpp">
       <Filter>Source Files\genMFC</Filter>
     </ClCompile>
@@ -1495,6 +1492,9 @@
     </ClCompile>
     <ClCompile Include="genClass\kiss_fft.cpp">
       <Filter>Source Files\genClass</Filter>
+    </ClCompile>
+    <ClCompile Include="genMFC\DllLoader.cpp">
+      <Filter>Source Files\genApp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2209,9 +2209,6 @@
     <ClInclude Include="genMFC\BasicView.h">
       <Filter>Header Files\genMFC H</Filter>
     </ClInclude>
-    <ClInclude Include="genMFC\DLLLOAD.H">
-      <Filter>Header Files\genMFC H</Filter>
-    </ClInclude>
     <ClInclude Include="genMFC\HelpDialog.h">
       <Filter>Header Files\genMFC H</Filter>
     </ClInclude>
@@ -2794,6 +2791,9 @@
     <ClInclude Include="genClass\kiss_fft.h">
       <Filter>Header Files\genClass H</Filter>
     </ClInclude>
+    <ClInclude Include="genMFC\DllLoader.h">
+      <Filter>Header Files\genApp H\Settings H</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GenLib.rc">
@@ -2860,5 +2860,6 @@
     </None>
     <None Include="res\compositeplot.ico" />
     <None Include="res\ico2dplo.ico" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>
