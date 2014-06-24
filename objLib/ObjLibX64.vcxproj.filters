@@ -1466,4 +1466,8 @@
       <Filter>Header Files\objUPO H</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\exe\$(Platform)\$(Configuration)\libblas.lib" />
+    <Library Include="..\exe\$(Platform)\$(Configuration)\liblapack.lib" />
+  </ItemGroup>
 </Project>
