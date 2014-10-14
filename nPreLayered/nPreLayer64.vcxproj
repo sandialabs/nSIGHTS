@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7E2E0837-0A77-4196-B42F-5F05D2C173EC}</ProjectGuid>
-    <RootNamespace>nPre64</RootNamespace>
+    <ProjectGuid>{94C25278-9C59-4BA4-B53F-7EF5A0A0911C}</ProjectGuid>
+    <RootNamespace>nPreLayer64</RootNamespace>
     <Keyword>MFCProj</Keyword>
-    <ProjectName>nPre</ProjectName>
+    <ProjectName>nPreLayer</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -58,18 +58,18 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Platform)\$(Configuration)\nPreLayer\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\obj\$(Platform)\$(Configuration)\nPreLayer\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Platform)\$(Configuration)\nPreLayer\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\obj\$(Platform)\$(Configuration)\nPre\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\obj\$(Platform)\$(Configuration)\nPreLayer\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -78,7 +78,7 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayer.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -88,10 +88,10 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayer\nPreLayer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayer\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ProgramDataBaseFileName>
       <BrowseInformation>true</BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -106,12 +106,12 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;glprMD.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
@@ -122,7 +122,7 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayer.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -132,10 +132,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayer\nPreLayer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayer\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ProgramDataBaseFileName>
       <BrowseInformation></BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -152,22 +152,23 @@
     </ResourceCompile>
     <Link>
       <AdditionalOptions></AdditionalOptions>
-      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;glprMD64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayer.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -179,10 +180,10 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayer\nPreLayer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayer\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
@@ -195,21 +196,22 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;HtmlHelp.lib;Delayimp.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;glprMD.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPre.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayer.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -221,10 +223,10 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPre\nPre.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPre\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPre\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayer\nPreLayer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayer\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
@@ -239,12 +241,12 @@
     </ResourceCompile>
     <Link>
       <AdditionalOptions></AdditionalOptions>
-      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPre.exe</OutputFile>
+      <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;glprMD64.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPre.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -252,14 +254,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="help\nPre64.h" />
+    <ClInclude Include="ListPrinterType.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="nPre.h" />
     <ClInclude Include="nPreDoc.h" />
     <ClInclude Include="nPreView.h" />
     <ClInclude Include="PopupCmdDefines.h" />
+    <ClInclude Include="PreviewViewEx.h" />
     <ClInclude Include="ProgressThreadDlg.h" />
-    <ClInclude Include="Resource.h" />
+    <CustomBuild Include="Resource.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Outputs)</Outputs>
+    </CustomBuild>
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="App\AppPages.h" />
     <ClInclude Include="App\nPreAppMenu.h" />
@@ -280,10 +300,14 @@
     <ClInclude Include="Dlg\DlgDataCaptureMain.h" />
     <ClInclude Include="Dlg\DlgDataCaptureProdRestart.h" />
     <ClInclude Include="Dlg\DlgDummy.h" />
+    <ClInclude Include="Dlg\DlgLayerGeology.h" />
+    <ClInclude Include="Dlg\DlgLayerSpec.h" />
+    <ClInclude Include="Dlg\DlgLayerWellboreZone.h" />
     <ClInclude Include="Dlg\DlgNoPointsParameter.h" />
     <ClInclude Include="Dlg\DlgNoSuperposition.h" />
     <ClInclude Include="Dlg\DlgNoVaryParameter.h" />
     <ClInclude Include="Dlg\DlgOutputFileSetupBase.h" />
+    <ClInclude Include="Dlg\DlgOutputFileSetupmView.h" />
     <ClInclude Include="Dlg\DlgOutputFileSetupOptimization.h" />
     <ClInclude Include="Dlg\DlgOutputFileSetupProfile.h" />
     <ClInclude Include="Dlg\DlgOutputFileSetupRange.h" />
@@ -294,6 +318,7 @@
     <ClInclude Include="Dlg\DlgPointsParametersPointsEntry.h" />
     <ClInclude Include="Dlg\DlgPointsParametersUnitsTransform.h" />
     <ClInclude Include="Dlg\DlgPointsParametersYOptimization.h" />
+    <ClInclude Include="Dlg\DlgSeqArray.h" />
     <ClInclude Include="Dlg\DlgSeqDynamicStep.h" />
     <ClInclude Include="Dlg\DlgSeqMain.h" />
     <ClInclude Include="Dlg\DlgSeqPartialRun.h" />
@@ -344,15 +369,19 @@
     <ClInclude Include="Var\C_CurveFile.h" />
     <ClInclude Include="Var\C_DataCapture.h" />
     <ClInclude Include="Var\C_FileOutput.h" />
+    <ClInclude Include="Var\C_Layer.h" />
     <ClInclude Include="Var\C_Parameter.h" />
     <ClInclude Include="Var\C_Sequence.h" />
     <ClInclude Include="Var\C_TestZoneCurve.h" />
+    <ClInclude Include="Var\C_UnitListObj.h" />
     <ClInclude Include="Var\C_Units.h" />
     <ClInclude Include="Var\E_Parameter.h" />
     <ClInclude Include="Var\G_CalcParameter.h" />
     <ClInclude Include="Var\G_Control.h" />
     <ClInclude Include="Var\G_CurveFiles.h" />
     <ClInclude Include="Var\G_DataCapture.h" />
+    <ClInclude Include="Var\G_Layer.h" />
+    <ClInclude Include="Var\G_mViewOutput.h" />
     <ClInclude Include="Var\G_OptOutput.h" />
     <ClInclude Include="Var\G_OutputFiles.h" />
     <ClInclude Include="Var\G_Parameter.h" />
@@ -370,36 +399,6 @@
     <ResourceCompile Include="nPre.rc" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="help\nPost.hhp">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hhc.exe help\%(Filename).hhp
-echo.
-copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Making HTML Help File...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">help\%(Filename).chm;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\genLib\genHelp\H_Genlib.h;..\nsLib\nsHelp\H_Nslib.h;..\objLib\objHelp\H_Objlib.h;..\osLib\osHelp\H_Oslib.h;help\nPre64.h;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hhc.exe help\%(Filename).hhp
-echo.
-copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Making HTML Help File...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">help\%(Filename).chm;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\genLib\genHelp\H_Genlib.h;..\nsLib\nsHelp\H_Nslib.h;..\objLib\objHelp\H_Objlib.h;..\osLib\osHelp\H_Oslib.h;help\nPre64.h;%(AdditionalInputs)</AdditionalInputs>
-    </CustomBuild>
-    <CustomBuild Include="help\nPre.hhp">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hhc.exe help\%(Filename).hhp
-echo.
-copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Making HTML Help File...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">help\%(Filename).chm;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\genLib\genHelp\H_Genlib.h;..\nsLib\nsHelp\H_Nslib.h;..\objLib\objHelp\H_Objlib.h;..\osLib\osHelp\H_Oslib.h;help\nPre64.h;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hhc.exe help\%(Filename).hhp
-echo.
-copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Making HTML Help File...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">help\%(Filename).chm;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\genLib\genHelp\H_Genlib.h;..\nsLib\nsHelp\H_Nslib.h;..\objLib\objHelp\H_Objlib.h;..\osLib\osHelp\H_Oslib.h;help\nPre64.h;%(AdditionalInputs)</AdditionalInputs>
-    </CustomBuild>
     <None Include="res\imageList.bmp" />
     <None Include="res\nPre.ico" />
     <None Include="res\nPre.rc2" />
@@ -415,8 +414,6 @@ copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
     <None Include="res\PrevZoomout.BMP" />
     <None Include="res\Toolbar.bmp" />
     <None Include="res\treeImageList.bmp" />
-    <None Include="help\nPost TOC.hhc" />
-    <None Include="help\nPre TOC.hhc" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainFrm.cpp">
@@ -1138,6 +1135,9 @@ copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">StdAfx.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="Dlg\DlgLayerGeology.cpp" />
+    <ClCompile Include="Dlg\DlgLayerSpec.cpp" />
+    <ClCompile Include="Dlg\DlgLayerWellboreZone.cpp" />
     <ClCompile Include="Dlg\DlgNoPointsParameter.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StdAfx.h</PrecompiledHeaderFile>
@@ -1169,6 +1169,7 @@ copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">StdAfx.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="Dlg\DlgOutputFileSetupmView.cpp" />
     <ClCompile Include="Dlg\DlgOutputFileSetupOptimization.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StdAfx.h</PrecompiledHeaderFile>
@@ -1269,6 +1270,7 @@ copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">StdAfx.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="Dlg\DlgSeqArray.cpp" />
     <ClCompile Include="Dlg\DlgSeqDynamicStep.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StdAfx.h</PrecompiledHeaderFile>
@@ -1472,6 +1474,7 @@ copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
     <ClCompile Include="Var\C_CurveFile.cpp" />
     <ClCompile Include="Var\C_DataCapture.cpp" />
     <ClCompile Include="Var\C_FileOutput.cpp" />
+    <ClCompile Include="Var\C_Layer.cpp" />
     <ClCompile Include="Var\C_Parameter.cpp" />
     <ClCompile Include="Var\C_Sequence.cpp" />
     <ClCompile Include="Var\C_TestZoneCurve.cpp" />
@@ -1481,6 +1484,8 @@ copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
     <ClCompile Include="Var\G_Control.cpp" />
     <ClCompile Include="Var\G_CurveFiles.cpp" />
     <ClCompile Include="Var\G_DataCapture.cpp" />
+    <ClCompile Include="Var\G_Layer.cpp" />
+    <ClCompile Include="Var\G_mViewOutput.cpp" />
     <ClCompile Include="Var\G_OptOutput.cpp" />
     <ClCompile Include="Var\G_OutputFiles.cpp" />
     <ClCompile Include="Var\G_Parameter.cpp" />
@@ -1589,4 +1594,9 @@ copy help\%(Filename).chm $(OutDir)%(Filename)64.chm</Command>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="nPre.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0ED2A793-8980-4675-BFA3-D552918770A1}</ProjectGuid>
-    <RootNamespace>nPreX64</RootNamespace>
+    <ProjectName>nPreLayerX</ProjectName>
+    <ProjectGuid>{83A2BD05-9003-40D4-83CC-24B37D00E197}</ProjectGuid>
+    <RootNamespace>nPreLayerX64</RootNamespace>
     <Keyword>MFCProj</Keyword>
-    <ProjectName>nPreX</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -60,31 +60,31 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Platform)\$(Configuration)\nPreX\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Platform)\$(Configuration)\nPreLayerX\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\obj\$(Platform)\$(Configuration)\nPreX\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\obj\$(Platform)\$(Configuration)\nPreLayerX\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Platform)\$(Configuration)\nPreX\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Platform)\$(Configuration)\nPreLayerX\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\exe\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\obj\$(Platform)\$(Configuration)\nPreX\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\obj\$(Platform)\$(Configuration)\nPreLayerX\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(LibraryPath)</LibraryPath>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PostBuildEventUseInBuild>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nPreX</TargetName>
-    <!-- 
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nPreLayerX</TargetName>
+    <!--
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;</LibraryPath>
     <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\MPICH2\lib</LibraryPath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files (x86)\MPICH2\include</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files\MPICH2\include;</IncludePath>
     <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(FrameworkSDKDir)\lib\win64;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
-    <ExcludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(MSBuildToolsPath);$(MSBuildToolsPath32);$(VCInstallDir)atlmfc\lib\amd64;$(VCInstallDir)lib\amd64;</ExcludePath> 
-    -->
+    <ExcludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(MSBuildToolsPath);$(MSBuildToolsPath32);$(VCInstallDir)atlmfc\lib\amd64;$(VCInstallDir)lib\amd64;</ExcludePath>
+  -->
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -92,7 +92,7 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreX.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayerX.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -102,10 +102,10 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreX\nPreX.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreX\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayerX\nPreLayerX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ProgramDataBaseFileName>
       <BrowseInformation>true</BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -120,12 +120,13 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
+      <AdditionalOptions></AdditionalOptions>
       <AdditionalDependencies>GenLibX.lib;ObjLibX.lib;osLibX.lib;nsLibX.lib;mpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreX.exe</OutputFile>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);C:\Program Files %28x86%29\MPICH2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreX.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
@@ -136,7 +137,7 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreX.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayerX.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -146,10 +147,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>True</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreX\nPreX.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreX\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayerX\nPreLayerX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ProgramDataBaseFileName>
       <BrowseInformation>false</BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -165,12 +166,13 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
+      <AdditionalOptions></AdditionalOptions>
       <AdditionalDependencies>GenLibX.lib;ObjLibX.lib;osLibX.lib;nsLibX.lib;mpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreX.exe</OutputFile>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);C:\Program Files\MPICH2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreX.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
       <IgnoreSpecificDefaultLibraries></IgnoreSpecificDefaultLibraries>
@@ -183,10 +185,11 @@
       <Command></Command>
     </PreBuildEvent>
     <Midl>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreX.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayerX.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -198,10 +201,10 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FloatingPointModel>Precise</FloatingPointModel>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreX\nPreX.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreX\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayerX\nPreLayerX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
@@ -216,10 +219,10 @@
     <Link>
       <AdditionalOptions></AdditionalOptions>
       <AdditionalDependencies>GenLibX.lib;ObjLibX.lib;osLibX.lib;nsLibX.lib;mpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreX.exe</OutputFile>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);C:\Program Files %28x86%29\MPICH2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreX.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
@@ -230,10 +233,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreX.tlb</TypeLibraryName>
+      <TypeLibraryName>..\exe\$(Platform)\$(Configuration)\nPreLayerX.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -244,10 +248,10 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;ADCONSOLEAPP;_WIN32_WINNT=0x0600;MSCVS2005;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreX\nPreX.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreX\</AssemblerListingLocation>
-      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ObjectFileName>
-      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreX\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\obj\$(Platform)\$(Configuration)\nPreLayerX\nPreLayerX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</AssemblerListingLocation>
+      <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ObjectFileName>
+      <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayerX\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
@@ -263,11 +267,11 @@
     <Link>
       <AdditionalOptions></AdditionalOptions>
       <AdditionalDependencies>GenLibX.lib;ObjLibX.lib;osLibX.lib;nsLibX.lib;mpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreX.exe</OutputFile>
+      <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\lib\$(Platform)\$(Configuration);C:\Program Files\MPICH2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreX.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayerX.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -276,6 +280,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="StdAfx.h" />
     <ClInclude Include="App\AppPages.h" />
     <ClInclude Include="App\nPreFile.h" />
     <ClInclude Include="App\nPreRoot.h" />
@@ -297,13 +302,13 @@
     <ClInclude Include="Sim\C_WorkSequence.h" />
     <ClInclude Include="Sim\G_ParameterCurveOutput.h" />
     <ClInclude Include="Sim\G_SimulatorRadiiOutput.h" />
-    <ClInclude Include="StdAfx.h" />
     <ClInclude Include="Var\C_CurveFile.h" />
     <ClInclude Include="Var\C_DataCapture.h" />
     <ClInclude Include="Var\C_FileOutput.h" />
     <ClInclude Include="Var\C_Parameter.h" />
     <ClInclude Include="Var\C_Sequence.h" />
     <ClInclude Include="Var\C_TestZoneCurve.h" />
+    <ClInclude Include="Var\C_UnitListObj.h" />
     <ClInclude Include="Var\C_Units.h" />
     <ClInclude Include="Var\E_Parameter.h" />
     <ClInclude Include="Var\G_CalcParameter.h" />
@@ -323,6 +328,16 @@
     <ClInclude Include="CmdLine\RunControl.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="App\AppFuncObj.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
@@ -1119,10 +1134,6 @@
     <ClCompile Include="Sim\C_WorkSequence.cpp" />
     <ClCompile Include="Sim\G_ParameterCurveOutput.cpp" />
     <ClCompile Include="Sim\G_SimulatorRadiiOutput.cpp" />
-    <ClCompile Include="StdAfx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="Var\C_CurveFile.cpp" />
     <ClCompile Include="Var\C_DataCapture.cpp" />
     <ClCompile Include="Var\C_FileOutput.cpp" />
