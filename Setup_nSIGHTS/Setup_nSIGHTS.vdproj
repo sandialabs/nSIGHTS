@@ -21,12 +21,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0D626261419C498E9A54FB33BB38E669"
-        "OwnerKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_20E694E416B04462BB61FFD40BDEAE0B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -59,6 +53,12 @@
         {
         "MsmKey" = "8:_8600F3B5134E4CDD945BFD8D1794558F"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A576772990664DC09144831559B44170"
+        "OwnerKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -377,7 +377,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:nSIGHTS (32)"
         "ProductCode" = "8:{F3FBF40A-6D47-41C3-9205-B37994F55437}"
-        "PackageCode" = "8:{2C51D190-0CE8-4AD6-904C-7032EE653BB7}"
+        "PackageCode" = "8:{A30AE0A2-C389-44AF-9E23-801E19470F29}"
         "UpgradeCode" = "8:{F91EEDC5-3869-402F-9067-979C5E3FBB66}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -893,7 +893,7 @@
         }
         "MergeModule"
         {
-            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_0D626261419C498E9A54FB33BB38E669"
+            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_A576772990664DC09144831559B44170"
             {
             "UseDynamicProperties" = "11:TRUE"
             "IsDependency" = "11:TRUE"
