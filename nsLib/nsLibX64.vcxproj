@@ -103,6 +103,7 @@
       <AdditionalLibraryDirectories>C:\repos\mingw-x86-blas-lapack;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -138,6 +139,7 @@
       <AdditionalLibraryDirectories>C:\repos\mingw-x64-blas-lapack;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
       <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -172,6 +174,7 @@
       <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\repos\mingw-x86-blas-lapack;</AdditionalLibraryDirectories>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -209,6 +212,7 @@
       <AdditionalDependencies>libblas.lib;liblapack.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\repos\mingw-x64-blas-lapack;</AdditionalLibraryDirectories>
       <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>

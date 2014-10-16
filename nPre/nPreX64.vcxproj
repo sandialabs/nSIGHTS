@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -128,6 +128,7 @@
       <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreX.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -173,14 +174,19 @@
       <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreX.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
-      <IgnoreSpecificDefaultLibraries></IgnoreSpecificDefaultLibraries>
-      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Message></Message>
-      <Command></Command>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <Midl>
       <MkTypLibCompatible>true</MkTypLibCompatible>
@@ -214,7 +220,7 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>/ignore:4006 /ignore:4221</AdditionalOptions>
       <AdditionalDependencies>GenLibX.lib;ObjLibX.lib;osLibX.lib;nsLibX.lib;mpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreX.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -224,8 +230,10 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Message></Message>
-      <Command></Command>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -261,7 +269,7 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>/ignore:4006 /ignore:4221</AdditionalOptions>
       <AdditionalDependencies>GenLibX.lib;ObjLibX.lib;osLibX.lib;nsLibX.lib;mpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreX.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
