@@ -47,7 +47,7 @@ const char * appVersionGlobals::versionID = "nPre/32 2.50";
 
 const char * appVersionGlobals::versionDate = "25 June 2012";
 
-const char * appVersionGlobals::supportID = "Support: ksbarnh@sandia.gov";
+const char * appVersionGlobals::supportID = "Support: nsights-free@gmail.com";
 const char * appVersionGlobals::versionQA = "non-QA Open Source";
 
 const int    appVersionGlobals::majorVerNum = 1;
