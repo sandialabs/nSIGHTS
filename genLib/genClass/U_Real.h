@@ -139,7 +139,6 @@ namespace genRealSupport {
     extern void     MedianSmooth(SC_DoubleArray& data, int kernelSize);
 
     // ************************************* matrix routines
-    // mostly from NumRecip
 
     // error class
     class MathError  {

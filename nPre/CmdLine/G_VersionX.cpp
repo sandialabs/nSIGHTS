@@ -46,7 +46,7 @@ const char * appVersionGlobals::versionID = "nPreX/32 2.50H";
 #endif
 
 const char * appVersionGlobals::versionDate = "7 April 2010";
-const char * appVersionGlobals::supportID = "Support: ksbarnh@sandia.gov";
+const char * appVersionGlobals::supportID = "Support: nsights.free@gmail.com";
 const char * appVersionGlobals::versionQA = "QA:Beta";
 
 const int    appVersionGlobals::majorVerNum = 1;
