@@ -1470,4 +1470,7 @@
     <Library Include="..\exe\$(Platform)\$(Configuration)\libblas.lib" />
     <Library Include="..\exe\$(Platform)\$(Configuration)\liblapack.lib" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
 </Project>
