@@ -28,9 +28,11 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_nSIGHTS_64bit", "Setu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "saLib", "saLib\saLib64\saLib64.vcxproj", "{AE663FC4-D3B1-4D88-86D1-823FE955D7A9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nPreLayer64", "nPreLayered\nPreLayer64.vcxproj", "{94C25278-9C59-4BA4-B53F-7EF5A0A0911C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nPreLayer", "nPreLayered\nPreLayer64.vcxproj", "{94C25278-9C59-4BA4-B53F-7EF5A0A0911C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nPreX64", "nPreLayered\nPreLayerX64.vcxproj", "{83A2BD05-9003-40D4-83CC-24B37D00E197}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nPreLayerX", "nPreLayered\nPreLayerX64.vcxproj", "{83A2BD05-9003-40D4-83CC-24B37D00E197}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_nSIGHTS_Layered", "Setup_nSIGHTS_Layered\Setup_nSIGHTS_Layered\Setup_nSIGHTS_Layered.vdproj", "{A1880174-C1A2-4055-AA37-F3E1FB9EEDE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -186,6 +188,12 @@ Global
 		{83A2BD05-9003-40D4-83CC-24B37D00E197}.Template|Win32.ActiveCfg = Release|x64
 		{83A2BD05-9003-40D4-83CC-24B37D00E197}.Template|x64.ActiveCfg = Release|x64
 		{83A2BD05-9003-40D4-83CC-24B37D00E197}.Template|x64.Build.0 = Release|x64
+		{A1880174-C1A2-4055-AA37-F3E1FB9EEDE2}.Debug|Win32.ActiveCfg = Debug
+		{A1880174-C1A2-4055-AA37-F3E1FB9EEDE2}.Debug|x64.ActiveCfg = Debug
+		{A1880174-C1A2-4055-AA37-F3E1FB9EEDE2}.Release|Win32.ActiveCfg = Release
+		{A1880174-C1A2-4055-AA37-F3E1FB9EEDE2}.Release|x64.ActiveCfg = Release
+		{A1880174-C1A2-4055-AA37-F3E1FB9EEDE2}.Template|Win32.ActiveCfg = Release
+		{A1880174-C1A2-4055-AA37-F3E1FB9EEDE2}.Template|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
