@@ -1496,6 +1496,9 @@
     <ClCompile Include="genMFC\DllLoader.cpp">
       <Filter>Source Files\genApp</Filter>
     </ClCompile>
+    <ClCompile Include="genClassPS\PS_WriteJPEG.cpp">
+      <Filter>Source Files\genClassPS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GenLibAfx.h">
