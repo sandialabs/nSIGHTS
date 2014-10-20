@@ -57,12 +57,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B85E210851BC440A9B562B28535B46DF"
-        "OwnerKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_D415EF132D160ECDA5B5DEFDA3C3941B"
         "OwnerKey" = "8:_2705DA17D38341FD83760833CB2E5E86"
         "MsmSig" = "8:_UNDEFINED"
@@ -893,20 +887,6 @@
         }
         "MergeModule"
         {
-            "{CEE29DC0-9FBA-4B99-8D47-5BC643D9B626}:_B85E210851BC440A9B562B28535B46DF"
-            {
-            "UseDynamicProperties" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "SourcePath" = "8:Microsoft_VC100_CRT_x86.msm"
-                "Properties"
-                {
-                }
-            "LanguageId" = "3:0"
-            "Exclude" = "11:FALSE"
-            "Folder" = "8:"
-            "Feature" = "8:"
-            "IsolateTo" = "8:"
-            }
         }
         "ProjectOutput"
         {

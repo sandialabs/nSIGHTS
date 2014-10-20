@@ -54,7 +54,7 @@
 #ifdef TGAIMAGE
 #include <genClassPS/PS_WriteTGA.h>
 #endif // TGAIMAGE
-//#include <genClassPS/PS_WriteJPEG.h>
+#include <genClassPS/PS_WriteJPEG.h>
 #include <genClassPS/PS_WriteBMP.h>
 #include <genUIExt/TitlePopupMenu.h>
 #include <genUIExt/FileDialog.h>
@@ -1142,17 +1142,20 @@ void PC_PlatformPS::WriteBitmapFile(const char fileName[])
     {
         PS_WriteTGA(fileName, header, bitmapData.tListData);
     }
-    else 
-	#endif TGAIMAGE
-// TODO: figure out ifdef/if-else logic here
-//	if (basePlotDef.tgaOutput.dumpFormat == PC_DumpTGA::dumpJPEG)
-//	{
-//	    PS_WriteJPEG(fileName, bitmapData.tListData, header.biWidth, header.biHeight,basePlotDef.tgaOutput.qualityJPEG);
-//	}
+    else {
+#endif // TGAIMAGE
+	if (basePlotDef.tgaOutput.dumpFormat == PC_DumpTGA::dumpJPEG)
+	{
+	    PS_WriteJPEG(fileName, bitmapData.tListData, header.biWidth, header.biHeight,basePlotDef.tgaOutput.qualityJPEG);
+	} 
+	else 
     {
         SwapRGB(bitmapData.tListData, header.biSizeImage/3);
         PS_WriteBmp(fileName, header, bitmapData.tListData);
     }
+#ifdef TGAIMAGE
+	}
+#endif //TGAIMAGE
 }
 
 

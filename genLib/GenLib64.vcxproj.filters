@@ -2863,6 +2863,5 @@
     </None>
     <None Include="res\compositeplot.ico" />
     <None Include="res\ico2dplo.ico" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

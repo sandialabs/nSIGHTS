@@ -179,10 +179,8 @@
     <Lib>
       <OutputFile>..\lib\$(Platform)\$(Configuration)\GenLib.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
-      <AdditionalLibraryDirectories>
-      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>libjpeg.dll.a;libturbojpeg.dll.a</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\repos\libjpeg-turbo-gcc64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>MachineX86</TargetMachine>
     </Lib>
   </ItemDefinitionGroup>
@@ -2576,7 +2574,6 @@
     <ResourceCompile Include="GenLib.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
     <None Include="res\2dPlot.ico" />
     <None Include="res\3dplot.ico" />
     <None Include="res\bitmap1.bmp" />
