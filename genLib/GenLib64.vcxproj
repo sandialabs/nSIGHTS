@@ -179,8 +179,10 @@
     <Lib>
       <OutputFile>..\lib\$(Platform)\$(Configuration)\GenLib.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalDependencies>libjpeg.dll.a;libturbojpeg.dll.a</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\repos\libjpeg-turbo-gcc64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
       <TargetMachine>MachineX86</TargetMachine>
     </Lib>
   </ItemDefinitionGroup>
@@ -258,6 +260,7 @@
     <ClCompile Include="genApp\G_AppObj.cpp" />
     <ClCompile Include="genApp\G_FileNames.cpp" />
     <ClCompile Include="genApp\G_Version.cpp" />
+    <ClCompile Include="genClassPS\jpge.cpp" />
     <ClCompile Include="genClassPS\PS_WriteJPEG.cpp" />
     <ClCompile Include="genClass\kiss_fft.cpp" />
     <ClCompile Include="genClass\U_Lapack.cpp" />
@@ -2137,6 +2140,7 @@
     <ClCompile Include="genUPO\UPO_WriteColorMapPS.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="genClassPS\jpge.h" />
     <ClInclude Include="genClass\kiss_fft.h" />
     <ClInclude Include="genClass\U_Lapack.h" />
     <ClInclude Include="genInterface\InterfaceDesc.h" />

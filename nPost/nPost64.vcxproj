@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -106,7 +106,8 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -150,7 +151,8 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -198,7 +200,8 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;HtmlHelp.lib;Delayimp.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -206,6 +209,7 @@
       <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPost.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -245,7 +249,8 @@
       <AdditionalIncludeDirectories>..\genLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <AdditionalDependencies>GenLib.lib;ObjLib.lib;nsLib.lib;osLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPost.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -254,6 +259,7 @@
       <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPost.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

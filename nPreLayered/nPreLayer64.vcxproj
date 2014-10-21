@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -136,7 +136,8 @@
       <AssemblerListingLocation>..\obj\$(Platform)\$(Configuration)\nPreLayer\</AssemblerListingLocation>
       <ObjectFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ObjectFileName>
       <ProgramDataBaseFileName>..\obj\$(Platform)\$(Configuration)\nPreLayer\</ProgramDataBaseFileName>
-      <BrowseInformation></BrowseInformation>
+      <BrowseInformation>
+      </BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -151,7 +152,8 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -164,7 +166,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
@@ -203,11 +206,13 @@
       <ProgramDatabaseFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>X64</TargetEnvironment>
@@ -240,7 +245,8 @@
       <AdditionalIncludeDirectories>..\genLib;..\osLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalOptions></AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
       <AdditionalDependencies>GenLib.lib;ObjLib.lib;osLib.lib;nsLib.lib;opengl32.lib;glu32.lib;HtmlHelp.lib;Delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\exe\$(Platform)\$(Configuration)\nPreLayer.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>

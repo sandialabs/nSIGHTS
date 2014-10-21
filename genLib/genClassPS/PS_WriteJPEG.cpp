@@ -33,83 +33,51 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
 #include "GenLibAfx.h"
-
 #include <genClass/U_Msg.h>
 
-#include <stdio.h>
-#include "jpeglib.h"  // libjpeg-turbo header
+#include "jpge.h"  // jpeg-compressor header (single source file - no library)
 
 void PS_WriteJPEG(const char* fileName, unsigned char* pBitmapData, 
-	              int width, int height, int nQuality)
+	              int nX, int nY, int nQuality)
 {
+	const int nChan = 3;  // RGB
+	int orig_buff_size = nChan*nX*nY;
+	unsigned char* pBitmapDataSwap = new unsigned char[orig_buff_size];
 
-  // three-channel data
-  JSAMPLE * image_buffer = new unsigned char[3 * width * height];
+	// Swapping lines in the buffer. OpenGL writes from lower line 
+	// going up but jpeg-compressor library works from top down
+	for (int j = 0; j < nY; j++) { // line counter
+		for (int i = 0; i < nX; i++) { // column counter
+			for (int k = 0; k < nChan; k++) { // channel counter
+				pBitmapDataSwap[(j*nX+i)*nChan+k] = pBitmapData[((nY-1-j)*nX+i)*nChan+k];
+			}
+		}
+	}
 
-  // Swapping lines in the buffer
-  // OpenGL writes from lower line going up but jpeg library works
-  // reverse (from up to down)
-  for (int j = 0; j < height; j++) { // line counter
-    for (int i = 0; i < width; i++) { // column counter
+	// length of buffer after compression
+	int comp_size = orig_buff_size; 
+	
+	// allocate buffer hopefully big enough for compression results
+	unsigned char* compressedData = new unsigned char[orig_buff_size];  
+	
+	jpge::params params;	
+    params.m_quality = nQuality;
+	
+	bool success = jpge::compress_image_to_jpeg_file_in_memory(compressedData, comp_size, 
+		                                                       nX, nY, 3, pBitmapDataSwap, params);
 
-      image_buffer[(j*width+i)*3]   = pBitmapData[((height-1-j)*width+i)*3];
-      image_buffer[(j*width+i)*3+1] = pBitmapData[((height-1-j)*width+i)*3+1];
-      image_buffer[(j*width+i)*3+2] = pBitmapData[((height-1-j)*width+i)*3+2];
-    }
-  }
+	if(!success){
+		GenAppWarningMsg("PS_WriteJPEG", "Error compressing JPEG data");
+	} else {
+	  CFile file;
+ 	    if (!file.Open(fileName,CFile::modeWrite | CFile::modeCreate)){
+            GenAppWarningMsg("PS_WriteJPEG", "Error opening JPEG file for writing");
+	    } else {
+           file.Write(compressedData, comp_size);
+		}
+	}
 
-  // based upon example.c distributed with libjpeg-turbo source code.
-
-  // struct contains the JPEG compression parameters and pointers to
-  // working space (allocated as needed by the JPEG library).
-  struct jpeg_compress_struct cinfo;
-
-  // JPEG error handler.
-  struct jpeg_error_mgr jerr;
-
-  FILE * outfile;		// target file
-  JSAMPROW row_pointer[1]; // pointer to JSAMPLE rows
-  int row_stride;       // row width in image buffer
-
-  // setup error handler and initialize JPEG compression object 
-  cinfo.err = jpeg_std_error(&jerr);
-  jpeg_create_compress(&cinfo);
-  
-  if ((outfile = fopen(fileName, "wb")) == NULL) {
-	  GenAppWarningMsg("PS_WriteJPEG", "Error opening JPEG file for writing");
-  } else {
-
-    jpeg_stdio_dest(&cinfo, outfile);
-  
-    cinfo.image_width = width; 	// image width and height in pixels 
-    cinfo.image_height = height;
-    cinfo.input_components = 3;		// # of color components per pixel
-    cinfo.in_color_space = JCS_RGB; 	// colorspace of input image (required)
-  
-    // set default compression parameters
-    jpeg_set_defaults(&cinfo);
-  
-    // start compressor
-    jpeg_start_compress(&cinfo, TRUE);
-  
-    row_stride = width * 3;
-
-    while (cinfo.next_scanline < cinfo.image_height) {
-      /* jpeg_write_scanlines expects an array of pointers to scanlines.
-       * Here the array is only one element long, but you could pass
-       * more than one scanline at a time if that's more convenient.
-       */
-      row_pointer[0] = & image_buffer[cinfo.next_scanline * row_stride];
-      (void) jpeg_write_scanlines(&cinfo, row_pointer, 1);
-    }
-
-    // Finish compression, close output file 
-    jpeg_finish_compress(&cinfo);
-    fclose(outfile);
-  }
-
-  // release JPEG compression object memory
-  jpeg_destroy_compress(&cinfo);
-
+	delete [] pBitmapDataSwap;
+	delete [] compressedData;
 }
 
