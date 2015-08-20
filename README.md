@@ -14,6 +14,8 @@ The "Setup_nSIGHTS" and "Setup_nSIGHTS_64" directories contain Windows installer
 
 The 32-bit version of nSIGHTS requires Windows XP SP2 or newer. The 64-bit version of nSIGHTS requires Windows Vistas or newer.
 
+**We strongly recommended to use the 32-bit installer for all platforms (it works on both 32-bit and 64-bit).** Users have reported issues with the 64-bit installer.
+
 Documentation
 -------------
 
